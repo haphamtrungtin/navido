@@ -1,0 +1,9 @@
+.next/
+coverage/
+menu.json
+NAVIDO_CODEX_CLI_MASTER_PROMPT.md
+docs/superpowers/
+node_modules/
+playwright-report/
+pnpm-lock.yaml
+test-results/
