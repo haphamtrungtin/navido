@@ -1,0 +1,1045 @@
+[
+  {
+    "sourceRow": 2,
+    "name": "Cà phê Avocado Coffee",
+    "price": 85000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 107,
+    "name": "Cà Phê Cinnamon Latte (시나몬 라떼)",
+    "price": 75000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 108,
+    "name": "Cà Phê Cloud Coffee (클라우드 커피)",
+    "price": 100000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 109,
+    "name": "Cà Phê Coco-Cano",
+    "price": 90000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 3,
+    "name": "Cà Phê Coconut Coffee (코코넛 커피)",
+    "price": 80000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 110,
+    "name": "Cà Phê Coldbrew Ice Shake (콜드브루 아이스쉐이크)",
+    "price": 80000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 111,
+    "name": "Sinh tố Tropical Mango Smoothies",
+    "price": 85000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 112,
+    "name": "Sữa Strawberry Latte (딸기라떼)",
+    "price": 75000,
+    "category": "Signature",
+    "categoryCode": "SIG",
+    "sort": 0
+  },
+  {
+    "sourceRow": 69,
+    "name": "Americano Bottle 500ml",
+    "price": 100000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 64,
+    "name": "Big Americano",
+    "price": 80000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 67,
+    "name": "Big Hazelnut Latte (헤이즐넛 카페라떼)",
+    "price": 95000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 68,
+    "name": "Big Vanilla Latte (바 닐 라 카페 라 떼)",
+    "price": 95000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 57,
+    "name": "Bạc Xỉu",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 71,
+    "name": "Café latte Bottle 500ml",
+    "price": 120000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 52,
+    "name": "Cà Phê Americano (아 메 리 카 노)",
+    "price": 60000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 54,
+    "name": "Cà Phê Cappucino (카푸치 노)",
+    "price": 70000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 58,
+    "name": "Cà Phê Caramel Macchiato (카 라 멜 마끼 아 또)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 53,
+    "name": "Cà Phê Double Espresso (에스프레소 더블 샷)",
+    "price": 60000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 59,
+    "name": "Cà Phê Hazelnut Latte (헤이즐넛 카페라떼)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 60,
+    "name": "Cà Phê Hazelnut Latte (헤이즐넛 카페라떼)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 55,
+    "name": "Cà Phê Latte (커피 라떼)",
+    "price": 70000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 61,
+    "name": "Cà Phê Mocha (카페모카)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 62,
+    "name": "Cà Phê Sữa Đá (카 페 쓰 어 다)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 56,
+    "name": "Cà phê sữa đặc",
+    "price": 70000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 63,
+    "name": "Cà Phê Vanilla Latte (바 닐 라 카페 라 떼)",
+    "price": 75000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 66,
+    "name": "Iced Big Cafe Latte",
+    "price": 90000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 65,
+    "name": "Milktea Bottle 500ml",
+    "price": 80000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 70,
+    "name": "Orange Juice Bottle 500ml",
+    "price": 100000,
+    "category": "Coffee",
+    "categoryCode": "CF",
+    "sort": 1
+  },
+  {
+    "sourceRow": 4,
+    "name": "Cà Phê Cold Brew (콜드브루)",
+    "price": 65000,
+    "category": "Brew Coffee",
+    "categoryCode": "BREW",
+    "sort": 2
+  },
+  {
+    "sourceRow": 5,
+    "name": "Cà Phê Cold Brew Latte (콜드브루 카페라떼)",
+    "price": 70000,
+    "category": "Brew Coffee",
+    "categoryCode": "BREW",
+    "sort": 2
+  },
+  {
+    "sourceRow": 6,
+    "name": "Cà Phê Cold Brew Specialty (콜드브루)",
+    "price": 75000,
+    "category": "Brew Coffee",
+    "categoryCode": "BREW",
+    "sort": 2
+  },
+  {
+    "sourceRow": 104,
+    "name": "Cà phê bạc xĩu (Phin)",
+    "price": 65000,
+    "category": "Phin",
+    "categoryCode": "ITEM_TYPE-MVIF",
+    "sort": 3
+  },
+  {
+    "sourceRow": 105,
+    "name": "Cà phê phin",
+    "price": 60000,
+    "category": "Phin",
+    "categoryCode": "ITEM_TYPE-MVIF",
+    "sort": 3
+  },
+  {
+    "sourceRow": 106,
+    "name": "Cà phê sữa (Phin)",
+    "price": 65000,
+    "category": "Phin",
+    "categoryCode": "ITEM_TYPE-MVIF",
+    "sort": 3
+  },
+  {
+    "sourceRow": 91,
+    "name": "Dừa coconut water",
+    "price": 60000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 92,
+    "name": "Nước ép Orange Juice (오렌지)",
+    "price": 65000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 93,
+    "name": "Nước ép Tomato Juice (토마토)",
+    "price": 65000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 94,
+    "name": "Nước ép Water melon",
+    "price": 70000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 95,
+    "name": "SInh tố Banana Milk (바나나우유)",
+    "price": 65000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 96,
+    "name": "Sinh Tố Strawberry Yogurt (딸기 요거트 스무디)",
+    "price": 75000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 98,
+    "name": "Soda Lemonade (레모네이드)",
+    "price": 70000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 97,
+    "name": "Sô co la (초콜릿)",
+    "price": 70000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 99,
+    "name": "Sữa Greentea Latte (녹차라떼)",
+    "price": 75000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 100,
+    "name": "Sữa Tươi - Fresh Milk",
+    "price": 60000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 101,
+    "name": "Trà Hibicus Iced Tea (히비스커스 아이스티)",
+    "price": 75000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 102,
+    "name": "Trà Measil (매실)",
+    "price": 60000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 103,
+    "name": "Trà Sữa Bubble Milktea (버블티)",
+    "price": 80000,
+    "category": "Non-Coffee",
+    "categoryCode": "NCF",
+    "sort": 4
+  },
+  {
+    "sourceRow": 85,
+    "name": "Đá xay Caramel Frappe (카라멜 커피)",
+    "price": 75000,
+    "category": "Frappuccino",
+    "categoryCode": "FRAP",
+    "sort": 5
+  },
+  {
+    "sourceRow": 86,
+    "name": "Đá xay Cookie Oreo (쿠키 오레오)",
+    "price": 75000,
+    "category": "Frappuccino",
+    "categoryCode": "FRAP",
+    "sort": 5
+  },
+  {
+    "sourceRow": 87,
+    "name": "Đá xay Mint Chocochip (민트초코칩)",
+    "price": 75000,
+    "category": "Frappuccino",
+    "categoryCode": "FRAP",
+    "sort": 5
+  },
+  {
+    "sourceRow": 88,
+    "name": "Apple Juices",
+    "price": 70000,
+    "category": "Fruit & Juices",
+    "categoryCode": "ITEM_TYPE-1SX6",
+    "sort": 6
+  },
+  {
+    "sourceRow": 89,
+    "name": "Pineapples Juices",
+    "price": 65000,
+    "category": "Fruit & Juices",
+    "categoryCode": "ITEM_TYPE-1SX6",
+    "sort": 6
+  },
+  {
+    "sourceRow": 90,
+    "name": "Pink Guava Juices",
+    "price": 65000,
+    "category": "Fruit & Juices",
+    "categoryCode": "ITEM_TYPE-1SX6",
+    "sort": 6
+  },
+  {
+    "sourceRow": 114,
+    "name": "Box Camomile (논카페인티)",
+    "price": 330000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 115,
+    "name": "Box English Breakfast",
+    "price": 330000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 116,
+    "name": "Box Rooibos Classic (논카페인티)",
+    "price": 330000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 117,
+    "name": "Box Rosehip (Non-Caffeine)",
+    "price": 330000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 118,
+    "name": "Darjeeling Summer Gold",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 119,
+    "name": "English Breakfast",
+    "price": 60000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 120,
+    "name": "Erdbeer-Himbeer (논카페인티)",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 121,
+    "name": "Famous Earl Grey",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 122,
+    "name": "Rooibos Classic (논카페인티)",
+    "price": 60000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 123,
+    "name": "Rooibos Orange - Sahne (논카페인티)",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 124,
+    "name": "Rosehip (Non-Caffeine)",
+    "price": 60000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 125,
+    "name": "Schlummertrunk (논카페인티)",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 126,
+    "name": "Trà Camomile (논카페인티)",
+    "price": 120000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 127,
+    "name": "Trà Camomile cup (논카페인티)",
+    "price": 60000,
+    "category": "Tea Pot & Cup",
+    "categoryCode": "RON",
+    "sort": 7
+  },
+  {
+    "sourceRow": 7,
+    "name": "Aglio E Olio",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 8,
+    "name": "All’Arrabbiata Pasta",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 9,
+    "name": "Arugula Burrata salad",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 10,
+    "name": "Arugula Green salad",
+    "price": 100000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 15,
+    "name": "Bolognese Spaghetti",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 16,
+    "name": "Burrata Caprese Salad",
+    "price": 170000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 17,
+    "name": "Burrata Cheese",
+    "price": 80000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 11,
+    "name": "Bánh Bagel Cream Cheese",
+    "price": 60000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 12,
+    "name": "Bánh Croissant Ham & Cheese",
+    "price": 80000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 13,
+    "name": "Bánh Sandwich Ham & Cheese",
+    "price": 80000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 14,
+    "name": "Bánh Waffle Plain",
+    "price": 90000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 18,
+    "name": "Classic Carbonara",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 19,
+    "name": "Cream & Mushroom Pasta",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 20,
+    "name": "Cream Cheese",
+    "price": 20000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 21,
+    "name": "English Muffin",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 22,
+    "name": "Extra Bacon",
+    "price": 40000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 23,
+    "name": "Extra Banana",
+    "price": 10000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 24,
+    "name": "Extra Mango",
+    "price": 20000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 25,
+    "name": "Extra Mapple",
+    "price": 10000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 26,
+    "name": "Extra Nutella",
+    "price": 30000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 27,
+    "name": "Extra Sausage",
+    "price": 40000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 28,
+    "name": "Greek Yogurt w/Fruit & Granola",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 29,
+    "name": "Grilled Chicken Garden Salad",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 30,
+    "name": "Grilled prawn & Green salad",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 31,
+    "name": "Honey Toast",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 32,
+    "name": "Mango Burrata Salad",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 33,
+    "name": "Pesto & Garlic Shrimp Toast",
+    "price": 120000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 34,
+    "name": "Pesto & Seafood Pasta",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 35,
+    "name": "Phần ăn Big Breakfast",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 36,
+    "name": "Phần ăn Waffle Seasonal Fruits",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 37,
+    "name": "Scramble Eggs Toast",
+    "price": 100000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 38,
+    "name": "Scrambled eggs bacons Muffin",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 39,
+    "name": "Shrimp Aghilio E Olio",
+    "price": 160000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 40,
+    "name": "Spicy Seafood Spaghetti",
+    "price": 180000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 41,
+    "name": "Súp - Pumkin Soup",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 42,
+    "name": "Súp-Cream of Mushroom Soup",
+    "price": 140000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 43,
+    "name": "Tomato Toast",
+    "price": 100000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 44,
+    "name": "Wild Garlic Mushroom Cream Toast",
+    "price": 120000,
+    "category": "Brunch",
+    "categoryCode": "ITEM_TYPE-1ICS",
+    "sort": 8
+  },
+  {
+    "sourceRow": 48,
+    "name": "Basque Cheese Cake",
+    "price": 85000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 45,
+    "name": "Bánh Carrot Cake",
+    "price": 80000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 46,
+    "name": "Bánh Chocolate Banana",
+    "price": 70000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 47,
+    "name": "Bánh Chocolate Cookie",
+    "price": 60000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 49,
+    "name": "Lemon Cake",
+    "price": 70000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 50,
+    "name": "Tiramisu",
+    "price": 90000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 51,
+    "name": "Whole Wheat Banana Bread",
+    "price": 40000,
+    "category": "Cake",
+    "categoryCode": "ITEM_TYPE-IGMS",
+    "sort": 9
+  },
+  {
+    "sourceRow": 72,
+    "name": "Bánh Banana Strawberry Croffle",
+    "price": 85000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 73,
+    "name": "Bánh Croffle Nuttella Banana",
+    "price": 80000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 74,
+    "name": "Bánh Croffle Plain",
+    "price": 60000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 75,
+    "name": "Bánh Croffle Tiramisu",
+    "price": 80000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 76,
+    "name": "Bánh Croissant",
+    "price": 40000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 77,
+    "name": "Ice cream",
+    "price": 70000,
+    "category": "Desserts",
+    "categoryCode": "ITEM_TYPE-MNZP",
+    "sort": 10
+  },
+  {
+    "sourceRow": 78,
+    "name": "Bánh mì BB",
+    "price": 40000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 79,
+    "name": "Bánh mì soup",
+    "price": 20000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 80,
+    "name": "Creamchesse",
+    "price": 20000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 81,
+    "name": "Extra Burrata Cheese",
+    "price": 80000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 82,
+    "name": "Extra Creamy Dressing",
+    "price": 30000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 83,
+    "name": "Extra Fennel vinaigrette",
+    "price": 30000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 84,
+    "name": "Extra Ganola",
+    "price": 20000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE-7918",
+    "sort": 11
+  },
+  {
+    "sourceRow": 113,
+    "name": "Americano Specialty",
+    "price": 70000,
+    "category": "Specialty Coffee",
+    "categoryCode": "ITEMTYPE_H4EA",
+    "sort": 12
+  },
+  {
+    "sourceRow": 128,
+    "name": "Extra Shot",
+    "price": 10000,
+    "category": "Extras",
+    "categoryCode": "ITEM_TYPE_OTHER",
+    "sort": 13
+  },
+  {
+    "sourceRow": 9001,
+    "name": "Mock Arabica Beans 250g",
+    "price": 180000,
+    "category": "Coffee Beans",
+    "categoryCode": "MOCK_BEANS",
+    "sort": 14,
+    "netWeightGram": 250
+  },
+  {
+    "sourceRow": 9002,
+    "name": "Mock Robusta Beans 500g",
+    "price": 260000,
+    "category": "Coffee Beans",
+    "categoryCode": "MOCK_BEANS",
+    "sort": 14,
+    "netWeightGram": 500
+  },
+  {
+    "sourceRow": 9003,
+    "name": "Mock Espresso Blend Beans 1kg",
+    "price": 420000,
+    "category": "Coffee Beans",
+    "categoryCode": "MOCK_BEANS",
+    "sort": 14,
+    "netWeightGram": 1000
+  }
+]
