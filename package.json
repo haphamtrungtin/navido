@@ -10,8 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "format:check": "prettier --check .",
-    "validate:menu": "tsx scripts/normalize-menu.ts --check"
+    "format:check": "prettier --check ."
   },
   "engines": {
     "node": ">=20.9.0",

@@ -3,6 +3,7 @@ coverage/
 menu.json
 NAVIDO_CODEX_CLI_MASTER_PROMPT.md
 docs/superpowers/
+next-env.d.ts
 node_modules/
 playwright-report/
 pnpm-lock.yaml
