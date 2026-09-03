@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "format:check": "prettier --check .",
     "generate:menu": "tsx scripts/normalize-menu.ts",
-    "validate:menu": "tsx scripts/normalize-menu.ts --check"
+    "validate:menu": "tsx scripts/normalize-menu.ts --check",
+    "verify:home-visual": "playwright test tests/e2e/home-visual.spec.ts --workers=1"
   },
   "engines": {
     "node": ">=20.9.0",

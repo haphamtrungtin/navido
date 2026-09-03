@@ -22,7 +22,10 @@ export function LocationInvitation({ copy, locale }: LocationInvitationProps) {
       data-home-section="location-invitation"
     >
       <Container>
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
+        <div
+          className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12"
+          data-home-grid="location"
+        >
           <div className="lg:col-span-5 lg:col-start-2">
             <Eyebrow>{copy.eyebrow}</Eyebrow>
             <h2 className="mt-4 text-3xl font-light leading-tight sm:text-4xl">

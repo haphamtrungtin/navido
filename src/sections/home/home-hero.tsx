@@ -15,16 +15,23 @@ type HomeHeroProps = Readonly<{
 
 export function HomeHero({ copy, locale }: HomeHeroProps) {
   return (
-    <section className="relative isolate overflow-hidden bg-[var(--navido-ink)] text-[var(--navido-paper)]">
+    <section
+      className="relative isolate overflow-hidden bg-[var(--navido-ink)] text-[var(--navido-paper)]"
+      data-home-section="hero"
+    >
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-[url('/images/stitch/home-cafe-interior.jpg')] bg-cover bg-center opacity-55"
+        data-home-hero-image
       />
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-[color:rgb(37_37_33_/_52%)]"
       />
-      <Container className="flex min-h-[calc(100vh-5rem)] items-end py-16 sm:py-20 lg:py-24">
+      <Container
+        className="flex min-h-[calc(100vh-5rem)] items-end py-16 sm:py-20 lg:py-24"
+        data-home-hero-content
+      >
         <div className="max-w-3xl">
           <p className="mb-6 text-xs font-semibold uppercase tracking-[0.14em] text-[color:rgb(252_249_241_/_78%)]">
             {copy.eyebrow}

@@ -43,10 +43,14 @@ export function SignatureHighlights({
             {copy.body}
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div
+          className="mt-12 grid gap-8 md:grid-cols-3"
+          data-home-grid="highlights"
+        >
           {items.map((item, index) => (
             <article
               className="border-t border-[var(--navido-rule)] pt-4"
+              data-home-highlight
               key={item.id}
             >
               <EditorialImage

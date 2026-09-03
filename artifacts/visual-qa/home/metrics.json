@@ -1,0 +1,290 @@
+[
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 1440,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 12,
+      "location": 12
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 820,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [1440, 1440, 1440, 1440],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 626312,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 768,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 944,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [768, 768, 768, 768],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 320544,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "contentPaddingTop": [72, 72, 72],
+    "documentScrollWidth": 390,
+    "gridTracks": {
+      "highlights": 1,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 764,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [390, 390, 390, 390],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 139358,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 1440,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 12,
+      "location": 12
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 820,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [1440, 1440, 1440, 1440],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 623361,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 768,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 944,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [768, 768, 768, 768],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 317591,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "contentPaddingTop": [72, 72, 72],
+    "documentScrollWidth": 390,
+    "gridTracks": {
+      "highlights": 1,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 764,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [390, 390, 390, 390],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 137961,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 1440,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 12,
+      "location": 12
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 820,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [1440, 1440, 1440, 1440],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 613394,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "contentPaddingTop": [120, 120, 120],
+    "documentScrollWidth": 768,
+    "gridTracks": {
+      "highlights": 3,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 944,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [768, 768, 768, 768],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 309826,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "contentPaddingTop": [72, 72, 72],
+    "documentScrollWidth": 390,
+    "gridTracks": {
+      "highlights": 1,
+      "introduction": 1,
+      "location": 1
+    },
+    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackgroundPosition": "50% 50%",
+    "heroBackgroundSize": "cover",
+    "heroHeight": 764,
+    "highlightCount": 3,
+    "imageCount": 6,
+    "loadedImageCount": 6,
+    "locationCount": 1,
+    "sectionOrder": [
+      "hero",
+      "introduction",
+      "signature-highlights",
+      "location-invitation"
+    ],
+    "sectionScrollWidths": [390, 390, 390, 390],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 131788,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

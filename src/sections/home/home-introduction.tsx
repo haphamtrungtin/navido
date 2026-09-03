@@ -13,7 +13,10 @@ export function HomeIntroduction({ copy }: HomeIntroductionProps) {
       data-home-section="introduction"
     >
       <Container>
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
+        <div
+          className="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12"
+          data-home-grid="introduction"
+        >
           <div className="lg:col-span-5">
             <Eyebrow>{copy.eyebrow}</Eyebrow>
             <h2 className="mt-4 text-3xl font-light leading-tight sm:text-4xl">
