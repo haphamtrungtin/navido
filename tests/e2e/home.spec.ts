@@ -24,4 +24,16 @@ for (const locale of locales) {
       page.locator('[data-home-section="signature-highlights"]'),
     ).toBeVisible();
   });
+
+  for (const destination of ['menu', 'visit'] as const) {
+    test(`serves the ${destination} CTA destination for ${locale}`, async ({
+      page,
+    }) => {
+      const response = await page.goto(`/${locale}/${destination}`);
+
+      expect(response?.status()).toBe(200);
+      await expect(page.locator('html')).toHaveAttribute('lang', locale);
+      await expect(page.getByRole('main')).toBeVisible();
+    });
+  }
 }
