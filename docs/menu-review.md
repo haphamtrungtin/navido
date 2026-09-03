@@ -1,0 +1,297 @@
+# NAVIDO Menu Review
+
+Generated from the immutable `menu.json` source. Content anomalies remain renderable and require editorial review.
+
+## Summary
+
+- Source records: 130
+- Display categories: 14
+- Review anomalies: 272
+
+## Corrections
+
+- None.
+
+## Generated Translations
+
+- Row 2: Used normalized source display as a review-required en fallback.
+- Row 2: Used normalized source display as a review-required ko fallback.
+- Row 3: Used normalized source display as a review-required en fallback.
+- Row 4: Used normalized source display as a review-required en fallback.
+- Row 5: Used normalized source display as a review-required en fallback.
+- Row 6: Used normalized source display as a review-required en fallback.
+- Row 7: Used normalized source display as a review-required en fallback.
+- Row 7: Used normalized source display as a review-required ko fallback.
+- Row 8: Used normalized source display as a review-required en fallback.
+- Row 8: Used normalized source display as a review-required ko fallback.
+- Row 9: Used normalized source display as a review-required en fallback.
+- Row 9: Used normalized source display as a review-required ko fallback.
+- Row 10: Used normalized source display as a review-required en fallback.
+- Row 10: Used normalized source display as a review-required ko fallback.
+- Row 11: Used normalized source display as a review-required en fallback.
+- Row 11: Used normalized source display as a review-required ko fallback.
+- Row 12: Used normalized source display as a review-required en fallback.
+- Row 12: Used normalized source display as a review-required ko fallback.
+- Row 13: Used normalized source display as a review-required en fallback.
+- Row 13: Used normalized source display as a review-required ko fallback.
+- Row 14: Used normalized source display as a review-required en fallback.
+- Row 14: Used normalized source display as a review-required ko fallback.
+- Row 15: Used normalized source display as a review-required en fallback.
+- Row 15: Used normalized source display as a review-required ko fallback.
+- Row 16: Used normalized source display as a review-required en fallback.
+- Row 16: Used normalized source display as a review-required ko fallback.
+- Row 17: Used normalized source display as a review-required en fallback.
+- Row 17: Used normalized source display as a review-required ko fallback.
+- Row 18: Used normalized source display as a review-required en fallback.
+- Row 18: Used normalized source display as a review-required ko fallback.
+- Row 19: Used normalized source display as a review-required en fallback.
+- Row 19: Used normalized source display as a review-required ko fallback.
+- Row 20: Used normalized source display as a review-required en fallback.
+- Row 20: Used normalized source display as a review-required ko fallback.
+- Row 21: Used normalized source display as a review-required en fallback.
+- Row 21: Used normalized source display as a review-required ko fallback.
+- Row 22: Used normalized source display as a review-required en fallback.
+- Row 22: Used normalized source display as a review-required ko fallback.
+- Row 23: Used normalized source display as a review-required en fallback.
+- Row 23: Used normalized source display as a review-required ko fallback.
+- Row 24: Used normalized source display as a review-required en fallback.
+- Row 24: Used normalized source display as a review-required ko fallback.
+- Row 25: Used normalized source display as a review-required en fallback.
+- Row 25: Used normalized source display as a review-required ko fallback.
+- Row 26: Used normalized source display as a review-required en fallback.
+- Row 26: Used normalized source display as a review-required ko fallback.
+- Row 27: Used normalized source display as a review-required en fallback.
+- Row 27: Used normalized source display as a review-required ko fallback.
+- Row 28: Used normalized source display as a review-required en fallback.
+- Row 28: Used normalized source display as a review-required ko fallback.
+- Row 29: Used normalized source display as a review-required en fallback.
+- Row 29: Used normalized source display as a review-required ko fallback.
+- Row 30: Used normalized source display as a review-required en fallback.
+- Row 30: Used normalized source display as a review-required ko fallback.
+- Row 31: Used normalized source display as a review-required en fallback.
+- Row 31: Used normalized source display as a review-required ko fallback.
+- Row 32: Used normalized source display as a review-required en fallback.
+- Row 32: Used normalized source display as a review-required ko fallback.
+- Row 33: Used normalized source display as a review-required en fallback.
+- Row 33: Used normalized source display as a review-required ko fallback.
+- Row 34: Used normalized source display as a review-required en fallback.
+- Row 34: Used normalized source display as a review-required ko fallback.
+- Row 35: Used normalized source display as a review-required en fallback.
+- Row 35: Used normalized source display as a review-required ko fallback.
+- Row 36: Used normalized source display as a review-required en fallback.
+- Row 36: Used normalized source display as a review-required ko fallback.
+- Row 37: Used normalized source display as a review-required en fallback.
+- Row 37: Used normalized source display as a review-required ko fallback.
+- Row 38: Used normalized source display as a review-required en fallback.
+- Row 38: Used normalized source display as a review-required ko fallback.
+- Row 39: Used normalized source display as a review-required en fallback.
+- Row 39: Used normalized source display as a review-required ko fallback.
+- Row 40: Used normalized source display as a review-required en fallback.
+- Row 40: Used normalized source display as a review-required ko fallback.
+- Row 41: Used normalized source display as a review-required en fallback.
+- Row 41: Used normalized source display as a review-required ko fallback.
+- Row 42: Used normalized source display as a review-required en fallback.
+- Row 42: Used normalized source display as a review-required ko fallback.
+- Row 43: Used normalized source display as a review-required en fallback.
+- Row 43: Used normalized source display as a review-required ko fallback.
+- Row 44: Used normalized source display as a review-required en fallback.
+- Row 44: Used normalized source display as a review-required ko fallback.
+- Row 45: Used normalized source display as a review-required en fallback.
+- Row 45: Used normalized source display as a review-required ko fallback.
+- Row 46: Used normalized source display as a review-required en fallback.
+- Row 46: Used normalized source display as a review-required ko fallback.
+- Row 47: Used normalized source display as a review-required en fallback.
+- Row 47: Used normalized source display as a review-required ko fallback.
+- Row 48: Used normalized source display as a review-required en fallback.
+- Row 48: Used normalized source display as a review-required ko fallback.
+- Row 49: Used normalized source display as a review-required en fallback.
+- Row 49: Used normalized source display as a review-required ko fallback.
+- Row 50: Used normalized source display as a review-required en fallback.
+- Row 50: Used normalized source display as a review-required ko fallback.
+- Row 51: Used normalized source display as a review-required en fallback.
+- Row 51: Used normalized source display as a review-required ko fallback.
+- Row 52: Used normalized source display as a review-required en fallback.
+- Row 53: Used normalized source display as a review-required en fallback.
+- Row 54: Used normalized source display as a review-required en fallback.
+- Row 55: Used normalized source display as a review-required en fallback.
+- Row 56: Used normalized source display as a review-required en fallback.
+- Row 56: Used normalized source display as a review-required ko fallback.
+- Row 57: Used normalized source display as a review-required en fallback.
+- Row 57: Used normalized source display as a review-required ko fallback.
+- Row 58: Used normalized source display as a review-required en fallback.
+- Row 59: Used normalized source display as a review-required en fallback.
+- Row 60: Used normalized source display as a review-required en fallback.
+- Row 61: Used normalized source display as a review-required en fallback.
+- Row 62: Used normalized source display as a review-required en fallback.
+- Row 63: Used normalized source display as a review-required en fallback.
+- Row 64: Used normalized source display as a review-required en fallback.
+- Row 64: Used normalized source display as a review-required ko fallback.
+- Row 65: Used normalized source display as a review-required en fallback.
+- Row 65: Used normalized source display as a review-required ko fallback.
+- Row 66: Used normalized source display as a review-required en fallback.
+- Row 66: Used normalized source display as a review-required ko fallback.
+- Row 67: Used normalized source display as a review-required en fallback.
+- Row 68: Used normalized source display as a review-required en fallback.
+- Row 69: Used normalized source display as a review-required en fallback.
+- Row 69: Used normalized source display as a review-required ko fallback.
+- Row 70: Used normalized source display as a review-required en fallback.
+- Row 70: Used normalized source display as a review-required ko fallback.
+- Row 71: Used normalized source display as a review-required en fallback.
+- Row 71: Used normalized source display as a review-required ko fallback.
+- Row 72: Used normalized source display as a review-required en fallback.
+- Row 72: Used normalized source display as a review-required ko fallback.
+- Row 73: Used normalized source display as a review-required en fallback.
+- Row 73: Used normalized source display as a review-required ko fallback.
+- Row 74: Used normalized source display as a review-required en fallback.
+- Row 74: Used normalized source display as a review-required ko fallback.
+- Row 75: Used normalized source display as a review-required en fallback.
+- Row 75: Used normalized source display as a review-required ko fallback.
+- Row 76: Used normalized source display as a review-required en fallback.
+- Row 76: Used normalized source display as a review-required ko fallback.
+- Row 77: Used normalized source display as a review-required en fallback.
+- Row 77: Used normalized source display as a review-required ko fallback.
+- Row 78: Used normalized source display as a review-required en fallback.
+- Row 78: Used normalized source display as a review-required ko fallback.
+- Row 79: Used normalized source display as a review-required en fallback.
+- Row 79: Used normalized source display as a review-required ko fallback.
+- Row 80: Used normalized source display as a review-required en fallback.
+- Row 80: Used normalized source display as a review-required ko fallback.
+- Row 81: Used normalized source display as a review-required en fallback.
+- Row 81: Used normalized source display as a review-required ko fallback.
+- Row 82: Used normalized source display as a review-required en fallback.
+- Row 82: Used normalized source display as a review-required ko fallback.
+- Row 83: Used normalized source display as a review-required en fallback.
+- Row 83: Used normalized source display as a review-required ko fallback.
+- Row 84: Used normalized source display as a review-required en fallback.
+- Row 84: Used normalized source display as a review-required ko fallback.
+- Row 85: Used normalized source display as a review-required en fallback.
+- Row 86: Used normalized source display as a review-required en fallback.
+- Row 87: Used normalized source display as a review-required en fallback.
+- Row 88: Used normalized source display as a review-required en fallback.
+- Row 88: Used normalized source display as a review-required ko fallback.
+- Row 89: Used normalized source display as a review-required en fallback.
+- Row 89: Used normalized source display as a review-required ko fallback.
+- Row 90: Used normalized source display as a review-required en fallback.
+- Row 90: Used normalized source display as a review-required ko fallback.
+- Row 91: Used normalized source display as a review-required en fallback.
+- Row 91: Used normalized source display as a review-required ko fallback.
+- Row 92: Used normalized source display as a review-required en fallback.
+- Row 93: Used normalized source display as a review-required en fallback.
+- Row 94: Used normalized source display as a review-required en fallback.
+- Row 94: Used normalized source display as a review-required ko fallback.
+- Row 95: Used normalized source display as a review-required en fallback.
+- Row 96: Used normalized source display as a review-required en fallback.
+- Row 97: Used normalized source display as a review-required en fallback.
+- Row 98: Used normalized source display as a review-required en fallback.
+- Row 99: Used normalized source display as a review-required en fallback.
+- Row 100: Used normalized source display as a review-required en fallback.
+- Row 100: Used normalized source display as a review-required ko fallback.
+- Row 101: Used normalized source display as a review-required en fallback.
+- Row 102: Used normalized source display as a review-required en fallback.
+- Row 103: Used normalized source display as a review-required en fallback.
+- Row 104: Used normalized source display as a review-required en fallback.
+- Row 104: Used normalized source display as a review-required ko fallback.
+- Row 105: Used normalized source display as a review-required en fallback.
+- Row 105: Used normalized source display as a review-required ko fallback.
+- Row 106: Used normalized source display as a review-required en fallback.
+- Row 106: Used normalized source display as a review-required ko fallback.
+- Row 107: Used normalized source display as a review-required en fallback.
+- Row 108: Used normalized source display as a review-required en fallback.
+- Row 109: Used normalized source display as a review-required en fallback.
+- Row 109: Used normalized source display as a review-required ko fallback.
+- Row 110: Used normalized source display as a review-required en fallback.
+- Row 111: Used normalized source display as a review-required en fallback.
+- Row 111: Used normalized source display as a review-required ko fallback.
+- Row 112: Used normalized source display as a review-required en fallback.
+- Row 113: Used normalized source display as a review-required en fallback.
+- Row 113: Used normalized source display as a review-required ko fallback.
+- Row 114: Used normalized source display as a review-required en fallback.
+- Row 115: Used normalized source display as a review-required en fallback.
+- Row 115: Used normalized source display as a review-required ko fallback.
+- Row 116: Used normalized source display as a review-required en fallback.
+- Row 117: Used normalized source display as a review-required en fallback.
+- Row 117: Used normalized source display as a review-required ko fallback.
+- Row 118: Used normalized source display as a review-required en fallback.
+- Row 118: Used normalized source display as a review-required ko fallback.
+- Row 119: Used normalized source display as a review-required en fallback.
+- Row 119: Used normalized source display as a review-required ko fallback.
+- Row 120: Used normalized source display as a review-required en fallback.
+- Row 121: Used normalized source display as a review-required en fallback.
+- Row 121: Used normalized source display as a review-required ko fallback.
+- Row 122: Used normalized source display as a review-required en fallback.
+- Row 123: Used normalized source display as a review-required en fallback.
+- Row 124: Used normalized source display as a review-required en fallback.
+- Row 124: Used normalized source display as a review-required ko fallback.
+- Row 125: Used normalized source display as a review-required en fallback.
+- Row 126: Used normalized source display as a review-required en fallback.
+- Row 127: Used normalized source display as a review-required en fallback.
+- Row 128: Used normalized source display as a review-required en fallback.
+- Row 128: Used normalized source display as a review-required ko fallback.
+- Row 9001: Used normalized source display as a review-required en fallback.
+- Row 9001: Used normalized source display as a review-required ko fallback.
+- Row 9002: Used normalized source display as a review-required en fallback.
+- Row 9002: Used normalized source display as a review-required ko fallback.
+- Row 9003: Used normalized source display as a review-required en fallback.
+- Row 9003: Used normalized source display as a review-required ko fallback.
+
+## Suspected Duplicates
+
+- Row 60: Matches row 59 exactly after normalization. Related row: 59.
+
+## Mixed-Language Names
+
+- Row 3: Separated a Korean parenthetical from the display name.
+- Row 4: Separated a Korean parenthetical from the display name.
+- Row 5: Separated a Korean parenthetical from the display name.
+- Row 6: Separated a Korean parenthetical from the display name.
+- Row 52: Separated a Korean parenthetical from the display name.
+- Row 53: Separated a Korean parenthetical from the display name.
+- Row 54: Separated a Korean parenthetical from the display name.
+- Row 55: Separated a Korean parenthetical from the display name.
+- Row 58: Separated a Korean parenthetical from the display name.
+- Row 59: Separated a Korean parenthetical from the display name.
+- Row 60: Separated a Korean parenthetical from the display name.
+- Row 61: Separated a Korean parenthetical from the display name.
+- Row 62: Separated a Korean parenthetical from the display name.
+- Row 63: Separated a Korean parenthetical from the display name.
+- Row 67: Separated a Korean parenthetical from the display name.
+- Row 68: Separated a Korean parenthetical from the display name.
+- Row 85: Separated a Korean parenthetical from the display name.
+- Row 86: Separated a Korean parenthetical from the display name.
+- Row 87: Separated a Korean parenthetical from the display name.
+- Row 92: Separated a Korean parenthetical from the display name.
+- Row 93: Separated a Korean parenthetical from the display name.
+- Row 95: Separated a Korean parenthetical from the display name.
+- Row 96: Separated a Korean parenthetical from the display name.
+- Row 97: Separated a Korean parenthetical from the display name.
+- Row 98: Separated a Korean parenthetical from the display name.
+- Row 99: Separated a Korean parenthetical from the display name.
+- Row 101: Separated a Korean parenthetical from the display name.
+- Row 102: Separated a Korean parenthetical from the display name.
+- Row 103: Separated a Korean parenthetical from the display name.
+- Row 107: Separated a Korean parenthetical from the display name.
+- Row 108: Separated a Korean parenthetical from the display name.
+- Row 110: Separated a Korean parenthetical from the display name.
+- Row 112: Separated a Korean parenthetical from the display name.
+- Row 114: Separated a Korean parenthetical from the display name.
+- Row 116: Separated a Korean parenthetical from the display name.
+- Row 120: Separated a Korean parenthetical from the display name.
+- Row 122: Separated a Korean parenthetical from the display name.
+- Row 123: Separated a Korean parenthetical from the display name.
+- Row 125: Separated a Korean parenthetical from the display name.
+- Row 126: Separated a Korean parenthetical from the display name.
+- Row 127: Separated a Korean parenthetical from the display name.
+
+## Suspicious Source Rows
+
+- Row 25: Source spelling requires review.
+- Row 39: Source spelling requires review.
+- Row 41: Source spelling requires review.
+- Row 54: Source spelling requires review.
+- Row 73: Source spelling requires review.
+- Row 80: Source spelling requires review.
+- Row 84: Source spelling requires review.
+- Row 101: Source spelling requires review.
+- Row 9001: Mock source record requires replacement.
+- Row 9002: Mock source record requires replacement.
+- Row 9003: Mock source record requires replacement.

@@ -8,3 +8,5 @@ node_modules/
 playwright-report/
 pnpm-lock.yaml
 test-results/
+
+src/features/menu/data/normalized-menu.generated.json
