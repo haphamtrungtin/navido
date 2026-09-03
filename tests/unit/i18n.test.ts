@@ -1,4 +1,4 @@
-﻿import { createElement } from 'react';
+import { createElement } from 'react';
 import { describe, expect, it, vi } from 'vitest';
 
 vi.mock('next/navigation', () => ({
@@ -11,8 +11,25 @@ vi.mock('next-intl', () => ({
     children,
 }));
 
+vi.mock('@/i18n/navigation', () => ({
+  usePathname: () => '/',
+}));
+
 vi.mock('next-intl/server', () => ({
-  getMessages: vi.fn(),
+  getMessages: vi.fn().mockResolvedValue({
+    Footer: { informationPending: 'Pending' },
+    Navigation: {
+      about: 'About',
+      closeMenu: 'Close navigation',
+      home: 'Home',
+      language: 'Language',
+      menu: 'Menu',
+      openMenu: 'Open navigation',
+      ourSpace: 'Our space',
+      primary: 'Primary navigation',
+      visit: 'Visit',
+    },
+  }),
   getRequestConfig: <T>(createRequestConfig: T) => createRequestConfig,
   setRequestLocale: vi.fn(),
 }));

@@ -1,17 +1,42 @@
 {
-  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Metadata": {
+    "title": "NAVIDO",
+    "description": "NAVIDO"
+  },
   "Navigation": {
     "home": "Trang chủ",
     "menu": "Thực đơn",
     "ourSpace": "Không gian",
     "about": "Giới thiệu",
-    "visit": "Ghé thăm"
+    "visit": "Ghé thăm",
+    "primary": "Điều hướng chính",
+    "language": "Ngôn ngữ",
+    "openMenu": "Mở điều hướng",
+    "closeMenu": "Đóng điều hướng"
   },
-  "Common": { "learnMore": "Xem thêm" },
-  "Home": { "title": "NAVIDO", "description": "Thông tin về NAVIDO" },
-  "Menu": { "title": "Thực đơn" },
-  "OurSpace": { "title": "Không gian" },
-  "About": { "title": "Giới thiệu" },
-  "Visit": { "title": "Ghé thăm" },
-  "Pending": { "title": "Đang cập nhật" }
+  "Common": {
+    "learnMore": "Xem thêm"
+  },
+  "Home": {
+    "title": "NAVIDO",
+    "description": "Thông tin về NAVIDO"
+  },
+  "Menu": {
+    "title": "Thực đơn"
+  },
+  "OurSpace": {
+    "title": "Không gian"
+  },
+  "About": {
+    "title": "Giới thiệu"
+  },
+  "Visit": {
+    "title": "Ghé thăm"
+  },
+  "Pending": {
+    "title": "Đang cập nhật"
+  },
+  "Footer": {
+    "informationPending": "Thông tin ghé thăm đang được xác nhận."
+  }
 }

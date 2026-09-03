@@ -1,17 +1,42 @@
 {
-  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Metadata": {
+    "title": "NAVIDO",
+    "description": "NAVIDO"
+  },
   "Navigation": {
     "home": "Home",
     "menu": "Menu",
     "ourSpace": "Our space",
     "about": "About",
-    "visit": "Visit"
+    "visit": "Visit",
+    "primary": "Primary navigation",
+    "language": "Language",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation"
   },
-  "Common": { "learnMore": "Learn more" },
-  "Home": { "title": "NAVIDO", "description": "Information about NAVIDO" },
-  "Menu": { "title": "Menu" },
-  "OurSpace": { "title": "Our space" },
-  "About": { "title": "About" },
-  "Visit": { "title": "Visit" },
-  "Pending": { "title": "Coming soon" }
+  "Common": {
+    "learnMore": "Learn more"
+  },
+  "Home": {
+    "title": "NAVIDO",
+    "description": "Information about NAVIDO"
+  },
+  "Menu": {
+    "title": "Menu"
+  },
+  "OurSpace": {
+    "title": "Our space"
+  },
+  "About": {
+    "title": "About"
+  },
+  "Visit": {
+    "title": "Visit"
+  },
+  "Pending": {
+    "title": "Coming soon"
+  },
+  "Footer": {
+    "informationPending": "Visit information is being confirmed."
+  }
 }
