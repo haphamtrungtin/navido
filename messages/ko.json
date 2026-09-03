@@ -1,0 +1,17 @@
+{
+  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Navigation": {
+    "home": "Home",
+    "menu": "Menu",
+    "ourSpace": "Our space",
+    "about": "About",
+    "visit": "Visit"
+  },
+  "Common": { "learnMore": "Learn more" },
+  "Home": { "title": "NAVIDO", "description": "Information about NAVIDO" },
+  "Menu": { "title": "Menu" },
+  "OurSpace": { "title": "Our space" },
+  "About": { "title": "About" },
+  "Visit": { "title": "Visit" },
+  "Pending": { "title": "Coming soon" }
+}

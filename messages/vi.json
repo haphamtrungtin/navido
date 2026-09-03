@@ -1,0 +1,17 @@
+{
+  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Navigation": {
+    "home": "Trang chu",
+    "menu": "Thuc don",
+    "ourSpace": "Khong gian",
+    "about": "Gioi thieu",
+    "visit": "Ghe tham"
+  },
+  "Common": { "learnMore": "Xem them" },
+  "Home": { "title": "NAVIDO", "description": "Thong tin ve NAVIDO" },
+  "Menu": { "title": "Thuc don" },
+  "OurSpace": { "title": "Khong gian" },
+  "About": { "title": "Gioi thieu" },
+  "Visit": { "title": "Ghe tham" },
+  "Pending": { "title": "Dang cap nhat" }
+}

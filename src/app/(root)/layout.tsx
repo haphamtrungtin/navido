@@ -1,10 +1,8 @@
-import './globals.css';
-
-export default function RootLayout({
+﻿export default function RedirectRootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html>
+    <html lang="vi">
       <body>{children}</body>
     </html>
   );
