@@ -1,0 +1,155 @@
+[
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 1254804,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 850215,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 80,
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 663227,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 1237664,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 833293,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 80,
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 642060,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 1186849,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 112,
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 781811,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "categoryCount": 14,
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "itemCount": 130,
+    "loadedImageCount": 2,
+    "navigationPosition": "sticky",
+    "navigationTop": 80,
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 607373,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

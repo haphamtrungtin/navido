@@ -1,0 +1,27 @@
+import { formatPriceVnd } from '@/features/menu/domain/normalize';
+import type { MenuItem } from '@/features/menu/domain/types';
+import { getLocalizedValue, type Locale } from '@/i18n/types';
+
+type MenuItemRowProps = Readonly<{
+  item: MenuItem;
+  locale: Locale;
+}>;
+
+export function MenuItemRow({ item, locale }: MenuItemRowProps) {
+  return (
+    <li
+      className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-6 border-b border-[var(--navido-rule)] py-4"
+      data-menu-item
+    >
+      <span
+        className="min-w-0 break-words text-base leading-7"
+        data-menu-item-name
+      >
+        {getLocalizedValue(item.name, locale)}
+      </span>
+      <span className="shrink-0 self-start text-right text-sm tabular-nums text-[var(--navido-muted-ink)]">
+        {formatPriceVnd(item.priceVnd, locale)}
+      </span>
+    </li>
+  );
+}
