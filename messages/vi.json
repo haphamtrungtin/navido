@@ -45,7 +45,44 @@
     }
   },
   "Menu": { "title": "Thực đơn" },
-  "OurSpace": { "title": "Không gian" },
+  "OurSpace": {
+    "title": "Không gian",
+    "hero": {
+      "eyebrow": "Không gian",
+      "body": "Một chuỗi ánh sáng, bàn ghế và những khoảnh khắc nhỏ trong ngày.",
+      "imageAlt": "Không gian NAVIDO trong ánh sáng ban mai"
+    },
+    "morningLight": {
+      "eyebrow": "Ánh sáng ban mai",
+      "title": "Ánh sáng đến chậm rãi",
+      "body": "Ánh sáng ban ngày đi qua căn phòng, làm hiện rõ chất liệu của không gian.",
+      "imageAlt": "Ánh sáng ban mai trên một chiếc bàn"
+    },
+    "quietTable": {
+      "eyebrow": "Một chiếc bàn yên tĩnh",
+      "title": "Một nơi để ngồi lại",
+      "body": "Chiếc bàn dành chỗ cho một tách cà phê, một trang sách hoặc một cuộc trò chuyện không vội.",
+      "imageAlt": "Bàn yên tĩnh với cà phê"
+    },
+    "downstairs": {
+      "eyebrow": "Góc nhìn thấp hơn",
+      "title": "Căn phòng khi đi qua",
+      "body": "Một góc nhìn thấp dẫn mắt qua bàn ghế, ánh sáng và khoảng trống trong phòng.",
+      "imageAlt": "Góc nhìn thấp qua không gian NAVIDO"
+    },
+    "upstairs": {
+      "eyebrow": "Góc nhìn cao hơn",
+      "title": "Một góc nhìn khác",
+      "body": "Từ trên cao, căn phòng hiện lên với nhịp điệu lặng hơn của mặt phẳng và bóng đổ.",
+      "imageAlt": "Góc nhìn cao qua không gian NAVIDO"
+    },
+    "callout": {
+      "eyebrow": "Ghé thăm NAVIDO",
+      "title": "Tiếp tục chuyến ghé thăm",
+      "body": "Xem thông tin ghé thăm mới nhất ở trang tiếp theo.",
+      "action": "Thông tin ghé thăm"
+    }
+  },
   "About": { "title": "Giới thiệu" },
   "Visit": { "title": "Ghé thăm" },
   "Pending": { "title": "Đang cập nhật" },

@@ -13,7 +13,8 @@
     "format:check": "prettier --check .",
     "generate:menu": "tsx scripts/normalize-menu.ts",
     "validate:menu": "tsx scripts/normalize-menu.ts --check",
-    "verify:home-visual": "playwright test tests/e2e/home-visual.spec.ts --workers=1"
+    "verify:home-visual": "playwright test tests/e2e/home-visual.spec.ts --workers=1",
+    "verify:our-space-visual": "playwright test tests/e2e/our-space-visual.spec.ts --workers=1"
   },
   "engines": {
     "node": ">=20.9.0",

@@ -45,7 +45,44 @@
     }
   },
   "Menu": { "title": "메뉴" },
-  "OurSpace": { "title": "공간" },
+  "OurSpace": {
+    "title": "공간",
+    "hero": {
+      "eyebrow": "공간",
+      "body": "하루 동안 이어지는 빛, 테이블, 그리고 작은 순간의 흐름입니다.",
+      "imageAlt": "아침 빛이 드는 NAVIDO 내부"
+    },
+    "morningLight": {
+      "eyebrow": "아침의 빛",
+      "title": "천천히 들어오는 빛",
+      "body": "낮의 빛이 방을 지나며 공간의 질감을 드러냅니다.",
+      "imageAlt": "테이블 위로 드리운 아침 빛"
+    },
+    "quietTable": {
+      "eyebrow": "고요한 테이블",
+      "title": "머무를 수 있는 자리",
+      "body": "커피 한 잔, 책 한 페이지, 서두르지 않는 대화를 위한 여백이 있습니다.",
+      "imageAlt": "커피가 놓인 고요한 테이블"
+    },
+    "downstairs": {
+      "eyebrow": "낮은 시선",
+      "title": "지나가며 보는 공간",
+      "body": "낮은 시선이 가구와 빛, 열린 공간 사이를 따라갑니다.",
+      "imageAlt": "NAVIDO 내부를 가로지르는 낮은 시선"
+    },
+    "upstairs": {
+      "eyebrow": "높은 시선",
+      "title": "다른 각도",
+      "body": "위에서 보면 표면과 그림자가 더 고요한 리듬을 만듭니다.",
+      "imageAlt": "NAVIDO 내부를 가로지르는 높은 시선"
+    },
+    "callout": {
+      "eyebrow": "NAVIDO 방문",
+      "title": "방문을 이어가기",
+      "body": "다음 페이지에서 최신 방문 정보를 확인하세요.",
+      "action": "방문 정보"
+    }
+  },
   "About": { "title": "소개" },
   "Visit": { "title": "방문" },
   "Pending": { "title": "준비 중" },

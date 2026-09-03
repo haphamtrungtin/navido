@@ -1,0 +1,146 @@
+[
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12],
+    "heroHeight": 694,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 1665285,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8],
+    "heroHeight": 760,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 1111823,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1],
+    "heroHeight": 608,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "vi",
+    "screenshotBytes": 708563,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12],
+    "heroHeight": 694,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 1652265,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8],
+    "heroHeight": 760,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 1095934,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1],
+    "heroHeight": 608,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "en",
+    "screenshotBytes": 697980,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12],
+    "heroHeight": 694,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 1611624,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8],
+    "heroHeight": 760,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 1056687,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1],
+    "heroHeight": 608,
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "textOverflowCount": 0,
+    "locale": "ko",
+    "screenshotBytes": 674280,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

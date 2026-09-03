@@ -45,7 +45,44 @@
     }
   },
   "Menu": { "title": "Menu" },
-  "OurSpace": { "title": "Our space" },
+  "OurSpace": {
+    "title": "Our space",
+    "hero": {
+      "eyebrow": "The room",
+      "body": "A sequence of light, tables, and small moments across the day.",
+      "imageAlt": "Interior of NAVIDO in morning light"
+    },
+    "morningLight": {
+      "eyebrow": "Morning light",
+      "title": "Light arrives slowly",
+      "body": "Daylight moves across the room, bringing the textures of the space into view.",
+      "imageAlt": "Morning light across a table"
+    },
+    "quietTable": {
+      "eyebrow": "A quiet table",
+      "title": "A place to settle",
+      "body": "A table leaves room for a cup, a page, or a conversation at an unhurried pace.",
+      "imageAlt": "Quiet table with coffee"
+    },
+    "downstairs": {
+      "eyebrow": "A lower view",
+      "title": "The room in passing",
+      "body": "A lower perspective carries the eye through the furniture, light, and open space.",
+      "imageAlt": "Lower view through the NAVIDO interior"
+    },
+    "upstairs": {
+      "eyebrow": "A higher view",
+      "title": "A different angle",
+      "body": "From above, the room takes on a quieter rhythm of surfaces and shadows.",
+      "imageAlt": "Higher view through the NAVIDO interior"
+    },
+    "callout": {
+      "eyebrow": "Visit NAVIDO",
+      "title": "Continue the visit",
+      "body": "Find the latest visit information on the next page.",
+      "action": "Visit information"
+    }
+  },
   "About": { "title": "About" },
   "Visit": { "title": "Visit" },
   "Pending": { "title": "Coming soon" },
