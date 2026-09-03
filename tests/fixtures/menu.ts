@@ -1,0 +1,78 @@
+﻿export const multilingualMenuFixture = [
+  {
+    sourceRow: 2,
+    name: 'Cà phê Avocado Coffee (아보카도 커피)',
+    price: 85000,
+    category: 'Signature',
+    categoryCode: 'SIG',
+    sort: 0,
+  },
+  {
+    sourceRow: 78,
+    name: 'Bánh mì BB',
+    price: 40000,
+    category: 'Extras',
+    categoryCode: 'ITEM_TYPE-7918',
+    sort: 11,
+  },
+  {
+    sourceRow: 128,
+    name: 'Extra Shot',
+    price: 10000,
+    category: 'Extras',
+    categoryCode: 'ITEM_TYPE_OTHER',
+    sort: 13,
+  },
+  {
+    sourceRow: 60,
+    name: 'Cà phê Hazelnut Latte (헤이즐넛 카페라떼)',
+    price: 75000,
+    category: 'Coffee',
+    categoryCode: 'CF',
+    sort: 1,
+  },
+  {
+    sourceRow: 59,
+    name: 'Cà phê Hazelnut Latte (헤이즐넛 카페라떼)',
+    price: 75000,
+    category: 'Coffee',
+    categoryCode: 'CF',
+    sort: 1,
+  },
+  {
+    sourceRow: 61,
+    name: 'Classic Latte',
+    price: 70000,
+    category: 'Coffee',
+    categoryCode: 'CF',
+    sort: 1,
+  },
+  {
+    sourceRow: 62,
+    name: 'Clasik Latte',
+    price: 70000,
+    category: 'Coffee',
+    categoryCode: 'CF',
+    sort: 1,
+  },
+  {
+    sourceRow: 9001,
+    name: 'Mock Arabica Beans 250g',
+    price: 180000,
+    category: 'Coffee Beans',
+    categoryCode: 'MOCK_BEANS',
+    sort: 14,
+    netWeightGram: 250,
+  },
+];
+
+export const malformedPriceMenuFixture = [
+  {
+    sourceRow: 1,
+    name: 'Invalid price',
+    price: '85000',
+    category: 'Coffee',
+    categoryCode: 'CF',
+    sort: 1,
+  },
+];
