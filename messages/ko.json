@@ -1,17 +1,17 @@
 {
   "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
   "Navigation": {
-    "home": "Home",
-    "menu": "Menu",
-    "ourSpace": "Our space",
-    "about": "About",
-    "visit": "Visit"
+    "home": "홈",
+    "menu": "메뉴",
+    "ourSpace": "공간",
+    "about": "소개",
+    "visit": "방문"
   },
-  "Common": { "learnMore": "Learn more" },
-  "Home": { "title": "NAVIDO", "description": "Information about NAVIDO" },
-  "Menu": { "title": "Menu" },
-  "OurSpace": { "title": "Our space" },
-  "About": { "title": "About" },
-  "Visit": { "title": "Visit" },
-  "Pending": { "title": "Coming soon" }
+  "Common": { "learnMore": "더 알아보기" },
+  "Home": { "title": "NAVIDO", "description": "NAVIDO에 관한 정보" },
+  "Menu": { "title": "메뉴" },
+  "OurSpace": { "title": "공간" },
+  "About": { "title": "소개" },
+  "Visit": { "title": "방문" },
+  "Pending": { "title": "준비 중" }
 }

@@ -12,15 +12,17 @@ const dictionaryLoaders: Record<
   ko: () => import('../../messages/ko.json').then((module) => module.default),
 };
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  const requestedLocale = await requestLocale;
-  const locale =
-    typeof requestedLocale === 'string' && isLocale(requestedLocale)
-      ? requestedLocale
-      : routing.defaultLocale;
+export default getRequestConfig(
+  async ({ locale: explicitLocale, requestLocale }) => {
+    const requestedLocale = explicitLocale ?? (await requestLocale);
+    const locale =
+      typeof requestedLocale === 'string' && isLocale(requestedLocale)
+        ? requestedLocale
+        : routing.defaultLocale;
 
-  return {
-    locale,
-    messages: await dictionaryLoaders[locale](),
-  };
-});
+    return {
+      locale,
+      messages: await dictionaryLoaders[locale](),
+    };
+  },
+);

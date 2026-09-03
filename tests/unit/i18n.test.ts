@@ -12,6 +12,8 @@ vi.mock('next-intl', () => ({
 }));
 
 vi.mock('next-intl/server', () => ({
+  getMessages: vi.fn(),
+  getRequestConfig: <T>(createRequestConfig: T) => createRequestConfig,
   setRequestLocale: vi.fn(),
 }));
 
@@ -22,7 +24,12 @@ import {
   generateStaticParams as generatePageStaticParams,
 } from '@/app/[locale]/page';
 import { getLocalizedValue, isLocale } from '@/i18n/types';
+import requestConfig from '@/i18n/request';
 import { redirect } from 'next/navigation';
+
+import enMessages from '../../messages/en.json';
+import koMessages from '../../messages/ko.json';
+import viMessages from '../../messages/vi.json';
 
 describe('i18n locale contracts', () => {
   it('recognizes supported locales only', () => {
@@ -59,5 +66,28 @@ describe('i18n locale contracts', () => {
     HomeRedirect();
 
     expect(redirect).toHaveBeenCalledWith('/vi');
+  });
+
+  it('keeps translated dictionaries schema-compatible with English', () => {
+    expect(Object.keys(viMessages).sort()).toEqual(
+      Object.keys(enMessages).sort(),
+    );
+    expect(Object.keys(koMessages).sort()).toEqual(
+      Object.keys(enMessages).sort(),
+    );
+    expect(viMessages.Navigation.home).toBe('Trang chủ');
+    expect(viMessages.Common.learnMore).toBe('Xem thêm');
+    expect(koMessages.Navigation.home).toBe('홈');
+    expect(koMessages.Common.learnMore).toBe('더 알아보기');
+  });
+
+  it('honors an explicitly requested locale when loading messages', async () => {
+    const config = await requestConfig({
+      locale: 'ko',
+      requestLocale: Promise.resolve('vi'),
+    });
+
+    expect(config.locale).toBe('ko');
+    expect(config.messages).toEqual(koMessages);
   });
 });
