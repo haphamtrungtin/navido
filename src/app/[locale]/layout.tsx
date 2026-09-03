@@ -32,7 +32,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="min-h-screen bg-[var(--navido-paper)] text-[var(--navido-ink)]">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -1,1 +1,73 @@
 @import 'tailwindcss';
+
+@theme inline {
+  --color-paper: var(--navido-paper);
+  --color-ink: var(--navido-ink);
+  --color-muted-ink: var(--navido-muted-ink);
+  --color-espresso: var(--navido-espresso);
+  --color-botanical: var(--navido-botanical);
+}
+
+:root {
+  --navido-paper: #fcf9f1;
+  --navido-ink: #252521;
+  --navido-muted-ink: #474741;
+  --navido-espresso: #46382e;
+  --navido-botanical: #536453;
+  --navido-rule: rgb(37 37 33 / 16%);
+  --content-width: 1200px;
+  --page-gutter: 24px;
+  --mobile-margin: 20px;
+  --section-gap: 120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--navido-paper);
+  color: var(--navido-ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--navido-paper);
+  color: var(--navido-ink);
+  font-family: 'Noto Sans', 'Noto Sans KR', Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  line-height: 1.6;
+}
+
+button,
+a {
+  transition-duration: 180ms;
+  transition-property:
+    color, background-color, border-color, opacity, transform;
+}
+
+:focus-visible {
+  outline: 2px solid var(--navido-botanical);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-gutter: var(--mobile-margin);
+    --section-gap: 72px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
