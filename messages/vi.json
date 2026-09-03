@@ -1,8 +1,5 @@
 {
-  "Metadata": {
-    "title": "NAVIDO",
-    "description": "NAVIDO"
-  },
+  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
   "Navigation": {
     "home": "Trang chủ",
     "menu": "Thực đơn",
@@ -14,29 +11,43 @@
     "openMenu": "Mở điều hướng",
     "closeMenu": "Đóng điều hướng"
   },
-  "Common": {
-    "learnMore": "Xem thêm"
-  },
+  "Common": { "learnMore": "Xem thêm" },
   "Home": {
     "title": "NAVIDO",
-    "description": "Thông tin về NAVIDO"
+    "description": "Một nhịp chậm cho cà phê, trò chuyện và những khoảng dừng trong ngày.",
+    "hero": {
+      "eyebrow": "Cà phê đặc sản",
+      "description": "Một nhịp chậm cho cà phê, trò chuyện và những khoảng dừng trong ngày.",
+      "menuAction": "Khám phá thực đơn",
+      "visitAction": "Xem thông tin ghé thăm"
+    },
+    "introduction": {
+      "eyebrow": "Một khoảng dừng",
+      "title": "Không gian cho những điều thường ngày",
+      "body": "Một nơi để ngồi lại với ly cà phê, một cuốn sách, hoặc một cuộc trò chuyện không vội.",
+      "imageAlt": "Bàn cà phê trong ánh sáng ban mai"
+    },
+    "signature": {
+      "eyebrow": "Chọn từ thực đơn",
+      "title": "Những hương vị nổi bật",
+      "body": "Ba lựa chọn được lấy trực tiếp từ thực đơn hiện tại của NAVIDO.",
+      "action": "Xem toàn bộ thực đơn",
+      "imageAltOne": "Cà phê espresso được pha",
+      "imageAltTwo": "Ly cà phê sữa đá",
+      "imageAltThree": "Cà phê pour-over"
+    },
+    "location": {
+      "eyebrow": "Ghé thăm NAVIDO",
+      "title": "Một lời hẹn dành cho ngày chậm lại",
+      "body": "Thông tin địa điểm đang được xác nhận. Chúng tôi sẽ cập nhật tại đây khi sẵn sàng.",
+      "action": "Thông tin ghé thăm",
+      "imageAlt": "Không gian quán cà phê NAVIDO"
+    }
   },
-  "Menu": {
-    "title": "Thực đơn"
-  },
-  "OurSpace": {
-    "title": "Không gian"
-  },
-  "About": {
-    "title": "Giới thiệu"
-  },
-  "Visit": {
-    "title": "Ghé thăm"
-  },
-  "Pending": {
-    "title": "Đang cập nhật"
-  },
-  "Footer": {
-    "informationPending": "Thông tin ghé thăm đang được xác nhận."
-  }
+  "Menu": { "title": "Thực đơn" },
+  "OurSpace": { "title": "Không gian" },
+  "About": { "title": "Giới thiệu" },
+  "Visit": { "title": "Ghé thăm" },
+  "Pending": { "title": "Đang cập nhật" },
+  "Footer": { "informationPending": "Thông tin ghé thăm đang được xác nhận." }
 }

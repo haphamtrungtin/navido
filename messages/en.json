@@ -1,8 +1,5 @@
 {
-  "Metadata": {
-    "title": "NAVIDO",
-    "description": "NAVIDO"
-  },
+  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
   "Navigation": {
     "home": "Home",
     "menu": "Menu",
@@ -14,29 +11,43 @@
     "openMenu": "Open navigation",
     "closeMenu": "Close navigation"
   },
-  "Common": {
-    "learnMore": "Learn more"
-  },
+  "Common": { "learnMore": "Learn more" },
   "Home": {
     "title": "NAVIDO",
-    "description": "Information about NAVIDO"
+    "description": "A slower rhythm for coffee, conversation, and pauses throughout the day.",
+    "hero": {
+      "eyebrow": "Specialty coffee",
+      "description": "A slower rhythm for coffee, conversation, and pauses throughout the day.",
+      "menuAction": "Explore the menu",
+      "visitAction": "Visit information"
+    },
+    "introduction": {
+      "eyebrow": "A pause",
+      "title": "A space for everyday moments",
+      "body": "A place to settle in with coffee, a book, or a conversation that does not need to hurry.",
+      "imageAlt": "Coffee table in morning light"
+    },
+    "signature": {
+      "eyebrow": "From the menu",
+      "title": "Signature selections",
+      "body": "Three selections drawn directly from NAVIDO's current menu.",
+      "action": "View the full menu",
+      "imageAltOne": "Freshly prepared espresso coffee",
+      "imageAltTwo": "Iced milk coffee",
+      "imageAltThree": "Pour-over coffee"
+    },
+    "location": {
+      "eyebrow": "Visit NAVIDO",
+      "title": "An invitation to slow the day down",
+      "body": "Location details are being confirmed. We will share them here when they are ready.",
+      "action": "Visit information",
+      "imageAlt": "NAVIDO coffee space"
+    }
   },
-  "Menu": {
-    "title": "Menu"
-  },
-  "OurSpace": {
-    "title": "Our space"
-  },
-  "About": {
-    "title": "About"
-  },
-  "Visit": {
-    "title": "Visit"
-  },
-  "Pending": {
-    "title": "Coming soon"
-  },
-  "Footer": {
-    "informationPending": "Visit information is being confirmed."
-  }
+  "Menu": { "title": "Menu" },
+  "OurSpace": { "title": "Our space" },
+  "About": { "title": "About" },
+  "Visit": { "title": "Visit" },
+  "Pending": { "title": "Coming soon" },
+  "Footer": { "informationPending": "Visit information is being confirmed." }
 }

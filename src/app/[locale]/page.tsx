@@ -1,7 +1,12 @@
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 
+import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 import { isLocale, locales } from '@/i18n/types';
+import { HomeHero } from '@/sections/home/home-hero';
+import { HomeIntroduction } from '@/sections/home/home-introduction';
+import { LocationInvitation } from '@/sections/home/location-invitation';
+import { SignatureHighlights } from '@/sections/home/signature-highlights';
 
 export const dynamic = 'force-static';
 
@@ -21,11 +26,55 @@ export default async function LocalizedHomePage({
   }
 
   const translations = await getTranslations({ locale, namespace: 'Home' });
+  const signatureItems = localMenuRepository
+    .getItemsByCategory('signature')
+    .slice(0, 3);
 
   return (
     <main>
-      <h1>{translations('title')}</h1>
-      <p>{translations('description')}</p>
+      <HomeHero
+        copy={{
+          description: translations('hero.description'),
+          eyebrow: translations('hero.eyebrow'),
+          menuAction: translations('hero.menuAction'),
+          title: translations('title'),
+          visitAction: translations('hero.visitAction'),
+        }}
+        locale={locale}
+      />
+      <HomeIntroduction
+        copy={{
+          body: translations('introduction.body'),
+          eyebrow: translations('introduction.eyebrow'),
+          imageAlt: translations('introduction.imageAlt'),
+          title: translations('introduction.title'),
+        }}
+      />
+      <SignatureHighlights
+        copy={{
+          action: translations('signature.action'),
+          body: translations('signature.body'),
+          eyebrow: translations('signature.eyebrow'),
+          imageAlts: [
+            translations('signature.imageAltOne'),
+            translations('signature.imageAltTwo'),
+            translations('signature.imageAltThree'),
+          ],
+          title: translations('signature.title'),
+        }}
+        items={signatureItems}
+        locale={locale}
+      />
+      <LocationInvitation
+        copy={{
+          action: translations('location.action'),
+          body: translations('location.body'),
+          eyebrow: translations('location.eyebrow'),
+          imageAlt: translations('location.imageAlt'),
+          title: translations('location.title'),
+        }}
+        locale={locale}
+      />
     </main>
   );
 }

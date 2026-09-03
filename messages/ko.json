@@ -1,8 +1,5 @@
 {
-  "Metadata": {
-    "title": "NAVIDO",
-    "description": "NAVIDO"
-  },
+  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
   "Navigation": {
     "home": "홈",
     "menu": "메뉴",
@@ -14,29 +11,43 @@
     "openMenu": "탐색 열기",
     "closeMenu": "탐색 닫기"
   },
-  "Common": {
-    "learnMore": "더 알아보기"
-  },
+  "Common": { "learnMore": "더 알아보기" },
   "Home": {
     "title": "NAVIDO",
-    "description": "NAVIDO에 관한 정보"
+    "description": "커피와 대화, 하루의 여유로운 쉼을 위한 느린 리듬입니다.",
+    "hero": {
+      "eyebrow": "스페셜티 커피",
+      "description": "커피와 대화, 하루의 여유로운 쉼을 위한 느린 리듬입니다.",
+      "menuAction": "메뉴 살펴보기",
+      "visitAction": "방문 정보"
+    },
+    "introduction": {
+      "eyebrow": "잠시 머무는 곳",
+      "title": "일상의 순간을 위한 공간",
+      "body": "커피 한 잔, 책 한 권, 서두르지 않아도 되는 대화와 함께 머무를 수 있는 곳입니다.",
+      "imageAlt": "아침 햇살 속 커피 테이블"
+    },
+    "signature": {
+      "eyebrow": "메뉴에서",
+      "title": "시그니처 셀렉션",
+      "body": "NAVIDO의 현재 메뉴에서 직접 고른 세 가지 선택입니다.",
+      "action": "전체 메뉴 보기",
+      "imageAltOne": "갓 내린 에스프레소 커피",
+      "imageAltTwo": "아이스 밀크 커피",
+      "imageAltThree": "푸어오버 커피"
+    },
+    "location": {
+      "eyebrow": "NAVIDO 방문",
+      "title": "하루의 속도를 늦추는 초대",
+      "body": "장소 정보는 확인 중입니다. 준비되는 대로 이곳에 안내하겠습니다.",
+      "action": "방문 정보",
+      "imageAlt": "NAVIDO 커피 공간"
+    }
   },
-  "Menu": {
-    "title": "메뉴"
-  },
-  "OurSpace": {
-    "title": "공간"
-  },
-  "About": {
-    "title": "소개"
-  },
-  "Visit": {
-    "title": "방문"
-  },
-  "Pending": {
-    "title": "준비 중"
-  },
-  "Footer": {
-    "informationPending": "방문 정보를 확인하고 있습니다."
-  }
+  "Menu": { "title": "메뉴" },
+  "OurSpace": { "title": "공간" },
+  "About": { "title": "소개" },
+  "Visit": { "title": "방문" },
+  "Pending": { "title": "준비 중" },
+  "Footer": { "informationPending": "방문 정보를 확인하고 있습니다." }
 }
