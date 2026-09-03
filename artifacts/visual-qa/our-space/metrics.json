@@ -2,10 +2,30 @@
   {
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
+    "heroCropped": true,
     "heroHeight": 694,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "vi",
     "screenshotBytes": 1665285,
@@ -18,10 +38,30 @@
   {
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
+    "heroCropped": true,
     "heroHeight": 760,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "vi",
     "screenshotBytes": 1111823,
@@ -34,10 +74,30 @@
   {
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
+    "heroCropped": true,
     "heroHeight": 608,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "vi",
     "screenshotBytes": 708563,
@@ -50,10 +110,30 @@
   {
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
+    "heroCropped": true,
     "heroHeight": 694,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "en",
     "screenshotBytes": 1652265,
@@ -66,10 +146,30 @@
   {
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
+    "heroCropped": true,
     "heroHeight": 760,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "en",
     "screenshotBytes": 1095934,
@@ -82,10 +182,30 @@
   {
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
+    "heroCropped": true,
     "heroHeight": 608,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "en",
     "screenshotBytes": 697980,
@@ -98,10 +218,30 @@
   {
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
+    "heroCropped": true,
     "heroHeight": 694,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "ko",
     "screenshotBytes": 1611624,
@@ -114,10 +254,30 @@
   {
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
+    "heroCropped": true,
     "heroHeight": 760,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true
+      },
+      {
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "ko",
     "screenshotBytes": 1056687,
@@ -130,10 +290,30 @@
   {
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
+    "heroCropped": true,
     "heroHeight": 608,
+    "heroObjectFit": "cover",
     "imageCount": 5,
     "loadedImageCount": 5,
     "storyOrder": ["morning-light", "quiet-table", "downstairs", "upstairs"],
+    "storyPositions": [
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      },
+      {
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false
+      }
+    ],
     "textOverflowCount": 0,
     "locale": "ko",
     "screenshotBytes": 674280,

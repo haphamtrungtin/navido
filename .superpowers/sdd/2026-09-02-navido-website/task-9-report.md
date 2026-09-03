@@ -58,3 +58,24 @@ Playwright and Next development output included existing `NO_COLOR` and `allowed
 - No unverified address, hours, historical claims, facility details, or service guarantees were added.
 - Approved Stitch exports remain temporary placeholders.
 - No `next-env.d.ts` change was generated, so no restoration was required.
+
+## Review Correction: Composition Gate
+
+The visual gate now asserts computed hero `object-fit`, a rendered source-to-frame aspect-ratio crop condition, and rendered image-frame versus heading positions for every story.
+
+### RED Evidence
+
+1. Removing the hero `object-cover` class caused `vi` desktop to fail with expected `cover`, received `fill`.
+2. Moving the second story copy to the right caused `vi` tablet to fail the expected alternating image-side sequence: the second story changed from `false` to `true` for `imageLeftOfCopy`.
+3. Reversing the mobile utility orders caused `vi` mobile to fail because all four `imageAboveCopy` values changed from `true` to `false`.
+
+Each temporary source change was reversed immediately after its focused expected failure.
+
+### GREEN Evidence
+
+- `corepack pnpm run verify:our-space-visual` passed all 9 locale/viewport captures after restoration.
+- Refreshed `comparison.md` and `metrics.json` record `cover/cropped`, `left/right/left/right` at desktop and tablet, and `above/above/above/above` at mobile for every locale.
+
+### Correction Round 3
+
+The review identified that the original gate described composition checks without executing them. The strengthened gate now derives all assertions from computed style and rendered bounding rectangles, so a removed hero cover class, lost alternation, or reversed mobile stack is a test failure.
