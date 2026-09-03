@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 
+import { documentFontClassName } from '@/app/fonts';
 import { isLocale, locales } from '@/i18n/types';
 
 type LocaleLayoutProps = Readonly<{
@@ -32,7 +33,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="min-h-screen bg-[var(--navido-paper)] text-[var(--navido-ink)]">
+      <body
+        className={`${documentFontClassName} min-h-screen bg-[var(--navido-paper)] text-[var(--navido-ink)]`}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
