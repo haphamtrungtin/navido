@@ -1,11 +1,17 @@
-﻿import { z } from 'zod';
+import { z } from 'zod';
+
+const nonblankSourceString = z
+  .string()
+  .refine((value) => value.trim().length > 0, {
+    message: 'Required',
+  });
 
 export const RawMenuItemSchema = z.object({
   sourceRow: z.number().int().positive(),
-  name: z.string().trim().min(1),
+  name: nonblankSourceString,
   price: z.number().int().nonnegative(),
-  category: z.string().trim().min(1),
-  categoryCode: z.string().trim().min(1),
+  category: nonblankSourceString,
+  categoryCode: nonblankSourceString,
   sort: z.number().int(),
   netWeightGram: z.number().int().positive().optional(),
 });

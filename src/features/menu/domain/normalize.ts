@@ -77,6 +77,41 @@ const categoryDefinitions = {
 type CategoryDefinition =
   (typeof categoryDefinitions)[keyof typeof categoryDefinitions];
 
+const categorySortOrders: Record<string, number> = {
+  signature: 0,
+  coffee: 1,
+  'brew-coffee': 2,
+  phin: 3,
+  'non-coffee': 4,
+  frappuccino: 5,
+  'fruit-juices': 6,
+  'tea-pot-cup': 7,
+  brunch: 8,
+  cake: 9,
+  desserts: 10,
+  extras: 11,
+  'specialty-coffee': 12,
+  'coffee-beans': 14,
+};
+
+const categoryCodeOrders: Record<string, number> = {
+  SIG: 0,
+  CF: 1,
+  BREW: 2,
+  'ITEM_TYPE-MVIF': 3,
+  NCF: 4,
+  FRAP: 5,
+  'ITEM_TYPE-1SX6': 6,
+  RON: 7,
+  'ITEM_TYPE-1ICS': 8,
+  'ITEM_TYPE-IGMS': 9,
+  'ITEM_TYPE-MNZP': 10,
+  'ITEM_TYPE-7918': 11,
+  ITEMTYPE_H4EA: 12,
+  ITEM_TYPE_OTHER: 13,
+  MOCK_BEANS: 14,
+};
+
 function normalizeWhitespace(value: string): string {
   return value.replace(/\s+/gu, ' ').trim();
 }
@@ -125,7 +160,7 @@ function localizedName(
 ): { name: LocalizedText; generatedLocales: Locale[] } {
   const english = englishDisplayName(base);
   const generatedLocales: Locale[] = [];
-  if (english === base) generatedLocales.push('en');
+  generatedLocales.push('en');
   if (!korean) generatedLocales.push('ko');
 
   return {
@@ -161,7 +196,8 @@ export function normalizeMenu(raw: unknown): NormalizationResult {
     const displaySource = normalizeWhitespace(repairedName ?? record.name);
     const { base, korean } = splitKoreanParenthetical(displaySource);
     const localized = localizedName(base, korean);
-    const category = categoryFor(record.categoryCode);
+    const displayCategoryCode = normalizeWhitespace(record.categoryCode);
+    const category = categoryFor(displayCategoryCode);
     let item: MenuItem = {
       id: `row-${record.sourceRow}-${category.id}`,
       categoryId: category.id,
@@ -207,19 +243,19 @@ export function normalizeMenu(raw: unknown): NormalizationResult {
       );
       item = addReviewNote(item, `generated-translation:${locale}`);
     }
-    if (isSuspiciousMenuRecord(displaySource, record.categoryCode)) {
+    if (isSuspiciousMenuRecord(displaySource, displayCategoryCode)) {
       anomalies.push(
         createAnomaly(
           'suspicious-record',
           record.sourceRow,
-          record.categoryCode === 'MOCK_BEANS'
+          displayCategoryCode === 'MOCK_BEANS'
             ? 'Mock source record requires replacement.'
             : 'Source spelling requires review.',
         ),
       );
       item = addReviewNote(
         item,
-        record.categoryCode === 'MOCK_BEANS'
+        displayCategoryCode === 'MOCK_BEANS'
           ? 'mock-source-record'
           : 'suspicious-source-spelling',
       );
@@ -294,7 +330,9 @@ export function normalizeMenu(raw: unknown): NormalizationResult {
 
   const categoriesById = new Map<string, MenuCategory>();
   for (const item of items) {
-    const sourceCategory = categoryFor(item.sourceCategoryCode);
+    const sourceCategory = categoryFor(
+      normalizeWhitespace(item.sourceCategoryCode),
+    );
     const existing = categoriesById.get(item.categoryId);
     if (existing) {
       if (!existing.sourceCategoryCodes.includes(item.sourceCategoryCode)) {
@@ -303,7 +341,15 @@ export function normalizeMenu(raw: unknown): NormalizationResult {
           sourceCategoryCodes: [
             ...existing.sourceCategoryCodes,
             item.sourceCategoryCode,
-          ],
+          ].sort((left, right) => {
+            const leftOrder =
+              categoryCodeOrders[normalizeWhitespace(left)] ??
+              Number.MAX_SAFE_INTEGER;
+            const rightOrder =
+              categoryCodeOrders[normalizeWhitespace(right)] ??
+              Number.MAX_SAFE_INTEGER;
+            return leftOrder - rightOrder || left.localeCompare(right);
+          }),
         });
       }
       continue;
@@ -311,7 +357,7 @@ export function normalizeMenu(raw: unknown): NormalizationResult {
     categoriesById.set(item.categoryId, {
       id: sourceCategory.id,
       name: sourceCategory.name,
-      sortOrder: item.sortOrder,
+      sortOrder: categorySortOrders[sourceCategory.id] ?? item.sortOrder,
       sourceCategoryCodes: [item.sourceCategoryCode],
     });
   }

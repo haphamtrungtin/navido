@@ -6,6 +6,7 @@ import {
   multilingualMenuFixture,
 } from '../fixtures/menu';
 
+import { RawMenuItemSchema } from '@/features/menu/domain/schemas';
 import {
   formatPriceVnd,
   normalizeMenu,
@@ -95,6 +96,80 @@ describe('menu normalization', () => {
     ).toEqual([59, 60, 61, 62]);
   });
 
+  it('flags a derived English label from supplied Vietnamese source text for review', () => {
+    const item = normalizeMenu(rawMenu).items.find(
+      (candidate) => candidate.sourceRow === 52,
+    );
+
+    expect(item?.needsReview).toBe(true);
+    expect(item?.reviewNotes).toContain('generated-translation:en');
+  });
+
+  it('uses the canonical Extras category order when the raw codes arrive reversed', () => {
+    const result = normalizeMenu([
+      {
+        sourceRow: 128,
+        name: 'Extra Shot',
+        price: 10000,
+        category: 'Extras',
+        categoryCode: 'ITEM_TYPE_OTHER',
+        sort: 13,
+      },
+      {
+        sourceRow: 78,
+        name: 'Bread',
+        price: 40000,
+        category: 'Extras',
+        categoryCode: 'ITEM_TYPE-7918',
+        sort: 11,
+      },
+    ]);
+
+    expect(result.categories).toEqual([
+      expect.objectContaining({
+        id: 'extras',
+        sortOrder: 11,
+        sourceCategoryCodes: ['ITEM_TYPE-7918', 'ITEM_TYPE_OTHER'],
+      }),
+    ]);
+  });
+
+  it('preserves raw source strings while using normalized values for display mapping', () => {
+    const rawName = '  Raw Americano  ';
+    const rawCategory = '  Coffee  ';
+    const rawCategoryCode = ' CF ';
+    const item = normalizeMenu([
+      {
+        sourceRow: 301,
+        name: rawName,
+        price: 60000,
+        category: rawCategory,
+        categoryCode: rawCategoryCode,
+        sort: 1,
+      },
+    ]).items[0];
+
+    expect(
+      RawMenuItemSchema.parse({
+        sourceRow: 301,
+        name: rawName,
+        price: 60000,
+        category: rawCategory,
+        categoryCode: rawCategoryCode,
+        sort: 1,
+      }),
+    ).toMatchObject({
+      name: rawName,
+      category: rawCategory,
+      categoryCode: rawCategoryCode,
+    });
+
+    expect(item).toMatchObject({
+      sourceName: rawName,
+      sourceCategoryCode: rawCategoryCode,
+      categoryId: 'coffee',
+    });
+  });
   it('rejects malformed source prices instead of coercing them', () => {
     expect(() => normalizeMenu(malformedPriceMenuFixture)).toThrow(/price/i);
   });
