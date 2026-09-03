@@ -13,3 +13,10 @@ Captured from the verified production build on 2026-09-03.
 - No viewport overflow, missing border, or focus-placement discrepancy was detected by the rendered DOM checks.
 - The detached development server could not complete its HMR WebSocket handshake in this environment, leaving the initial client island unhydrated for capture. The production build on port 3001 hydrated correctly: the trigger changed from `aria-expanded=false` to `aria-expanded=true` and exposed one dialog. Production captures replace the affected development captures.
 - Direct raster inspection through the local image viewer was blocked by the Windows sandbox (`CreateProcessWithLogonW` error 1327). Screenshot dimensions, rendered DOM state, border width, viewport width, focus placement, and overflow were checked programmatically; manual design comparison remains a final handoff item when that viewer is available.
+
+## Focus Management Review Fix
+
+The fresh production build on port 3002 was checked at 390x844. From the final KO
+language link, Tab focused the close control; Shift+Tab returned to KO. Activating the
+close control set the trigger to `aria-expanded=false` and restored focus to that trigger.
+No focus escape was observed.
