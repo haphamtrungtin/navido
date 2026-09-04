@@ -50,3 +50,32 @@ Desktop matches the Stitch editorial intent through staggered image/copy placeme
 `menu.json` SHA-256 after all checks: `A7040FE8B651E60923851798F58DADBF8C6455F68E3A6F6D4715F6FA2106F0AE`.
 
 `next-env.d.ts` was restored to the base version after local development regenerated it. There are no scope deviations.
+
+## Fix Round 1: Enforced Visual Contracts
+
+The visual gate now resets the page to scroll position zero before collecting capture metrics and producing every full-page PNG. It verifies exact ordered approved image URLs, image-before-copy DOM order with `compareDocumentPosition`, rendered mobile order, crop ratios, natural-to-frame crop deltas, frame widths and heights calculated from the active grid tracks, constrained copy widths, track starts, horizontal negative-space gaps, asymmetric center separation, section bounds, and text containment.
+
+### RED Evidence
+
+- Screenshot capture: before the reset, the focused desktop verifier failed with `Expected: 0` and `Received: 480` for `window.scrollY` immediately before the full-page screenshot.
+- Frame geometry: temporarily changing Coffee from `4 / 5` to `1 / 1` failed the frame-height tolerance with `Expected: <= 3` and `Received: 113`.
+- Approved source URL: temporarily changing Coffee to `/images/stitch/home-pour-over.jpg` failed the exact image URL array, which expected `/images/stitch/about-pour-over.jpg`.
+- Semantic order: temporarily moving the copy before the image in the theme DOM failed `domImageBeforeCopy` with `Expected: true` and `Received: false` while CSS still rendered the image first.
+
+All temporary source regressions were restored. No production layout correction was required; the implementation already met the intended geometry. The visual verifier and generated artifacts were corrected.
+
+### GREEN Evidence
+
+| Command | Result |
+| --- | --- |
+| `pnpm verify:about-visual` | 9 passed, all artifacts regenerated with `captureScrollY: 0` |
+| `pnpm exec playwright test tests/e2e/about.spec.ts --workers=1` | 3 passed |
+| `pnpm test` | 31 passed in 9 files |
+| `pnpm test:e2e` | 55 passed |
+| `pnpm typecheck` | passed |
+| `pnpm lint` | passed |
+| `pnpm format:check` | passed |
+| `pnpm validate:menu` | passed |
+| `pnpm build` | passed; static About routes generated for all locales |
+
+`menu.json` SHA-256 after the fix round remained `A7040FE8B651E60923851798F58DADBF8C6455F68E3A6F6D4715F6FA2106F0AE`.
