@@ -91,3 +91,52 @@ The package `build` script invokes `corepack`, which is unavailable in this
 environment. Menu validation was run independently, then the equivalent
 production compiler command `pnpm.cmd exec next build` completed successfully.
 `next-env.d.ts` retained its pre-build SHA-256 and needed no restoration.
+
+## Fix Round 1: Pending And Action Isolation
+
+The two Important review findings are covered in this round. Pending Visit
+content now has stable `data-visit-pending` identifiers for `address`,
+`hours`, `phone`, `directions`, `grab`, `instagram`, `facebook`, and `map`.
+Route and visual tests compare the exact locale-specific values and their DOM
+order, including the map caption. Component coverage now exercises each action
+URL in isolation and verifies the rendered address, hours, and `tel:` phone
+semantics for a complete verified configuration.
+
+The review's Minor display-label comparison concern remains intentionally
+deferred for this test-focused round; no functional rendering branch was
+refactored for it.
+
+### RED/GREEN Evidence
+
+- RED: route and visual tests required eight semantic pending identifiers and
+  received zero from the pre-change markup.
+- GREEN: the focused route suite passed 3 localized routes and the visual gate
+  passed all 9 locale/viewport cases after identifiers were added.
+- RED mutation: replacing English `mapPending` with a fabricated address made
+  the visual gate fail its exact `map` pending-state comparison at all three
+  English viewports. The translation was restored.
+- RED mutation: cross-wiring the Directions action to `grabUrl` failed the
+  representative href assertion and the Maps/Grab partial configuration cases.
+  The action was restored to `mapsUrl`.
+- RED mutation: replacing the verified phone `tel:` anchor with a span failed
+  the verified VisitInformation link assertion. The telephone anchor was
+  restored.
+- GREEN: `pnpm.cmd vitest run tests/components/visit-actions.test.tsx` passed
+  9 tests after restoration.
+
+### Fix Round 1 Command Results
+
+| Command | Result |
+| --- | --- |
+| `pnpm.cmd vitest run tests/components/visit-actions.test.tsx` | 9 passed |
+| `pnpm.cmd playwright test tests/e2e/visit.spec.ts --workers=1` | 3 passed |
+| `pnpm.cmd verify:visit-visual` | 9 passed |
+| `pnpm.cmd test` | 10 files, 40 tests passed |
+| `pnpm.cmd test:e2e` | 67 tests passed |
+| `pnpm.cmd lint` | passed |
+| `pnpm.cmd typecheck` | passed |
+| `pnpm.cmd format:check` | passed |
+| `pnpm.cmd validate:menu` | passed |
+| `pnpm.cmd exec next build` | passed |
+
+The Visit visual artifacts were regenerated after the final green run.

@@ -18,10 +18,21 @@ export function VisitInformation({ config, copy }: VisitInformationProps) {
     {
       label: copy.address,
       pending: copy.addressPending,
+      pendingId: 'address',
       value: config.address,
     },
-    { label: copy.hours, pending: copy.hoursPending, value: config.hours },
-    { label: copy.phone, pending: copy.phonePending, value: config.phone },
+    {
+      label: copy.hours,
+      pending: copy.hoursPending,
+      pendingId: 'hours',
+      value: config.hours,
+    },
+    {
+      label: copy.phone,
+      pending: copy.phonePending,
+      pendingId: 'phone',
+      value: config.phone,
+    },
   ] as const;
 
   return (
@@ -50,7 +61,9 @@ export function VisitInformation({ config, copy }: VisitInformationProps) {
                   detail.value
                 )
               ) : (
-                detail.pending
+                <span data-visit-pending={detail.pendingId}>
+                  {detail.pending}
+                </span>
               )}
             </dd>
           </div>

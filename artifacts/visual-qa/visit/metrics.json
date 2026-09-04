@@ -63,6 +63,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "Địa chỉ đang được xác nhận."
+      },
+      {
+        "id": "hours",
+        "text": "Giờ mở cửa đang được xác nhận."
+      },
+      {
+        "id": "phone",
+        "text": "Số điện thoại đang được xác nhận."
+      },
+      {
+        "id": "directions",
+        "text": "Chỉ đường đang được xác nhận."
+      },
+      {
+        "id": "grab",
+        "text": "Thông tin Grab đang được xác nhận."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram đang được xác nhận."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook đang được xác nhận."
+      },
+      {
+        "id": "map",
+        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -143,6 +177,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "Địa chỉ đang được xác nhận."
+      },
+      {
+        "id": "hours",
+        "text": "Giờ mở cửa đang được xác nhận."
+      },
+      {
+        "id": "phone",
+        "text": "Số điện thoại đang được xác nhận."
+      },
+      {
+        "id": "directions",
+        "text": "Chỉ đường đang được xác nhận."
+      },
+      {
+        "id": "grab",
+        "text": "Thông tin Grab đang được xác nhận."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram đang được xác nhận."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook đang được xác nhận."
+      },
+      {
+        "id": "map",
+        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -223,6 +291,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "Địa chỉ đang được xác nhận."
+      },
+      {
+        "id": "hours",
+        "text": "Giờ mở cửa đang được xác nhận."
+      },
+      {
+        "id": "phone",
+        "text": "Số điện thoại đang được xác nhận."
+      },
+      {
+        "id": "directions",
+        "text": "Chỉ đường đang được xác nhận."
+      },
+      {
+        "id": "grab",
+        "text": "Thông tin Grab đang được xác nhận."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram đang được xác nhận."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook đang được xác nhận."
+      },
+      {
+        "id": "map",
+        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -303,6 +405,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "The address is being confirmed."
+      },
+      {
+        "id": "hours",
+        "text": "Opening hours are being confirmed."
+      },
+      {
+        "id": "phone",
+        "text": "A phone number is being confirmed."
+      },
+      {
+        "id": "directions",
+        "text": "Directions are being confirmed."
+      },
+      {
+        "id": "grab",
+        "text": "Grab availability is being confirmed."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram is being confirmed."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook is being confirmed."
+      },
+      {
+        "id": "map",
+        "text": "The map will be available once the location is confirmed."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -383,6 +519,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "The address is being confirmed."
+      },
+      {
+        "id": "hours",
+        "text": "Opening hours are being confirmed."
+      },
+      {
+        "id": "phone",
+        "text": "A phone number is being confirmed."
+      },
+      {
+        "id": "directions",
+        "text": "Directions are being confirmed."
+      },
+      {
+        "id": "grab",
+        "text": "Grab availability is being confirmed."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram is being confirmed."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook is being confirmed."
+      },
+      {
+        "id": "map",
+        "text": "The map will be available once the location is confirmed."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -463,6 +633,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "The address is being confirmed."
+      },
+      {
+        "id": "hours",
+        "text": "Opening hours are being confirmed."
+      },
+      {
+        "id": "phone",
+        "text": "A phone number is being confirmed."
+      },
+      {
+        "id": "directions",
+        "text": "Directions are being confirmed."
+      },
+      {
+        "id": "grab",
+        "text": "Grab availability is being confirmed."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram is being confirmed."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook is being confirmed."
+      },
+      {
+        "id": "map",
+        "text": "The map will be available once the location is confirmed."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -543,6 +747,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "주소를 확인 중입니다."
+      },
+      {
+        "id": "hours",
+        "text": "영업 시간을 확인 중입니다."
+      },
+      {
+        "id": "phone",
+        "text": "전화번호를 확인 중입니다."
+      },
+      {
+        "id": "directions",
+        "text": "길 안내를 확인 중입니다."
+      },
+      {
+        "id": "grab",
+        "text": "Grab 정보를 확인 중입니다."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram을 확인 중입니다."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook을 확인 중입니다."
+      },
+      {
+        "id": "map",
+        "text": "위치가 확정되면 지도를 안내하겠습니다."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -623,6 +861,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "주소를 확인 중입니다."
+      },
+      {
+        "id": "hours",
+        "text": "영업 시간을 확인 중입니다."
+      },
+      {
+        "id": "phone",
+        "text": "전화번호를 확인 중입니다."
+      },
+      {
+        "id": "directions",
+        "text": "길 안내를 확인 중입니다."
+      },
+      {
+        "id": "grab",
+        "text": "Grab 정보를 확인 중입니다."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram을 확인 중입니다."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook을 확인 중입니다."
+      },
+      {
+        "id": "map",
+        "text": "위치가 확정되면 지도를 안내하겠습니다."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
@@ -703,6 +975,40 @@
     },
     "mapIsLinked": false,
     "pendingCount": 8,
+    "pendingStates": [
+      {
+        "id": "address",
+        "text": "주소를 확인 중입니다."
+      },
+      {
+        "id": "hours",
+        "text": "영업 시간을 확인 중입니다."
+      },
+      {
+        "id": "phone",
+        "text": "전화번호를 확인 중입니다."
+      },
+      {
+        "id": "directions",
+        "text": "길 안내를 확인 중입니다."
+      },
+      {
+        "id": "grab",
+        "text": "Grab 정보를 확인 중입니다."
+      },
+      {
+        "id": "instagram",
+        "text": "Instagram을 확인 중입니다."
+      },
+      {
+        "id": "facebook",
+        "text": "Facebook을 확인 중입니다."
+      },
+      {
+        "id": "map",
+        "text": "위치가 확정되면 지도를 안내하겠습니다."
+      }
+    ],
     "textOverflowCount": 0,
     "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,

@@ -18,7 +18,10 @@ export function VisitMap({ alt, caption, title }: VisitMapProps) {
           sizes="(min-width: 1024px) 32vw, (min-width: 768px) 50vw, 100vw"
           src="/images/stitch/visit-map-placeholder.jpg"
         />
-        <figcaption className="mt-3 text-sm leading-6 text-[var(--navido-muted-ink)]">
+        <figcaption
+          className="mt-3 text-sm leading-6 text-[var(--navido-muted-ink)]"
+          data-visit-pending="map"
+        >
           {caption}
         </figcaption>
       </figure>

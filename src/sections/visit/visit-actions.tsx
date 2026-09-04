@@ -19,6 +19,7 @@ type Action = Readonly<{
   href: string | null;
   label: string;
   pending: string;
+  pendingId: string;
 }>;
 
 export function VisitActions({ config, copy }: VisitActionsProps) {
@@ -27,17 +28,25 @@ export function VisitActions({ config, copy }: VisitActionsProps) {
       href: config.mapsUrl,
       label: copy.directions,
       pending: copy.directionsPending,
+      pendingId: 'directions',
     },
-    { href: config.grabUrl, label: copy.grab, pending: copy.grabPending },
+    {
+      href: config.grabUrl,
+      label: copy.grab,
+      pending: copy.grabPending,
+      pendingId: 'grab',
+    },
     {
       href: config.instagramUrl,
       label: copy.instagram,
       pending: copy.instagramPending,
+      pendingId: 'instagram',
     },
     {
       href: config.facebookUrl,
       label: copy.facebook,
       pending: copy.facebookPending,
+      pendingId: 'facebook',
     },
   ];
 
@@ -59,7 +68,10 @@ export function VisitActions({ config, copy }: VisitActionsProps) {
                 {action.label}
               </a>
             ) : (
-              <p className="text-base text-[var(--navido-muted-ink)]">
+              <p
+                className="text-base text-[var(--navido-muted-ink)]"
+                data-visit-pending={action.pendingId}
+              >
                 {action.pending}
               </p>
             )}

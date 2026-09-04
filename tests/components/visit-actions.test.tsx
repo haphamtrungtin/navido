@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import { VisitActions } from '@/sections/visit/visit-actions';
@@ -40,6 +40,33 @@ const informationCopy = {
   phonePending: 'A phone number is being confirmed.',
   title: 'Visit information',
 };
+
+const actionFields = [
+  {
+    href: 'https://maps.google.com/?q=partial-navido',
+    key: 'mapsUrl',
+    label: copy.directions,
+    pending: copy.directionsPending,
+  },
+  {
+    href: 'https://food.grab.com/partial-navido',
+    key: 'grabUrl',
+    label: copy.grab,
+    pending: copy.grabPending,
+  },
+  {
+    href: 'https://www.instagram.com/partial-navido',
+    key: 'instagramUrl',
+    label: copy.instagram,
+    pending: copy.instagramPending,
+  },
+  {
+    href: 'https://www.facebook.com/partial-navido',
+    key: 'facebookUrl',
+    label: copy.facebook,
+    pending: copy.facebookPending,
+  },
+] as const;
 
 describe('VisitActions', () => {
   it('starts with no verified visit business details', () => {
@@ -88,6 +115,33 @@ describe('VisitActions', () => {
       );
     }
   });
+
+  it.each(actionFields)(
+    'emits only $label when $key is the sole verified action URL',
+    (field) => {
+      const config: VisitBusinessConfig = {
+        ...initialVisitBusinessConfig,
+        [field.key]: field.href,
+      };
+      const { container } = render(
+        <VisitActions config={config} copy={copy} />,
+      );
+
+      const link = within(container).getByRole('link', { name: field.label });
+      expect(container.querySelectorAll('a')).toHaveLength(1);
+      expect(link).toHaveAttribute('href', field.href);
+      expect(link).toHaveAttribute('target', '_blank');
+      expect(link).toHaveAttribute('rel', 'noreferrer');
+
+      for (const otherField of actionFields.filter(
+        (candidate) => candidate.key !== field.key,
+      )) {
+        expect(
+          within(container).getByText(otherField.pending, { exact: true }),
+        ).toBeInTheDocument();
+      }
+    },
+  );
 });
 
 describe('VisitInformation', () => {
@@ -108,5 +162,30 @@ describe('VisitInformation', () => {
     expect(screen.queryByText('1 Verified Street')).not.toBeInTheDocument();
     expect(screen.queryByText('08:00 - 18:00')).not.toBeInTheDocument();
     expect(screen.queryByText('+84123456789')).not.toBeInTheDocument();
+  });
+
+  it('renders verified address, hours, and phone with only a telephone link', () => {
+    const { container } = render(
+      <VisitInformation config={verifiedConfig} copy={informationCopy} />,
+    );
+
+    expect(
+      within(container).getByText(verifiedConfig.hours!),
+    ).toBeInTheDocument();
+    expect(within(container).getByText(verifiedConfig.address!)).toBeInstanceOf(
+      HTMLElement,
+    );
+    expect(container.querySelector('address')).toHaveTextContent(
+      verifiedConfig.address!,
+    );
+
+    const phone = within(container).getByRole('link', {
+      name: verifiedConfig.phone!,
+    });
+    expect(container.querySelectorAll('a')).toHaveLength(1);
+    expect(phone).toHaveAttribute('href', `tel:${verifiedConfig.phone}`);
+    expect(
+      container.querySelector('[data-visit-section="actions"]'),
+    ).toBeNull();
   });
 });

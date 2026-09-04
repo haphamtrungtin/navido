@@ -1,33 +1,36 @@
 import { expect, test } from '@playwright/test';
 
 const localizedPending = {
-  en: [
-    'The address is being confirmed.',
-    'Opening hours are being confirmed.',
-    'A phone number is being confirmed.',
-    'Directions are being confirmed.',
-    'Grab availability is being confirmed.',
-    'Instagram is being confirmed.',
-    'Facebook is being confirmed.',
-  ],
-  ko: [
-    '주소를 확인 중입니다.',
-    '영업 시간을 확인 중입니다.',
-    '전화번호를 확인 중입니다.',
-    '길 안내를 확인 중입니다.',
-    'Grab 정보를 확인 중입니다.',
-    'Instagram을 확인 중입니다.',
-    'Facebook을 확인 중입니다.',
-  ],
-  vi: [
-    'Địa chỉ đang được xác nhận.',
-    'Giờ mở cửa đang được xác nhận.',
-    'Số điện thoại đang được xác nhận.',
-    'Chỉ đường đang được xác nhận.',
-    'Thông tin Grab đang được xác nhận.',
-    'Instagram đang được xác nhận.',
-    'Facebook đang được xác nhận.',
-  ],
+  en: {
+    address: 'The address is being confirmed.',
+    hours: 'Opening hours are being confirmed.',
+    phone: 'A phone number is being confirmed.',
+    directions: 'Directions are being confirmed.',
+    grab: 'Grab availability is being confirmed.',
+    instagram: 'Instagram is being confirmed.',
+    facebook: 'Facebook is being confirmed.',
+    map: 'The map will be available once the location is confirmed.',
+  },
+  ko: {
+    address: '주소를 확인 중입니다.',
+    hours: '영업 시간을 확인 중입니다.',
+    phone: '전화번호를 확인 중입니다.',
+    directions: '길 안내를 확인 중입니다.',
+    grab: 'Grab 정보를 확인 중입니다.',
+    instagram: 'Instagram을 확인 중입니다.',
+    facebook: 'Facebook을 확인 중입니다.',
+    map: '위치가 확정되면 지도를 안내하겠습니다.',
+  },
+  vi: {
+    address: 'Địa chỉ đang được xác nhận.',
+    hours: 'Giờ mở cửa đang được xác nhận.',
+    phone: 'Số điện thoại đang được xác nhận.',
+    directions: 'Chỉ đường đang được xác nhận.',
+    grab: 'Thông tin Grab đang được xác nhận.',
+    instagram: 'Instagram đang được xác nhận.',
+    facebook: 'Facebook đang được xác nhận.',
+    map: 'Bản đồ sẽ hiển thị khi địa điểm được xác nhận.',
+  },
 } as const;
 
 const locales = ['vi', 'en', 'ko'] as const;
@@ -45,9 +48,20 @@ for (const locale of locales) {
     await expect(page.locator('html')).toHaveAttribute('lang', locale);
     await expect(page.locator('h1')).toHaveCount(1);
 
-    for (const text of localizedPending[locale]) {
-      await expect(page.getByText(text, { exact: true })).toHaveCount(1);
+    const pendingStates = Object.entries(localizedPending[locale]);
+    await expect(page.locator('[data-visit-pending]')).toHaveCount(
+      pendingStates.length,
+    );
+    for (const [id, text] of pendingStates) {
+      await expect(page.locator(`[data-visit-pending="${id}"]`)).toHaveText(
+        text,
+      );
     }
+    expect(
+      await page
+        .locator('[data-visit-pending]')
+        .evaluateAll((nodes) => nodes.map((node) => node.dataset.visitPending)),
+    ).toEqual(pendingStates.map(([id]) => id));
 
     const images = page.locator('main img');
     await expect(images).toHaveCount(2);
