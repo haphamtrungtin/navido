@@ -1,0 +1,722 @@
+[
+  {
+    "action": {
+      "bottom": 1043,
+      "height": 291,
+      "left": 644,
+      "right": 996,
+      "top": 753,
+      "width": 352
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 1440,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1070,
+      "height": 318,
+      "left": 244,
+      "right": 596,
+      "top": 753,
+      "width": 352
+    },
+    "intro": {
+      "copy": {
+        "bottom": 455,
+        "height": 198,
+        "left": 244,
+        "right": 596,
+        "top": 257,
+        "width": 352
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 512,
+          "height": 311,
+          "left": 744,
+          "right": 1296,
+          "top": 201,
+          "width": 552
+        },
+        "naturalRatio": 1.8326848249027237,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.77491961414791
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1016,
+        "height": 202,
+        "left": 1044,
+        "right": 1296,
+        "top": 814,
+        "width": 252
+      },
+      "naturalRatio": 0.46195652173913043,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.2475247524752475
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 397320,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "action": {
+      "bottom": 979,
+      "height": 291,
+      "left": 400,
+      "right": 744,
+      "top": 688,
+      "width": 344
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 768,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1006,
+      "height": 318,
+      "left": 24,
+      "right": 368,
+      "top": 688,
+      "width": 344
+    },
+    "intro": {
+      "copy": {
+        "bottom": 432,
+        "height": 215,
+        "left": 24,
+        "right": 274,
+        "top": 217,
+        "width": 250
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 447,
+          "height": 246,
+          "left": 306,
+          "right": 744,
+          "top": 201,
+          "width": 438
+        },
+        "naturalRatio": 1.84,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7804878048780488
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1675,
+        "height": 576,
+        "left": 24,
+        "right": 744,
+        "top": 1099,
+        "width": 720
+      },
+      "naturalRatio": 0.462890625,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 522773,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "action": {
+      "bottom": 1344,
+      "height": 283,
+      "left": 20,
+      "right": 370,
+      "top": 1061,
+      "width": 350
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 390,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1013,
+      "height": 310,
+      "left": 20,
+      "right": 370,
+      "top": 703,
+      "width": 350
+    },
+    "intro": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 558,
+          "height": 197,
+          "left": 20,
+          "right": 370,
+          "top": 361,
+          "width": 350
+        },
+        "naturalRatio": 1.8352941176470587,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7766497461928934
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1726,
+        "height": 280,
+        "left": 20,
+        "right": 370,
+        "top": 1446,
+        "width": 350
+      },
+      "naturalRatio": 0.46153846153846156,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 283028,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "action": {
+      "bottom": 1043,
+      "height": 291,
+      "left": 644,
+      "right": 996,
+      "top": 753,
+      "width": 352
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 1440,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1070,
+      "height": 318,
+      "left": 244,
+      "right": 596,
+      "top": 753,
+      "width": 352
+    },
+    "intro": {
+      "copy": {
+        "bottom": 455,
+        "height": 198,
+        "left": 244,
+        "right": 596,
+        "top": 257,
+        "width": 352
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 512,
+          "height": 311,
+          "left": 744,
+          "right": 1296,
+          "top": 201,
+          "width": 552
+        },
+        "naturalRatio": 1.8326848249027237,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.77491961414791
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1016,
+        "height": 202,
+        "left": 1044,
+        "right": 1296,
+        "top": 814,
+        "width": 252
+      },
+      "naturalRatio": 0.46195652173913043,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.2475247524752475
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 389311,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "action": {
+      "bottom": 979,
+      "height": 291,
+      "left": 400,
+      "right": 744,
+      "top": 688,
+      "width": 344
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 768,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1006,
+      "height": 318,
+      "left": 24,
+      "right": 368,
+      "top": 688,
+      "width": 344
+    },
+    "intro": {
+      "copy": {
+        "bottom": 432,
+        "height": 215,
+        "left": 24,
+        "right": 274,
+        "top": 217,
+        "width": 250
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 447,
+          "height": 246,
+          "left": 306,
+          "right": 744,
+          "top": 201,
+          "width": 438
+        },
+        "naturalRatio": 1.84,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7804878048780488
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1675,
+        "height": 576,
+        "left": 24,
+        "right": 744,
+        "top": 1099,
+        "width": 720
+      },
+      "naturalRatio": 0.462890625,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 514236,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "action": {
+      "bottom": 1344,
+      "height": 283,
+      "left": 20,
+      "right": 370,
+      "top": 1061,
+      "width": 350
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 390,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1013,
+      "height": 310,
+      "left": 20,
+      "right": 370,
+      "top": 703,
+      "width": 350
+    },
+    "intro": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 558,
+          "height": 197,
+          "left": 20,
+          "right": 370,
+          "top": 361,
+          "width": 350
+        },
+        "naturalRatio": 1.8352941176470587,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7766497461928934
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1726,
+        "height": 280,
+        "left": 20,
+        "right": 370,
+        "top": 1446,
+        "width": 350
+      },
+      "naturalRatio": 0.46153846153846156,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 275238,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "action": {
+      "bottom": 1043,
+      "height": 291,
+      "left": 644,
+      "right": 996,
+      "top": 753,
+      "width": 352
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 1440,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1070,
+      "height": 318,
+      "left": 244,
+      "right": 596,
+      "top": 753,
+      "width": 352
+    },
+    "intro": {
+      "copy": {
+        "bottom": 455,
+        "height": 198,
+        "left": 244,
+        "right": 596,
+        "top": 257,
+        "width": 352
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 512,
+          "height": 311,
+          "left": 744,
+          "right": 1296,
+          "top": 201,
+          "width": 552
+        },
+        "naturalRatio": 1.8326848249027237,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.77491961414791
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1016,
+        "height": 202,
+        "left": 1044,
+        "right": 1296,
+        "top": 814,
+        "width": 252
+      },
+      "naturalRatio": 0.46195652173913043,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.2475247524752475
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 373403,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "action": {
+      "bottom": 979,
+      "height": 291,
+      "left": 400,
+      "right": 744,
+      "top": 688,
+      "width": 344
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 768,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1006,
+      "height": 318,
+      "left": 24,
+      "right": 368,
+      "top": 688,
+      "width": 344
+    },
+    "intro": {
+      "copy": {
+        "bottom": 416,
+        "height": 183,
+        "left": 24,
+        "right": 274,
+        "top": 233,
+        "width": 250
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 447,
+          "height": 246,
+          "left": 306,
+          "right": 744,
+          "top": 201,
+          "width": 438
+        },
+        "naturalRatio": 1.84,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7804878048780488
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1675,
+        "height": 576,
+        "left": 24,
+        "right": 744,
+        "top": 1099,
+        "width": 720
+      },
+      "naturalRatio": 0.462890625,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 499401,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "action": {
+      "bottom": 1344,
+      "height": 283,
+      "left": 20,
+      "right": 370,
+      "top": 1061,
+      "width": 350
+    },
+    "actionAnchorCount": 0,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 390,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1013,
+      "height": 310,
+      "left": 20,
+      "right": 370,
+      "top": 703,
+      "width": 350
+    },
+    "intro": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 558,
+          "height": 197,
+          "left": 20,
+          "right": 370,
+          "top": 361,
+          "width": 350
+        },
+        "naturalRatio": 1.8352941176470587,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7766497461928934
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1726,
+        "height": 280,
+        "left": 20,
+        "right": 370,
+        "top": 1446,
+        "width": 350
+      },
+      "naturalRatio": 0.46153846153846156,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": false,
+    "pendingCount": 8,
+    "textOverflowCount": 0,
+    "forbiddenAnchorCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 263221,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

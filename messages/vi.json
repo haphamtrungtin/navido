@@ -115,7 +115,31 @@
       "imageAlt": "Mọi người quây quần bên bàn"
     }
   },
-  "Visit": { "title": "Ghé thăm" },
+  "Visit": {
+    "title": "Ghé thăm",
+    "eyebrow": "Ghé thăm NAVIDO",
+    "introduction": "Thông tin ghé thăm đang được xác nhận và sẽ được cập nhật tại đây khi sẵn sàng.",
+    "exteriorAlt": "Mặt tiền NAVIDO",
+    "informationTitle": "Thông tin ghé thăm",
+    "address": "Địa chỉ",
+    "addressPending": "Địa chỉ đang được xác nhận.",
+    "hours": "Giờ mở cửa",
+    "hoursPending": "Giờ mở cửa đang được xác nhận.",
+    "phone": "Điện thoại",
+    "phonePending": "Số điện thoại đang được xác nhận.",
+    "actionsTitle": "Chuẩn bị ghé thăm",
+    "directions": "Chỉ đường",
+    "directionsPending": "Chỉ đường đang được xác nhận.",
+    "grab": "Grab",
+    "grabPending": "Thông tin Grab đang được xác nhận.",
+    "instagram": "Instagram",
+    "instagramPending": "Instagram đang được xác nhận.",
+    "facebook": "Facebook",
+    "facebookPending": "Facebook đang được xác nhận.",
+    "mapTitle": "Bản đồ",
+    "mapAlt": "Minh họa bản đồ NAVIDO",
+    "mapPending": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
+  },
   "Pending": { "title": "Đang cập nhật" },
   "Footer": { "informationPending": "Thông tin ghé thăm đang được xác nhận." }
 }

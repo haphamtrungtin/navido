@@ -115,7 +115,31 @@
       "imageAlt": "테이블에 함께 앉은 사람들"
     }
   },
-  "Visit": { "title": "방문" },
+  "Visit": {
+    "title": "방문",
+    "eyebrow": "NAVIDO 방문",
+    "introduction": "방문 정보를 확인 중이며 준비되는 대로 이곳에 안내하겠습니다.",
+    "exteriorAlt": "NAVIDO 외관",
+    "informationTitle": "방문 정보",
+    "address": "주소",
+    "addressPending": "주소를 확인 중입니다.",
+    "hours": "영업 시간",
+    "hoursPending": "영업 시간을 확인 중입니다.",
+    "phone": "전화",
+    "phonePending": "전화번호를 확인 중입니다.",
+    "actionsTitle": "방문 준비",
+    "directions": "길 안내",
+    "directionsPending": "길 안내를 확인 중입니다.",
+    "grab": "Grab",
+    "grabPending": "Grab 정보를 확인 중입니다.",
+    "instagram": "Instagram",
+    "instagramPending": "Instagram을 확인 중입니다.",
+    "facebook": "Facebook",
+    "facebookPending": "Facebook을 확인 중입니다.",
+    "mapTitle": "지도",
+    "mapAlt": "NAVIDO 지도 임시 이미지",
+    "mapPending": "위치가 확정되면 지도를 안내하겠습니다."
+  },
   "Pending": { "title": "준비 중" },
   "Footer": { "informationPending": "방문 정보를 확인하고 있습니다." }
 }

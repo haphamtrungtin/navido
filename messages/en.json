@@ -115,7 +115,31 @@
       "imageAlt": "People gathered around a table"
     }
   },
-  "Visit": { "title": "Visit" },
+  "Visit": {
+    "title": "Visit",
+    "eyebrow": "Visit NAVIDO",
+    "introduction": "Visit details are being confirmed and will be shared here when ready.",
+    "exteriorAlt": "Exterior view of NAVIDO",
+    "informationTitle": "Visit information",
+    "address": "Address",
+    "addressPending": "The address is being confirmed.",
+    "hours": "Opening hours",
+    "hoursPending": "Opening hours are being confirmed.",
+    "phone": "Phone",
+    "phonePending": "A phone number is being confirmed.",
+    "actionsTitle": "Plan your visit",
+    "directions": "Directions",
+    "directionsPending": "Directions are being confirmed.",
+    "grab": "Grab",
+    "grabPending": "Grab availability is being confirmed.",
+    "instagram": "Instagram",
+    "instagramPending": "Instagram is being confirmed.",
+    "facebook": "Facebook",
+    "facebookPending": "Facebook is being confirmed.",
+    "mapTitle": "Map",
+    "mapAlt": "Map placeholder for NAVIDO",
+    "mapPending": "The map will be available once the location is confirmed."
+  },
   "Pending": { "title": "Coming soon" },
   "Footer": { "informationPending": "Visit information is being confirmed." }
 }
