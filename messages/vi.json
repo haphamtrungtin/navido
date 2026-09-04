@@ -83,7 +83,38 @@
       "action": "Thông tin ghé thăm"
     }
   },
-  "About": { "title": "Giới thiệu" },
+  "About": {
+    "title": "Về NAVIDO",
+    "introduction": {
+      "eyebrow": "Về NAVIDO",
+      "body": "Cà phê, đồ ăn và không gian mở gặp nhau trong nhịp sống thường ngày.",
+      "imageAlt": "Góc phố gần NAVIDO"
+    },
+    "coffee": {
+      "eyebrow": "Cà phê",
+      "title": "Cà phê, được cân nhắc",
+      "body": "Espresso và cà phê lọc phù hợp với những khoảnh khắc khác nhau trong ngày.",
+      "imageAlt": "Cà phê pour-over đang được pha"
+    },
+    "food": {
+      "eyebrow": "Đồ ăn",
+      "title": "Đồ ăn bên tách cà phê",
+      "body": "Bánh ngọt và những món nhỏ có thể đi cùng cà phê.",
+      "imageAlt": "Bánh ngọt trên đĩa"
+    },
+    "space": {
+      "eyebrow": "Không gian",
+      "title": "Một căn phòng để sử dụng",
+      "body": "Bàn, ánh sáng và những góc mở tạo nên các chỗ dừng khác nhau.",
+      "imageAlt": "Chỗ ngồi và bàn trong không gian"
+    },
+    "community": {
+      "eyebrow": "Cộng đồng",
+      "title": "Thời gian sẻ chia",
+      "body": "Một tách cà phê có thể mở ra cuộc trò chuyện, một việc yên tĩnh hoặc thời gian bên người khác.",
+      "imageAlt": "Mọi người quây quần bên bàn"
+    }
+  },
   "Visit": { "title": "Ghé thăm" },
   "Pending": { "title": "Đang cập nhật" },
   "Footer": { "informationPending": "Thông tin ghé thăm đang được xác nhận." }

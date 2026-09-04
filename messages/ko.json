@@ -83,7 +83,38 @@
       "action": "방문 정보"
     }
   },
-  "About": { "title": "소개" },
+  "About": {
+    "title": "NAVIDO 소개",
+    "introduction": {
+      "eyebrow": "NAVIDO 소개",
+      "body": "커피, 음식, 열린 공간이 일상의 리듬 안에서 만납니다.",
+      "imageAlt": "NAVIDO 근처의 거리 풍경"
+    },
+    "coffee": {
+      "eyebrow": "커피",
+      "title": "고려한 커피",
+      "body": "에스프레소와 필터 커피는 하루의 서로 다른 순간에 어울립니다.",
+      "imageAlt": "준비 중인 푸어오버 커피"
+    },
+    "food": {
+      "eyebrow": "음식",
+      "title": "커피 곁의 음식",
+      "body": "페이스트리와 작은 접시는 커피와 자연스럽게 함께할 수 있습니다.",
+      "imageAlt": "접시 위의 페이스트리"
+    },
+    "space": {
+      "eyebrow": "공간",
+      "title": "머무는 방",
+      "body": "테이블, 빛, 열린 모퉁이가 서로 다른 쉼의 자리를 만듭니다.",
+      "imageAlt": "실내의 좌석과 테이블"
+    },
+    "community": {
+      "eyebrow": "함께",
+      "title": "함께하는 시간",
+      "body": "커피는 대화, 조용한 일, 또는 다른 사람과의 시간을 위한 여지를 만들 수 있습니다.",
+      "imageAlt": "테이블에 함께 앉은 사람들"
+    }
+  },
   "Visit": { "title": "방문" },
   "Pending": { "title": "준비 중" },
   "Footer": { "informationPending": "방문 정보를 확인하고 있습니다." }

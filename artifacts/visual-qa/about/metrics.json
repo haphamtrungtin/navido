@@ -1,0 +1,452 @@
+[
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12, 12],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.250021605738484,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500176916000283,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "vi",
+    "screenshotBytes": 1361451,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8, 8],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "vi",
+    "screenshotBytes": 851577,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1, 1],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [72, 72, 72, 72, 72],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "vi",
+    "screenshotBytes": 750763,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12, 12],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.250021605738484,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500176916000283,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "en",
+    "screenshotBytes": 1342537,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8, 8],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "en",
+    "screenshotBytes": 836181,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1, 1],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [72, 72, 72, 72, 72],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "en",
+    "screenshotBytes": 739230,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "gridTracks": [12, 12, 12, 12, 12],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.250021605738484,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 352,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500176916000283,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "ko",
+    "screenshotBytes": 1325668,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "gridTracks": [8, 8, 8, 8, 8],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [120, 120, 120, 120, 120],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": false,
+        "imageLeftOfCopy": true,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 250,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.2500567794685442,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "ko",
+    "screenshotBytes": 811002,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "gridTracks": [1, 1, 1, 1, 1],
+    "imageCount": 5,
+    "loadedImageCount": 5,
+    "sectionOrder": ["introduction", "coffee", "food", "space", "community"],
+    "sectionPaddingTop": [72, 72, 72, 72, 72],
+    "textOverflowCount": 0,
+    "themePositions": [
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 0.8,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      },
+      {
+        "copyWidth": 350,
+        "imageAboveCopy": true,
+        "imageLeftOfCopy": false,
+        "imageRatio": 1.25,
+        "imageObjectFit": "cover",
+        "verticalGap": 20
+      }
+    ],
+    "locale": "ko",
+    "screenshotBytes": 725473,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

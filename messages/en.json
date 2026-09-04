@@ -83,7 +83,38 @@
       "action": "Visit information"
     }
   },
-  "About": { "title": "About" },
+  "About": {
+    "title": "About NAVIDO",
+    "introduction": {
+      "eyebrow": "About NAVIDO",
+      "body": "Coffee, food, and an open room meet within the everyday rhythm of the day.",
+      "imageAlt": "Street view near NAVIDO"
+    },
+    "coffee": {
+      "eyebrow": "Coffee",
+      "title": "Coffee, considered",
+      "body": "Espresso and filter coffee suit different moments of the day.",
+      "imageAlt": "Pour-over coffee in preparation"
+    },
+    "food": {
+      "eyebrow": "Food",
+      "title": "Food beside the cup",
+      "body": "Pastries and small plates can sit naturally alongside coffee.",
+      "imageAlt": "Pastry on a plate"
+    },
+    "space": {
+      "eyebrow": "Space",
+      "title": "A room to use",
+      "body": "Tables, light, and open corners create different places to pause.",
+      "imageAlt": "Interior seating and tables"
+    },
+    "community": {
+      "eyebrow": "Community",
+      "title": "Time together",
+      "body": "Coffee can make room for a conversation, a quiet task, or time with others.",
+      "imageAlt": "People gathered around a table"
+    }
+  },
   "Visit": { "title": "Visit" },
   "Pending": { "title": "Coming soon" },
   "Footer": { "informationPending": "Visit information is being confirmed." }
