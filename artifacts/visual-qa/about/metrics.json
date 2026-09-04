@@ -10,6 +10,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 455,
+        "height": 198,
+        "left": 244,
+        "right": 596,
+        "top": 257,
+        "width": 352
+      },
+      "frame": {
+        "bottom": 512,
+        "height": 311,
+        "left": 744,
+        "right": 1296,
+        "top": 201,
+        "width": 552
+      },
+      "imageNaturalRatio": 1.8326848249027237,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -363,6 +385,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -399,6 +422,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
         "verticalGap": 20
       },
@@ -435,6 +459,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.790874524714829,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -471,6 +496,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500176916000283,
         "verticalGap": 20
       }
@@ -494,6 +520,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 432,
+        "height": 215,
+        "left": 24,
+        "right": 274,
+        "top": 217,
+        "width": 250
+      },
+      "frame": {
+        "bottom": 447,
+        "height": 246,
+        "left": 306,
+        "right": 744,
+        "top": 201,
+        "width": 438
+      },
+      "imageNaturalRatio": 1.84,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -847,6 +895,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -883,6 +932,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       },
@@ -919,6 +969,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.786046511627907,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -955,6 +1006,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       }
@@ -978,6 +1030,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "frame": {
+        "bottom": 558,
+        "height": 197,
+        "left": 20,
+        "right": 370,
+        "top": 361,
+        "width": 350
+      },
+      "imageNaturalRatio": 1.8352941176470587,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -1331,6 +1405,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -1367,6 +1442,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       },
@@ -1403,6 +1479,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.793103448275862,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -1439,6 +1516,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       }
@@ -1462,6 +1540,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 493,
+        "height": 273,
+        "left": 244,
+        "right": 596,
+        "top": 220,
+        "width": 352
+      },
+      "frame": {
+        "bottom": 512,
+        "height": 311,
+        "left": 744,
+        "right": 1296,
+        "top": 201,
+        "width": 552
+      },
+      "imageNaturalRatio": 1.8326848249027237,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -1815,6 +1915,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -1851,6 +1952,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
         "verticalGap": 20
       },
@@ -1887,6 +1989,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.790874524714829,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -1923,6 +2026,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500176916000283,
         "verticalGap": 20
       }
@@ -1946,6 +2050,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 476,
+        "height": 275,
+        "left": 24,
+        "right": 274,
+        "top": 201,
+        "width": 250
+      },
+      "frame": {
+        "bottom": 462,
+        "height": 246,
+        "left": 306,
+        "right": 744,
+        "top": 215,
+        "width": 438
+      },
+      "imageNaturalRatio": 1.84,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -2299,6 +2425,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -2335,6 +2462,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       },
@@ -2371,6 +2499,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.786046511627907,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -2407,6 +2536,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       }
@@ -2430,6 +2560,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "frame": {
+        "bottom": 558,
+        "height": 197,
+        "left": 20,
+        "right": 370,
+        "top": 361,
+        "width": 350
+      },
+      "imageNaturalRatio": 1.8352941176470587,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -2783,6 +2935,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -2819,6 +2972,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       },
@@ -2855,6 +3009,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.793103448275862,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -2891,6 +3046,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       }
@@ -2914,6 +3070,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 439,
+        "height": 166,
+        "left": 244,
+        "right": 596,
+        "top": 273,
+        "width": 352
+      },
+      "frame": {
+        "bottom": 512,
+        "height": 311,
+        "left": 744,
+        "right": 1296,
+        "top": 201,
+        "width": 552
+      },
+      "imageNaturalRatio": 1.8326848249027237,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -3267,6 +3445,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -3303,6 +3482,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
         "verticalGap": 20
       },
@@ -3339,6 +3519,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.790874524714829,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -3375,6 +3556,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8326848249027237,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500176916000283,
         "verticalGap": 20
       }
@@ -3398,6 +3580,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 446,
+        "height": 243,
+        "left": 24,
+        "right": 274,
+        "top": 203,
+        "width": 250
+      },
+      "frame": {
+        "bottom": 447,
+        "height": 246,
+        "left": 306,
+        "right": 744,
+        "top": 201,
+        "width": 438
+      },
+      "imageNaturalRatio": 1.84,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -3751,6 +3955,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -3787,6 +3992,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       },
@@ -3823,6 +4029,7 @@
         "imageLeftOfCopy": true,
         "imageNaturalRatio": 1.786046511627907,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -3859,6 +4066,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8373205741626795,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
         "verticalGap": 20
       }
@@ -3882,6 +4090,28 @@
       "/images/stitch/about-space.jpg",
       "/images/stitch/about-community.jpg"
     ],
+    "introduction": {
+      "copy": {
+        "bottom": 321,
+        "height": 168,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "frame": {
+        "bottom": 558,
+        "height": 197,
+        "left": 20,
+        "right": 370,
+        "top": 361,
+        "width": 350
+      },
+      "imageNaturalRatio": 1.8352941176470587,
+      "imageObjectFit": "cover",
+      "imageObjectPosition": "50% 50%",
+      "imageRatio": 1.7777777777777777
+    },
     "loadedImageCount": 5,
     "sectionBounds": [
       {
@@ -4235,6 +4465,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -4271,6 +4502,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       },
@@ -4307,6 +4539,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.793103448275862,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
         "verticalGap": 20
       },
@@ -4343,6 +4576,7 @@
         "imageLeftOfCopy": false,
         "imageNaturalRatio": 1.8352941176470587,
         "imageObjectFit": "cover",
+        "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
         "verticalGap": 20
       }

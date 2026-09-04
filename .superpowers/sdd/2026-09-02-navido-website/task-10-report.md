@@ -79,3 +79,49 @@ All temporary source regressions were restored. No production layout correction 
 | `pnpm build` | passed; static About routes generated for all locales |
 
 `menu.json` SHA-256 after the fix round remained `A7040FE8B651E60923851798F58DADBF8C6455F68E3A6F6D4715F6FA2106F0AE`.
+
+## Fix Round 2: Independent Geometry Verification
+
+The visual verifier now uses fixed per-viewport geometry contracts derived from
+the intended Tailwind layout rather than the rendered grid: the 1200px maximum
+container, 20px/24px gutters, 12/8/1 column breakpoints, and 48px/32px gaps.
+At 1440px, 768px, and 390px it independently checks the introduction and all
+four theme frame positions, dimensions, constrained copy widths, and the
+desktop/tablet horizontal negative-space gaps. The 2px mobile and 3px
+desktop/tablet tolerances allow rounding and font/layout subpixels without
+accepting token-level regressions. Introduction and theme image collection now
+also records and requires `object-fit: cover` with computed
+`object-position: 50% 50%`; crop coverage includes each natural-to-frame ratio
+delta.
+
+### RED Evidence
+
+- Container/track gap: temporarily changing the desktop theme grid from
+  `lg:gap-12` to `lg:gap-8` failed the desktop contract with `Expected: <= 3`
+  and `Received: 9` for an independently expected frame coordinate.
+- Crop position: temporarily changing Coffee from `objectPosition: 'center'`
+  to `'left top'` failed with `Expected: "50% 50%"` and `Received: "0% 0%"`.
+- Introduction geometry: temporarily changing its frame from `16 / 9` to
+  `4 / 5` failed the independent frame-height contract with `Expected: <= 3`
+  and `Received: 379`.
+- Text containment: temporarily adding `translate-x-[400px]` to the theme body
+  failed the mobile overflow contract with `Expected: <= 390` and
+  `Received: 770` document width.
+
+Each mutation was restored before the final artifact and quality-gate runs. No
+production layout correction was necessary; this round corrected the visual
+verification baseline and added the missing introduction/crop coverage.
+
+### GREEN Evidence
+
+| Command | Result |
+| --- | --- |
+| `pnpm verify:about-visual` | 9 passed; all nine captures, metrics, and comparison notes regenerated at scroll position zero |
+| `pnpm exec playwright test tests/e2e/about.spec.ts --workers=1` | 3 passed |
+| `pnpm test` | 31 passed in 9 files |
+| `pnpm test:e2e` | 55 passed |
+| `pnpm typecheck` | passed |
+| `pnpm lint` | passed |
+| `pnpm format:check` | passed |
+| `pnpm validate:menu` | passed |
+| `pnpm build` | passed; static About routes generated for all locales |
