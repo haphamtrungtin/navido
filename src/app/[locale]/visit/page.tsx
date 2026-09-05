@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
 import { EditorialImage } from '@/components/ui/editorial-image';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { isLocale, locales } from '@/i18n/types';
+import { buildPageMetadata } from '@/lib/metadata';
 import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { VisitActions } from '@/sections/visit/visit-actions';
 import { VisitInformation } from '@/sections/visit/visit-information';
@@ -14,6 +16,28 @@ export const dynamic = 'force-static';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    return {};
+  }
+
+  const metadata = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return buildPageMetadata({
+    description: metadata('visit.description'),
+    locale,
+    page: 'visit',
+    siteUrl: initialVisitBusinessConfig.siteUrl,
+    title: metadata('visit.title'),
+  });
 }
 
 export default async function VisitPage({

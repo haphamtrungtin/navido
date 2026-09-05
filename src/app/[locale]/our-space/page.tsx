@@ -1,7 +1,10 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { isLocale, locales } from '@/i18n/types';
+import { buildPageMetadata } from '@/lib/metadata';
+import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { SpaceCallout } from '@/sections/our-space/space-callout';
 import { SpaceHero } from '@/sections/our-space/space-hero';
 import { SpaceStory } from '@/sections/our-space/space-story';
@@ -10,6 +13,28 @@ export const dynamic = 'force-static';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    return {};
+  }
+
+  const metadata = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return buildPageMetadata({
+    description: metadata('ourSpace.description'),
+    locale,
+    page: 'ourSpace',
+    siteUrl: initialVisitBusinessConfig.siteUrl,
+    title: metadata('ourSpace.title'),
+  });
 }
 
 export default async function OurSpacePage({

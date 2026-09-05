@@ -1,8 +1,11 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 import { isLocale, locales } from '@/i18n/types';
+import { buildPageMetadata } from '@/lib/metadata';
+import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { HomeHero } from '@/sections/home/home-hero';
 import { HomeIntroduction } from '@/sections/home/home-introduction';
 import { LocationInvitation } from '@/sections/home/location-invitation';
@@ -12,6 +15,28 @@ export const dynamic = 'force-static';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    return {};
+  }
+
+  const metadata = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return buildPageMetadata({
+    description: metadata('home.description'),
+    locale,
+    page: 'home',
+    siteUrl: initialVisitBusinessConfig.siteUrl,
+    title: metadata('home.title'),
+  });
 }
 
 export default async function LocalizedHomePage({

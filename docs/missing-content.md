@@ -28,3 +28,9 @@ publication. The reproducible source manifest is in `scripts/download-stitch-ass
 
 The site must render localized pending states for these values and must not emit phone,
 maps, ride-hailing, or social links until the corresponding values are verified.
+
+## Discovery URLs awaiting verification
+
+Canonical URLs, language alternates, and sitemap entries remain omitted until a verified
+production origin is supplied. The current `initialVisitBusinessConfig.siteUrl` is `null`,
+so the site must not infer a domain from a preview, localhost, or deployment environment.

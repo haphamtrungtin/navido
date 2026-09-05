@@ -1,5 +1,26 @@
 {
-  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Metadata": {
+    "home": {
+      "title": "NAVIDO",
+      "description": "커피와 대화, 하루의 여유로운 쉼을 위한 느린 리듬입니다."
+    },
+    "menu": {
+      "title": "메뉴 | NAVIDO",
+      "description": "NAVIDO의 현재 커피와 음식 셀렉션을 살펴보세요."
+    },
+    "ourSpace": {
+      "title": "공간 | NAVIDO",
+      "description": "NAVIDO를 이루는 빛과 테이블, 고요한 구석을 만나보세요."
+    },
+    "about": {
+      "title": "NAVIDO 소개",
+      "description": "NAVIDO의 커피와 공간, 함께하는 시간을 소개합니다."
+    },
+    "visit": {
+      "title": "NAVIDO 방문",
+      "description": "방문 정보는 확인 중이며 준비되는 대로 안내하겠습니다."
+    }
+  },
   "Navigation": {
     "home": "홈",
     "menu": "메뉴",

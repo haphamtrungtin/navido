@@ -1,5 +1,26 @@
 {
-  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Metadata": {
+    "home": {
+      "title": "NAVIDO",
+      "description": "Một nhịp chậm cho cà phê, trò chuyện và những khoảng dừng trong ngày."
+    },
+    "menu": {
+      "title": "Thực đơn | NAVIDO",
+      "description": "Khám phá những lựa chọn cà phê và đồ ăn hiện có tại NAVIDO."
+    },
+    "ourSpace": {
+      "title": "Không gian | NAVIDO",
+      "description": "Khám phá ánh sáng, bàn ghế và những góc yên tĩnh tạo nên NAVIDO."
+    },
+    "about": {
+      "title": "Về NAVIDO",
+      "description": "Tìm hiểu về cà phê, đồ ăn và những khoảng thời gian sẻ chia tại NAVIDO."
+    },
+    "visit": {
+      "title": "Ghé thăm NAVIDO",
+      "description": "Thông tin ghé thăm đang được xác nhận và sẽ được cập nhật khi sẵn sàng."
+    }
+  },
   "Navigation": {
     "home": "Trang chủ",
     "menu": "Thực đơn",

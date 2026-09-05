@@ -1,5 +1,26 @@
 {
-  "Metadata": { "title": "NAVIDO", "description": "NAVIDO" },
+  "Metadata": {
+    "home": {
+      "title": "NAVIDO",
+      "description": "A slower rhythm for coffee, conversation, and pauses throughout the day."
+    },
+    "menu": {
+      "title": "Menu | NAVIDO",
+      "description": "Explore NAVIDO's current coffee and food selections."
+    },
+    "ourSpace": {
+      "title": "Our space | NAVIDO",
+      "description": "Discover the light, tables, and quiet corners that shape NAVIDO."
+    },
+    "about": {
+      "title": "About NAVIDO",
+      "description": "Learn about the coffee, food, and shared time at NAVIDO."
+    },
+    "visit": {
+      "title": "Visit NAVIDO",
+      "description": "Visit details are being confirmed and will be shared when ready."
+    }
+  },
   "Navigation": {
     "home": "Home",
     "menu": "Menu",

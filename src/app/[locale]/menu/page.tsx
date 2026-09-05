@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
@@ -7,8 +8,32 @@ import { CategoryNavigation } from '@/features/menu/components/category-navigati
 import { MenuCategory } from '@/features/menu/components/menu-category';
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 import { isLocale } from '@/i18n/types';
+import { buildPageMetadata } from '@/lib/metadata';
+import { initialVisitBusinessConfig } from '@/lib/site-config';
 
 export const dynamic = 'force-static';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    return {};
+  }
+
+  const metadata = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return buildPageMetadata({
+    description: metadata('menu.description'),
+    locale,
+    page: 'menu',
+    siteUrl: initialVisitBusinessConfig.siteUrl,
+    title: metadata('menu.title'),
+  });
+}
 
 export default async function MenuPage({
   params,
