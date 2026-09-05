@@ -6,6 +6,12 @@ the final production matrix on 2026-09-05 confirmed the same route families at
 desktop and mobile widths. Documentation-only handoff changes did not alter rendered
 presentation, so no duplicate captures were created.
 
+These are NAVIDO output captures. The approved Stitch project informed the earlier
+page gates, but its reference images and stable page locators are not retained in
+this handoff. The linked comparison records therefore document rendered-contract
+verification and measurements, not an auditable retained Stitch-to-output pairwise
+comparison.
+
 ## Shared Shell
 
 | Capture                                                                | Evidence                            |

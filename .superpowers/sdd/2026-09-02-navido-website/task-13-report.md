@@ -67,3 +67,27 @@ After the handoff commit, the persistent development server was started with
 
 The production server is stopped. The development listener is intentionally left
 running for review.
+
+## Fix Round 1: Review Evidence Corrections
+
+The handoff index and page comparison summary now describe the retained artifacts as
+NAVIDO output captures plus rendered-contract measurements. The approved Stitch
+project informed the earlier visual gates, but its source images and stable locators
+are not retained in this repository; the handoff no longer claims an auditable direct
+Stitch-to-output comparison.
+
+The Menu correction history now explicitly records that no implementation correction
+was needed: the Task 8 report records no requirement deviation and the Task 8 review
+found no implementation findings. The Visit history now records the actual prior
+correction from the Task 11 report: the initial `Directions` action-section heading
+was replaced by an independent localized heading (`Plan your visit` in English). The
+Task 11 report also records zero material visual correction rounds.
+
+The screenshot-dimension wording Minor remains deferred for the whole-branch review,
+as required for this fix round.
+
+| Fix-round check | Result |
+| --- | --- |
+| Markdown link check | Passed; all 49 links in the index and summary resolve to tracked local artifacts. |
+| Evidence content check | Passed; no ambiguous direct-comparison labels remain, retained-reference limitations are explicit, and the Menu/Visit correction history is present. |
+| `corepack pnpm format:check` | Exit 0; all matched files use Prettier code style. |
