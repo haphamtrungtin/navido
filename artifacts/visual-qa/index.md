@@ -6,6 +6,14 @@ the final production matrix on 2026-09-05 confirmed the same route families at
 desktop and mobile widths. Documentation-only handoff changes did not alter rendered
 presentation, so no duplicate captures were created.
 
+## Tracked Stitch References
+
+The newer Menu baseline is retained separately under
+[`artifacts/stitch-references/menu`](../stitch-references/menu/README.md). Its
+desktop and mobile exports were added after the current Menu implementation gate;
+the output captures below therefore document the existing implementation, not a
+completed comparison against that newer pair.
+
 These are NAVIDO output captures. The approved Stitch project informed the earlier
 page gates, but its reference images and stable page locators are not retained in
 this handoff. The linked comparison records therefore document rendered-contract

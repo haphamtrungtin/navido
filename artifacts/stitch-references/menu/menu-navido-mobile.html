@@ -1,0 +1,756 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Menu - NAVIDO</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'tertiary-fixed': '#d5e8d2',
+              primary: '#10100c',
+              'on-secondary-fixed': '#251911',
+              'on-surface': '#1c1c17',
+              'tertiary-fixed-dim': '#b9ccb7',
+              'surface-container': '#f1eee6',
+              'error-container': '#ffdad6',
+              error: '#ba1a1a',
+              'surface-variant': '#e5e2da',
+              outline: '#787770',
+              'secondary-fixed-dim': '#d8c2b5',
+              'on-error': '#ffffff',
+              background: '#fcf9f1',
+              'surface-container-lowest': '#ffffff',
+              'on-tertiary-container': '#7f907e',
+              'surface-container-high': '#ebe8e0',
+              'surface-dim': '#dcdad2',
+              'on-tertiary-fixed-variant': '#3a4b3b',
+              'surface-tint': '#5f5e59',
+              'on-primary-container': '#8d8c86',
+              'tertiary-container': '#19281a',
+              'on-error-container': '#93000a',
+              'outline-variant': '#c8c7be',
+              'on-secondary': '#ffffff',
+              'on-tertiary': '#ffffff',
+              'inverse-on-surface': '#f3f1e9',
+              secondary: '#6b5b50',
+              'on-tertiary-fixed': '#101f12',
+              'on-secondary-fixed-variant': '#534439',
+              'on-primary-fixed-variant': '#474742',
+              surface: '#fcf9f1',
+              'surface-container-low': '#f6f3eb',
+              'on-secondary-container': '#726156',
+              tertiary: '#041207',
+              'primary-container': '#252521',
+              'secondary-fixed': '#f5ded0',
+              'on-background': '#1c1c17',
+              'on-primary-fixed': '#1c1c18',
+              'primary-fixed': '#e5e2dc',
+              'on-primary': '#ffffff',
+              'surface-container-highest': '#e5e2da',
+              'inverse-primary': '#c9c6c0',
+              'primary-fixed-dim': '#c9c6c0',
+              'surface-bright': '#fcf9f1',
+              'on-surface-variant': '#474741',
+              'inverse-surface': '#31312b',
+              'secondary-container': '#f5ded0',
+            },
+            borderRadius: {
+              DEFAULT: '0.125rem',
+              lg: '0.25rem',
+              xl: '0.5rem',
+              full: '0.75rem',
+            },
+            spacing: {
+              'section-gap': '72px',
+              'container-max': '1200px',
+              unit: '8px',
+              gutter: '24px',
+              'margin-mobile': '20px',
+            },
+            fontFamily: {
+              'body-md': ['Noto Sans'],
+              'headline-lg': ['Noto Sans'],
+              'display-hero-mobile': ['Noto Sans'],
+              'body-lg': ['Noto Sans'],
+              'display-hero': ['Noto Sans'],
+              'label-caps': ['Noto Sans'],
+              'headline-md': ['Noto Sans'],
+            },
+            fontSize: {
+              'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }],
+              'headline-lg': [
+                '36px',
+                { lineHeight: '44px', fontWeight: '300' },
+              ],
+              'display-hero-mobile': [
+                '40px',
+                {
+                  lineHeight: '48px',
+                  letterSpacing: '-0.01em',
+                  fontWeight: '300',
+                },
+              ],
+              'body-lg': ['17px', { lineHeight: '26px', fontWeight: '400' }],
+              'label-caps': [
+                '11px',
+                {
+                  lineHeight: '16px',
+                  letterSpacing: '0.18em',
+                  fontWeight: '500',
+                },
+              ],
+              'headline-md': [
+                '26px',
+                { lineHeight: '34px', fontWeight: '300' },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #fcf9f1;
+        color: #1c1c17;
+        min-height: max(884px, 100dvh);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased flex flex-col min-h-screen selection:bg-surface-variant selection:text-primary"
+  >
+    <!-- Mobile Top Bar -->
+    <header
+      class="sticky top-0 z-50 bg-[#fcf9f1]/90 backdrop-blur-md border-b border-outline-variant/30 px-margin-mobile py-4 flex items-center justify-between transition-colors"
+    >
+      <a
+        class="font-display-hero-mobile tracking-tighter text-2xl font-light text-primary"
+        href="#"
+        >NAVIDO</a
+      >
+      <div class="flex items-center gap-3">
+        <span
+          class="font-label-caps text-[10px] text-on-surface-variant tracking-wider hidden sm:inline"
+          >VI / EN / KR</span
+        >
+        <button
+          aria-label="Open Navigation Menu"
+          class="p-1 text-primary hover:text-on-surface-variant transition-colors"
+        >
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </header>
+    <!-- Sticky Subcategory Bar -->
+    <nav
+      class="sticky top-[57px] z-40 bg-[#fcf9f1]/95 backdrop-blur border-b border-outline-variant/25 px-margin-mobile py-3.5"
+    >
+      <div
+        class="flex overflow-x-auto no-scrollbar gap-6 items-center text-[12px] uppercase tracking-widest font-medium"
+        id="categoryNav"
+      >
+        <a
+          class="text-primary border-b border-primary pb-0.5 whitespace-nowrap"
+          href="#signatures"
+          >Signatures</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors"
+          href="#coffee"
+          >Coffee</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors"
+          href="#brew-coffee"
+          >Brew Coffee</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors"
+          href="#brunch"
+          >Brunch</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors"
+          href="#pastries"
+          >Pastries</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary whitespace-nowrap transition-colors"
+          href="#tea"
+          >Tea</a
+        >
+      </div>
+    </nav>
+    <!-- Main Menu Content -->
+    <main class="flex-grow px-margin-mobile pt-8 pb-28 max-w-lg mx-auto w-full">
+      <!-- Header / Lead Intro -->
+      <section class="mb-12 pt-2">
+        <p
+          class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] mb-2"
+        >
+          Artisan Collection
+        </p>
+        <h1
+          class="font-headline-lg text-primary tracking-tight font-light mb-3"
+        >
+          MENU
+        </h1>
+        <p
+          class="font-body-md text-on-surface-variant text-[15px] leading-relaxed"
+        >
+          Coffee, brunch &amp; a little more. Quietude in every cup.
+        </p>
+      </section>
+      <!-- Section 1: Signatures -->
+      <section class="mb-14 scroll-mt-32" id="signatures">
+        <div
+          class="flex items-baseline justify-between border-b border-outline-variant/40 pb-3 mb-6"
+        >
+          <div>
+            <h2
+              class="font-label-caps text-[13px] tracking-[0.2em] uppercase font-medium text-primary"
+            >
+              SIGNATURES
+            </h2>
+            <p class="text-xs text-on-surface-variant font-light mt-0.5">
+              Made at NAVIDO.
+            </p>
+          </div>
+          <span class="text-[11px] font-label-caps text-outline">01</span>
+        </div>
+        <!-- Editorial Featured Spotlight: Avocado Coffee -->
+        <div
+          class="mb-8 bg-surface-container-low/60 border border-outline-variant/30 rounded-[2px] overflow-hidden"
+        >
+          <div
+            class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Signature layered Avocado Coffee drink in a minimal ribbed glass"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1Xxzhswo4JcDuSWgqx8TjrTVWMpA9uY2oTGTcs84NB5NtFhkS0OgIi6UxjJr_rpabTQcN79d2YYQQDYrv0e2tcMLXwcTyRyLqgTrM_1oXzVXVuoxb5ZxRCjB8Q4Xg3jDN9mnz0UHoi356xEVnWZUhE5LgMqPrgvxxqeov7379leHVPn0DLa9RabS3SfG7td2xgSEz4XWhJY-cNOdtU-p9nkGKkcu3tRiVFjiwf9Q8omYrfWXO8izhSE0zs"
+            />
+            <span
+              class="absolute bottom-3 left-3 bg-[#10100c]/80 text-[#fcf9f1] text-[10px] tracking-widest font-label-caps px-2.5 py-1 uppercase backdrop-blur-sm"
+            >
+              FEATURED: AVOCADO COFFEE
+            </span>
+          </div>
+          <div class="p-4 pt-4 pb-5">
+            <div class="flex justify-between items-baseline mb-1.5">
+              <h3 class="font-body-lg text-[17px] font-medium text-primary">
+                Avocado Coffee
+              </h3>
+              <span class="font-label-caps text-[13px] font-medium text-primary"
+                >85,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed mb-3">
+              Signature layered espresso with smooth Vietnamese avocado cream
+              and subtle cocoa dust.
+            </p>
+            <div
+              class="flex items-center gap-1.5 text-[11px] text-secondary tracking-wide"
+            >
+              <span>Velvety</span>
+              <span>•</span>
+              <span>Rich Hazelnut</span>
+              <span>•</span>
+              <span>Natural Sweetness</span>
+            </div>
+          </div>
+        </div>
+        <!-- Other Signatures List -->
+        <div class="space-y-5 divide-y divide-outline-variant/20">
+          <div class="pt-2">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Coconut Cloud Coffee
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >80,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Cold brew crowned with airy coconut foam and roasted flakes.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Cloud Coffee
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >100,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Aerated cold extraction infused with vanilla bean and delicate
+              micro-foam.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Cinnamon Latte
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >75,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Espresso, steamed oat milk, and organic cinnamon bark infusion.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Coffee & Espresso -->
+      <section class="mb-14 scroll-mt-32" id="coffee">
+        <div
+          class="flex items-baseline justify-between border-b border-outline-variant/40 pb-3 mb-6"
+        >
+          <div>
+            <h2
+              class="font-label-caps text-[13px] tracking-[0.2em] uppercase font-medium text-primary"
+            >
+              COFFEE &amp; ESPRESSO
+            </h2>
+            <p class="text-xs text-on-surface-variant font-light mt-0.5">
+              Classic house extractions &amp; milk pairings
+            </p>
+          </div>
+          <span class="text-[11px] font-label-caps text-outline">02</span>
+        </div>
+        <div class="space-y-5 divide-y divide-outline-variant/20">
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Single Origin Espresso
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >65,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Bright acidity, notes of jasmine and stone fruit. Washed Ethiopia.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Long Black
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >55,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Double shot over hot water. House blend (Brazil/Colombia).
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Flat White
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >70,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Silky microfoam over double ristretto shot.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Spanish Latte
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >75,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Espresso with gentle condensed milk and fresh milk.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: Brew Coffee -->
+      <section class="mb-14 scroll-mt-32" id="brew-coffee">
+        <div
+          class="flex items-baseline justify-between border-b border-outline-variant/40 pb-3 mb-6"
+        >
+          <div>
+            <h2
+              class="font-label-caps text-[13px] tracking-[0.2em] uppercase font-medium text-primary"
+            >
+              BREW COFFEE
+            </h2>
+            <p class="text-xs text-on-surface-variant font-light mt-0.5">
+              Single origin slow drip extraction
+            </p>
+          </div>
+          <span class="text-[11px] font-label-caps text-outline">03</span>
+        </div>
+        <!-- Editorial Pour Over Image -->
+        <div
+          class="mb-6 rounded-[2px] overflow-hidden relative aspect-[16/10] bg-surface-container border border-outline-variant/30"
+        >
+          <img
+            class="w-full h-full object-cover"
+            data-alt="Slow drip pour over coffee ritual with glass carafe and ceramic mug"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1UQfnB6dwgNbEWBo2lGtmBPxuPWsNv7RYDM3EUTK8uF8IfpiauRwFYSxNFIS1WLQKZSy8Gsej689MRQ9qE6zoDibt4uC0lUqQtOPj0OX1JgpI94F0CQuQYdXhFStt-29xPoUi_7weqFWjEiT-vtjbGXHnZ9f0vW84W4aOAzN-Y2W1V59yoUxY1ssAO6TZ4HYsXkpRm1lUhdh3taaRn8r-Hv_Kq-5utHsLG2qL9L83XhnLCLeTPVeF4tk_g"
+          />
+          <span
+            class="absolute bottom-3 left-3 bg-[#10100c]/80 text-[#fcf9f1] text-[10px] tracking-widest font-label-caps px-2.5 py-1 uppercase backdrop-blur-sm"
+          >
+            SLOW DRIP POUR OVER RITUAL
+          </span>
+        </div>
+        <div class="space-y-5 divide-y divide-outline-variant/20">
+          <div class="pt-1">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Kenya AA Ndumberi
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >90,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Blackcurrant, tomato, syrupy body. Fully washed.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Panama Geisha Finca Lerida
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >150,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Bergamot, peach, lingering floral finish. Natural.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Ethiopia Guji Hambela
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >95,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Blueberry, lavender, jasmine honey. Natural.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4: Brunch -->
+      <section class="mb-14 scroll-mt-32" id="brunch">
+        <div
+          class="flex items-baseline justify-between border-b border-outline-variant/40 pb-3 mb-6"
+        >
+          <div>
+            <h2
+              class="font-label-caps text-[13px] tracking-[0.2em] uppercase font-medium text-primary"
+            >
+              BRUNCH
+            </h2>
+            <p class="text-xs text-on-surface-variant font-light mt-0.5">
+              SERVED TILL 15:00
+            </p>
+          </div>
+          <span class="text-[11px] font-label-caps text-outline">04</span>
+        </div>
+        <!-- Featured Brunch Dish -->
+        <div
+          class="mb-6 bg-surface-container-low/60 border border-outline-variant/30 rounded-[2px] overflow-hidden"
+        >
+          <div
+            class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Artisan sourdough tartine with figs and whipped ricotta"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1U3F5uNSXh6uYNjzyU603swCf8oyHj4XsKaRGCbuqOknIGPB7iAJm_lWKuPBHBP5RvtlTxTbGg9aBBV7L-aXkSfQ2CFWYRBMW7B1KYQG134izuzdx5p7AvQ7cm86_rktcnH8hTZHH3HP_MJZJuJXG9WkmmiBo8bt7E2CfrbcNZ2-HpMm1hgArpj3I1io1ok-LJneRtIVlh0mvtA0SCOuLquqqY-m3DkUnqpaj0OgCp-A4E-4GODs4kTkPuj"
+            />
+            <span
+              class="absolute bottom-3 left-3 bg-[#10100c]/80 text-[#fcf9f1] text-[10px] tracking-widest font-label-caps px-2.5 py-1 uppercase backdrop-blur-sm"
+            >
+              FEATURED: FIG &amp; WHIPPED RICOTTA TARTINE
+            </span>
+          </div>
+          <div class="p-4 pt-4 pb-5">
+            <div class="flex justify-between items-baseline mb-1.5">
+              <h3 class="font-body-lg text-[17px] font-medium text-primary">
+                Fig &amp; Whipped Ricotta Tartine
+              </h3>
+              <span class="font-label-caps text-[13px] font-medium text-primary"
+                >115,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-relaxed mb-3">
+              Artisan sourdough, house-whipped ricotta, fresh ripe figs, organic
+              mountain honey drizzle, fresh thyme.
+            </p>
+            <div
+              class="flex items-center gap-1.5 text-[11px] text-secondary tracking-wide"
+            >
+              <span>Handmade country sourdough</span>
+              <span>•</span>
+              <span>Dalat fresh figs</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-5 divide-y divide-outline-variant/20">
+          <div class="pt-1">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Sourdough &amp; Soft Scramble
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >95,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Pasture-raised eggs gently scrambled with French cultured butter,
+              chives, Maldon sea salt, toasted batard.
+            </p>
+          </div>
+          <div class="pt-5">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Seasonal Granola Bowl
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >85,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              House-baked rolled oats, pumpkin seeds, Greek yogurt, passionfruit
+              coulis, dragon fruit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 5 & 6: Pastries & Tea Summary -->
+      <section class="mb-12 scroll-mt-32" id="pastries">
+        <div
+          class="flex items-baseline justify-between border-b border-outline-variant/40 pb-3 mb-6"
+        >
+          <div>
+            <h2
+              class="font-label-caps text-[13px] tracking-[0.2em] uppercase font-medium text-primary"
+            >
+              PASTRIES &amp; TEA
+            </h2>
+            <p class="text-xs text-on-surface-variant font-light mt-0.5">
+              Baked daily &amp; whole leaf infusions
+            </p>
+          </div>
+          <span class="text-[11px] font-label-caps text-outline">05</span>
+        </div>
+        <div class="space-y-5 divide-y divide-outline-variant/20">
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Almond &amp; Orange Blossom Croissant
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >65,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Twice-baked butter croissant with almond frangipane.
+            </p>
+          </div>
+          <div class="pt-5" id="tea">
+            <div class="flex justify-between items-baseline mb-1">
+              <h3 class="text-[16px] text-on-surface font-normal">
+                Wild Ancient Mountain Oolong
+              </h3>
+              <span
+                class="font-label-caps text-[13px] text-primary shrink-0 ml-4 font-medium"
+                >75,000₫</span
+              >
+            </div>
+            <p class="text-[13px] text-on-surface-variant leading-snug">
+              Hand-picked heirloom tea from Ha Giang, subtle honey finish.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Quiet Editorial Footer Note -->
+      <footer
+        class="mt-16 pt-10 pb-4 border-t border-outline-variant/30 text-center"
+      >
+        <h3
+          class="font-display-hero-mobile text-2xl font-light text-primary tracking-tight mb-2"
+        >
+          NAVIDO
+        </h3>
+        <p class="text-xs text-on-surface-variant mb-6 font-light">
+          A Quiet Place for Coffee &amp; Time.
+        </p>
+        <div
+          class="space-y-2 text-xs text-on-surface-variant leading-relaxed mb-6 font-light"
+        >
+          <p>Nam Quang 1, Phu My Hung, Ho Chi Minh City</p>
+          <p class="font-medium text-primary">07:00 – 21:00 Daily</p>
+          <p>+84 (0) 28 5410 0000</p>
+        </div>
+        <div
+          class="flex justify-center gap-6 text-[11px] font-label-caps uppercase tracking-widest text-secondary mb-8"
+        >
+          <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+          <span>/</span>
+          <a class="hover:text-primary transition-colors" href="#">Facebook</a>
+        </div>
+        <p
+          class="text-[11px] font-label-caps text-outline tracking-wider uppercase"
+        >
+          © 2024 NAVIDO. All Rights Reserved.
+        </p>
+      </footer>
+    </main>
+    <!-- Fixed Mobile Bottom Navigation Bar -->
+    <nav
+      class="fixed bottom-0 left-0 right-0 z-50 bg-[#fcf9f1]/95 backdrop-blur-md border-t border-outline-variant/30 flex justify-around items-center py-2.5 px-4 safe-area-pb"
+    >
+      <a
+        class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors py-1 px-2"
+        href="#"
+      >
+        <span class="material-symbols-outlined text-[22px]">home</span>
+        <span class="font-label-caps text-[9px] uppercase tracking-wider"
+          >Home</span
+        >
+      </a>
+      <a
+        class="flex flex-col items-center gap-1 text-primary py-1 px-2"
+        href="#"
+      >
+        <span
+          class="material-symbols-outlined text-[22px]"
+          style="font-variation-settings: 'FILL' 1"
+          >menu_book</span
+        >
+        <span
+          class="font-label-caps text-[9px] uppercase tracking-wider font-semibold"
+          >Menu</span
+        >
+      </a>
+      <a
+        class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors py-1 px-2"
+        href="#"
+      >
+        <span class="material-symbols-outlined text-[22px]"
+          >flip_camera_ios</span
+        >
+        <span class="font-label-caps text-[9px] uppercase tracking-wider"
+          >Our Space</span
+        >
+      </a>
+      <a
+        class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors py-1 px-2"
+        href="#"
+      >
+        <span class="material-symbols-outlined text-[22px]">info</span>
+        <span class="font-label-caps text-[9px] uppercase tracking-wider"
+          >About</span
+        >
+      </a>
+      <a
+        class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors py-1 px-2"
+        href="#"
+      >
+        <span class="material-symbols-outlined text-[22px]">location_on</span>
+        <span class="font-label-caps text-[9px] uppercase tracking-wider"
+          >Visit</span
+        >
+      </a>
+    </nav>
+    <script>
+      // Smooth scroll and active link indicator for mobile category pills
+      document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('#categoryNav a');
+
+        window.addEventListener('scroll', () => {
+          let current = '';
+          const scrollPosition = window.scrollY + 160;
+
+          sections.forEach((section) => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            if (scrollPosition >= top && scrollPosition < top + height) {
+              current = section.getAttribute('id');
+            }
+          });
+
+          if (current) {
+            navLinks.forEach((link) => {
+              link.classList.remove(
+                'text-primary',
+                'border-b',
+                'border-primary',
+                'pb-0.5',
+              );
+              link.classList.add('text-on-surface-variant');
+              if (link.getAttribute('href') === `#${current}`) {
+                link.classList.remove('text-on-surface-variant');
+                link.classList.add(
+                  'text-primary',
+                  'border-b',
+                  'border-primary',
+                  'pb-0.5',
+                );
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

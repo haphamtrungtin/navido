@@ -1,0 +1,1496 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NAVIDO — Editorial Menu</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'inverse-surface': '#31312b',
+              'on-error-container': '#93000a',
+              'surface-container-highest': '#e5e2da',
+              'on-tertiary-fixed': '#101f12',
+              tertiary: '#041207',
+              'on-primary': '#ffffff',
+              background: '#fcf9f1',
+              'surface-container-high': '#ebe8e0',
+              'on-background': '#1c1c17',
+              'error-container': '#ffdad6',
+              'surface-container': '#f1eee6',
+              'on-surface-variant': '#474741',
+              'tertiary-fixed-dim': '#b9ccb7',
+              'on-surface': '#1c1c17',
+              surface: '#fcf9f1',
+              'on-primary-fixed-variant': '#474742',
+              'on-secondary-fixed': '#251911',
+              'on-primary-fixed': '#1c1c18',
+              'inverse-primary': '#c9c6c0',
+              'primary-fixed': '#e5e2dc',
+              'on-error': '#ffffff',
+              outline: '#787770',
+              'surface-container-lowest': '#ffffff',
+              'secondary-container': '#f5ded0',
+              'outline-variant': '#c8c7be',
+              'tertiary-fixed': '#d5e8d2',
+              primary: '#10100c',
+              'surface-bright': '#fcf9f1',
+              'surface-variant': '#e5e2da',
+              'on-secondary-fixed-variant': '#534439',
+              'tertiary-container': '#19281a',
+              secondary: '#6b5b50',
+              'surface-container-low': '#f6f3eb',
+              'surface-dim': '#dcdad2',
+              'on-tertiary-container': '#7f907e',
+              'secondary-fixed-dim': '#d8c2b5',
+              'inverse-on-surface': '#f3f1e9',
+              'primary-container': '#252521',
+              'on-tertiary': '#ffffff',
+              'on-primary-container': '#8d8c86',
+              error: '#ba1a1a',
+              'on-secondary-container': '#726156',
+              'secondary-fixed': '#f5ded0',
+              'surface-tint': '#5f5e59',
+              'primary-fixed-dim': '#c9c6c0',
+              'on-secondary': '#ffffff',
+              'on-tertiary-fixed-variant': '#3a4b3b',
+            },
+            borderRadius: {
+              DEFAULT: '0.125rem',
+              lg: '0.25rem',
+              xl: '0.5rem',
+              full: '0.75rem',
+            },
+            spacing: {
+              gutter: '24px',
+              unit: '8px',
+              'section-gap': '120px',
+              'margin-mobile': '20px',
+              'container-max': '1200px',
+            },
+            fontFamily: {
+              'headline-md': ['Noto Sans'],
+              'label-caps': ['Noto Sans'],
+              'display-hero': ['Noto Sans'],
+              'body-md': ['Noto Sans'],
+              'body-lg': ['Noto Sans'],
+              'headline-lg': ['Noto Sans'],
+              'display-hero-mobile': ['Noto Sans'],
+            },
+            fontSize: {
+              'headline-md': [
+                '32px',
+                { lineHeight: '44px', fontWeight: '400' },
+              ],
+              'label-caps': [
+                '12px',
+                {
+                  lineHeight: '16px',
+                  letterSpacing: '0.15em',
+                  fontWeight: '500',
+                },
+              ],
+              'display-hero': [
+                '80px',
+                {
+                  lineHeight: '96px',
+                  letterSpacing: '-0.02em',
+                  fontWeight: '300',
+                },
+              ],
+              'body-md': ['16px', { lineHeight: '28px', fontWeight: '400' }],
+              'body-lg': ['18px', { lineHeight: '32px', fontWeight: '400' }],
+              'headline-lg': [
+                '40px',
+                { lineHeight: '52px', fontWeight: '400' },
+              ],
+              'display-hero-mobile': [
+                '48px',
+                {
+                  lineHeight: '56px',
+                  letterSpacing: '-0.01em',
+                  fontWeight: '300',
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #fcf9f1;
+        color: #1c1c17;
+        font-family: 'Noto Sans', sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      .thin-border-b {
+        border-bottom: 1px solid rgba(37, 37, 33, 0.16);
+      }
+      .thin-border-t {
+        border-top: 1px solid rgba(37, 37, 33, 0.16);
+      }
+      .thin-border-r {
+        border-right: 1px solid rgba(37, 37, 33, 0.16);
+      }
+      .thin-border {
+        border: 1px solid rgba(37, 37, 33, 0.16);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for sticky category list if needed */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background min-h-screen selection:bg-surface-variant selection:text-primary"
+  >
+    <!-- TopNavBar (Shared Component) -->
+    <header
+      class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-6 max-w-container-max mx-auto left-0 right-0 bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/30"
+    >
+      <a
+        class="font-display-hero text-headline-md tracking-tighter text-primary dark:text-primary-fixed leading-none"
+        href="#"
+      >
+        NAVIDO
+      </a>
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-10">
+        <a
+          class="font-label-caps text-label-caps text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1 transition-all duration-700 ease-in-out"
+          href="#"
+        >
+          Menu
+        </a>
+        <a
+          class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-500"
+          href="#"
+        >
+          Our Space
+        </a>
+        <a
+          class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-500"
+          href="#"
+        >
+          About
+        </a>
+        <a
+          class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-500"
+          href="#"
+        >
+          Visit
+        </a>
+      </nav>
+      <!-- Trailing Action -->
+      <div class="flex items-center">
+        <span
+          class="font-label-caps text-label-caps tracking-widest text-on-surface-variant cursor-pointer hover:text-primary transition-colors duration-500"
+        >
+          VI / EN / KR
+        </span>
+      </div>
+    </header>
+    <!-- Main Canvas Container -->
+    <main class="max-w-container-max mx-auto px-gutter pt-32 md:pt-40">
+      <!-- 1. Menu Introduction Section -->
+      <section class="pb-16 md:pb-24">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-12 thin-border-b"
+        >
+          <div class="space-y-4">
+            <span class="font-label-caps text-label-caps text-secondary block">
+              EST. 2024 · PHU MY HUNG
+            </span>
+            <h1
+              class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary tracking-tight"
+            >
+              MENU
+            </h1>
+          </div>
+          <div class="max-w-md pb-2">
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Coffee, brunch &amp; a little more. Quietude in every cup.
+              Prepared with time, intention, and slow morning warmth.
+            </p>
+          </div>
+        </div>
+        <!-- Restrained Horizontal Editorial Photo Strip -->
+        <div class="mt-12 overflow-hidden bg-surface-container-low">
+          <img
+            class="w-full h-[360px] md:h-[480px] object-cover object-center filter grayscale-[8%]"
+            data-alt="Editorial warm daylight photo of the peaceful NAVIDO cafe espresso bar counter made of natural oak wood, featuring handcrafted ceramics, soft sunlight casting gentle architectural shadows on textured ivory walls, creating a minimalist slow coffee sanctuary"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB-eraS4RdUqMcUXIsGrWmyVuEuoyEJWaz9X1t51_caL4WUfW-PRsk-pQEFRzGNlqwBNdCiCtrzWFFiP-LYdoFS32_Fgrq0JojKOM-3Oheaaj7XvxUFbM4H-sHfoe5mm-Vu4qKH52j7084IvhBhy8yXINsjISfMJTWaHWb3uif7Pt_U6iW3_S1oJus4Q8-F0tZCR5zjH7fZZC2S2W8PwRQD8bpGei_GbdIpZYAKuncDPPXqplAFdribg"
+          />
+          <div
+            class="flex justify-between items-center py-3 text-secondary text-xs tracking-wider"
+          >
+            <span class="font-label-caps text-label-caps"
+              >NAVIDO COUNTER 01</span
+            >
+            <span class="font-label-caps text-label-caps"
+              >NATURAL WOOD &amp; CERAMIC VESSEL</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- 2. NAVIDO Picks (Featured Highlights) -->
+      <section class="py-16 md:py-24 thin-border-b">
+        <div
+          class="flex flex-col md:flex-row md:items-baseline justify-between mb-16"
+        >
+          <div>
+            <h2
+              class="font-headline-lg text-headline-lg text-primary tracking-tight"
+            >
+              NAVIDO PICKS
+            </h2>
+            <p class="font-body-md text-body-md text-secondary mt-1">
+              Curated moments from our kitchen and brew bar
+            </p>
+          </div>
+          <span
+            class="font-label-caps text-label-caps text-outline mt-4 md:mt-0"
+          >
+            SEASONAL SELECTION [04]
+          </span>
+        </div>
+        <!-- Asymmetric Editorial Composition (4 House Icons) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <!-- Left Item 1 & 2 -->
+          <div class="md:col-span-4 space-y-12">
+            <!-- Item 1: Avocado Coffee -->
+            <div class="space-y-4">
+              <div class="overflow-hidden bg-surface-container mb-4">
+                <img
+                  class="w-full aspect-[4/5] object-cover"
+                  data-alt="A refined signature avocado coffee in a clear fluted highball glass set on a handcrafted ceramic saucer on an aged oak table, layered with smooth pale green avocado cream and rich dark espresso, illuminated by soft natural morning café daylight"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyIM1SzmVH27dQVs1kCNQ5k-sn3CiHUPBeBZ_Lx_L7psT8gKtwytgyfOIY_Ph9nUv5puswKCtVFzloP9Gkr-GL-TAtmG4fIrT-PSe5pPz27SAD3jh0XOHS1BRlan1rEFCDWCUSW3T3rJdyQcTq2ipVKFXPF5Pog3niPsgG5o17rRCj5zEwJmWLKLBGi8rIN1RMNO09Kwtra3_ImuwyyWsjom0XCG7Z42JiDQkyKGCyZERH_8VrhU7_jw"
+                />
+              </div>
+              <div
+                class="flex justify-between items-baseline thin-border-b pb-2"
+              >
+                <h3
+                  class="font-headline-md text-headline-md text-primary text-xl"
+                >
+                  Avocado Coffee
+                </h3>
+                <span class="font-label-caps text-label-caps text-primary"
+                  >₫85,000</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-sm"
+              >
+                Signature layered espresso with house-whipped fresh avocado
+                cream and a hint of organic raw sugarcane.
+              </p>
+            </div>
+            <!-- Item 2: Kenya AA Ndumberi -->
+            <div class="space-y-3 pt-6">
+              <div
+                class="flex justify-between items-baseline thin-border-b pb-2"
+              >
+                <h3
+                  class="font-headline-md text-headline-md text-primary text-xl"
+                >
+                  Kenya AA Ndumberi
+                </h3>
+                <span class="font-label-caps text-label-caps text-primary"
+                  >₫90,000</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-sm"
+              >
+                Single origin pour-over. Blackcurrant, ripe tomato sweetness,
+                delicate phosphoric acidity, slow drip extraction.
+              </p>
+              <span
+                class="font-label-caps text-label-caps text-secondary text-[11px] block"
+                >WASHED · 1,750M ELEVATION</span
+              >
+            </div>
+          </div>
+          <!-- Center Editorial Spacer & Minimal Manifesto -->
+          <div
+            class="md:col-span-3 flex flex-col justify-between h-full pt-4 md:px-4"
+          >
+            <div class="space-y-6">
+              <span
+                class="font-label-caps text-label-caps text-primary border-l border-primary pl-3"
+              >
+                THE PHILOSOPHY OF SLOW DRIP
+              </span>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed"
+              >
+                Every extraction is measured by breath and temperature. We do
+                not hurry the water through the bed; we allow coffee to disclose
+                its botanical birthplace.
+              </p>
+            </div>
+            <div class="pt-16 pb-4 hidden md:block">
+              <span
+                class="font-label-caps text-label-caps text-outline block mb-2"
+                >ORIGIN SOURCING</span
+              >
+              <p
+                class="font-body-md text-body-md text-xs text-secondary leading-normal"
+              >
+                Direct trade beans roasted lightly to maintain pristine regional
+                acidity and aroma.
+              </p>
+            </div>
+          </div>
+          <!-- Right Item 3 & 4 -->
+          <div class="md:col-span-5 space-y-12">
+            <!-- Item 3: Fig & Whipped Ricotta Tartine -->
+            <div class="space-y-3">
+              <div
+                class="flex justify-between items-baseline thin-border-b pb-2"
+              >
+                <h3
+                  class="font-headline-md text-headline-md text-primary text-xl"
+                >
+                  Fig &amp; Whipped Ricotta Tartine
+                </h3>
+                <span class="font-label-caps text-label-caps text-primary"
+                  >₫115,000</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-sm"
+              >
+                Handcrafted country sourdough, Dalat fresh figs, wild blossom
+                honey, fresh thyme, and sea salt flakes.
+              </p>
+            </div>
+            <!-- Item 4: Vietnamese Phin Drip -->
+            <div class="space-y-4">
+              <div class="overflow-hidden bg-surface-container mb-4">
+                <img
+                  alt="Editorial photography of iced Vietnamese phin drip coffee in a clean minimal ribbed glass with condensed milk layer at bottom, quiet warm neutral background on light wood tabletop, soft diffuse daylight"
+                  class="w-full aspect-[4/5] object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9rhV6EYpheKrYKp2QJY6P5-bBxH0IAGVDCTAt35GtE48PtEeViUMCc19wrByrz_64Sj9fumRQhDg4NadgijgmfmvmliY49rB9dgx1sPGo4KRg_tahgHBVULX7VcwIWEeC3NfaMr3yQJ7oK-TtqbhmNiBuH9pqWmdT5N2P9WgnVEdBxGEA5J54mQsTPCfohn6EnpZJouFX98tGe8q7AJYktoDLB3PeN5EqBmAWxL__mbFFuOQpQEQWXw"
+                />
+              </div>
+              <div
+                class="flex justify-between items-baseline thin-border-b pb-2"
+              >
+                <h3
+                  class="font-headline-md text-headline-md text-primary text-xl"
+                >
+                  Vietnamese Phin Drip
+                </h3>
+                <span class="font-label-caps text-label-caps text-primary"
+                  >₫65,000</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-sm"
+              >
+                Traditional slow metal filter extraction paired with artisan
+                dairy condensed milk. Deep chocolate and hazelnut undertones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3. Sticky Left Category Navigation & Main Layout -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 md:pt-24 items-start"
+      >
+        <!-- Left 3 Columns: Sticky Category Index -->
+        <aside class="md:col-span-3 sticky top-28 hidden md:block pr-6">
+          <div class="space-y-6">
+            <div class="space-y-1 pb-4 thin-border-b">
+              <span
+                class="font-label-caps text-label-caps text-outline block text-[11px]"
+                >INDEX DIRECTORY</span
+              >
+              <span
+                class="font-headline-md text-headline-md text-primary text-lg font-medium"
+                >Card Catalog</span
+              >
+            </div>
+            <nav class="flex flex-col space-y-3 no-scrollbar" id="category-nav">
+              <a
+                class="font-label-caps text-label-caps text-primary font-bold border-l-2 border-primary pl-3 py-0.5 transition-all"
+                href="#signature"
+              >
+                Signature
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#coffee-espresso"
+              >
+                Coffee &amp; Espresso
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#brew-coffee"
+              >
+                Brew Coffee
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#phin"
+              >
+                Phin Tradition
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#non-coffee"
+              >
+                Non-Coffee
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#frappuccino"
+              >
+                Frappuccino
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#fruit-juices"
+              >
+                Fruit &amp; Juices
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#tea"
+              >
+                Tea
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#brunch"
+              >
+                Brunch
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#desserts"
+              >
+                Cake &amp; Desserts
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#coffee-beans"
+              >
+                Coffee Beans
+              </a>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pl-3 py-0.5 transition-all"
+                href="#extras"
+              >
+                Extras &amp; Dairy
+              </a>
+            </nav>
+            <div class="pt-8 thin-border-t">
+              <span
+                class="font-label-caps text-label-caps text-outline block mb-1"
+                >ALLERGY NOTICE</span
+              >
+              <p
+                class="font-body-md text-body-md text-xs text-secondary leading-relaxed"
+              >
+                Oat milk substitution available upon request. Inform our
+                baristas of any dietary restrictions.
+              </p>
+            </div>
+          </div>
+        </aside>
+        <!-- Right 9 Columns: Continuous Editorial Menu Content -->
+        <div class="md:col-span-9 space-y-24">
+          <!-- Pattern A: Category list with vertical image ('Signature' category) -->
+          <section class="space-y-8 scroll-mt-28" id="signature">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 01</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Signature Drinks
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[4 ITEMS]</span
+              >
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <!-- Left List -->
+              <div class="md:col-span-7 space-y-8">
+                <!-- Item -->
+                <div class="group">
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <span
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                      >Avocado Coffee</span
+                    >
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫85,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Ripe Dalat avocado whip, double ristretto float, touch of
+                    condensed sweetness. Rich and velvety.
+                  </p>
+                </div>
+                <!-- Item -->
+                <div class="group">
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <span
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                      >Coconut Cloud Coffee</span
+                    >
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫80,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Toasted Ben Tre coconut cream froth poured over chilled
+                    slow-drip Robusta concentrate.
+                  </p>
+                </div>
+                <!-- Item -->
+                <div class="group">
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <span
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                      >Cloud Coffee</span
+                    >
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫100,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Sea salt sweet mascarpone foam resting lightly on cold brew
+                    blend. A quiet balance of sweet and mineral.
+                  </p>
+                </div>
+                <!-- Item -->
+                <div class="group">
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <span
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                      >Cinnamon Latte</span
+                    >
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫75,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Steamed silky whole milk, single-origin espresso, infused
+                    with crushed Yen Bai cinnamon bark.
+                  </p>
+                </div>
+              </div>
+              <!-- Right Vertical Image -->
+              <div class="md:col-span-5">
+                <div class="bg-surface-container overflow-hidden">
+                  <img
+                    class="w-full h-[380px] object-cover"
+                    data-alt="Editorial close up photography of a cold layered avocado coffee beverage in a textured glass cup beside an antique silver spoon on a rustic cafe wooden counter in bright airy morning atmosphere"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUOFCT7sM8AnTcEQqltNsrS1Gosmi5HsQb0l_q0riPrMgKiaURYAKe5CxEq-eRjnAtcqaaIgj8I6Uu9ioMm1a8bTa9_AAIqlc1TkYJubg6SEdDvpE6gElddlYEqSmspJy9LBi1zPcrbO2STGMuGnap6d2aFFNyIhpi4QBlnDw3ZS0H9vN4eGvWiKsWM1XLyyjx63-gbvzH0VRMz2TkU9kum1mej9y_4-AsOxuau_Q9qLF195ylPOwOLw"
+                  />
+                </div>
+                <p
+                  class="font-label-caps text-label-caps text-secondary text-[11px] mt-2 text-right"
+                >
+                  SIGNATURE LAYER / DALAT AVOCADO
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Typography-Focused Category: 'Coffee & Espresso' -->
+          <section class="space-y-8 scroll-mt-28" id="coffee-espresso">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 02</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Coffee &amp; Espresso
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[5 ITEMS]</span
+              >
+            </div>
+            <div class="space-y-6">
+              <!-- Row 1 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline thin-border-b pb-3"
+              >
+                <div class="md:col-span-4">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Single Origin Espresso
+                  </h3>
+                </div>
+                <div class="md:col-span-6">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Double extraction of our rotating Ethiopian or Colombian
+                    profile. Bright jasmine florals and citrus finish.
+                  </p>
+                </div>
+                <div class="md:col-span-2 text-right">
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫65,000</span
+                  >
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline thin-border-b pb-3"
+              >
+                <div class="md:col-span-4">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Long Black
+                  </h3>
+                </div>
+                <div class="md:col-span-6">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Espresso drawn over pristine 92°C mineral water, preserving
+                    dense golden crema and clarity.
+                  </p>
+                </div>
+                <div class="md:col-span-2 text-right">
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫55,000</span
+                  >
+                </div>
+              </div>
+              <!-- Row 3 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline thin-border-b pb-3"
+              >
+                <div class="md:col-span-4">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Flat White
+                  </h3>
+                </div>
+                <div class="md:col-span-6">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Double shot espresso with micro-textured velvety milk,
+                    folded gently for a seamless silk texture.
+                  </p>
+                </div>
+                <div class="md:col-span-2 text-right">
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫70,000</span
+                  >
+                </div>
+              </div>
+              <!-- Row 4 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline thin-border-b pb-3"
+              >
+                <div class="md:col-span-4">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Spanish Latte
+                  </h3>
+                </div>
+                <div class="md:col-span-6">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Balanced steamed milk combined with raw condensed milk and
+                    full-bodied espresso.
+                  </p>
+                </div>
+                <div class="md:col-span-2 text-right">
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫75,000</span
+                  >
+                </div>
+              </div>
+              <!-- Row 5 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline thin-border-b pb-3"
+              >
+                <div class="md:col-span-4">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Piccolo
+                  </h3>
+                </div>
+                <div class="md:col-span-6">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Single ristretto in a 100ml glass with silky steamed milk.
+                    Intense coffee focus.
+                  </p>
+                </div>
+                <div class="md:col-span-2 text-right">
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫65,000</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Pattern B: Horizontal image break / chapter divider -->
+          <div class="pt-8 pb-4">
+            <div class="overflow-hidden bg-surface-container">
+              <img
+                alt="Editorial panoramic photograph of NAVIDO cafe brunch table setting, natural daylight, artisan toasts, freshly poured coffee, quiet cafe seating in background, warm minimalist muted tones"
+                class="w-full h-[260px] md:h-[340px] object-cover filter brightness-[0.98]"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSP5FsGdDHVBBhyeh93o9p0vRxXMoml7LxIGCKndJ7w9A7A7FDTztxnLMnuu0xIXFMrh1oYPJbnZWlWZngcYG0oVGlz-0pV0iBVaUaUezoYbrztcr5hw57gR3i1Fy-_pNHRyNbs9m52ias3DGRSym6Wt6Vmm0tu3CAIBJjVC7aTpPvnESzQsNtSPlxOT5IQLbpF0QsnZiSlmNKST2FGlSd58pWzeSmDyW50ld4SntTgCdbV_i4dwNu6Q"
+              />
+            </div>
+            <div class="flex justify-between items-center py-2 text-secondary">
+              <span class="font-label-caps text-label-caps text-[11px]"
+                >CHAPTER TRANSITION · THE ARTISAN TABLE</span
+              >
+              <span class="font-label-caps text-label-caps text-[11px]"
+                >SLOW LIVING IN PHU MY HUNG</span
+              >
+            </div>
+          </div>
+          <!-- Pattern A (Reversed — image left, list right): 'Brew Coffee & Manual Extractions' -->
+          <section class="space-y-8 scroll-mt-28" id="brew-coffee">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 03</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Brew Coffee &amp; Manual Extractions
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[KALITA WAVE &amp; V60]</span
+              >
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <!-- Left Image -->
+              <div class="md:col-span-5 order-2 md:order-1">
+                <div class="bg-surface-container overflow-hidden">
+                  <img
+                    class="w-full h-[440px] object-cover"
+                    data-alt="Editorial photograph of a barista pouring hot water from a copper gooseneck kettle over a ceramic pour-over dripper with fresh coffee blooming, soft morning side-light, calm minimalist wooden bar setting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ZlFjrUVgPICSxO4TXKh457za1xdDbT2FmFFS9IhI3QJjfyepDEFFstrfTRu5qXts9ADwdLg_4xgNqSyG72tp0XxY_zEIrKS1knWBA9cpQpvgoFPJVFRBljWw8MwMSW1rCO40IbNQY7XB3F-tB4_BX75-ORU8FeWI2JZ8qpmAdCprrvwMLM1VDXUOEOzMLZVqhjTz-pdUQi8slLctnkIQPLWzFypiqJC7Ip7I8-EGn1ob2CCcANfGbg"
+                  />
+                </div>
+                <p
+                  class="font-label-caps text-label-caps text-secondary text-[11px] mt-2"
+                >
+                  EXTRACTION 03 / CERAMIC DRIPPER
+                </p>
+              </div>
+              <!-- Right List -->
+              <div class="md:col-span-7 order-1 md:order-2 space-y-8">
+                <!-- Item 1 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Kenya AA Ndumberi
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫90,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Blackcurrant, tomato sweetness, crystalline grapefruit
+                    acidity, lingering tea-like clarity.
+                  </p>
+                  <span
+                    class="font-label-caps text-label-caps text-secondary text-[11px] mt-1 block"
+                    >WASHED · NYERI HIGHLANDS</span
+                  >
+                </div>
+                <!-- Item 2 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Panama Geisha Finca Lerida
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫150,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Exquisite jasmine blossoms, bergamot peel, white peach,
+                    honeysuckle sweetness with silky mouthfeel.
+                  </p>
+                  <span
+                    class="font-label-caps text-label-caps text-secondary text-[11px] mt-1 block"
+                    >NATURAL · BOQUETE</span
+                  >
+                </div>
+                <!-- Item 3 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Ethiopia Guji Hambela
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫95,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Lavender fragrance, ripe blueberry jam, candied lemon zest,
+                    delicate body with honey finish.
+                  </p>
+                  <span
+                    class="font-label-caps text-label-caps text-secondary text-[11px] mt-1 block"
+                    >ANAEROBIC NATURAL · 2,100M</span
+                  >
+                </div>
+                <!-- Item 4 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Colombia Huila Washed
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫85,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Red apple crispness, brown sugar, cocoa nibs, balanced
+                    medium body and rounded warmth.
+                  </p>
+                  <span
+                    class="font-label-caps text-label-caps text-secondary text-[11px] mt-1 block"
+                    >WASHED · SAN AGUSTIN</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Pattern C: Editorial Diptych (Phin, Non-Coffee & Tea) -->
+          <section class="space-y-10 scroll-mt-28" id="phin">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 04 &amp; 05</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Phin Tradition, Tea &amp; Botanicals
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[HERITAGE RITUAL]</span
+              >
+            </div>
+            <!-- Diptych Images -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <div class="bg-surface-container overflow-hidden">
+                  <img
+                    alt="Editorial photography of iced Vietnamese phin drip coffee in a clean minimal ribbed glass with condensed milk layer at bottom, quiet warm neutral background on light wood tabletop, soft diffuse daylight"
+                    class="w-full aspect-[4/5] object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9rhV6EYpheKrYKp2QJY6P5-bBxH0IAGVDCTAt35GtE48PtEeViUMCc19wrByrz_64Sj9fumRQhDg4NadgijgmfmvmliY49rB9dgx1sPGo4KRg_tahgHBVULX7VcwIWEeC3NfaMr3yQJ7oK-TtqbhmNiBuH9pqWmdT5N2P9WgnVEdBxGEA5J54mQsTPCfohn6EnpZJouFX98tGe8q7AJYktoDLB3PeN5EqBmAWxL__mbFFuOQpQEQWXw"
+                  />
+                </div>
+                <p
+                  class="font-label-caps text-label-caps text-secondary text-[11px] mt-2"
+                >
+                  01 / THE SLOW PHIN DRIP EXTRACT
+                </p>
+              </div>
+              <div>
+                <div class="bg-surface-container overflow-hidden">
+                  <img
+                    alt="Editorial photography of fresh baked almond croissant and matcha roll cake on handcrafted cream ceramic plates, minimal wooden table setting with linen napkin, soft morning light"
+                    class="w-full aspect-[4/5] object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4pzoL5bIwzgOvK3m9sTzdz60VoLOi2KbYa5hc1YmZnew6To-2vFbXhfhZT8PLlFYClY6KpCYHQWJQdrdTlhkf4AxZjNtXrKrVwUHGWav_vTOJmM175iJ4kfPuqjOqPY_OiTpmAbdVDKeb6_P3CUyh52EBY5GsHyjrd4HlzuyK1g91TZc-ieoI0nHVhjdmi4hO6gxCnDT_A_phC13wF2IzDp82H0jc3hQoaLrd4eDTq0fBt--0mQCZcA"
+                  />
+                </div>
+                <p
+                  class="font-label-caps text-label-caps text-secondary text-[11px] mt-2"
+                >
+                  02 / ARTISAN BAKES &amp; MATCHA PAIRINGS
+                </p>
+              </div>
+            </div>
+            <!-- Item Grid for Phin, Non-Coffee & Tea -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 pt-4">
+              <div class="space-y-6" id="phin-sub">
+                <span
+                  class="font-label-caps text-label-caps text-outline block border-b border-outline-variant/30 pb-1"
+                >
+                  PHIN SELECTION
+                </span>
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-lg"
+                    >
+                      Vietnamese Phin Drip (Hot/Iced)
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫65,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-1"
+                  >
+                    High-elevation fine Robusta blend from Lam Dong, condensed
+                    milk, slow drip.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-lg"
+                    >
+                      Black Phin On Rock
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫60,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-1"
+                  >
+                    Pure extraction without sweetness, served over a hand-carved
+                    clear ice sphere.
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-6" id="tea">
+                <span
+                  class="font-label-caps text-label-caps text-outline block border-b border-outline-variant/30 pb-1"
+                >
+                  TEA &amp; BOTANICALS
+                </span>
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-lg"
+                    >
+                      Wild Ancient Mountain Oolong
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫75,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-1"
+                  >
+                    Single batch wild tea from Ha Giang mountain slopes. Woody
+                    orchid note with lingering natural sweetness.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-lg"
+                    >
+                      Ceremonial Matcha Latte
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫85,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-1"
+                  >
+                    First-harvest Uji matcha stone-ground, whisked with
+                    steam-aerated creamy milk.
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-lg"
+                    >
+                      Fresh Ginger Honey Tea
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫65,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-1"
+                  >
+                    Hand-crushed mountain ginger simmered with wild raw honey
+                    and fresh lime zest.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Transition into Brunch & Sweets -->
+          <section class="space-y-12 scroll-mt-28 pt-8" id="brunch">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 06</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Brunch &amp; Morning Kitchen
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[SERVED 07:00 - 15:00]</span
+              >
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <!-- Left List -->
+              <div class="md:col-span-7 space-y-8">
+                <!-- Item 1 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Fig &amp; Whipped Ricotta Tartine
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫115,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Handcrafted country sourdough, Dalat fresh figs,
+                    house-whipped lemon ricotta, raw pine honey, sea salt.
+                  </p>
+                </div>
+                <!-- Item 2 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Sourdough &amp; Soft Scramble
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫95,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Pasture-raised eggs folded with cultured butter, fresh
+                    chives, toasted sourdough slice, smoked paprika oil.
+                  </p>
+                </div>
+                <!-- Item 3 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Seasonal Granola Bowl
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫85,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Rolled oat clusters toasted with pumpkin seeds and sesame,
+                    house Greek yogurt, seasonal berries, passionfruit
+                    reduction.
+                  </p>
+                </div>
+                <!-- Item 4 -->
+                <div>
+                  <div
+                    class="flex justify-between items-baseline thin-border-b pb-2"
+                  >
+                    <h3
+                      class="font-headline-md text-headline-md text-primary text-xl"
+                    >
+                      Avocado Toast with Poached Egg
+                    </h3>
+                    <span class="font-label-caps text-label-caps text-primary"
+                      >₫110,000</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm mt-2"
+                  >
+                    Smashed Hass avocado, slow-poached farm egg, toasted dukkah
+                    spices, micro-cilantro on seeded sourdough.
+                  </p>
+                </div>
+              </div>
+              <!-- Right Food Image -->
+              <div class="md:col-span-5">
+                <div class="bg-surface-container overflow-hidden">
+                  <img
+                    class="w-full h-[400px] object-cover"
+                    data-alt="Editorial bright shot of a gourmet fig and whipped ricotta sourdough tartine on a ceramic speckled dish with fork and knife on clean natural linen table setting, natural daylight"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyjR2xgAKdunBopjVs1Oez_c9o19zOlA2cKhdnKJcLfBqaKZLHPTEb1FHad_Rq0lMD3Ye5yatVhNRyMByLK1jRMOWLrRU9qnUInQ1cCZzTxg-13FA1j23Qj74kiwNNBvfr3tixWVY4r5k32DgWXV-F3UhC9gewz1par5drZ0DGC8KQs57MsTsm3WTk1GGg5DCn4N3PLQeu78NJSYFPkDTb0m-Sufob-zHJ5ZlVSYKYbORyOY3bslu4sw"
+                  />
+                </div>
+                <p
+                  class="font-label-caps text-label-caps text-secondary text-[11px] mt-2 text-right"
+                >
+                  MORNING KITCHEN / FRESH FIGS &amp; WILD HONEY
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Pastries & Desserts (Typography List) -->
+          <section class="space-y-8 scroll-mt-28 pt-8" id="desserts">
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 07</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Pastries &amp; Desserts
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[BAKED IN HOUSE DAILY]</span
+              >
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Pastry 1 -->
+              <div class="space-y-2 thin-border-b pb-4">
+                <div class="flex justify-between items-baseline">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Almond Croissant
+                  </h3>
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫65,000</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant text-sm"
+                >
+                  Twice-baked butter croissant filled with orange blossom almond
+                  frangipane and topped with toasted sliced almonds.
+                </p>
+              </div>
+              <!-- Pastry 2 -->
+              <div class="space-y-2 thin-border-b pb-4">
+                <div class="flex justify-between items-baseline">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Matcha Roll Cake
+                  </h3>
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫70,000</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant text-sm"
+                >
+                  Light sponge infused with ceremonial Uji matcha, filled with
+                  Hokkaido chantilly cream and subtle adzuki bean paste.
+                </p>
+              </div>
+              <!-- Pastry 3 -->
+              <div class="space-y-2 thin-border-b pb-4">
+                <div class="flex justify-between items-baseline">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Basque Cheesecake
+                  </h3>
+                  <span class="font-label-caps text-label-caps text-primary"
+                    >₫75,000</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant text-sm"
+                >
+                  Caramelized crust with a molten, silky center made from fresh
+                  dairy cream and Madagascan vanilla bean.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Coffee Beans & Retail Section -->
+          <section
+            class="space-y-8 scroll-mt-28 pt-8 thin-border-t"
+            id="coffee-beans"
+          >
+            <div class="flex justify-between items-baseline thin-border-b pb-4">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-secondary block"
+                  >CHAPTER 08</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Coffee Beans &amp; Roastery Takeaway
+                </h2>
+              </div>
+              <span class="font-label-caps text-label-caps text-outline"
+                >[WHOLE BEAN 250G]</span
+              >
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex justify-between items-start thin-border-b pb-4">
+                <div class="space-y-1">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    NAVIDO House Blend (250g)
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    70% Arabica Dalat, 30% Fine Robusta Bao Loc. Cacao, roasted
+                    hazelnut, brown sugar.
+                  </p>
+                </div>
+                <span class="font-label-caps text-label-caps text-primary pl-4"
+                  >₫180,000</span
+                >
+              </div>
+              <div class="flex justify-between items-start thin-border-b pb-4">
+                <div class="space-y-1">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary text-lg"
+                  >
+                    Ethiopia Guji Hambela (250g)
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant text-sm"
+                  >
+                    Single Origin. Whole bean. Floral jasmine, ripe blueberry,
+                    sweet honey mouthfeel.
+                  </p>
+                </div>
+                <span class="font-label-caps text-label-caps text-primary pl-4"
+                  >₫260,000</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- Extras & Dairy Specification -->
+          <section class="space-y-4 pt-4 pb-16" id="extras">
+            <div
+              class="bg-surface-container-low p-6 thin-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+            >
+              <div>
+                <span class="font-label-caps text-label-caps text-primary block"
+                  >CUSTOMIZATION &amp; EXTRAS</span
+                >
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant text-sm"
+                >
+                  Oat Milk / Almond Milk (+₫15,000) · Extra Espresso Shot
+                  (+₫20,000) · Hand-cut Ice (+₫5,000)
+                </p>
+              </div>
+              <span
+                class="font-label-caps text-label-caps text-secondary text-xs"
+              >
+                COMPLIMENTARY HERBAL INFUSED ICED WATER
+              </span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer
+      class="w-full px-gutter py-section-gap flex flex-col md:flex-row justify-between items-start gap-8 max-w-container-max mx-auto bg-background dark:bg-background border-t border-outline-variant/20 mt-20"
+    >
+      <div class="space-y-4 max-w-sm">
+        <span class="font-display-hero text-headline-md text-primary">
+          NAVIDO
+        </span>
+        <p
+          class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-fixed-variant"
+        >
+          © 2024 NAVIDO. A Quiet Place for Coffee &amp; Time.
+        </p>
+      </div>
+      <!-- Middle Info & Hours -->
+      <div class="space-y-2">
+        <span class="font-label-caps text-label-caps text-primary block"
+          >LOCATION &amp; HOURS</span
+        >
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          Nam Quang 1, Phu My Hung, Ho Chi Minh City
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          07:00 - 21:00 Daily
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          +84 000 000 000
+        </p>
+      </div>
+      <!-- Social & Links -->
+      <div class="space-y-2">
+        <span class="font-label-caps text-label-caps text-primary block"
+          >CONNECTIONS</span
+        >
+        <ul class="space-y-1">
+          <li>
+            <a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all"
+              href="#"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all"
+              href="#"
+            >
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      // Smooth active state tracker for sticky category navigation
+      document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('#category-nav a');
+
+        window.addEventListener('scroll', () => {
+          let current = '';
+          const scrollPosition =
+            window.pageYOffset || document.documentElement.scrollTop;
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 180;
+            const sectionHeight = section.offsetHeight;
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              current = section.getAttribute('id');
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove(
+              'text-primary',
+              'font-bold',
+              'border-l-2',
+              'border-primary',
+            );
+            link.classList.add('text-on-surface-variant');
+            if (link.getAttribute('href') === `#${current}`) {
+              link.classList.remove('text-on-surface-variant');
+              link.classList.add(
+                'text-primary',
+                'font-bold',
+                'border-l-2',
+                'border-primary',
+              );
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
