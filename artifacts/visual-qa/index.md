@@ -8,11 +8,11 @@ presentation, so no duplicate captures were created.
 
 ## Tracked Stitch References
 
-The newer Menu baseline is retained separately under
+The implemented Menu baseline is retained separately under
 [`artifacts/stitch-references/menu`](../stitch-references/menu/README.md). Its
-desktop and mobile exports were added after the current Menu implementation gate;
-the output captures below therefore document the existing implementation, not a
-completed comparison against that newer pair.
+desktop and mobile exports are the source references for the Menu output captures
+below. The comparison record documents the shared-shell and full-source-data
+constraints applied during implementation.
 
 These are NAVIDO output captures. The approved Stitch project informed the earlier
 page gates, but its reference images and stable page locators are not retained in

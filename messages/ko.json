@@ -65,7 +65,27 @@
       "imageAlt": "NAVIDO 커피 공간"
     }
   },
-  "Menu": { "title": "메뉴" },
+  "Menu": {
+    "title": "메뉴",
+    "eyebrow": "NAVIDO 메뉴",
+    "introduction": "하루의 리듬에 맞춰 커피와 음식, 다양한 선택을 준비했습니다.",
+    "index": "메뉴 목록",
+    "categoryNavigation": "메뉴 카테고리",
+    "picks": {
+      "eyebrow": "메뉴에서",
+      "title": "NAVIDO 셀렉션",
+      "body": "현재 메뉴에서 직접 고른 네 가지 선택입니다."
+    },
+    "images": {
+      "counter": "부드러운 햇빛이 드는 커피 바",
+      "avocado": "나무 테이블 위 층을 이룬 아보카도 커피",
+      "phin": "골이 있는 잔에 담긴 베트남 핀 커피",
+      "table": "카페 테이블에 놓인 커피와 음식",
+      "pourOver": "푸어오버 커피를 내리는 모습",
+      "pastries": "도자기 접시에 담긴 페이스트리",
+      "brunch": "도자기 접시에 담긴 브런치"
+    }
+  },
   "OurSpace": {
     "title": "공간",
     "hero": {

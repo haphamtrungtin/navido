@@ -9,12 +9,14 @@ type CategoryNavigationProps = Readonly<{
   categories: readonly MenuCategory[];
   label: string;
   locale: Locale;
+  variant?: 'desktop' | 'mobile';
 }>;
 
 export function CategoryNavigation({
   categories,
   label,
   locale,
+  variant = 'desktop',
 }: CategoryNavigationProps) {
   const [activeCategoryId, setActiveCategoryId] = useState(
     categories[0]?.id ?? '',
@@ -50,19 +52,35 @@ export function CategoryNavigation({
   }, [categories]);
 
   return (
-    <nav aria-label={label} className="min-w-0">
-      <ul className="flex h-12 items-stretch gap-x-5 overflow-x-auto md:block md:h-auto md:space-y-1 md:overflow-visible">
+    <nav
+      aria-label={label}
+      className="min-w-0"
+      data-menu-desktop-category-nav={variant === 'desktop' ? '' : undefined}
+      data-menu-mobile-category-nav={variant === 'mobile' ? '' : undefined}
+    >
+      <ul
+        className={
+          variant === 'mobile'
+            ? 'flex h-12 items-stretch gap-x-6 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+            : 'space-y-1'
+        }
+      >
         {categories.map((category) => {
           const isActive = activeCategoryId === category.id;
 
           return (
-            <li className="shrink-0 md:shrink" key={category.id}>
+            <li
+              className={variant === 'mobile' ? 'shrink-0' : ''}
+              key={category.id}
+            >
               <a
                 aria-current={isActive ? 'location' : undefined}
                 className={[
-                  'block h-12 max-w-52 truncate border-b py-3 text-sm leading-5 md:h-auto md:max-w-none md:overflow-visible md:text-clip md:whitespace-normal md:break-words md:py-2',
+                  variant === 'mobile'
+                    ? 'block h-12 max-w-52 truncate border-b py-3 text-xs uppercase leading-5'
+                    : 'block border-l-2 py-1.5 pl-3 text-xs uppercase leading-5',
                   isActive
-                    ? 'border-[var(--navido-ink)] text-[var(--navido-ink)]'
+                    ? 'border-[var(--navido-ink)] font-semibold text-[var(--navido-ink)]'
                     : 'border-transparent text-[var(--navido-muted-ink)] hover:border-current hover:text-[var(--navido-ink)]',
                 ].join(' ')}
                 href={`#${category.id}`}

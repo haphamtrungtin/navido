@@ -97,6 +97,7 @@ describe('CategoryNavigation', () => {
         ]}
         locale="en"
         label="Menu categories"
+        variant="mobile"
       />,
     );
 
@@ -104,6 +105,6 @@ describe('CategoryNavigation', () => {
       screen.getByRole('link', {
         name: 'An intentionally long category name for wrapping',
       }),
-    ).toHaveClass('h-12', 'truncate', 'md:break-words');
+    ).toHaveClass('h-12', 'truncate');
   });
 });

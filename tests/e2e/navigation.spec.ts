@@ -27,15 +27,15 @@ async function expectAccessibleImages(page: Page) {
   const images = page.locator('img');
 
   for (const image of await images.all()) {
+    await expect(image).toHaveAttribute('alt');
+  }
+
+  for (const image of await page.locator('img:visible').all()) {
     await image.scrollIntoViewIfNeeded();
     await expect
       .poll(() =>
         image.evaluate(async (element) => {
           const nativeImage = element as HTMLImageElement;
-
-          if (!nativeImage.hasAttribute('alt')) {
-            return false;
-          }
 
           await nativeImage.decode();
           return nativeImage.complete && nativeImage.naturalWidth > 0;

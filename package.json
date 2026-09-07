@@ -14,6 +14,7 @@
     "generate:menu": "tsx scripts/normalize-menu.ts",
     "validate:menu": "tsx scripts/normalize-menu.ts --check",
     "verify:home-visual": "playwright test tests/e2e/home-visual.spec.ts --workers=1",
+    "verify:menu-visual": "playwright test tests/e2e/menu-visual.spec.ts --workers=1",
     "verify:our-space-visual": "playwright test tests/e2e/our-space-visual.spec.ts --workers=1",
     "verify:about-visual": "playwright test tests/e2e/about-visual.spec.ts --workers=1",
     "verify:visit-visual": "playwright test tests/e2e/visit-visual.spec.ts --workers=1"

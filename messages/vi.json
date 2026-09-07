@@ -65,7 +65,27 @@
       "imageAlt": "Không gian quán cà phê NAVIDO"
     }
   },
-  "Menu": { "title": "Thực đơn" },
+  "Menu": {
+    "title": "Thực đơn",
+    "eyebrow": "Thực đơn NAVIDO",
+    "introduction": "Cà phê, món ăn và những lựa chọn khác cho từng nhịp trong ngày.",
+    "index": "Mục lục thực đơn",
+    "categoryNavigation": "Các nhóm thực đơn",
+    "picks": {
+      "eyebrow": "Từ thực đơn",
+      "title": "NAVIDO tuyển chọn",
+      "body": "Bốn lựa chọn được lấy trực tiếp từ thực đơn hiện tại."
+    },
+    "images": {
+      "counter": "Quầy cà phê trong ánh sáng dịu",
+      "avocado": "Cà phê bơ nhiều lớp trên bàn gỗ",
+      "phin": "Cà phê phin Việt Nam trong ly gân",
+      "table": "Cà phê và món ăn trên bàn quán",
+      "pourOver": "Cà phê pour-over đang được pha",
+      "pastries": "Bánh ngọt trên đĩa gốm",
+      "brunch": "Món brunch trên đĩa gốm"
+    }
+  },
   "OurSpace": {
     "title": "Không gian",
     "hero": {

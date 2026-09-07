@@ -65,7 +65,27 @@
       "imageAlt": "NAVIDO coffee space"
     }
   },
-  "Menu": { "title": "Menu" },
+  "Menu": {
+    "title": "Menu",
+    "eyebrow": "NAVIDO menu",
+    "introduction": "Coffee, food, and more, arranged for the rhythm of the day.",
+    "index": "Menu index",
+    "categoryNavigation": "Menu categories",
+    "picks": {
+      "eyebrow": "From the menu",
+      "title": "NAVIDO picks",
+      "body": "Four selections drawn directly from the current menu."
+    },
+    "images": {
+      "counter": "Coffee counter in soft daylight",
+      "avocado": "Layered avocado coffee on a wooden table",
+      "phin": "Vietnamese phin coffee in a ribbed glass",
+      "table": "Coffee and food arranged across a cafe table",
+      "pourOver": "Pour-over coffee being prepared",
+      "pastries": "Pastries served on ceramic plates",
+      "brunch": "Brunch served on a ceramic plate"
+    }
+  },
   "OurSpace": {
     "title": "Our space",
     "hero": {

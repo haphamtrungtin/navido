@@ -1,13 +1,19 @@
-import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 
 import { Container } from '@/components/layout/container';
-import { EditorialImage } from '@/components/ui/editorial-image';
 import { CategoryNavigation } from '@/features/menu/components/category-navigation';
 import { MenuCategory } from '@/features/menu/components/menu-category';
+import { MenuEditorialImage } from '@/features/menu/components/menu-editorial-image';
+import { formatPriceVnd } from '@/features/menu/domain/normalize';
+import {
+  featuredMenuItemIds,
+  getMenuCategoryPresentation,
+} from '@/features/menu/domain/presentation';
+import type { MenuItem } from '@/features/menu/domain/types';
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
-import { isLocale } from '@/i18n/types';
+import { getLocalizedValue, isLocale, type Locale } from '@/i18n/types';
 import { buildPageMetadata } from '@/lib/metadata';
 import { initialVisitBusinessConfig } from '@/lib/site-config';
 
@@ -19,13 +25,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-
-  if (!isLocale(locale)) {
-    return {};
-  }
+  if (!isLocale(locale)) return {};
 
   const metadata = await getTranslations({ locale, namespace: 'Metadata' });
-
   return buildPageMetadata({
     description: metadata('menu.description'),
     locale,
@@ -41,68 +43,155 @@ export default async function MenuPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
-  if (!isLocale(locale)) {
-    notFound();
-  }
+  if (!isLocale(locale)) notFound();
 
   const menu = await getTranslations({ locale, namespace: 'Menu' });
   const categories = localMenuRepository.getCategories();
+  const allItems = categories.flatMap((category) =>
+    localMenuRepository.getItemsByCategory(category.id),
+  );
+  const itemsById = new Map(allItems.map((item) => [item.id, item]));
+  const featuredItems = featuredMenuItemIds.flatMap((id) => {
+    const item = itemsById.get(id);
+    return item ? [item] : [];
+  });
 
   return (
     <main>
-      <Container className="pb-14 pt-16 sm:pb-20 sm:pt-24">
-        <h1 className="max-w-2xl text-4xl font-light leading-tight sm:text-5xl">
-          {menu('title')}
-        </h1>
+      <Container
+        className="pb-14 pt-12 md:pb-20 md:pt-20"
+        data-menu-introduction
+      >
+        <section className="grid items-end gap-8 md:grid-cols-12 md:gap-12">
+          <div className="md:col-span-7">
+            <span className="mb-4 block text-xs uppercase text-[var(--navido-muted-ink)]">
+              {menu('eyebrow')}
+            </span>
+            <h1 className="text-5xl font-light leading-none md:text-7xl">
+              {menu('title')}
+            </h1>
+          </div>
+          <p className="max-w-md text-base leading-7 text-[var(--navido-muted-ink)] md:col-span-5 md:text-lg md:leading-8">
+            {menu('introduction')}
+          </p>
+        </section>
+
+        <MenuEditorialImage
+          alt={menu('images.counter')}
+          aspect="16 / 5"
+          className="mt-14 hidden md:block"
+          desktopSrc="/images/stitch/menu-editorial-counter.jpg"
+        />
       </Container>
 
-      <div className="sticky top-20 z-20 border-y border-[var(--navido-rule)] bg-[var(--navido-paper)] md:hidden">
-        <Container className="py-0">
+      <div className="sticky top-20 z-20 border-y border-[var(--navido-rule)] bg-[color:rgb(252_249_241_/_96%)] backdrop-blur-sm md:hidden">
+        <Container>
           <CategoryNavigation
             categories={categories}
-            label={menu('title')}
+            label={menu('categoryNavigation')}
             locale={locale}
+            variant="mobile"
           />
         </Container>
       </div>
 
-      <Container className="grid gap-y-12 pb-[var(--section-gap)] md:grid-cols-[minmax(10rem,1fr)_minmax(0,3fr)] md:gap-x-16">
-        <aside className="hidden md:block">
-          <div className="sticky top-28">
+      <Container
+        className="hidden border-y border-[var(--navido-rule)] py-16 md:block md:py-20"
+        data-menu-picks
+      >
+        <section>
+          <div className="mb-12 flex items-end justify-between gap-8">
+            <div>
+              <span className="mb-2 block text-xs uppercase text-[var(--navido-muted-ink)]">
+                {menu('picks.eyebrow')}
+              </span>
+              <h2 className="text-4xl font-light leading-tight">
+                {menu('picks.title')}
+              </h2>
+            </div>
+            <p className="max-w-xs text-sm leading-6 text-[var(--navido-muted-ink)]">
+              {menu('picks.body')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 items-start gap-8">
+            <div className="col-span-3 space-y-10">
+              {featuredItems.slice(0, 2).map((item) => (
+                <FeaturedItem item={item} key={item.id} locale={locale} />
+              ))}
+            </div>
+            <div className="col-span-3">
+              <MenuEditorialImage
+                alt={menu('images.avocado')}
+                aspect="4 / 5"
+                desktopSrc="/images/stitch/menu-editorial-avocado.jpg"
+              />
+            </div>
+            <div className="col-span-3 space-y-10">
+              {featuredItems.slice(2).map((item) => (
+                <FeaturedItem item={item} key={item.id} locale={locale} />
+              ))}
+            </div>
+            <div className="col-span-3 pt-24">
+              <MenuEditorialImage
+                alt={menu('images.phin')}
+                aspect="4 / 5"
+                desktopSrc="/images/stitch/menu-editorial-phin.jpg"
+              />
+            </div>
+          </div>
+        </section>
+      </Container>
+
+      <Container className="grid gap-y-12 pb-[var(--section-gap)] pt-14 md:grid-cols-12 md:gap-x-12 md:pt-24">
+        <aside className="hidden md:col-span-3 md:block">
+          <div className="sticky top-28 border-t border-[var(--navido-rule)] pt-6">
+            <span className="mb-5 block text-[11px] uppercase text-[var(--navido-muted-ink)]">
+              {menu('index')}
+            </span>
             <CategoryNavigation
               categories={categories}
-              label={menu('title')}
+              label={menu('categoryNavigation')}
               locale={locale}
+              variant="desktop"
             />
           </div>
         </aside>
 
-        <div className="space-y-16 sm:space-y-20">
+        <div className="space-y-16 md:col-span-9 md:space-y-24">
           {categories.map((category, index) => (
             <div key={category.id}>
               <MenuCategory
                 category={category}
+                chapter={getMenuCategoryPresentation(category.id).chapter}
+                index={index}
                 items={localMenuRepository.getItemsByCategory(category.id)}
                 locale={locale}
+                media={getCategoryMedia(category.id, menu)}
               />
-              {index === 2 ? (
-                <EditorialImage
-                  alt=""
-                  aspect="16 / 7"
-                  className="mt-16"
-                  sizes="(min-width: 768px) 72vw, 100vw"
-                  src="/images/stitch/menu-latte-book.jpg"
+
+              {category.id === 'coffee' ? (
+                <MenuEditorialImage
+                  alt={menu('images.table')}
+                  aspect="16 / 6"
+                  className="mt-20 hidden md:block"
+                  desktopSrc="/images/stitch/menu-editorial-table.jpg"
                 />
               ) : null}
-              {index === 8 ? (
-                <EditorialImage
-                  alt=""
-                  aspect="16 / 7"
-                  className="mt-16"
-                  sizes="(min-width: 768px) 72vw, 100vw"
-                  src="/images/stitch/menu-espresso-extraction.jpg"
-                />
+
+              {category.id === 'phin' ? (
+                <div className="mt-10 hidden grid-cols-2 gap-6 md:grid">
+                  <MenuEditorialImage
+                    alt={menu('images.phin')}
+                    aspect="4 / 3"
+                    desktopSrc="/images/stitch/menu-editorial-phin.jpg"
+                  />
+                  <MenuEditorialImage
+                    alt={menu('images.pastries')}
+                    aspect="4 / 3"
+                    desktopSrc="/images/stitch/menu-editorial-pastries.jpg"
+                  />
+                </div>
               ) : null}
             </div>
           ))}
@@ -110,4 +199,61 @@ export default async function MenuPage({
       </Container>
     </main>
   );
+}
+
+function FeaturedItem({
+  item,
+  locale,
+}: Readonly<{ item: MenuItem; locale: Locale }>) {
+  return (
+    <article
+      className="border-t border-[var(--navido-rule)] pt-4"
+      data-menu-feature
+    >
+      <h3 className="text-lg font-normal leading-7">
+        {getLocalizedValue(item.name, locale)}
+      </h3>
+      <p className="mt-2 text-xs tabular-nums text-[var(--navido-muted-ink)]">
+        {formatPriceVnd(item.priceVnd, locale)}
+      </p>
+    </article>
+  );
+}
+
+function getCategoryMedia(
+  categoryId: string,
+  menu: Awaited<ReturnType<typeof getTranslations>>,
+) {
+  if (categoryId === 'signature') {
+    return (
+      <MenuEditorialImage
+        alt={menu('images.avocado')}
+        aspect="4 / 5"
+        desktopSrc="/images/stitch/menu-editorial-avocado-detail.jpg"
+        eager
+        mobileSrc="/images/stitch/menu-editorial-avocado-mobile.jpg"
+      />
+    );
+  }
+  if (categoryId === 'brew-coffee') {
+    return (
+      <MenuEditorialImage
+        alt={menu('images.pourOver')}
+        aspect="4 / 5"
+        desktopSrc="/images/stitch/menu-editorial-pour-over.jpg"
+        mobileSrc="/images/stitch/menu-editorial-pour-over-mobile.jpg"
+      />
+    );
+  }
+  if (categoryId === 'brunch') {
+    return (
+      <MenuEditorialImage
+        alt={menu('images.brunch')}
+        aspect="4 / 5"
+        desktopSrc="/images/stitch/menu-editorial-brunch.jpg"
+        mobileSrc="/images/stitch/menu-editorial-brunch-mobile.jpg"
+      />
+    );
+  }
+  return undefined;
 }
