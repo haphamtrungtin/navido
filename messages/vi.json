@@ -18,7 +18,7 @@
     },
     "visit": {
       "title": "Ghé thăm NAVIDO",
-      "description": "Thông tin ghé thăm đang được xác nhận và sẽ được cập nhật khi sẵn sàng."
+      "description": "Xem địa chỉ, giờ mở cửa hằng ngày, số điện thoại và chỉ đường để ghé NAVIDO."
     }
   },
   "Navigation": {
@@ -161,27 +161,24 @@
   "Visit": {
     "title": "Ghé thăm",
     "eyebrow": "Ghé thăm NAVIDO",
-    "introduction": "Thông tin ghé thăm đang được xác nhận và sẽ được cập nhật tại đây khi sẵn sàng.",
+    "introduction": "Ghé NAVIDO để thưởng thức cà phê rang tại chỗ, thức uống đặc trưng và thực đơn đa dạng trong không gian Phú Mỹ Hưng.",
     "exteriorAlt": "Mặt tiền NAVIDO",
     "informationTitle": "Thông tin ghé thăm",
     "address": "Địa chỉ",
-    "addressPending": "Địa chỉ đang được xác nhận.",
     "hours": "Giờ mở cửa",
-    "hoursPending": "Giờ mở cửa đang được xác nhận.",
     "phone": "Điện thoại",
-    "phonePending": "Số điện thoại đang được xác nhận.",
     "actionsTitle": "Chuẩn bị ghé thăm",
     "directions": "Chỉ đường",
-    "directionsPending": "Chỉ đường đang được xác nhận.",
-    "grab": "Grab",
-    "grabPending": "Thông tin Grab đang được xác nhận.",
+    "call": "Gọi điện",
+    "grabFood": "GrabFood",
+    "zalo": "Zalo",
     "instagram": "Instagram",
-    "instagramPending": "Instagram đang được xác nhận.",
     "facebook": "Facebook",
-    "facebookPending": "Facebook đang được xác nhận.",
+    "email": "Email",
     "mapTitle": "Bản đồ",
-    "mapAlt": "Minh họa bản đồ NAVIDO",
-    "mapPending": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
+    "mapAlt": "Bản đồ chỉ đường đến NAVIDO",
+    "openGoogleMaps": "Mở Google Maps",
+    "mapCaption": "Mở Google Maps để xem đường đến NAVIDO."
   },
   "Pending": { "title": "Đang cập nhật" },
   "Footer": {

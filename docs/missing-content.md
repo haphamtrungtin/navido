@@ -26,9 +26,9 @@ and prices remain provisional until an official menu replaces this source.
 - Authentic photography of packaged beans.
 
 Canonical URLs, language alternates, and sitemap entries remain omitted until a
-verified production origin is supplied. `initialVisitBusinessConfig.siteUrl`
-remains `null`; a preview, localhost, or deployment environment must not establish
-a production domain.
+verified production origin is supplied. `businessProfile.siteUrl` remains `null`;
+a preview, localhost, or deployment environment must not establish a production
+domain.
 
 ## Temporary Stitch placeholders
 

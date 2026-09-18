@@ -1,53 +1,43 @@
-import type { VisitBusinessConfig } from '@/lib/site-config';
+import type { ConversionLinks } from '@/lib/conversion-links';
 
 type VisitActionsProps = Readonly<{
-  config: VisitBusinessConfig;
+  links: ConversionLinks;
   copy: {
+    call: string;
     directions: string;
-    directionsPending: string;
+    email: string;
     facebook: string;
-    facebookPending: string;
-    grab: string;
-    grabPending: string;
+    grabFood: string;
     instagram: string;
-    instagramPending: string;
     title: string;
+    zalo: string;
   };
 }>;
 
-type Action = Readonly<{
-  href: string | null;
-  label: string;
-  pending: string;
-  pendingId: string;
-}>;
+type Action =
+  | Readonly<{
+      external: true;
+      href: string;
+      label: string;
+    }>
+  | Readonly<{
+      external: false;
+      href: string;
+      label: string;
+    }>;
 
-export function VisitActions({ config, copy }: VisitActionsProps) {
+const linkClassName =
+  'inline-flex text-base text-[var(--navido-ink)] underline decoration-[var(--navido-rule)] underline-offset-4 hover:decoration-current';
+
+export function VisitActions({ copy, links }: VisitActionsProps) {
   const actions: readonly Action[] = [
-    {
-      href: config.mapsUrl,
-      label: copy.directions,
-      pending: copy.directionsPending,
-      pendingId: 'directions',
-    },
-    {
-      href: config.grabUrl,
-      label: copy.grab,
-      pending: copy.grabPending,
-      pendingId: 'grab',
-    },
-    {
-      href: config.instagramUrl,
-      label: copy.instagram,
-      pending: copy.instagramPending,
-      pendingId: 'instagram',
-    },
-    {
-      href: config.facebookUrl,
-      label: copy.facebook,
-      pending: copy.facebookPending,
-      pendingId: 'facebook',
-    },
+    { external: true, href: links.maps, label: copy.directions },
+    { external: false, href: links.call, label: copy.call },
+    { external: true, href: links.grabFood, label: copy.grabFood },
+    { external: true, href: links.zalo, label: copy.zalo },
+    { external: true, href: links.instagram, label: copy.instagram },
+    { external: true, href: links.facebook, label: copy.facebook },
+    { external: false, href: links.email, label: copy.email },
   ];
 
   return (
@@ -57,10 +47,10 @@ export function VisitActions({ config, copy }: VisitActionsProps) {
       </h2>
       <ul className="mt-6 divide-y divide-[var(--navido-rule)] border-y border-[var(--navido-rule)]">
         {actions.map((action) => (
-          <li className="py-4" key={action.label}>
-            {action.href ? (
+          <li className="py-4" key={action.href}>
+            {action.external ? (
               <a
-                className="inline-flex text-base text-[var(--navido-ink)] underline decoration-[var(--navido-rule)] underline-offset-4 hover:decoration-current"
+                className={linkClassName}
                 href={action.href}
                 rel="noreferrer"
                 target="_blank"
@@ -68,12 +58,9 @@ export function VisitActions({ config, copy }: VisitActionsProps) {
                 {action.label}
               </a>
             ) : (
-              <p
-                className="text-base text-[var(--navido-muted-ink)]"
-                data-visit-pending={action.pendingId}
-              >
-                {action.pending}
-              </p>
+              <a className={linkClassName} href={action.href}>
+                {action.label}
+              </a>
             )}
           </li>
         ))}

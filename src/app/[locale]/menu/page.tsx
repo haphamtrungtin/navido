@@ -14,8 +14,8 @@ import {
 import type { MenuItem } from '@/features/menu/domain/types';
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 import { getLocalizedValue, isLocale, type Locale } from '@/i18n/types';
+import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
-import { initialVisitBusinessConfig } from '@/lib/site-config';
 
 export const dynamic = 'force-static';
 
@@ -32,7 +32,7 @@ export async function generateMetadata({
     description: metadata('menu.description'),
     locale,
     page: 'menu',
-    siteUrl: initialVisitBusinessConfig.siteUrl,
+    siteUrl: businessProfile.siteUrl,
     title: metadata('menu.title'),
   });
 }

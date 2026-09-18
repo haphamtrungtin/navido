@@ -34,28 +34,6 @@ export type FooterCopy = Readonly<{
   zalo: string;
 }>;
 
-export type VisitBusinessConfig = Readonly<{
-  address: string | null;
-  hours: string | null;
-  phone: string | null;
-  mapsUrl: string | null;
-  grabUrl: string | null;
-  instagramUrl: string | null;
-  facebookUrl: string | null;
-  siteUrl: string | null;
-}>;
-
-export const initialVisitBusinessConfig: VisitBusinessConfig = {
-  address: null,
-  hours: null,
-  phone: null,
-  mapsUrl: null,
-  grabUrl: null,
-  instagramUrl: null,
-  facebookUrl: null,
-  siteUrl: null,
-};
-
 export const localeOptions: ReadonlyArray<
   Readonly<{ code: Locale; label: string }>
 > = [

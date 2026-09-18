@@ -1,44 +1,54 @@
 import { expect, test } from '@playwright/test';
 
-const localizedPending = {
+import { businessProfile } from '../../src/lib/business-profile';
+import { conversionLinks } from '../../src/lib/conversion-links';
+
+const locales = ['vi', 'en', 'ko'] as const;
+
+const localizedCopy = {
+  vi: {
+    actions: {
+      call: 'Gọi điện',
+      directions: 'Chỉ đường',
+      email: 'Email',
+      facebook: 'Facebook',
+      grabFood: 'GrabFood',
+      instagram: 'Instagram',
+      zalo: 'Zalo',
+    },
+    daily: 'Mỗi ngày',
+    mapLink: 'Mở Google Maps',
+  },
   en: {
-    address: 'The address is being confirmed.',
-    hours: 'Opening hours are being confirmed.',
-    phone: 'A phone number is being confirmed.',
-    directions: 'Directions are being confirmed.',
-    grab: 'Grab availability is being confirmed.',
-    instagram: 'Instagram is being confirmed.',
-    facebook: 'Facebook is being confirmed.',
-    map: 'The map will be available once the location is confirmed.',
+    actions: {
+      call: 'Call',
+      directions: 'Directions',
+      email: 'Email',
+      facebook: 'Facebook',
+      grabFood: 'GrabFood',
+      instagram: 'Instagram',
+      zalo: 'Zalo',
+    },
+    daily: 'Daily',
+    mapLink: 'Open Google Maps',
   },
   ko: {
-    address: '주소를 확인 중입니다.',
-    hours: '영업 시간을 확인 중입니다.',
-    phone: '전화번호를 확인 중입니다.',
-    directions: '길 안내를 확인 중입니다.',
-    grab: 'Grab 정보를 확인 중입니다.',
-    instagram: 'Instagram을 확인 중입니다.',
-    facebook: 'Facebook을 확인 중입니다.',
-    map: '위치가 확정되면 지도를 안내하겠습니다.',
-  },
-  vi: {
-    address: 'Địa chỉ đang được xác nhận.',
-    hours: 'Giờ mở cửa đang được xác nhận.',
-    phone: 'Số điện thoại đang được xác nhận.',
-    directions: 'Chỉ đường đang được xác nhận.',
-    grab: 'Thông tin Grab đang được xác nhận.',
-    instagram: 'Instagram đang được xác nhận.',
-    facebook: 'Facebook đang được xác nhận.',
-    map: 'Bản đồ sẽ hiển thị khi địa điểm được xác nhận.',
+    actions: {
+      call: '전화하기',
+      directions: '길 안내',
+      email: '이메일',
+      facebook: 'Facebook',
+      grabFood: 'GrabFood',
+      instagram: 'Instagram',
+      zalo: 'Zalo',
+    },
+    daily: '매일',
+    mapLink: 'Google 지도 열기',
   },
 } as const;
 
-const locales = ['vi', 'en', 'ko'] as const;
-const forbiddenActionHref =
-  /^(tel:|https?:\/\/(?:[^/]+\.)?(?:google\.com|googleapis\.com|grab\.com|instagram\.com|facebook\.com))/i;
-
 for (const locale of locales) {
-  test(`renders localized pending Visit information for ${locale}`, async ({
+  test(`renders complete verified Visit details for ${locale}`, async ({
     page,
   }) => {
     await page.setViewportSize({ height: 844, width: 390 });
@@ -47,21 +57,7 @@ for (const locale of locales) {
     expect(response?.status()).toBe(200);
     await expect(page.locator('html')).toHaveAttribute('lang', locale);
     await expect(page.locator('h1')).toHaveCount(1);
-
-    const pendingStates = Object.entries(localizedPending[locale]);
-    await expect(page.locator('[data-visit-pending]')).toHaveCount(
-      pendingStates.length,
-    );
-    for (const [id, text] of pendingStates) {
-      await expect(page.locator(`[data-visit-pending="${id}"]`)).toHaveText(
-        text,
-      );
-    }
-    expect(
-      await page
-        .locator('[data-visit-pending]')
-        .evaluateAll((nodes) => nodes.map((node) => node.dataset.visitPending)),
-    ).toEqual(pendingStates.map(([id]) => id));
+    await expect(page.locator('[data-visit-pending]')).toHaveCount(0);
 
     const images = page.locator('main img');
     await expect(images).toHaveCount(2);
@@ -76,19 +72,72 @@ for (const locale of locales) {
         .toBe(true);
     }
 
-    const forbiddenAnchors = await page
-      .locator('main a')
-      .evaluateAll(
-        (anchors, pattern) =>
-          anchors.filter((anchor) =>
-            new RegExp(pattern, 'i').test(anchor.getAttribute('href') ?? ''),
-          ).length,
-        forbiddenActionHref.source,
-      );
-    expect(forbiddenAnchors).toBe(0);
-    await expect(page.locator('main a')).toHaveCount(0);
+    const information = page.locator('[data-visit-section="information"]');
+    await expect(information).toContainText(businessProfile.address);
+    await expect(information).toContainText(
+      `${localizedCopy[locale].daily} ${businessProfile.openingHours.timeRange}`,
+    );
+    await expect(information).toContainText(businessProfile.phoneDisplay);
+
+    const addressLink = information.getByRole('link', {
+      name: businessProfile.address,
+    });
+    await expect(addressLink).toHaveAttribute('href', conversionLinks.maps);
+    await expect(addressLink).toHaveAttribute('target', '_blank');
+    await expect(addressLink).toHaveAttribute('rel', 'noreferrer');
+
+    const phoneLink = information.getByRole('link', {
+      name: businessProfile.phoneDisplay,
+    });
+    await expect(phoneLink).toHaveAttribute('href', conversionLinks.call);
+    expect(await phoneLink.getAttribute('target')).toBeNull();
+    expect(await phoneLink.getAttribute('rel')).toBeNull();
+
+    const actions = page.locator('[data-visit-section="actions"]');
+    const actionLinks = actions.getByRole('link');
+    await expect(actionLinks).toHaveCount(7);
+
+    const expectedActions = [
+      [localizedCopy[locale].actions.directions, conversionLinks.maps, true],
+      [localizedCopy[locale].actions.call, conversionLinks.call, false],
+      [localizedCopy[locale].actions.grabFood, conversionLinks.grabFood, true],
+      [localizedCopy[locale].actions.zalo, conversionLinks.zalo, true],
+      [
+        localizedCopy[locale].actions.instagram,
+        conversionLinks.instagram,
+        true,
+      ],
+      [localizedCopy[locale].actions.facebook, conversionLinks.facebook, true],
+      [localizedCopy[locale].actions.email, conversionLinks.email, false],
+    ] as const;
+
+    for (const [name, href, external] of expectedActions) {
+      const link = actions.getByRole('link', { exact: true, name });
+      await expect(link).toHaveAttribute('href', href);
+
+      if (external) {
+        await expect(link).toHaveAttribute('target', '_blank');
+        await expect(link).toHaveAttribute('rel', 'noreferrer');
+      } else {
+        expect(await link.getAttribute('target')).toBeNull();
+        expect(await link.getAttribute('rel')).toBeNull();
+      }
+    }
+
+    const actionHrefs = await actionLinks.evaluateAll((links) =>
+      links.map((link) => link.getAttribute('href')),
+    );
+    expect(new Set(actionHrefs).size).toBe(actionHrefs.length);
+
+    const mapLink = page
+      .locator('[data-visit-section="map"]')
+      .getByRole('link', { name: localizedCopy[locale].mapLink });
+    await expect(mapLink).toHaveAttribute('href', conversionLinks.maps);
+    await expect(mapLink).toHaveAttribute('target', '_blank');
+    await expect(mapLink).toHaveAttribute('rel', 'noreferrer');
+
     await expect(
-      page.locator('main [disabled], main [aria-disabled="true"]'),
-    ).toHaveCount(0);
+      page.locator(`main a[href="${conversionLinks.maps}"]`),
+    ).toHaveCount(3);
   });
 }

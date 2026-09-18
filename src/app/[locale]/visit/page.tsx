@@ -6,8 +6,9 @@ import { Container } from '@/components/layout/container';
 import { EditorialImage } from '@/components/ui/editorial-image';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { isLocale, locales } from '@/i18n/types';
+import { businessProfile } from '@/lib/business-profile';
+import { conversionLinks } from '@/lib/conversion-links';
 import { buildPageMetadata } from '@/lib/metadata';
-import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { VisitActions } from '@/sections/visit/visit-actions';
 import { VisitInformation } from '@/sections/visit/visit-information';
 import { VisitMap } from '@/sections/visit/visit-map';
@@ -35,7 +36,7 @@ export async function generateMetadata({
     description: metadata('visit.description'),
     locale,
     page: 'visit',
-    siteUrl: initialVisitBusinessConfig.siteUrl,
+    siteUrl: businessProfile.siteUrl,
     title: metadata('visit.title'),
   });
 }
@@ -52,6 +53,7 @@ export default async function VisitPage({
   }
 
   const visit = await getTranslations({ locale, namespace: 'Visit' });
+  const footer = await getTranslations({ locale, namespace: 'Footer' });
 
   return (
     <main>
@@ -92,38 +94,41 @@ export default async function VisitPage({
           <div className="grid gap-12 md:grid-cols-8 md:gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="md:col-span-4 lg:col-span-4 lg:col-start-2">
               <VisitInformation
-                config={initialVisitBusinessConfig}
+                address={businessProfile.address}
+                callHref={conversionLinks.call}
                 copy={{
                   address: visit('address'),
-                  addressPending: visit('addressPending'),
                   hours: visit('hours'),
-                  hoursPending: visit('hoursPending'),
                   phone: visit('phone'),
-                  phonePending: visit('phonePending'),
                   title: visit('informationTitle'),
                 }}
+                daily={footer('daily')}
+                hours={businessProfile.openingHours.timeRange}
+                mapsHref={conversionLinks.maps}
+                phoneDisplay={businessProfile.phoneDisplay}
               />
             </div>
             <div className="md:col-span-4 lg:col-span-4">
               <VisitActions
-                config={initialVisitBusinessConfig}
                 copy={{
+                  call: visit('call'),
                   directions: visit('directions'),
-                  directionsPending: visit('directionsPending'),
+                  email: visit('email'),
                   facebook: visit('facebook'),
-                  facebookPending: visit('facebookPending'),
-                  grab: visit('grab'),
-                  grabPending: visit('grabPending'),
+                  grabFood: visit('grabFood'),
                   instagram: visit('instagram'),
-                  instagramPending: visit('instagramPending'),
                   title: visit('actionsTitle'),
+                  zalo: visit('zalo'),
                 }}
+                links={conversionLinks}
               />
             </div>
             <div className="md:col-span-8 lg:col-span-3">
               <VisitMap
                 alt={visit('mapAlt')}
-                caption={visit('mapPending')}
+                caption={visit('mapCaption')}
+                href={conversionLinks.maps}
+                linkLabel={visit('openGoogleMaps')}
                 title={visit('mapTitle')}
               />
             </div>

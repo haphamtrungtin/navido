@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { isLocale, locales } from '@/i18n/types';
+import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
-import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { AboutIntroduction } from '@/sections/about/about-introduction';
 import { AboutTheme } from '@/sections/about/about-theme';
 
@@ -31,7 +31,7 @@ export async function generateMetadata({
     description: metadata('about.description'),
     locale,
     page: 'about',
-    siteUrl: initialVisitBusinessConfig.siteUrl,
+    siteUrl: businessProfile.siteUrl,
     title: metadata('about.title'),
   });
 }

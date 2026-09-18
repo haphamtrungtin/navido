@@ -18,7 +18,7 @@
     },
     "visit": {
       "title": "Visit NAVIDO",
-      "description": "Visit details are being confirmed and will be shared when ready."
+      "description": "Find NAVIDO's address, daily opening hours, phone number, and directions for your visit."
     }
   },
   "Navigation": {
@@ -161,27 +161,24 @@
   "Visit": {
     "title": "Visit",
     "eyebrow": "Visit NAVIDO",
-    "introduction": "Visit details are being confirmed and will be shared here when ready.",
+    "introduction": "Visit NAVIDO for coffee roasted in house, signature drinks, and a varied food menu in our Phú Mỹ Hưng space.",
     "exteriorAlt": "Exterior view of NAVIDO",
     "informationTitle": "Visit information",
     "address": "Address",
-    "addressPending": "The address is being confirmed.",
     "hours": "Opening hours",
-    "hoursPending": "Opening hours are being confirmed.",
     "phone": "Phone",
-    "phonePending": "A phone number is being confirmed.",
     "actionsTitle": "Plan your visit",
     "directions": "Directions",
-    "directionsPending": "Directions are being confirmed.",
-    "grab": "Grab",
-    "grabPending": "Grab availability is being confirmed.",
+    "call": "Call",
+    "grabFood": "GrabFood",
+    "zalo": "Zalo",
     "instagram": "Instagram",
-    "instagramPending": "Instagram is being confirmed.",
     "facebook": "Facebook",
-    "facebookPending": "Facebook is being confirmed.",
+    "email": "Email",
     "mapTitle": "Map",
-    "mapAlt": "Map placeholder for NAVIDO",
-    "mapPending": "The map will be available once the location is confirmed."
+    "mapAlt": "Map directions to NAVIDO",
+    "openGoogleMaps": "Open Google Maps",
+    "mapCaption": "Plan your route to NAVIDO with Google Maps."
   },
   "Pending": { "title": "Coming soon" },
   "Footer": {

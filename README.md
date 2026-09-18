@@ -118,7 +118,7 @@ The project is ready for a Vercel deployment as a standard Next.js application:
 3. Verify the deployed routes in all three locales before publishing.
 4. Supply verified business facts and replace temporary assets before public launch.
 
-Do not set `initialVisitBusinessConfig.siteUrl` from a preview URL, `localhost`, or
-an inferred environment value. A verified production domain must be set first.
-Until then its current value is `null`, and the application intentionally emits no
-canonical URL, language alternate URLs, sitemap entries, or robots sitemap URL.
+Do not set `businessProfile.siteUrl` from a preview URL, `localhost`, or an inferred
+environment value. A verified production domain must be set first. Until then its
+current value is `null`, and the application intentionally emits no canonical URL,
+language alternate URLs, sitemap entries, or robots sitemap URL.

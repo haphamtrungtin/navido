@@ -1,191 +1,96 @@
 import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
+import { businessProfile } from '@/lib/business-profile';
+import { conversionLinks } from '@/lib/conversion-links';
 import { VisitActions } from '@/sections/visit/visit-actions';
 import { VisitInformation } from '@/sections/visit/visit-information';
-import {
-  initialVisitBusinessConfig,
-  type VisitBusinessConfig,
-} from '@/lib/site-config';
 
-const copy = {
+const actionCopy = {
+  call: 'Call',
   directions: 'Directions',
-  directionsPending: 'Directions are being confirmed.',
+  email: 'Email',
   facebook: 'Facebook',
-  facebookPending: 'Facebook is being confirmed.',
-  grab: 'Grab',
-  grabPending: 'Grab is being confirmed.',
+  grabFood: 'GrabFood',
   instagram: 'Instagram',
-  instagramPending: 'Instagram is being confirmed.',
   title: 'Plan your visit',
-};
-
-const verifiedConfig: VisitBusinessConfig = {
-  address: '1 Verified Street',
-  facebookUrl: 'https://www.facebook.com/navido.verified',
-  grabUrl: 'https://food.grab.com/verified-navido',
-  hours: '08:00 - 18:00',
-  instagramUrl: 'https://www.instagram.com/navido.verified',
-  mapsUrl: 'https://maps.google.com/?q=verified-navido',
-  phone: '+84123456789',
-  siteUrl: 'https://navido.example',
+  zalo: 'Zalo',
 };
 
 const informationCopy = {
   address: 'Address',
-  addressPending: 'The address is being confirmed.',
   hours: 'Opening hours',
-  hoursPending: 'Opening hours are being confirmed.',
   phone: 'Phone',
-  phonePending: 'A phone number is being confirmed.',
   title: 'Visit information',
 };
 
-const actionFields = [
-  {
-    href: 'https://maps.google.com/?q=partial-navido',
-    key: 'mapsUrl',
-    label: copy.directions,
-    pending: copy.directionsPending,
-  },
-  {
-    href: 'https://food.grab.com/partial-navido',
-    key: 'grabUrl',
-    label: copy.grab,
-    pending: copy.grabPending,
-  },
-  {
-    href: 'https://www.instagram.com/partial-navido',
-    key: 'instagramUrl',
-    label: copy.instagram,
-    pending: copy.instagramPending,
-  },
-  {
-    href: 'https://www.facebook.com/partial-navido',
-    key: 'facebookUrl',
-    label: copy.facebook,
-    pending: copy.facebookPending,
-  },
-] as const;
-
 describe('VisitActions', () => {
-  it('starts with no verified visit business details', () => {
-    expect(initialVisitBusinessConfig).toEqual({
-      address: null,
-      facebookUrl: null,
-      grabUrl: null,
-      hours: null,
-      instagramUrl: null,
-      mapsUrl: null,
-      phone: null,
-      siteUrl: null,
-    });
-  });
+  it('renders exactly the seven verified actions with correct link contracts', () => {
+    render(<VisitActions copy={actionCopy} links={conversionLinks} />);
 
-  it('keeps every action non-navigable while visit details are unverified', () => {
-    render(<VisitActions config={initialVisitBusinessConfig} copy={copy} />);
+    const expectedActions = [
+      ['Directions', conversionLinks.maps, true],
+      ['Call', conversionLinks.call, false],
+      ['GrabFood', conversionLinks.grabFood, true],
+      ['Zalo', conversionLinks.zalo, true],
+      ['Instagram', conversionLinks.instagram, true],
+      ['Facebook', conversionLinks.facebook, true],
+      ['Email', conversionLinks.email, false],
+    ] as const;
 
-    expect(
-      screen.getByRole('heading', { name: copy.title }),
-    ).toBeInTheDocument();
-    expect(screen.getByText(copy.directionsPending)).toBeInTheDocument();
-    expect(screen.getByText(copy.grabPending)).toBeInTheDocument();
-    expect(screen.getByText(copy.instagramPending)).toBeInTheDocument();
-    expect(screen.getByText(copy.facebookPending)).toBeInTheDocument();
-    expect(screen.queryAllByRole('link')).toHaveLength(0);
-  });
+    expect(screen.getAllByRole('link')).toHaveLength(expectedActions.length);
 
-  it('emits each verified external action with a safe target relationship', () => {
-    render(<VisitActions config={verifiedConfig} copy={copy} />);
+    for (const [name, href, external] of expectedActions) {
+      const link = screen.getByRole('link', { name });
 
-    for (const [name, href] of [
-      [copy.directions, verifiedConfig.mapsUrl],
-      [copy.grab, verifiedConfig.grabUrl],
-      [copy.instagram, verifiedConfig.instagramUrl],
-      [copy.facebook, verifiedConfig.facebookUrl],
-    ] as const) {
-      expect(screen.getByRole('link', { name })).toHaveAttribute('href', href);
-      expect(screen.getByRole('link', { name })).toHaveAttribute(
-        'rel',
-        'noreferrer',
-      );
-      expect(screen.getByRole('link', { name })).toHaveAttribute(
-        'target',
-        '_blank',
-      );
-    }
-  });
-
-  it.each(actionFields)(
-    'emits only $label when $key is the sole verified action URL',
-    (field) => {
-      const config: VisitBusinessConfig = {
-        ...initialVisitBusinessConfig,
-        [field.key]: field.href,
-      };
-      const { container } = render(
-        <VisitActions config={config} copy={copy} />,
-      );
-
-      const link = within(container).getByRole('link', { name: field.label });
-      expect(container.querySelectorAll('a')).toHaveLength(1);
-      expect(link).toHaveAttribute('href', field.href);
-      expect(link).toHaveAttribute('target', '_blank');
-      expect(link).toHaveAttribute('rel', 'noreferrer');
-
-      for (const otherField of actionFields.filter(
-        (candidate) => candidate.key !== field.key,
-      )) {
-        expect(
-          within(container).getByText(otherField.pending, { exact: true }),
-        ).toBeInTheDocument();
+      expect(link).toHaveAttribute('href', href);
+      if (external) {
+        expect(link).toHaveAttribute('target', '_blank');
+        expect(link).toHaveAttribute('rel', 'noreferrer');
+      } else {
+        expect(link).not.toHaveAttribute('target');
+        expect(link).not.toHaveAttribute('rel');
       }
-    },
-  );
+    }
+
+    expect(document.querySelector('[data-visit-pending]')).toBeNull();
+  });
 });
 
 describe('VisitInformation', () => {
-  it('does not fabricate contact details or a telephone action while pending', () => {
+  it('links the address to Maps, displays the phone number, and shows daily hours', () => {
     const { container } = render(
       <VisitInformation
-        config={initialVisitBusinessConfig}
+        address={businessProfile.address}
+        callHref={conversionLinks.call}
         copy={informationCopy}
+        daily="Daily"
+        hours={businessProfile.openingHours.timeRange}
+        mapsHref={conversionLinks.maps}
+        phoneDisplay={businessProfile.phoneDisplay}
       />,
     );
 
-    expect(
-      screen.getByText(informationCopy.addressPending),
-    ).toBeInTheDocument();
-    expect(screen.getByText(informationCopy.hoursPending)).toBeInTheDocument();
-    expect(screen.getByText(informationCopy.phonePending)).toBeInTheDocument();
-    expect(container.querySelector('a')).toBeNull();
-    expect(screen.queryByText('1 Verified Street')).not.toBeInTheDocument();
-    expect(screen.queryByText('08:00 - 18:00')).not.toBeInTheDocument();
-    expect(screen.queryByText('+84123456789')).not.toBeInTheDocument();
-  });
-
-  it('renders verified address, hours, and phone with only a telephone link', () => {
-    const { container } = render(
-      <VisitInformation config={verifiedConfig} copy={informationCopy} />,
-    );
-
-    expect(
-      within(container).getByText(verifiedConfig.hours!),
-    ).toBeInTheDocument();
-    expect(within(container).getByText(verifiedConfig.address!)).toBeInstanceOf(
-      HTMLElement,
-    );
-    expect(container.querySelector('address')).toHaveTextContent(
-      verifiedConfig.address!,
-    );
+    const address = within(container).getByRole('link', {
+      name: businessProfile.address,
+    });
+    expect(address).toHaveAttribute('href', conversionLinks.maps);
+    expect(address).toHaveAttribute('target', '_blank');
+    expect(address).toHaveAttribute('rel', 'noreferrer');
 
     const phone = within(container).getByRole('link', {
-      name: verifiedConfig.phone!,
+      name: businessProfile.phoneDisplay,
     });
-    expect(container.querySelectorAll('a')).toHaveLength(1);
-    expect(phone).toHaveAttribute('href', `tel:${verifiedConfig.phone}`);
+    expect(phone).toHaveAttribute('href', conversionLinks.call);
+    expect(phone).not.toHaveAttribute('target');
+    expect(phone).not.toHaveAttribute('rel');
+
     expect(
-      container.querySelector('[data-visit-section="actions"]'),
-    ).toBeNull();
+      within(container).getByText(
+        `Daily ${businessProfile.openingHours.timeRange}`,
+      ),
+    ).toBeInTheDocument();
+    expect(container.querySelectorAll('a')).toHaveLength(2);
+    expect(container.querySelector('[data-visit-pending]')).toBeNull();
   });
 });

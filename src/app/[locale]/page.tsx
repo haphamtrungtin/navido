@@ -6,7 +6,6 @@ import { localMenuRepository } from '@/features/menu/repository/local-menu-repos
 import { isLocale, locales } from '@/i18n/types';
 import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
-import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { HomeHero } from '@/sections/home/home-hero';
 import { HomeIntroduction } from '@/sections/home/home-introduction';
 import { LocationInvitation } from '@/sections/home/location-invitation';
@@ -35,7 +34,7 @@ export async function generateMetadata({
     description: metadata('home.description'),
     locale,
     page: 'home',
-    siteUrl: initialVisitBusinessConfig.siteUrl,
+    siteUrl: businessProfile.siteUrl,
     title: metadata('home.title'),
   });
 }
