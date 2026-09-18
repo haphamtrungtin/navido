@@ -8,7 +8,7 @@ describe('verified NAVIDO business profile', () => {
       displayName: 'NAVIDO Specialty Coffee',
       address:
         '23 Khu Phố Nam Quang 1, Phú Mỹ Hưng, phường Tân Hưng, TP. Hồ Chí Minh',
-      openingHours: '07:00–22:00 hằng ngày',
+      openingHours: { openDaily: true, timeRange: '07:00–22:00' },
       phoneDisplay: '0368 979 361',
       phoneE164: '+84368979361',
       email: 'navidocf@gmail.com',
