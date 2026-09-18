@@ -22,6 +22,8 @@
     }
   },
   "Navigation": {
+    "call": "Call",
+    "directions": "Directions",
     "home": "Home",
     "menu": "Menu",
     "ourSpace": "Our space",
@@ -182,5 +184,16 @@
     "mapPending": "The map will be available once the location is confirmed."
   },
   "Pending": { "title": "Coming soon" },
-  "Footer": { "informationPending": "Visit information is being confirmed." }
+  "Footer": {
+    "address": "Address",
+    "hours": "Hours",
+    "phone": "Phone",
+    "email": "Email",
+    "maps": "Open Google Maps",
+    "grabFood": "Order on GrabFood",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "zalo": "Zalo",
+    "daily": "Daily"
+  }
 }

@@ -8,6 +8,8 @@ import { documentFontClassName } from '@/app/fonts';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
 import { isLocale, locales } from '@/i18n/types';
+import { businessProfile } from '@/lib/business-profile';
+import { conversionLinks } from '@/lib/conversion-links';
 import type { FooterCopy, NavigationCopy } from '@/lib/site-config';
 
 type LocaleLayoutProps = Readonly<{
@@ -39,12 +41,21 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${documentFontClassName} min-h-screen bg-[var(--navido-paper)] text-[var(--navido-ink)]`}
+        className={`${documentFontClassName} navido-page-shell min-h-screen bg-[var(--navido-paper)] text-[var(--navido-ink)]`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header copy={navigation} locale={locale} />
+          <Header
+            callHref={conversionLinks.call}
+            copy={navigation}
+            locale={locale}
+            mapsHref={conversionLinks.maps}
+          />
           {children}
-          <Footer copy={footer} />
+          <Footer
+            businessProfile={businessProfile}
+            conversionLinks={conversionLinks}
+            copy={footer}
+          />
         </NextIntlClientProvider>
       </body>
     </html>

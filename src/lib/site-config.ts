@@ -13,14 +13,25 @@ export const navigationItems = [
 export type NavigationKey = (typeof navigationItems)[number]['key'];
 
 export type NavigationCopy = Record<NavigationKey, string> & {
+  call: string;
   closeMenu: string;
+  directions: string;
   language: string;
   openMenu: string;
   primary: string;
 };
 
 export type FooterCopy = Readonly<{
-  informationPending: string;
+  address: string;
+  daily: string;
+  email: string;
+  facebook: string;
+  grabFood: string;
+  hours: string;
+  instagram: string;
+  maps: string;
+  phone: string;
+  zalo: string;
 }>;
 
 export type VisitBusinessConfig = Readonly<{

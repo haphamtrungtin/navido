@@ -7,14 +7,74 @@ vi.mock('@/i18n/navigation', () => ({
 }));
 
 import { MobileNavigation } from '@/components/layout/mobile-navigation';
+import { conversionLinks } from '@/lib/conversion-links';
+
+const defaultNavigationCopy = {
+  about: 'About',
+  call: 'Call',
+  closeMenu: 'Close navigation',
+  directions: 'Directions',
+  home: 'Home',
+  language: 'Language',
+  menu: 'Menu',
+  openMenu: 'Open navigation',
+  ourSpace: 'Our space',
+  primary: 'Primary navigation',
+  visit: 'Visit',
+};
 
 afterEach(cleanup);
 
 describe('MobileNavigation', () => {
+  it('offers equal call and directions actions only while navigation is closed', async () => {
+    const user = userEvent.setup();
+
+    render(
+      <MobileNavigation
+        callHref={conversionLinks.call}
+        copy={defaultNavigationCopy}
+        locale="en"
+        mapsHref={conversionLinks.maps}
+      />,
+    );
+
+    const conversionBar = screen.getByTestId('mobile-conversion-bar');
+    expect(conversionBar).toBeVisible();
+    expect(conversionBar).toHaveClass('grid-cols-2');
+    expect(screen.getByRole('link', { name: 'Call' })).toHaveAttribute(
+      'href',
+      conversionLinks.call,
+    );
+    expect(screen.getByRole('link', { name: 'Directions' })).toHaveAttribute(
+      'href',
+      conversionLinks.maps,
+    );
+    expect(screen.getByRole('link', { name: 'Directions' })).toHaveAttribute(
+      'target',
+      '_blank',
+    );
+    expect(screen.getByRole('link', { name: 'Directions' })).toHaveAttribute(
+      'rel',
+      'noreferrer',
+    );
+
+    await user.click(screen.getByRole('button', { name: 'Open navigation' }));
+
+    expect(
+      screen.queryByTestId('mobile-conversion-bar'),
+    ).not.toBeInTheDocument();
+  });
+
   it('moves focus into its panel and restores it after Escape closes the panel', async () => {
     const user = userEvent.setup();
 
-    render(<MobileNavigation locale="en" />);
+    render(
+      <MobileNavigation
+        callHref={conversionLinks.call}
+        locale="en"
+        mapsHref={conversionLinks.maps}
+      />,
+    );
 
     const trigger = screen.getByRole('button', { name: 'Open navigation' });
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
@@ -34,7 +94,13 @@ describe('MobileNavigation', () => {
   it('keeps Tab and Shift+Tab focus inside the open navigation panel', async () => {
     const user = userEvent.setup();
 
-    render(<MobileNavigation locale="en" />);
+    render(
+      <MobileNavigation
+        callHref={conversionLinks.call}
+        locale="en"
+        mapsHref={conversionLinks.maps}
+      />,
+    );
 
     const appRoot = document.body.firstElementChild as HTMLElement;
     await user.click(screen.getByRole('button', { name: 'Open navigation' }));
@@ -63,7 +129,13 @@ describe('MobileNavigation', () => {
   it('restores focus to the trigger after closing with the close button', async () => {
     const user = userEvent.setup();
 
-    render(<MobileNavigation locale="en" />);
+    render(
+      <MobileNavigation
+        callHref={conversionLinks.call}
+        locale="en"
+        mapsHref={conversionLinks.maps}
+      />,
+    );
 
     const trigger = screen.getByRole('button', { name: 'Open navigation' });
     const appRoot = document.body.firstElementChild as HTMLElement;

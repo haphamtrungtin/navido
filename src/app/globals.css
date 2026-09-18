@@ -60,6 +60,10 @@ a {
     --page-gutter: var(--mobile-margin);
     --section-gap: 72px;
   }
+
+  .navido-page-shell {
+    padding-bottom: calc(3.5rem + env(safe-area-inset-bottom));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

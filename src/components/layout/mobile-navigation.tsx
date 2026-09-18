@@ -10,16 +10,21 @@ import {
   type NavigationCopy,
   siteName,
 } from '@/lib/site-config';
+import type { ConversionLinks } from '@/lib/conversion-links';
 import type { Locale } from '@/i18n/types';
 
 type MobileNavigationProps = Readonly<{
+  callHref: ConversionLinks['call'];
   copy?: NavigationCopy;
   locale: Locale;
+  mapsHref: ConversionLinks['maps'];
 }>;
 
 const defaultCopy: NavigationCopy = {
   about: 'About',
+  call: 'Call',
   closeMenu: 'Close navigation',
+  directions: 'Directions',
   home: 'Home',
   language: 'Language',
   menu: 'Menu',
@@ -45,8 +50,10 @@ function getFocusableElements(container: HTMLElement) {
 }
 
 export function MobileNavigation({
+  callHref,
   copy = defaultCopy,
   locale,
+  mapsHref,
 }: MobileNavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const panelId = useId();
@@ -210,6 +217,25 @@ export function MobileNavigation({
       {panel && typeof document !== 'undefined'
         ? createPortal(panel, document.body)
         : null}
+
+      {!isOpen ? (
+        <div
+          className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-[var(--navido-rule)] bg-[var(--navido-paper)] pb-[env(safe-area-inset-bottom)] md:hidden"
+          data-testid="mobile-conversion-bar"
+        >
+          <a className="grid min-h-14 place-items-center" href={callHref}>
+            {copy.call}
+          </a>
+          <a
+            className="grid min-h-14 place-items-center border-l border-[var(--navido-rule)]"
+            href={mapsHref}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {copy.directions}
+          </a>
+        </div>
+      ) : null}
     </div>
   );
 }

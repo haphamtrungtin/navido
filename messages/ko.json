@@ -22,6 +22,8 @@
     }
   },
   "Navigation": {
+    "call": "전화",
+    "directions": "길 안내",
     "home": "홈",
     "menu": "메뉴",
     "ourSpace": "공간",
@@ -182,5 +184,16 @@
     "mapPending": "위치가 확정되면 지도를 안내하겠습니다."
   },
   "Pending": { "title": "준비 중" },
-  "Footer": { "informationPending": "방문 정보를 확인하고 있습니다." }
+  "Footer": {
+    "address": "주소",
+    "hours": "영업시간",
+    "phone": "전화",
+    "email": "이메일",
+    "maps": "Google 지도 열기",
+    "grabFood": "GrabFood에서 주문",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "zalo": "Zalo",
+    "daily": "매일"
+  }
 }

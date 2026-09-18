@@ -22,6 +22,8 @@
     }
   },
   "Navigation": {
+    "call": "Gọi",
+    "directions": "Chỉ đường",
     "home": "Trang chủ",
     "menu": "Thực đơn",
     "ourSpace": "Không gian",
@@ -182,5 +184,16 @@
     "mapPending": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
   },
   "Pending": { "title": "Đang cập nhật" },
-  "Footer": { "informationPending": "Thông tin ghé thăm đang được xác nhận." }
+  "Footer": {
+    "address": "Địa chỉ",
+    "hours": "Giờ mở cửa",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "maps": "Mở Google Maps",
+    "grabFood": "Đặt qua GrabFood",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "zalo": "Zalo",
+    "daily": "Mỗi ngày"
+  }
 }

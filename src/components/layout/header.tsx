@@ -5,17 +5,20 @@ import {
   type NavigationCopy,
   siteName,
 } from '@/lib/site-config';
+import type { ConversionLinks } from '@/lib/conversion-links';
 import type { Locale } from '@/i18n/types';
 
 import { Container } from './container';
 import { MobileNavigation } from './mobile-navigation';
 
 type HeaderProps = Readonly<{
+  callHref: ConversionLinks['call'];
   copy: NavigationCopy;
   locale: Locale;
+  mapsHref: ConversionLinks['maps'];
 }>;
 
-export function Header({ copy, locale }: HeaderProps) {
+export function Header({ callHref, copy, locale, mapsHref }: HeaderProps) {
   return (
     <header className="sticky top-0 z-30 border-b border-[var(--navido-rule)] bg-[color:rgb(252_249_241_/_96%)] backdrop-blur-sm">
       <Container className="flex min-h-20 items-center justify-between gap-6">
@@ -41,9 +44,22 @@ export function Header({ copy, locale }: HeaderProps) {
             ))}
           </nav>
           <LanguageSwitcher label={copy.language} locale={locale} />
+          <a
+            className="border border-[var(--navido-rule)] px-4 py-2 text-sm text-[var(--navido-ink)] hover:border-[var(--navido-ink)]"
+            href={mapsHref}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {copy.directions}
+          </a>
         </div>
 
-        <MobileNavigation copy={copy} locale={locale} />
+        <MobileNavigation
+          callHref={callHref}
+          copy={copy}
+          locale={locale}
+          mapsHref={mapsHref}
+        />
       </Container>
     </header>
   );
