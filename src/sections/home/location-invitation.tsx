@@ -5,6 +5,7 @@ import { TextLink } from '@/components/ui/text-link';
 import type { Locale } from '@/i18n/types';
 
 type LocationInvitationProps = Readonly<{
+  address: string;
   copy: {
     action: string;
     body: string;
@@ -12,10 +13,18 @@ type LocationInvitationProps = Readonly<{
     imageAlt: string;
     title: string;
   };
+  daily: string;
+  hours: string;
   locale: Locale;
 }>;
 
-export function LocationInvitation({ copy, locale }: LocationInvitationProps) {
+export function LocationInvitation({
+  address,
+  copy,
+  daily,
+  hours,
+  locale,
+}: LocationInvitationProps) {
   return (
     <section
       className="py-[var(--section-gap)]"
@@ -34,6 +43,12 @@ export function LocationInvitation({ copy, locale }: LocationInvitationProps) {
             <p className="mt-6 max-w-lg text-base leading-8 text-[var(--navido-muted-ink)]">
               {copy.body}
             </p>
+            <div className="mt-6 grid gap-2 text-sm leading-6 text-[var(--navido-muted-ink)]">
+              <address className="not-italic">{address}</address>
+              <p>
+                <span>{daily}</span> <span>{hours}</span>
+              </p>
+            </div>
             <TextLink className="mt-8" href="/visit" locale={locale}>
               {copy.action}
             </TextLink>

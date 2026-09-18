@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 import { isLocale, locales } from '@/i18n/types';
+import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
 import { initialVisitBusinessConfig } from '@/lib/site-config';
 import { HomeHero } from '@/sections/home/home-hero';
@@ -51,6 +52,10 @@ export default async function LocalizedHomePage({
   }
 
   const translations = await getTranslations({ locale, namespace: 'Home' });
+  const footerTranslations = await getTranslations({
+    locale,
+    namespace: 'Footer',
+  });
   const signatureItems = localMenuRepository
     .getItemsByCategory('signature')
     .slice(0, 3);
@@ -91,6 +96,7 @@ export default async function LocalizedHomePage({
         locale={locale}
       />
       <LocationInvitation
+        address={businessProfile.address}
         copy={{
           action: translations('location.action'),
           body: translations('location.body'),
@@ -98,6 +104,8 @@ export default async function LocalizedHomePage({
           imageAlt: translations('location.imageAlt'),
           title: translations('location.title'),
         }}
+        daily={footerTranslations('daily')}
+        hours={businessProfile.openingHours.timeRange}
         locale={locale}
       />
     </main>

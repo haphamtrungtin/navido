@@ -1,6 +1,9 @@
 import { expect, test } from '@playwright/test';
 
 const locales = ['vi', 'en', 'ko'] as const;
+const verifiedAddress =
+  '23 Khu Phố Nam Quang 1, Phú Mỹ Hưng, phường Tân Hưng, TP. Hồ Chí Minh';
+const localizedDaily = { vi: 'Mỗi ngày', en: 'Daily', ko: '매일' } as const;
 
 for (const locale of locales) {
   test(`renders the complete localized Home page for ${locale}`, async ({
@@ -23,6 +26,14 @@ for (const locale of locales) {
     await expect(
       page.locator('[data-home-section="signature-highlights"]'),
     ).toBeVisible();
+    await expect(page.locator('[data-home-section]')).toHaveCount(4);
+    await expect(page.getByRole('main').locator('img')).toHaveCount(6);
+
+    const location = page.locator('[data-home-section="location-invitation"]');
+    await expect(location).toContainText(verifiedAddress);
+    await expect(location).toContainText('07:00–22:00');
+    await expect(location).toContainText(localizedDaily[locale]);
+    await expect(location.locator(`a[href="/${locale}/visit"]`)).toBeVisible();
   });
 
   for (const destination of ['menu', 'visit'] as const) {
