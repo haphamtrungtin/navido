@@ -48,3 +48,55 @@ Stitch reference.
 The corresponding `metrics.json` files are rendered-DOM measurements for each page
 gate, not extra screenshots. See [page comparison summary](page-comparison-summary.md)
 for the final evidence interpretation.
+
+## Goal 1 baseline verification — 2026-09-18
+
+The baseline handoff passed deterministic validation, repository formatting,
+lint, typecheck, all 66 unit/component tests in 16 files, the production build,
+and all 98 Chromium E2E/visual-contract tests (8 workers, 1.6 minutes).
+
+Commands ran from `D:/Projects/navido/.worktrees/navido-website` using the installed
+pnpm executable. The process PATH included its directory. Because Corepack is not
+installed, an ignored `task-5-runtime/corepack.cmd` shim forwarded
+`corepack pnpm <args>` to that executable, preserving the committed build and
+Playwright web-server commands.
+
+```powershell
+$env:PATH = 'D:/Projects/navido/.worktrees/navido-website/.superpowers/sdd/2026-09-17-navido-goal-1-baseline/task-5-runtime;C:/Users/tinha/AppData/Local/pnpm/bin;' + $env:PATH
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' exec prettier --write src/lib/business-profile.ts src/lib/asset-manifest.ts src/features/menu/domain/publication.ts src/lib/site-baseline.ts scripts/generate-asset-manifest.ts scripts/generate-visual-baseline.ts tests/unit/business-profile.test.ts tests/unit/asset-manifest.test.ts tests/unit/menu-publication.test.ts tests/unit/site-baseline.test.ts docs/navido-content-source-of-truth.md docs/asset-inventory.md docs/missing-content.md README.md package.json
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' validate:baseline-content
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' validate:baseline-content
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' format:check
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' lint
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' typecheck
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' test
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' build
+& 'C:/Users/tinha/AppData/Local/pnpm/bin/pnpm.CMD' test:e2e --config .superpowers/sdd/2026-09-17-navido-goal-1-baseline/task-5-runtime/playwright.config.ts
+```
+
+All commands exited 0. Both aggregate validations checked the immutable menu,
+110-file authentic asset inventory, and 15-route visual baseline; comparing the
+tracked diff before and after the second run found no change. Prettier processed
+exactly the 15 plan-listed files; only the two previously unformatted Task 1
+TypeScript files required formatting beyond the handoff documentation changes.
+
+The temporary Playwright config imported the committed config and retained all
+committed specs, Chromium settings, web-server behavior, and assertions. It changed
+only artifact destinations: the visual specs derive their output from the working
+directory, so their new captures, measurements, and comparison records went to
+ignored scratch storage. SHA-256 comparisons before and after the suite confirmed
+all 62 tracked visual evidence files were unchanged, including the 45 page PNGs
+and 3 shared-shell PNGs. No accepted screenshot was replaced or recaptured in place.
+
+The build generated 20 static outputs, including exactly the original 15 localized
+customer routes across Home, Menu, Our Space, About, and Visit. Its prerender
+manifest matched `baseline.json`; no Roastery route exists. Scope audits found no
+changes to customer pages, shared components, sections, locale dictionaries, public
+images, raw menu source, or generated menu artifacts. The raw menu SHA-256 remains
+`A7040FE8B651E60923851798F58DADBF8C6455F68E3A6F6D4715F6FA2106F0AE`.
+
+The development server emitted image-loading advice, color-environment warnings,
+and one `Unexpected end of JSON input` message while generating `/[locale]` static
+paths during the concurrent browser run. All 98 tests still passed with no retries
+or skipped tests; these messages did not occur as build or test failures. Goal 1
+made no customer-facing code change in response.
