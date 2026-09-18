@@ -10,3 +10,4 @@ pnpm-lock.yaml
 test-results/
 
 src/features/menu/data/normalized-menu.generated.json
+artifacts/visual-qa/baseline.json

@@ -1,0 +1,151 @@
+{
+  "locales": [
+    "vi",
+    "en",
+    "ko"
+  ],
+  "routes": [
+    "/vi",
+    "/en",
+    "/ko",
+    "/vi/menu",
+    "/en/menu",
+    "/ko/menu",
+    "/vi/our-space",
+    "/en/our-space",
+    "/ko/our-space",
+    "/vi/about",
+    "/en/about",
+    "/ko/about",
+    "/vi/visit",
+    "/en/visit",
+    "/ko/visit"
+  ],
+  "viewports": [
+    "desktop-1440x900",
+    "tablet-768x1024",
+    "mobile-390x844"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "landmarks": [
+        "hero",
+        "introduction",
+        "signature-highlights",
+        "location-invitation"
+      ],
+      "expectedDecodedImages": 6,
+      "screenshots": [
+        "artifacts/visual-qa/home/vi-desktop-1440x900.png",
+        "artifacts/visual-qa/home/vi-tablet-768x1024.png",
+        "artifacts/visual-qa/home/vi-mobile-390x844.png",
+        "artifacts/visual-qa/home/en-desktop-1440x900.png",
+        "artifacts/visual-qa/home/en-tablet-768x1024.png",
+        "artifacts/visual-qa/home/en-mobile-390x844.png",
+        "artifacts/visual-qa/home/ko-desktop-1440x900.png",
+        "artifacts/visual-qa/home/ko-tablet-768x1024.png",
+        "artifacts/visual-qa/home/ko-mobile-390x844.png"
+      ]
+    },
+    {
+      "id": "menu",
+      "path": "/menu",
+      "landmarks": [
+        "introduction",
+        "picks",
+        "category-navigation",
+        "category-list"
+      ],
+      "expectedDecodedImages": 9,
+      "screenshots": [
+        "artifacts/visual-qa/menu/vi-desktop-1440x900.png",
+        "artifacts/visual-qa/menu/vi-tablet-768x1024.png",
+        "artifacts/visual-qa/menu/vi-mobile-390x844.png",
+        "artifacts/visual-qa/menu/en-desktop-1440x900.png",
+        "artifacts/visual-qa/menu/en-tablet-768x1024.png",
+        "artifacts/visual-qa/menu/en-mobile-390x844.png",
+        "artifacts/visual-qa/menu/ko-desktop-1440x900.png",
+        "artifacts/visual-qa/menu/ko-tablet-768x1024.png",
+        "artifacts/visual-qa/menu/ko-mobile-390x844.png"
+      ]
+    },
+    {
+      "id": "our-space",
+      "path": "/our-space",
+      "landmarks": [
+        "hero",
+        "morning-light",
+        "quiet-table",
+        "downstairs",
+        "upstairs",
+        "callout"
+      ],
+      "expectedDecodedImages": 5,
+      "screenshots": [
+        "artifacts/visual-qa/our-space/vi-desktop-1440x900.png",
+        "artifacts/visual-qa/our-space/vi-tablet-768x1024.png",
+        "artifacts/visual-qa/our-space/vi-mobile-390x844.png",
+        "artifacts/visual-qa/our-space/en-desktop-1440x900.png",
+        "artifacts/visual-qa/our-space/en-tablet-768x1024.png",
+        "artifacts/visual-qa/our-space/en-mobile-390x844.png",
+        "artifacts/visual-qa/our-space/ko-desktop-1440x900.png",
+        "artifacts/visual-qa/our-space/ko-tablet-768x1024.png",
+        "artifacts/visual-qa/our-space/ko-mobile-390x844.png"
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about",
+      "landmarks": [
+        "introduction",
+        "coffee",
+        "food",
+        "space",
+        "community"
+      ],
+      "expectedDecodedImages": 5,
+      "screenshots": [
+        "artifacts/visual-qa/about/vi-desktop-1440x900.png",
+        "artifacts/visual-qa/about/vi-tablet-768x1024.png",
+        "artifacts/visual-qa/about/vi-mobile-390x844.png",
+        "artifacts/visual-qa/about/en-desktop-1440x900.png",
+        "artifacts/visual-qa/about/en-tablet-768x1024.png",
+        "artifacts/visual-qa/about/en-mobile-390x844.png",
+        "artifacts/visual-qa/about/ko-desktop-1440x900.png",
+        "artifacts/visual-qa/about/ko-tablet-768x1024.png",
+        "artifacts/visual-qa/about/ko-mobile-390x844.png"
+      ]
+    },
+    {
+      "id": "visit",
+      "path": "/visit",
+      "landmarks": [
+        "introduction",
+        "information",
+        "actions",
+        "map"
+      ],
+      "expectedDecodedImages": 2,
+      "screenshots": [
+        "artifacts/visual-qa/visit/vi-desktop-1440x900.png",
+        "artifacts/visual-qa/visit/vi-tablet-768x1024.png",
+        "artifacts/visual-qa/visit/vi-mobile-390x844.png",
+        "artifacts/visual-qa/visit/en-desktop-1440x900.png",
+        "artifacts/visual-qa/visit/en-tablet-768x1024.png",
+        "artifacts/visual-qa/visit/en-mobile-390x844.png",
+        "artifacts/visual-qa/visit/ko-desktop-1440x900.png",
+        "artifacts/visual-qa/visit/ko-tablet-768x1024.png",
+        "artifacts/visual-qa/visit/ko-mobile-390x844.png"
+      ]
+    }
+  ],
+  "verificationCommands": [
+    "corepack pnpm lint",
+    "corepack pnpm typecheck",
+    "corepack pnpm test",
+    "corepack pnpm test:e2e",
+    "corepack pnpm build"
+  ]
+}
