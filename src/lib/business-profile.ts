@@ -28,8 +28,7 @@ export const businessProfile: BusinessProfile = {
 };
 
 export const externalDestinations: ExternalDestinations = {
-  maps:
-    'https://www.google.com/maps/search/?api=1&query=NAVIDO%20Specialty%20Coffee%20Nam%20Quang%201',
+  maps: 'https://www.google.com/maps/search/?api=1&query=NAVIDO%20Specialty%20Coffee%20Nam%20Quang%201',
   grabFood:
     'https://food.grab.com/vn/vi/restaurant/navido-coffee-roaster-delivery/5-C7WALGCHALJKRA',
   facebook: 'https://www.facebook.com/navidocoffeetea?locale=vi_VN',

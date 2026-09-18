@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import {
-  businessProfile,
-  externalDestinations,
-} from '@/lib/business-profile';
+import { businessProfile, externalDestinations } from '@/lib/business-profile';
 
 describe('verified NAVIDO business profile', () => {
   it('stores the owner-approved identity and visit facts', () => {
@@ -21,12 +18,10 @@ describe('verified NAVIDO business profile', () => {
 
   it('stores only verified external destinations', () => {
     expect(externalDestinations).toEqual({
-      maps:
-        'https://www.google.com/maps/search/?api=1&query=NAVIDO%20Specialty%20Coffee%20Nam%20Quang%201',
+      maps: 'https://www.google.com/maps/search/?api=1&query=NAVIDO%20Specialty%20Coffee%20Nam%20Quang%201',
       grabFood:
         'https://food.grab.com/vn/vi/restaurant/navido-coffee-roaster-delivery/5-C7WALGCHALJKRA',
-      facebook:
-        'https://www.facebook.com/navidocoffeetea?locale=vi_VN',
+      facebook: 'https://www.facebook.com/navidocoffeetea?locale=vi_VN',
       instagram: 'https://www.instagram.com/navidocoffee/?hl=en',
       zalo: 'https://zalo.me/84368979361',
     });
@@ -34,8 +29,8 @@ describe('verified NAVIDO business profile', () => {
 
   it('does not invent a production domain or roaster specification', () => {
     expect(businessProfile.siteUrl).toBeNull();
-    expect(JSON.stringify({ businessProfile, externalDestinations })).not.toMatch(
-      /vercel\.app|roasterModel|batchCapacity|5–15/i,
-    );
+    expect(
+      JSON.stringify({ businessProfile, externalDestinations }),
+    ).not.toMatch(/vercel\.app|roasterModel|batchCapacity|5–15/i);
   });
 });

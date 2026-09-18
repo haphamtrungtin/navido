@@ -78,10 +78,21 @@ and `docs/missing-content.md`, preserving its responsive dimensions, aspect rati
 alt text, and tests. Never treat the placeholders as evidence for a location or
 business claim.
 
-Address, hours, phone, social URLs, Maps, Grab, and the public site domain remain
-unverified. Keep the corresponding nullable values in `src/lib/site-config.ts` null
-until verified facts are supplied. The Visit page must render localized pending
-states and no actionable external links for null values.
+Address, hours, phone, social URLs, Maps, GrabFood, and email are verified in the
+baseline sources below. Goal 2 will wire these facts into customer pages. Goal 1
+preserves the nullable values in `src/lib/site-config.ts` and the Visit page's
+localized pending states. The public production domain remains unverified.
+
+## Baseline content
+
+- Verified business facts: `src/lib/business-profile.ts` and `docs/navido-content-source-of-truth.md`
+- Authentic asset intake: `../../incoming-assets/navido`
+- Generated asset inventory: `docs/asset-inventory.json` and `docs/asset-inventory.md`
+- Provisional menu source: immutable `menu.json`; mock records classify as hidden
+- Accepted visual baseline: `artifacts/visual-qa/baseline.json`
+
+Run `corepack pnpm validate:baseline-content` after changing any baseline input.
+The external intake directory is required only for asset generation and validation; production builds continue to use committed public assets until later milestones replace them.
 
 ## Testing And Visual QA
 
