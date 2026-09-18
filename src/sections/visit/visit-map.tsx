@@ -18,14 +18,14 @@ export function VisitMap({
   return (
     <section data-visit-section="map">
       <h2 className="text-2xl font-light leading-tight sm:text-3xl">{title}</h2>
-      <figure className="mt-6">
-        <a
-          aria-label={linkLabel}
-          className="block"
-          href={href}
-          rel="noreferrer"
-          target="_blank"
-        >
+      <a
+        aria-label={linkLabel}
+        className="mt-6 block"
+        href={href}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <figure>
           <EditorialImage
             alt={alt}
             aspect="5 / 4"
@@ -36,8 +36,8 @@ export function VisitMap({
           <figcaption className="mt-3 text-sm leading-6 text-[var(--navido-muted-ink)]">
             {caption}
           </figcaption>
-        </a>
-      </figure>
+        </figure>
+      </a>
     </section>
   );
 }

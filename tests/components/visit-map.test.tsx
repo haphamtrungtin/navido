@@ -24,7 +24,12 @@ describe('VisitMap', () => {
       'src',
       expect.stringContaining('visit-map-placeholder.jpg'),
     );
-    expect(screen.getByText('Plan your route with Google Maps.')).toBeVisible();
+    const caption = screen.getByText('Plan your route with Google Maps.');
+    const figure = container.querySelector('figure');
+
+    expect(caption).toBeVisible();
+    expect(container.querySelector('figure > figcaption')).toBe(caption);
+    expect(mapLink).toContainElement(figure);
     expect(container.querySelector('[data-visit-pending]')).toBeNull();
   });
 });
