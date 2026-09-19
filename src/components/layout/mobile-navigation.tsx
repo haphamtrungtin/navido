@@ -38,6 +38,7 @@ const defaultCopy: NavigationCopy = {
   openMenu: 'Open navigation',
   ourSpace: 'Our space',
   primary: 'Primary navigation',
+  roastery: 'Roastery',
   visit: 'Visit',
 };
 
