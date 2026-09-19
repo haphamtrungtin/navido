@@ -1,7 +1,8 @@
 # NAVIDO Website
 
 NAVIDO is a static, localized informational site for a specialty coffee brand. It
-uses Next.js App Router, `next-intl`, Tailwind CSS, and a deterministic menu-data
+uses Next.js App Router,
+ext-intl`, Tailwind CSS, and a deterministic menu-data
 pipeline. The site currently supports Vietnamese (`vi`), English (`en`), and Korean
 (`ko`) routes.
 
@@ -97,9 +98,9 @@ The external intake directory is required only for asset generation and validati
 ## Testing And Visual QA
 
 Run the unit/component suite with `corepack pnpm test` and the browser suite with
-`corepack pnpm test:e2e`. The latter covers all five pages in all three locales,
-navigation behavior, responsive containment, images, metadata basics, and the
-visual contracts.
+`corepack pnpm test:e2e`. The latter covers all six page families (including Roastery) in all three locales,
+navigation behavior, responsive containment, images, metadata/JSON-LD contracts,
+discovery accessibility, and the visual contracts.
 
 Accepted screenshots and page evidence are indexed in
 `artifacts/visual-qa/index.md`. The comparison summary explains direct desktop and
@@ -120,5 +121,6 @@ The project is ready for a Vercel deployment as a standard Next.js application:
 
 Do not set `businessProfile.siteUrl` from a preview URL, `localhost`, or an inferred
 environment value. A verified production domain must be set first. Until then its
-current value is `null`, and the application intentionally emits no canonical URL,
+current value is
+ull`, and the application intentionally emits no canonical URL,
 language alternate URLs, sitemap entries, or robots sitemap URL.
