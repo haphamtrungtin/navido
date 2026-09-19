@@ -118,6 +118,7 @@ The project is ready for a Vercel deployment as a standard Next.js application:
    placeholder assets.
 3. Verify the deployed routes in all three locales before publishing.
 4. Supply verified business facts and replace temporary assets before public launch.
+5. Set `NEXT_PUBLIC_SITE_URL` to the verified HTTPS production origin; preview, localhost, and non-HTTPS values are rejected automatically.
 
 Do not set `businessProfile.siteUrl` from a preview URL, `localhost`, or an inferred
 environment value. A verified production domain must be set first. Until then its

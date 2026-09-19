@@ -25,6 +25,6 @@ The audit covers all six localized page families (`home`, `menu`, `our-space`, `
 
 ## Explicit release prerequisites
 
-- `businessProfile.siteUrl` remains `null` because no production domain has been verified. Until NAVIDO provides the final domain, canonical URLs, hreflang absolute URLs, and the sitemap URL remain intentionally disabled. The Vercel preview must not be promoted to a canonical origin.
+- `businessProfile.siteUrl` remains `null` until `NEXT_PUBLIC_SITE_URL` contains a verified HTTPS production origin. Until NAVIDO provides the final domain, canonical URLs, hreflang absolute URLs, and the sitemap URL remain intentionally disabled. The domain guard rejects preview, localhost, non-HTTPS, malformed, query-string, and hash-bearing values. The Vercel preview must not be promoted to a canonical origin.
 - Next.js still reports advisory LCP messages for several existing lazy editorial images (Menu, Our Space, and Visit placeholders). They do not fail the contracts, but should be rechecked with a production Lighthouse/Web Vitals run after the final hero/media assets are confirmed.
 - Roastery machine/process/team/packaging imagery remains explicitly temporary and replaceable.

@@ -1,3 +1,5 @@
+import { getConfiguredSiteUrl } from './site-url';
+
 export type BusinessProfile = Readonly<{
   displayName: string;
   address: string;
@@ -27,7 +29,7 @@ export const businessProfile: BusinessProfile = {
   phoneDisplay: '0368 979 361',
   phoneE164: '+84368979361',
   email: 'navidocf@gmail.com',
-  siteUrl: null,
+  siteUrl: getConfiguredSiteUrl(),
 };
 
 export const externalDestinations: ExternalDestinations = {
