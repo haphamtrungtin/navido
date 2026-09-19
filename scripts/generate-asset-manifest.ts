@@ -221,7 +221,7 @@ function serializeMarkdown(
   return `${[
     '# NAVIDO Asset Inventory',
     '',
-    'Deterministically generated from the owner-supplied `incoming-assets/navido` intake. These files are inventoried only and have not been copied into the public site.',
+    'Deterministically generated from the owner-supplied `incoming-assets/navido` intake. These owner-supplied files are inventoried and published under `public/images/navido/`.',
     '',
     '## Summary',
     '',

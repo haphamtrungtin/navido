@@ -18,9 +18,9 @@ type SignatureHighlightsProps = Readonly<{
 }>;
 
 const images = [
-  '/images/stitch/home-espresso.jpg',
-  '/images/stitch/home-iced-latte.jpg',
-  '/images/stitch/home-pour-over.jpg',
+  '/images/navido/menu/navido_menu_double_espresso_specialty_01.avif',
+  '/images/navido/menu/navido_menu_cafe_latte_specialty_01.avif',
+  '/images/navido/coffee/navido_coffee_table_setting_01.jpg',
 ] as const;
 
 export function SignatureHighlights({

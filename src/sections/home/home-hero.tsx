@@ -21,7 +21,7 @@ export function HomeHero({ copy, locale }: HomeHeroProps) {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[url('/images/stitch/home-cafe-interior.jpg')] bg-cover bg-center opacity-55"
+        className="absolute inset-0 -z-10 bg-[url('/images/navido/space/navido_space_entrance_01.jpg')] bg-cover bg-center opacity-55"
         data-home-hero-image
       />
       <div

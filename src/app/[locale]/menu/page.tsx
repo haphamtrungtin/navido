@@ -80,7 +80,7 @@ export default async function MenuPage({
           alt={menu('images.counter')}
           aspect="16 / 5"
           className="mt-14 hidden md:block"
-          desktopSrc="/images/stitch/menu-editorial-counter.jpg"
+          desktopSrc="/images/navido/space/navido_space_warm_coffee_taste_corner_01.webp"
         />
       </Container>
 
@@ -124,7 +124,7 @@ export default async function MenuPage({
               <MenuEditorialImage
                 alt={menu('images.avocado')}
                 aspect="4 / 5"
-                desktopSrc="/images/stitch/menu-editorial-avocado.jpg"
+                desktopSrc="/images/navido/menu/navido_menu_avocado_coffee_specialty_01.avif"
               />
             </div>
             <div className="col-span-3 space-y-10">
@@ -136,7 +136,7 @@ export default async function MenuPage({
               <MenuEditorialImage
                 alt={menu('images.phin')}
                 aspect="4 / 5"
-                desktopSrc="/images/stitch/menu-editorial-phin.jpg"
+                desktopSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
               />
             </div>
           </div>
@@ -175,7 +175,7 @@ export default async function MenuPage({
                   alt={menu('images.table')}
                   aspect="16 / 6"
                   className="mt-20 hidden md:block"
-                  desktopSrc="/images/stitch/menu-editorial-table.jpg"
+                  desktopSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
                 />
               ) : null}
 
@@ -184,12 +184,12 @@ export default async function MenuPage({
                   <MenuEditorialImage
                     alt={menu('images.phin')}
                     aspect="4 / 3"
-                    desktopSrc="/images/stitch/menu-editorial-phin.jpg"
+                    desktopSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
                   />
                   <MenuEditorialImage
                     alt={menu('images.pastries')}
                     aspect="4 / 3"
-                    desktopSrc="/images/stitch/menu-editorial-pastries.jpg"
+                    desktopSrc="/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg"
                   />
                 </div>
               ) : null}
@@ -229,9 +229,9 @@ function getCategoryMedia(
       <MenuEditorialImage
         alt={menu('images.avocado')}
         aspect="4 / 5"
-        desktopSrc="/images/stitch/menu-editorial-avocado-detail.jpg"
+        desktopSrc="/images/navido/menu/navido_menu_avocado_coffee_specialty_01.avif"
         eager
-        mobileSrc="/images/stitch/menu-editorial-avocado-mobile.jpg"
+        mobileSrc="/images/navido/menu/navido_menu_avocado_coffee_specialty_01.avif"
       />
     );
   }
@@ -240,8 +240,8 @@ function getCategoryMedia(
       <MenuEditorialImage
         alt={menu('images.pourOver')}
         aspect="4 / 5"
-        desktopSrc="/images/stitch/menu-editorial-pour-over.jpg"
-        mobileSrc="/images/stitch/menu-editorial-pour-over-mobile.jpg"
+        desktopSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
+        mobileSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
       />
     );
   }
@@ -250,8 +250,8 @@ function getCategoryMedia(
       <MenuEditorialImage
         alt={menu('images.brunch')}
         aspect="4 / 5"
-        desktopSrc="/images/stitch/menu-editorial-brunch.jpg"
-        mobileSrc="/images/stitch/menu-editorial-brunch-mobile.jpg"
+        desktopSrc="/images/navido/menu/navido_menu_brunch_photographed_01.jpg"
+        mobileSrc="/images/navido/menu/navido_menu_brunch_photographed_01.jpg"
       />
     );
   }

@@ -31,7 +31,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1686203,
+    "screenshotBytes": 2058608,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -70,7 +70,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1133121,
+    "screenshotBytes": 1450357,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -109,7 +109,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 725803,
+    "screenshotBytes": 949039,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -148,7 +148,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1671454,
+    "screenshotBytes": 2046346,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -187,7 +187,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1116132,
+    "screenshotBytes": 1431480,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -226,7 +226,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 713584,
+    "screenshotBytes": 936440,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -265,7 +265,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1631173,
+    "screenshotBytes": 2009316,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -304,7 +304,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1076164,
+    "screenshotBytes": 1393393,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -343,7 +343,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 690553,
+    "screenshotBytes": 915184,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

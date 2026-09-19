@@ -58,7 +58,7 @@ export function LocationInvitation({
               alt={copy.imageAlt}
               aspect="5 / 4"
               sizes="(min-width: 1024px) 40vw, 100vw"
-              src="/images/stitch/home-cafe-interior.jpg"
+              src="/images/navido/space/navido_space_ground_floor_seating_01.jpeg"
             />
           </div>
         </div>

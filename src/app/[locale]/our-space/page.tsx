@@ -51,22 +51,22 @@ export default async function OurSpacePage({
   const translations = await getTranslations({ locale, namespace: 'OurSpace' });
   const stories = [
     {
-      imageSrc: '/images/stitch/space-morning-light.jpg',
+      imageSrc: '/images/navido/space/navido_space_warm_dining_corner_02.webp',
       key: 'morning-light' as const,
       translationKey: 'morningLight' as const,
     },
     {
-      imageSrc: '/images/stitch/space-quiet-table.jpg',
+      imageSrc: '/images/navido/space/navido_space_private_room_01.jpeg',
       key: 'quiet-table' as const,
       translationKey: 'quietTable' as const,
     },
     {
-      imageSrc: '/images/stitch/space-downstairs.jpg',
+      imageSrc: '/images/navido/space/navido_space_arch_seating_01.png',
       key: 'downstairs' as const,
       translationKey: 'downstairs' as const,
     },
     {
-      imageSrc: '/images/stitch/space-upstairs.jpg',
+      imageSrc: '/images/navido/space/navido_space_warm_dining_corner_01.png',
       key: 'upstairs' as const,
       translationKey: 'upstairs' as const,
     },

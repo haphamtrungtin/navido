@@ -43,7 +43,7 @@
           "top": 201,
           "width": 552
         },
-        "naturalRatio": 1.8326848249027237,
+        "naturalRatio": 0.750271444082519,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.77491961414791
@@ -69,12 +69,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 420484,
+    "screenshotBytes": 501592,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -125,7 +125,7 @@
           "top": 201,
           "width": 438
         },
-        "naturalRatio": 1.84,
+        "naturalRatio": 0.749185667752443,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7804878048780488
@@ -151,12 +151,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 547853,
+    "screenshotBytes": 593074,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -207,7 +207,7 @@
           "top": 393,
           "width": 350
         },
-        "naturalRatio": 1.8352941176470587,
+        "naturalRatio": 0.7514450867052023,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7766497461928934
@@ -233,12 +233,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 303797,
+    "screenshotBytes": 328166,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -289,7 +289,7 @@
           "top": 201,
           "width": 552
         },
-        "naturalRatio": 1.8326848249027237,
+        "naturalRatio": 0.750271444082519,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.77491961414791
@@ -315,12 +315,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 409537,
+    "screenshotBytes": 489658,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -371,7 +371,7 @@
           "top": 201,
           "width": 438
         },
-        "naturalRatio": 1.84,
+        "naturalRatio": 0.749185667752443,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7804878048780488
@@ -397,12 +397,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 535962,
+    "screenshotBytes": 580184,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -453,7 +453,7 @@
           "top": 393,
           "width": 350
         },
-        "naturalRatio": 1.8352941176470587,
+        "naturalRatio": 0.7514450867052023,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7766497461928934
@@ -479,12 +479,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 294116,
+    "screenshotBytes": 319810,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -535,7 +535,7 @@
           "top": 201,
           "width": 552
         },
-        "naturalRatio": 1.8326848249027237,
+        "naturalRatio": 0.750271444082519,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.77491961414791
@@ -561,12 +561,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 397960,
+    "screenshotBytes": 479747,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -617,7 +617,7 @@
           "top": 201,
           "width": 438
         },
-        "naturalRatio": 1.84,
+        "naturalRatio": 0.749185667752443,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7804878048780488
@@ -643,12 +643,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 525244,
+    "screenshotBytes": 570365,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -699,7 +699,7 @@
           "top": 361,
           "width": 350
         },
-        "naturalRatio": 1.8352941176470587,
+        "naturalRatio": 0.7514450867052023,
         "objectFit": "cover",
         "objectPosition": "50% 50%",
         "ratio": 1.7766497461928934
@@ -725,12 +725,12 @@
     "textOverflowCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
+      "/images/navido/space/navido_space_exterior_building_02.jpg",
       "/images/stitch/visit-map-placeholder.jpg"
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 280308,
+    "screenshotBytes": 310440,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

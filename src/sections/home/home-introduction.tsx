@@ -31,14 +31,14 @@ export function HomeIntroduction({ copy }: HomeIntroductionProps) {
               alt={copy.imageAlt}
               aspect="4 / 5"
               sizes="(min-width: 1024px) 38vw, (min-width: 640px) 56vw, 100vw"
-              src="/images/stitch/home-morning-table.jpg"
+              src="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
             />
             <EditorialImage
               alt=""
               aria-hidden="true"
               aspect="3 / 4"
               sizes="(min-width: 1024px) 21vw, (min-width: 640px) 30vw, 100vw"
-              src="/images/stitch/home-pour-over.jpg"
+              src="/images/navido/space/navido_space_warm_coffee_taste_corner_01.webp"
             />
           </div>
         </div>

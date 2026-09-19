@@ -19,7 +19,7 @@ export function SpaceHero({ copy }: SpaceHeroProps) {
         fill
         priority
         sizes="100vw"
-        src="/images/stitch/space-interior-morning.jpg"
+        src="/images/navido/space/navido_space_ground_floor_seating_01.jpeg"
       />
       <div
         aria-hidden="true"

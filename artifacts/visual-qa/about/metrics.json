@@ -7,10 +7,10 @@
     "documentScrollWidth": 1440,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -30,7 +30,7 @@
         "top": 201,
         "width": 552
       },
-      "imageNaturalRatio": 1.8326848249027237,
+      "imageNaturalRatio": 0.750271444082519,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -386,7 +386,7 @@
         "horizontalGap": 248,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -423,7 +423,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 1.5633484162895928,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
@@ -460,7 +460,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.790874524714829,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -505,7 +505,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 1405040,
+    "screenshotBytes": 1722453,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -520,10 +520,10 @@
     "documentScrollWidth": 768,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -543,7 +543,7 @@
         "top": 201,
         "width": 438
       },
-      "imageNaturalRatio": 1.84,
+      "imageNaturalRatio": 0.749185667752443,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -899,7 +899,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -936,7 +936,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 1.5609756097560976,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
@@ -973,7 +973,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.786046511627907,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -1018,7 +1018,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 873093,
+    "screenshotBytes": 1023556,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -1033,10 +1033,10 @@
     "documentScrollWidth": 390,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -1056,7 +1056,7 @@
         "top": 361,
         "width": 350
       },
-      "imageNaturalRatio": 1.8352941176470587,
+      "imageNaturalRatio": 0.7514450867052023,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -1412,7 +1412,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 0.7514450867052023,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -1449,7 +1449,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 1.5662650602409638,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
@@ -1486,7 +1486,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.793103448275862,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -1531,7 +1531,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 791891,
+    "screenshotBytes": 947820,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -1546,10 +1546,10 @@
     "documentScrollWidth": 1440,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -1569,7 +1569,7 @@
         "top": 201,
         "width": 552
       },
-      "imageNaturalRatio": 1.8326848249027237,
+      "imageNaturalRatio": 0.750271444082519,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -1925,7 +1925,7 @@
         "horizontalGap": 248,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -1962,7 +1962,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 1.5633484162895928,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
@@ -1999,7 +1999,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.790874524714829,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -2044,7 +2044,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 1384008,
+    "screenshotBytes": 1701995,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -2059,10 +2059,10 @@
     "documentScrollWidth": 768,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -2082,7 +2082,7 @@
         "top": 215,
         "width": 438
       },
-      "imageNaturalRatio": 1.84,
+      "imageNaturalRatio": 0.749185667752443,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -2438,7 +2438,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -2475,7 +2475,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 1.5609756097560976,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
@@ -2512,7 +2512,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.786046511627907,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -2557,7 +2557,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 855390,
+    "screenshotBytes": 1005692,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -2572,10 +2572,10 @@
     "documentScrollWidth": 390,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -2595,7 +2595,7 @@
         "top": 361,
         "width": 350
       },
-      "imageNaturalRatio": 1.8352941176470587,
+      "imageNaturalRatio": 0.7514450867052023,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -2951,7 +2951,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 0.7514450867052023,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -2988,7 +2988,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 1.5662650602409638,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
@@ -3025,7 +3025,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.793103448275862,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -3070,7 +3070,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 779687,
+    "screenshotBytes": 934889,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -3085,10 +3085,10 @@
     "documentScrollWidth": 1440,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -3108,7 +3108,7 @@
         "top": 201,
         "width": 552
       },
-      "imageNaturalRatio": 1.8326848249027237,
+      "imageNaturalRatio": 0.750271444082519,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -3464,7 +3464,7 @@
         "horizontalGap": 248,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -3501,7 +3501,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8326848249027237,
+        "imageNaturalRatio": 1.5633484162895928,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.250021605738484,
@@ -3538,7 +3538,7 @@
         "horizontalGap": 148,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.790874524714829,
+        "imageNaturalRatio": 0.750271444082519,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -3583,7 +3583,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 1363868,
+    "screenshotBytes": 1678269,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -3598,10 +3598,10 @@
     "documentScrollWidth": 768,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -3621,7 +3621,7 @@
         "top": 201,
         "width": 438
       },
-      "imageNaturalRatio": 1.84,
+      "imageNaturalRatio": 0.749185667752443,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -3977,7 +3977,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -4014,7 +4014,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8373205741626795,
+        "imageNaturalRatio": 1.5609756097560976,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.2500567794685442,
@@ -4051,7 +4051,7 @@
         "horizontalGap": 126,
         "imageAboveCopy": false,
         "imageLeftOfCopy": true,
-        "imageNaturalRatio": 1.786046511627907,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -4096,7 +4096,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 830378,
+    "screenshotBytes": 980748,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -4111,10 +4111,10 @@
     "documentScrollWidth": 390,
     "imageCount": 5,
     "imageUrls": [
-      "/images/stitch/about-street.jpg",
-      "/images/stitch/about-pour-over.jpg",
-      "/images/stitch/about-pastry.jpg",
-      "/images/stitch/about-space.jpg",
+      "/images/navido/space/navido_space_entrance_01.jpg",
+      "/images/navido/coffee/navido_coffee_table_setting_01.jpg",
+      "/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg",
+      "/images/navido/space/navido_space_ground_floor_seating_01.jpeg",
       "/images/stitch/about-community.jpg"
     ],
     "introduction": {
@@ -4134,7 +4134,7 @@
         "top": 361,
         "width": 350
       },
-      "imageNaturalRatio": 1.8352941176470587,
+      "imageNaturalRatio": 0.7514450867052023,
       "imageObjectFit": "cover",
       "imageObjectPosition": "50% 50%",
       "imageRatio": 1.7777777777777777
@@ -4490,7 +4490,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 0.7514450867052023,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -4527,7 +4527,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.8352941176470587,
+        "imageNaturalRatio": 1.5662650602409638,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 1.25,
@@ -4564,7 +4564,7 @@
         "horizontalGap": -350,
         "imageAboveCopy": true,
         "imageLeftOfCopy": false,
-        "imageNaturalRatio": 1.793103448275862,
+        "imageNaturalRatio": 0.75,
         "imageObjectFit": "cover",
         "imageObjectPosition": "50% 50%",
         "imageRatio": 0.8,
@@ -4609,7 +4609,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 768294,
+    "screenshotBytes": 922331,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

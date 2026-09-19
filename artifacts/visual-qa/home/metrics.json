@@ -10,7 +10,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -27,7 +27,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 627752,
+    "screenshotBytes": 1093818,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -45,7 +45,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -62,7 +62,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 323372,
+    "screenshotBytes": 786420,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -80,7 +80,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -97,7 +97,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 134080,
+    "screenshotBytes": 278285,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -115,7 +115,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -132,7 +132,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 624423,
+    "screenshotBytes": 1090810,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -150,7 +150,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -167,7 +167,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 318660,
+    "screenshotBytes": 782297,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -185,7 +185,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -202,7 +202,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 132483,
+    "screenshotBytes": 276862,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -220,7 +220,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -237,7 +237,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 614123,
+    "screenshotBytes": 1082867,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -255,7 +255,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -272,7 +272,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 310649,
+    "screenshotBytes": 774551,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -290,7 +290,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/navido/space/navido_space_entrance_01.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -307,7 +307,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 126186,
+    "screenshotBytes": 271954,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

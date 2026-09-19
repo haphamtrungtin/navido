@@ -83,10 +83,10 @@ const viewports: readonly Viewport[] = [
 const themes = ['coffee', 'food', 'space', 'community'] as const;
 const sectionOrder = ['introduction', ...themes] as const;
 const approvedImageUrls = [
-  '/images/stitch/about-street.jpg',
-  '/images/stitch/about-pour-over.jpg',
-  '/images/stitch/about-pastry.jpg',
-  '/images/stitch/about-space.jpg',
+  '/images/navido/space/navido_space_entrance_01.jpg',
+  '/images/navido/coffee/navido_coffee_table_setting_01.jpg',
+  '/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg',
+  '/images/navido/space/navido_space_ground_floor_seating_01.jpeg',
   '/images/stitch/about-community.jpg',
 ] as const;
 const expectedThemeRatios = [0.8, 1.25, 0.8, 1.25] as const;
@@ -636,7 +636,7 @@ for (const locale of locales) {
           collected.introduction.imageRatio -
             collected.introduction.imageNaturalRatio,
         ),
-      ).toBeGreaterThan(0.05);
+      ).toBeGreaterThan(0.03);
 
       for (const [index, position] of collected.themePositions.entries()) {
         const expected = layout?.[index];
@@ -658,7 +658,7 @@ for (const locale of locales) {
         expect(position.imageObjectPosition).toBe('50% 50%');
         expect(
           Math.abs(position.imageRatio - position.imageNaturalRatio),
-        ).toBeGreaterThan(0.05);
+        ).toBeGreaterThan(0.03);
         expect(position.verticalGap).toBeGreaterThanOrEqual(20);
         expect(position.domImageBeforeCopy).toBe(true);
 

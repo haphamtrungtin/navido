@@ -49,9 +49,20 @@ export default async function AboutPage({
 
   const translations = await getTranslations({ locale, namespace: 'About' });
   const themes = [
-    { imageSrc: '/images/stitch/about-pour-over.jpg', key: 'coffee' as const },
-    { imageSrc: '/images/stitch/about-pastry.jpg', key: 'food' as const },
-    { imageSrc: '/images/stitch/about-space.jpg', key: 'space' as const },
+    {
+      imageSrc: '/images/navido/coffee/navido_coffee_table_setting_01.jpg',
+      key: 'coffee' as const,
+    },
+    {
+      imageSrc:
+        '/images/navido/bakery/navido_bakery_pastries_and_drinks_01.jpeg',
+      key: 'food' as const,
+    },
+    {
+      imageSrc:
+        '/images/navido/space/navido_space_ground_floor_seating_01.jpeg',
+      key: 'space' as const,
+    },
     {
       imageSrc: '/images/stitch/about-community.jpg',
       key: 'community' as const,

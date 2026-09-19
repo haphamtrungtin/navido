@@ -14,7 +14,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 2377312,
+    "screenshotBytes": 2578002,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -36,7 +36,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1392673,
+    "screenshotBytes": 1383408,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -58,7 +58,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1025959,
+    "screenshotBytes": 1129452,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -80,7 +80,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 2355098,
+    "screenshotBytes": 2555287,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -102,7 +102,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1367936,
+    "screenshotBytes": 1363386,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -124,7 +124,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1010050,
+    "screenshotBytes": 1109102,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -146,7 +146,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 2298904,
+    "screenshotBytes": 2493456,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -168,7 +168,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1313945,
+    "screenshotBytes": 1304181,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -190,7 +190,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 967996,
+    "screenshotBytes": 1071960,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

@@ -100,3 +100,9 @@ and one `Unexpected end of JSON input` message while generating `/[locale]` stat
 paths during the concurrent browser run. All 98 tests still passed with no retries
 or skipped tests; these messages did not occur as build or test failures. Goal 1
 made no customer-facing code change in response.
+
+## Goal 3 authentic asset integration — 2026-09-19
+
+The owner-supplied intake is now published under `public/images/navido/`: 110 verified assets (98 menu, 9 space, bakery, coffee, and logo). Home, About, Menu editorial, Our Space, and Visit now reference verified NAVIDO imagery where the inventory has a semantic match; the Visit map and About community image remain explicit Stitch placeholders because no verified replacement was supplied.
+
+The five visual-contract suites were refreshed after the source changes: 45/45 visual tests passed. The full localized E2E matrix passed 128/128. Unit tests passed 23 files / 77 tests; typecheck, lint, Prettier, asset validation, and production build passed. `src/lib/authentic-assets.ts` provides deterministic menu filename matching and editorial paths; unmatched menu rows remain reportable instead of silently receiving unrelated photography.

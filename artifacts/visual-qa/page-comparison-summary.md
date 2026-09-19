@@ -22,3 +22,7 @@ All 97 tests passed, including 30 desktop/mobile navigation-matrix tests spannin
 15 localized routes and the five page visual-contract suites. No page was recaptured:
 the Task 13 changes are documentation only, and no rendered presentation changed after
 the accepted visual gates.
+
+## Authentic asset update
+
+Goal 3 replaced the temporary page imagery with owner-supplied NAVIDO assets wherever the inventory provides a semantic match. The established layouts, section order, responsive geometry, and conversion shell are unchanged; the remaining map/community placeholders are intentional pending verified photography.

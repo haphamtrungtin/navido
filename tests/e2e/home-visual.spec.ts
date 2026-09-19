@@ -237,7 +237,7 @@ for (const locale of locales) {
       });
 
       expect(metrics.sectionOrder).toEqual(sectionOrder);
-      expect(metrics.heroBackground).toContain('home-cafe-interior.jpg');
+      expect(metrics.heroBackground).toContain('navido_space_entrance_01.jpg');
       expect(metrics.heroBackgroundSize).toBe('cover');
       expect(metrics.heroBackgroundPosition).toBe('50% 50%');
       expect(metrics.heroHeight).toBeGreaterThanOrEqual(viewport.height - 84);

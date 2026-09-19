@@ -79,7 +79,7 @@ export default async function VisitPage({
                 objectPosition="center"
                 priority
                 sizes="(min-width: 1024px) 48vw, (min-width: 768px) 60vw, 100vw"
-                src="/images/stitch/visit-exterior.jpg"
+                src="/images/navido/space/navido_space_exterior_building_02.jpg"
               />
             </div>
           </div>

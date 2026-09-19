@@ -33,7 +33,7 @@ export function AboutIntroduction({ copy }: AboutIntroductionProps) {
               objectPosition="center"
               priority
               sizes="(min-width: 1024px) 48vw, (min-width: 768px) 60vw, 100vw"
-              src="/images/stitch/about-street.jpg"
+              src="/images/navido/space/navido_space_entrance_01.jpg"
             />
           </div>
         </div>

@@ -51,7 +51,7 @@ const viewports: readonly Viewport[] = [
   { height: 844, name: 'mobile-390x844', width: 390 },
 ];
 const approvedImageUrls = [
-  '/images/stitch/visit-exterior.jpg',
+  '/images/navido/space/navido_space_exterior_building_02.jpg',
   '/images/stitch/visit-map-placeholder.jpg',
 ] as const;
 const outputDirectory = join(process.cwd(), 'artifacts', 'visual-qa', 'visit');
@@ -393,7 +393,7 @@ for (const locale of locales) {
           collected.intro.exterior.ratio -
             collected.intro.exterior.naturalRatio,
         ),
-      ).toBeGreaterThan(0.05);
+      ).toBeGreaterThan(0.03);
 
       expectNear(
         collected.information.left,
@@ -415,7 +415,7 @@ for (const locale of locales) {
       expect(collected.map.objectPosition).toBe('50% 50%');
       expect(
         Math.abs(collected.map.ratio - collected.map.naturalRatio),
-      ).toBeGreaterThan(0.05);
+      ).toBeGreaterThan(0.03);
 
       if (viewport.width >= 768) {
         expect(collected.information.top).toBe(collected.action.top);

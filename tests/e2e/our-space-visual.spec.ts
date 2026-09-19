@@ -248,7 +248,7 @@ for (const locale of locales) {
               heroImage.naturalWidth / heroImage.naturalHeight -
                 hero.getBoundingClientRect().width /
                   hero.getBoundingClientRect().height,
-            ) > 0.05,
+            ) > 0.03,
           ),
           heroHeight: Math.round(hero?.getBoundingClientRect().height ?? 0),
           heroObjectFit: heroImage ? getComputedStyle(heroImage).objectFit : '',
