@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import type { RoasteryOrigin } from '@/features/roastery/domain/types';
@@ -74,6 +74,7 @@ describe('Roastery sections', () => {
         copy={{
           eyebrow: 'Từ hạt đến tách',
           mediaAlt: 'Ảnh placeholder cho việc rang',
+          mediaNote: 'Thay ảnh placeholder.',
           title: 'Một nhịp rang tại NAVIDO',
           steps: [
             { body: 'Chọn hạt.', title: 'Nguồn gốc' },
@@ -101,6 +102,7 @@ describe('Roastery sections', () => {
         <RoasteryOrigins
           copy={{
             empty: 'Thông tin origin sẽ được cập nhật.',
+            eyebrow: 'Nguồn hạt',
             title: 'Nguồn hạt',
           }}
           origins={origins}

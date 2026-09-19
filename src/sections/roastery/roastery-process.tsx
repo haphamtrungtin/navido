@@ -8,6 +8,7 @@ type RoasteryProcessProps = Readonly<{
   copy: Readonly<{
     eyebrow: string;
     mediaAlt: string;
+    mediaNote: string;
     title: string;
     steps: ReadonlyArray<Readonly<{ body: string; title: string }>>;
   }>;

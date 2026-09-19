@@ -27,7 +27,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1093818,
+    "screenshotBytes": 1094371,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -62,7 +62,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 786420,
+    "screenshotBytes": 787304,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -132,7 +132,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1090810,
+    "screenshotBytes": 1091811,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -167,7 +167,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 782297,
+    "screenshotBytes": 783393,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -237,7 +237,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1082867,
+    "screenshotBytes": 1083574,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -272,7 +272,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 774551,
+    "screenshotBytes": 775210,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",

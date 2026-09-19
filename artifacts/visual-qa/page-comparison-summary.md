@@ -26,3 +26,7 @@ the accepted visual gates.
 ## Authentic asset update
 
 Goal 3 replaced the temporary page imagery with owner-supplied NAVIDO assets wherever the inventory provides a semantic match. The established layouts, section order, responsive geometry, and conversion shell are unchanged; the remaining map/community placeholders are intentional pending verified photography.
+
+## Roastery
+
+The new localized Roastery route is covered by nine captures (three locales x desktop, tablet, and mobile). The dark editorial bands, process list, intentional empty origin/bean states, localized conversion links, and 390px overflow contract passed; all nine captures contain two loaded images. Roastery media is explicitly temporary and mapped for later owner-supplied replacement.

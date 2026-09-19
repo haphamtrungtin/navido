@@ -109,9 +109,11 @@
       "stepTwoBody": "Thợ rang riêng của quán thực hiện công việc in-house.",
       "stepThreeTitle": "Thưởng thức và mang về",
       "stepThreeBody": "Thưởng thức tại quán hoặc mang hạt đã đóng gói về nhà.",
-      "mediaAlt": "Ảnh placeholder cho việc rang cà phê"
+      "mediaAlt": "Ảnh placeholder cho việc rang cà phê",
+      "mediaNote": "Ảnh placeholder của NAVIDO — sẽ thay bằng ảnh rang tại quán đã được xác nhận."
     },
     "origins": {
+      "eyebrow": "Nguồn hạt",
       "title": "Những vùng nguyên liệu",
       "empty": "Thông tin origin sẽ được cập nhật khi danh sách hạt chính thức được xác nhận."
     },

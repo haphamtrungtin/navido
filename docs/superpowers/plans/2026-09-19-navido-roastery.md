@@ -46,7 +46,7 @@
   Add tests that assert:
 
   ```ts
-  expect(getRoasteryOrigins().every((origin) => origin.sourceCategoryCode !== 'MOCK_BEANS')).toBe(true);
+  expect(getRoasteryOrigins()).toEqual([]);
   expect(getRoasteryCoffeePicks(3)).toHaveLength(3);
   expect(getRoasteryBeanProducts()).toEqual([]);
   expect(getRoasteryMedia('roaster-machine')).toMatchObject({ replacementStatus: 'temporary' });
@@ -62,7 +62,7 @@
 
 - [ ] **Step 3: Implement the typed selector boundary**
 
-  Define `RoasteryOrigin` with `label`, `sourceCategoryCode`, and `sourceRows`; define `RoasteryMediaAsset` with `src`, `altKey`, `replacementStatus`, and `replacementKey`. Derive origins from public coffee-related items, dedupe by normalized English name, select the first three public signature/specialty-coffee/coffee items for picks, and return only public items with `categoryId === 'coffee-beans'` for beans. Return frozen arrays. Use owner-supplied `/images/navido/coffee/...`, `/images/navido/space/...`, and `/images/navido/menu/...` paths as temporary media and set keys `roaster-machine`, `roasting-process`, `roasting-team`, and `packaging`.
+  Define `RoasteryOrigin` with `label`, `sourceCategoryCode`, and `sourceRows`; define `RoasteryMediaAsset` with `src`, `altKey`, `replacementStatus`, and `replacementKey`. Derive origins from public packaged-bean records when they exist, dedupe by normalized English name, select the first three public signature/specialty-coffee/coffee items for picks, and return only public items with `categoryId === 'coffee-beans'` for beans. Return frozen arrays. Use owner-supplied `/images/navido/coffee/...`, `/images/navido/space/...`, and `/images/navido/menu/...` paths as temporary media and set keys `roaster-machine`, `roasting-process`, `roasting-team`, and `packaging`.
 
 - [ ] **Step 4: Run the focused tests and verify they pass**
 

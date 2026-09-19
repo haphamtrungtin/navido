@@ -4,7 +4,7 @@ import { Eyebrow } from '@/components/ui/eyebrow';
 import type { RoasteryOrigin } from '@/features/roastery/domain/types';
 
 type RoasteryOriginsProps = Readonly<{
-  copy: Readonly<{ empty: string; title: string }>;
+  copy: Readonly<{ empty: string; eyebrow: string; title: string }>;
   origins: readonly RoasteryOrigin[];
 }>;
 
@@ -16,7 +16,7 @@ export function RoasteryOrigins({ copy, origins }: RoasteryOriginsProps) {
       data-testid="roastery-origins"
     >
       <Container>
-        <Eyebrow>Origins</Eyebrow>
+        <Eyebrow>{copy.eyebrow}</Eyebrow>
         <h2 className="mt-4 text-3xl font-light sm:text-5xl">{copy.title}</h2>
         {origins.length > 0 ? (
           <ul className="mt-10 grid gap-px overflow-hidden border border-[var(--navido-rule)] bg-[var(--navido-rule)] sm:grid-cols-2 lg:grid-cols-3">

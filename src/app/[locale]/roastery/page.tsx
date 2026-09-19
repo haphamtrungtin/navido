@@ -77,6 +77,7 @@ export default async function RoasteryPage({
         copy={{
           eyebrow: copy('process.eyebrow'),
           mediaAlt: copy('process.mediaAlt'),
+          mediaNote: copy('process.mediaNote'),
           steps: [
             {
               body: copy('process.stepOneBody'),
@@ -96,7 +97,11 @@ export default async function RoasteryPage({
         media={getRoasteryMedia('roasting-process')}
       />
       <RoasteryOrigins
-        copy={{ empty: copy('origins.empty'), title: copy('origins.title') }}
+        copy={{
+          empty: copy('origins.empty'),
+          eyebrow: copy('origins.eyebrow'),
+          title: copy('origins.title'),
+        }}
         origins={getRoasteryOrigins()}
       />
       <section

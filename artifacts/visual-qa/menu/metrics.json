@@ -14,7 +14,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 2557085,
+    "screenshotBytes": 2558137,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -36,7 +36,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1363614,
+    "screenshotBytes": 1364803,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -80,7 +80,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 2531453,
+    "screenshotBytes": 2532692,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -102,7 +102,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1341869,
+    "screenshotBytes": 1343063,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -146,7 +146,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 2473443,
+    "screenshotBytes": 2474222,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -168,7 +168,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1285215,
+    "screenshotBytes": 1286372,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -190,7 +190,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1055800,
+    "screenshotBytes": 1055794,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

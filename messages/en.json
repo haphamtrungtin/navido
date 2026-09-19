@@ -110,9 +110,11 @@
       "stepTwoBody": "Our dedicated roaster works in-house at the store.",
       "stepThreeTitle": "Serve and take home",
       "stepThreeBody": "Taste the coffee here or take packaged beans with you.",
-      "mediaAlt": "Coffee roasting placeholder"
+      "mediaAlt": "Coffee roasting placeholder",
+      "mediaNote": "NAVIDO image placeholder — replace with verified roastery photography."
     },
     "origins": {
+      "eyebrow": "Origins",
       "title": "Origins we explore",
       "empty": "Origin details will be added as the official bean list is confirmed."
     },
