@@ -4,6 +4,7 @@ import rawMenu from '../../menu.json';
 
 import { normalizeMenu } from '@/features/menu/domain/normalize';
 import { getMenuPublicationStatus } from '@/features/menu/domain/publication';
+import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 
 describe('provisional menu publication policy', () => {
   const result = normalizeMenu(rawMenu);
@@ -21,6 +22,26 @@ describe('provisional menu publication policy', () => {
       'hidden',
       'hidden',
     ]);
+  });
+
+  it('excludes hidden mock products and empty categories from the public repository', () => {
+    const visibleItems = localMenuRepository
+      .getCategories()
+      .flatMap((category) =>
+        localMenuRepository.getItemsByCategory(category.id),
+      );
+
+    expect(visibleItems).toHaveLength(127);
+    expect(
+      visibleItems.some(
+        (item) => item.sourceCategoryCode.trim() === 'MOCK_BEANS',
+      ),
+    ).toBe(false);
+    expect(
+      localMenuRepository
+        .getCategories()
+        .some((category) => category.id === 'coffee-beans'),
+    ).toBe(false);
   });
 
   it('classifies all non-mock source items as provisional drafts', () => {

@@ -15,7 +15,7 @@ for (const locale of locales) {
     await expect(
       page.getByRole('heading', { level: 1, name: locale.title }),
     ).toHaveCount(1);
-    await expect(page.locator('[data-menu-item]')).toHaveCount(130);
+    await expect(page.locator('[data-menu-item]')).toHaveCount(127);
     await expect(page.locator('[data-menu-introduction]')).toHaveCount(1);
     await expect(page.locator('[data-menu-introduction] img')).toHaveAttribute(
       'loading',

@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
 
 describe('local menu repository', () => {
-  it('exposes all 130 unique source rows through ordered display categories', () => {
+  it('exposes all 127 public source rows through ordered display categories', () => {
     const categories = localMenuRepository.getCategories();
     const items = categories.flatMap((category) =>
       localMenuRepository.getItemsByCategory(category.id),
@@ -23,10 +23,9 @@ describe('local menu repository', () => {
       'desserts',
       'extras',
       'specialty-coffee',
-      'coffee-beans',
     ]);
-    expect(items).toHaveLength(130);
-    expect(new Set(items.map((item) => item.sourceRow))).toHaveLength(130);
+    expect(items).toHaveLength(127);
+    expect(new Set(items.map((item) => item.sourceRow))).toHaveLength(127);
   });
 
   it('merges Extras only at the display level while retaining source traceability', () => {

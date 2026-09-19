@@ -36,7 +36,6 @@ export const menuCategoryPresentations = {
   desserts: { chapter: 'pastry' },
   extras: { chapter: 'compact' },
   'specialty-coffee': { chapter: 'retail' },
-  'coffee-beans': { chapter: 'retail' },
 } as const satisfies Record<string, MenuCategoryPresentation>;
 
 export function getMenuCategoryPresentation(
