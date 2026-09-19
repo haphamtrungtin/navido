@@ -1,0 +1,110 @@
+[
+  {
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "vi",
+    "screenshotBytes": 284363,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "vi",
+    "screenshotBytes": 263698,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "vi",
+    "screenshotBytes": 103099,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "en",
+    "screenshotBytes": 281759,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "en",
+    "screenshotBytes": 258666,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "en",
+    "screenshotBytes": 101954,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "documentScrollWidth": 1440,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "ko",
+    "screenshotBytes": 275059,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "documentScrollWidth": 768,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "ko",
+    "screenshotBytes": 253027,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "documentScrollWidth": 390,
+    "imageCount": 2,
+    "loadedImageCount": 2,
+    "locale": "ko",
+    "screenshotBytes": 98916,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  }
+]

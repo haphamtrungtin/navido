@@ -4,6 +4,7 @@ const locales = ['vi', 'en', 'ko'] as const;
 const routes = [
   { key: 'home', pathname: '/' },
   { key: 'menu', pathname: '/menu' },
+  { key: 'roastery', pathname: '/roastery' },
   { key: 'our-space', pathname: '/our-space' },
   { key: 'about', pathname: '/about' },
   { key: 'visit', pathname: '/visit' },

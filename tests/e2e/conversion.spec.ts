@@ -1,7 +1,14 @@
 import { expect, test } from '@playwright/test';
 
 const locales = ['vi', 'en', 'ko'] as const;
-const routes = ['/', '/menu', '/our-space', '/about', '/visit'] as const;
+const routes = [
+  '/',
+  '/menu',
+  '/roastery',
+  '/our-space',
+  '/about',
+  '/visit',
+] as const;
 const viewports = [
   { name: 'desktop', size: { height: 900, width: 1440 } },
   { name: 'mobile', size: { height: 844, width: 390 } },
