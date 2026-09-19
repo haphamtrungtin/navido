@@ -73,6 +73,7 @@ describe('Roastery sections', () => {
       <RoasteryProcess
         copy={{
           eyebrow: 'Từ hạt đến tách',
+          mediaAlt: 'Ảnh placeholder cho việc rang',
           title: 'Một nhịp rang tại NAVIDO',
           steps: [
             { body: 'Chọn hạt.', title: 'Nguồn gốc' },
@@ -106,6 +107,7 @@ describe('Roastery sections', () => {
         />
         <RoasteryBeans
           copy={{
+            action: 'Xem thực đơn',
             empty: 'Hạt rang đóng gói hiện có tại quán.',
             title: 'Mang hạt về nhà',
           }}

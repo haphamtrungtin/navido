@@ -7,6 +7,7 @@ import type { RoasteryMediaAsset } from '@/features/roastery/domain/types';
 type RoasteryProcessProps = Readonly<{
   copy: Readonly<{
     eyebrow: string;
+    mediaAlt: string;
     title: string;
     steps: ReadonlyArray<Readonly<{ body: string; title: string }>>;
   }>;
@@ -54,7 +55,7 @@ export function RoasteryProcess({ copy, media }: RoasteryProcessProps) {
           data-roastery-media-status={media.replacementStatus}
         >
           <EditorialImage
-            alt="NAVIDO coffee roasting placeholder"
+            alt={copy.mediaAlt}
             aspect="16 / 7"
             sizes="(min-width: 1024px) 70vw, 100vw"
             src={media.src}

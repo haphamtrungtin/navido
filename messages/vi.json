@@ -93,6 +93,41 @@
       "brunch": "Món brunch trên đĩa gốm"
     }
   },
+  "Roastery": {
+    "hero": {
+      "eyebrow": "Xưởng rang",
+      "title": "Rang tại chỗ",
+      "description": "Cà phê được rang tại quán, từ những vùng nguyên liệu được chọn đến tách cà phê bạn muốn trở lại.",
+      "action": "Ghé NAVIDO"
+    },
+    "process": {
+      "eyebrow": "Từ hạt đến tách",
+      "title": "Một nhịp rang tại NAVIDO",
+      "stepOneTitle": "Nguồn hạt",
+      "stepOneBody": "NAVIDO làm việc với cà phê từ nhiều vùng nguyên liệu.",
+      "stepTwoTitle": "Rang tại quán",
+      "stepTwoBody": "Thợ rang riêng của quán thực hiện công việc in-house.",
+      "stepThreeTitle": "Thưởng thức và mang về",
+      "stepThreeBody": "Thưởng thức tại quán hoặc mang hạt đã đóng gói về nhà.",
+      "mediaAlt": "Ảnh placeholder cho việc rang cà phê"
+    },
+    "origins": {
+      "title": "Những vùng nguyên liệu",
+      "empty": "Thông tin origin sẽ được cập nhật khi danh sách hạt chính thức được xác nhận."
+    },
+    "beans": {
+      "title": "Mang mẻ rang về nhà",
+      "empty": "Hạt rang đóng gói có tại quán; hãy hỏi đội ngũ NAVIDO về lựa chọn hiện có.",
+      "action": "Xem thực đơn"
+    },
+    "visit": {
+      "title": "Theo mẻ rang đến NAVIDO",
+      "address": "Địa chỉ",
+      "hours": "Giờ mở cửa",
+      "call": "Điện thoại",
+      "directions": "Chỉ đường"
+    }
+  },
   "OurSpace": {
     "title": "Không gian",
     "hero": {

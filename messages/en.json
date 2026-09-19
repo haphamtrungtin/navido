@@ -94,6 +94,41 @@
       "brunch": "Brunch served on a ceramic plate"
     }
   },
+  "Roastery": {
+    "hero": {
+      "eyebrow": "Roastery",
+      "title": "Roasted in-house",
+      "description": "Coffee roasted at the store, from considered origins to the cup you return to.",
+      "action": "Visit NAVIDO"
+    },
+    "process": {
+      "eyebrow": "From green bean to cup",
+      "title": "A roast rhythm at NAVIDO",
+      "stepOneTitle": "Origins",
+      "stepOneBody": "We work with coffee from multiple origins.",
+      "stepTwoTitle": "Roasting",
+      "stepTwoBody": "Our dedicated roaster works in-house at the store.",
+      "stepThreeTitle": "Serve and take home",
+      "stepThreeBody": "Taste the coffee here or take packaged beans with you.",
+      "mediaAlt": "Coffee roasting placeholder"
+    },
+    "origins": {
+      "title": "Origins we explore",
+      "empty": "Origin details will be added as the official bean list is confirmed."
+    },
+    "beans": {
+      "title": "Take the roast home",
+      "empty": "Packaged roasted beans are available in-store; ask our team about the current selection.",
+      "action": "View the menu"
+    },
+    "visit": {
+      "title": "Follow the roast to NAVIDO",
+      "address": "Address",
+      "hours": "Opening hours",
+      "call": "Phone",
+      "directions": "Directions"
+    }
+  },
   "OurSpace": {
     "title": "Our space",
     "hero": {

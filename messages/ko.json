@@ -93,6 +93,41 @@
       "brunch": "도자기 접시에 담긴 브런치"
     }
   },
+  "Roastery": {
+    "hero": {
+      "eyebrow": "로스터리",
+      "title": "매장에서 직접 로스팅",
+      "description": "선별한 원산지의 커피를 매장에서 직접 로스팅해 한 잔으로 완성합니다.",
+      "action": "NAVIDO 방문하기"
+    },
+    "process": {
+      "eyebrow": "생두에서 한 잔까지",
+      "title": "NAVIDO의 로스팅 리듬",
+      "stepOneTitle": "원산지",
+      "stepOneBody": "여러 원산지의 커피를 함께 살펴봅니다.",
+      "stepTwoTitle": "로스팅",
+      "stepTwoBody": "전담 로스터가 매장에서 직접 작업합니다.",
+      "stepThreeTitle": "매장에서, 집에서",
+      "stepThreeBody": "매장에서 맛보고 포장 원두를 집으로 가져갈 수 있습니다.",
+      "mediaAlt": "커피 로스팅 임시 이미지"
+    },
+    "origins": {
+      "title": "살펴보는 원산지",
+      "empty": "공식 원두 목록이 확정되면 원산지 정보를 업데이트합니다."
+    },
+    "beans": {
+      "title": "로스팅 원두를 집으로",
+      "empty": "포장 원두는 매장에서 판매합니다. 현재 선택은 NAVIDO 팀에 문의해 주세요.",
+      "action": "메뉴 보기"
+    },
+    "visit": {
+      "title": "로스팅을 따라 NAVIDO로",
+      "address": "주소",
+      "hours": "영업시간",
+      "call": "전화",
+      "directions": "길 안내"
+    }
+  },
   "OurSpace": {
     "title": "공간",
     "hero": {

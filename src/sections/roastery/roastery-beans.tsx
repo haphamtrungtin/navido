@@ -4,7 +4,7 @@ import type { MenuItem } from '@/features/menu/domain/types';
 import type { Locale } from '@/i18n/types';
 
 type RoasteryBeansProps = Readonly<{
-  copy: Readonly<{ empty: string; title: string }>;
+  copy: Readonly<{ action: string; empty: string; title: string }>;
   items: readonly MenuItem[];
   locale: Locale;
 }>;
@@ -20,7 +20,7 @@ export function RoasteryBeans({ copy, items, locale }: RoasteryBeansProps) {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <h2 className="text-3xl font-light sm:text-5xl">{copy.title}</h2>
           <TextLink href="/menu" locale={locale}>
-            Xem thực đơn
+            {copy.action}
           </TextLink>
         </div>
         {items.length > 0 ? (
