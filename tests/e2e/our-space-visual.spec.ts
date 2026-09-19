@@ -11,7 +11,10 @@ type StoryPosition = Readonly<{
   imageLeftOfCopy: boolean;
 }>;
 type Metrics = Readonly<{
+  desktopHeaderMapsVisible: boolean;
   documentScrollWidth: number;
+  mobileBarClearance: number | null;
+  mobileBarVisible: boolean;
   gridTracks: number[];
   heroCropped: boolean;
   heroHeight: number;
@@ -195,7 +198,40 @@ for (const locale of locales) {
           };
         });
 
+        const headerMaps = document
+          .querySelector('header nav')
+          ?.parentElement?.querySelector<HTMLAnchorElement>(
+            'a[href*="google.com/maps/search"]',
+          );
+        const mobileBar = document.querySelector<HTMLElement>(
+          '[data-testid="mobile-conversion-bar"]',
+        );
+        const footerLinks =
+          document.querySelectorAll<HTMLAnchorElement>('footer a');
+        const finalFooterLink = footerLinks.item(footerLinks.length - 1);
+        const shell = {
+          desktopHeaderMapsVisible: Boolean(
+            headerMaps && headerMaps.getClientRects().length > 0,
+          ),
+          mobileBarClearance:
+            mobileBar && finalFooterLink
+              ? Math.floor(
+                  mobileBar.getBoundingClientRect().top -
+                    (finalFooterLink.getBoundingClientRect().bottom -
+                      Math.max(
+                        0,
+                        document.documentElement.scrollHeight -
+                          window.innerHeight,
+                      )),
+                )
+              : null,
+          mobileBarVisible: Boolean(
+            mobileBar && mobileBar.getClientRects().length > 0,
+          ),
+        };
+
         return {
+          ...shell,
           documentScrollWidth: document.documentElement.scrollWidth,
           gridTracks: grids.map((grid) => {
             const template = getComputedStyle(grid).gridTemplateColumns;
@@ -252,6 +288,13 @@ for (const locale of locales) {
       expect(collected.loadedImageCount).toBe(5);
       expect(collected.textOverflowCount).toBe(0);
       expect(collected.documentScrollWidth).toBeLessThanOrEqual(viewport.width);
+      expect(collected.desktopHeaderMapsVisible).toBe(viewport.width >= 768);
+      expect(collected.mobileBarVisible).toBe(viewport.width < 768);
+      if (viewport.width < 768) {
+        expect(collected.mobileBarClearance).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(collected.mobileBarClearance).toBeNull();
+      }
 
       const screenshot = await page.screenshot({
         fullPage: true,

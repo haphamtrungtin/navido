@@ -118,13 +118,29 @@ for (const [localeIndex, locale] of locales.entries()) {
 
           await primaryLink.focus();
           await expect(primaryLink).toBeFocused();
+          const headerMaps = page
+            .locator('header nav')
+            .first()
+            .locator('..')
+            .locator('a[href*="google.com/maps/search"]');
+          await expect(headerMaps).toBeVisible();
+          await expect(page.getByTestId('mobile-conversion-bar')).toBeHidden();
         } else {
           const menuButton = page.locator('header button[aria-controls]');
 
           await menuButton.focus();
           await expect(menuButton).toBeFocused();
+          const mobileBar = page.getByTestId('mobile-conversion-bar');
+          await expect(mobileBar).toBeVisible();
+          await expect(
+            mobileBar.locator('a[href^="tel:"]').first(),
+          ).toHaveCount(1);
+          await expect(
+            mobileBar.locator('a[href*="google.com/maps/search"]').first(),
+          ).toHaveCount(1);
           await menuButton.click();
           await expect(page.getByRole('dialog')).toBeVisible();
+          await expect(mobileBar).toHaveCount(0);
           await expect(
             page
               .getByRole('dialog')

@@ -8,7 +8,10 @@ type Locale = 'vi' | 'en' | 'ko';
 type Viewport = Readonly<{ height: number; name: string; width: number }>;
 type HomeVisualMetrics = Readonly<{
   contentPaddingTop: number[];
+  desktopHeaderMapsVisible: boolean;
   documentScrollWidth: number;
+  mobileBarClearance: number | null;
+  mobileBarVisible: boolean;
   gridTracks: Record<'highlights' | 'introduction' | 'location', number>;
   heroBackground: string;
   heroBackgroundPosition: string;
@@ -163,7 +166,40 @@ for (const locale of locales) {
         );
         const images = Array.from(document.images);
 
+        const headerMaps = document
+          .querySelector('header nav')
+          ?.parentElement?.querySelector<HTMLAnchorElement>(
+            'a[href*="google.com/maps/search"]',
+          );
+        const mobileBar = document.querySelector<HTMLElement>(
+          '[data-testid="mobile-conversion-bar"]',
+        );
+        const footerLinks =
+          document.querySelectorAll<HTMLAnchorElement>('footer a');
+        const finalFooterLink = footerLinks.item(footerLinks.length - 1);
+        const shell = {
+          desktopHeaderMapsVisible: Boolean(
+            headerMaps && headerMaps.getClientRects().length > 0,
+          ),
+          mobileBarClearance:
+            mobileBar && finalFooterLink
+              ? Math.floor(
+                  mobileBar.getBoundingClientRect().top -
+                    (finalFooterLink.getBoundingClientRect().bottom -
+                      Math.max(
+                        0,
+                        document.documentElement.scrollHeight -
+                          window.innerHeight,
+                      )),
+                )
+              : null,
+          mobileBarVisible: Boolean(
+            mobileBar && mobileBar.getClientRects().length > 0,
+          ),
+        };
+
         return {
+          ...shell,
           contentPaddingTop: sections
             .slice(1)
             .map((section) =>
@@ -217,6 +253,13 @@ for (const locale of locales) {
       expect(metrics.loadedImageCount).toBe(6);
       expect(metrics.textOverflowCount).toBe(0);
       expect(metrics.documentScrollWidth).toBeLessThanOrEqual(viewport.width);
+      expect(metrics.desktopHeaderMapsVisible).toBe(viewport.width >= 768);
+      expect(metrics.mobileBarVisible).toBe(viewport.width < 768);
+      if (viewport.width < 768) {
+        expect(metrics.mobileBarClearance).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(metrics.mobileBarClearance).toBeNull();
+      }
       expect(
         metrics.sectionScrollWidths.every((width) => width <= viewport.width),
       ).toBe(true);

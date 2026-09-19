@@ -9,7 +9,10 @@ type Viewport = Readonly<{ height: number; name: string; width: number }>;
 type MenuVisualMetrics = Readonly<{
   categoryCount: number;
   chapterPatternCount: number;
+  desktopHeaderMapsVisible: boolean;
   documentScrollWidth: number;
+  mobileBarClearance: number | null;
+  mobileBarVisible: boolean;
   imageCount: number;
   itemCount: number;
   loadedImageCount: number;
@@ -113,7 +116,40 @@ for (const locale of locales) {
           document.querySelectorAll<HTMLElement>('[data-menu-item-name]'),
         );
 
+        const headerMaps = document
+          .querySelector('header nav')
+          ?.parentElement?.querySelector<HTMLAnchorElement>(
+            'a[href*="google.com/maps/search"]',
+          );
+        const mobileBar = document.querySelector<HTMLElement>(
+          '[data-testid="mobile-conversion-bar"]',
+        );
+        const footerLinks =
+          document.querySelectorAll<HTMLAnchorElement>('footer a');
+        const finalFooterLink = footerLinks.item(footerLinks.length - 1);
+        const shell = {
+          desktopHeaderMapsVisible: Boolean(
+            headerMaps && headerMaps.getClientRects().length > 0,
+          ),
+          mobileBarClearance:
+            mobileBar && finalFooterLink
+              ? Math.floor(
+                  mobileBar.getBoundingClientRect().top -
+                    (finalFooterLink.getBoundingClientRect().bottom -
+                      Math.max(
+                        0,
+                        document.documentElement.scrollHeight -
+                          window.innerHeight,
+                      )),
+                )
+              : null,
+          mobileBarVisible: Boolean(
+            mobileBar && mobileBar.getClientRects().length > 0,
+          ),
+        };
+
         return {
+          ...shell,
           categoryCount: document.querySelectorAll('[data-menu-category]')
             .length,
           chapterPatternCount: new Set(
@@ -160,6 +196,15 @@ for (const locale of locales) {
       expect(metricsForViewport.documentScrollWidth).toBeLessThanOrEqual(
         viewport.width,
       );
+      expect(metricsForViewport.desktopHeaderMapsVisible).toBe(
+        viewport.width >= 768,
+      );
+      expect(metricsForViewport.mobileBarVisible).toBe(viewport.width < 768);
+      if (viewport.width < 768) {
+        expect(metricsForViewport.mobileBarClearance).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(metricsForViewport.mobileBarClearance).toBeNull();
+      }
 
       const screenshot = await page.screenshot({
         fullPage: true,

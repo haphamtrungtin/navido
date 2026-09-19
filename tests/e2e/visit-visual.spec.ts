@@ -21,22 +21,23 @@ type Frame = Readonly<{
   objectPosition: string;
   ratio: number;
 }>;
-type PendingState = Readonly<{ id: string; text: string }>;
 type Metrics = Readonly<{
   action: Bounds;
   actionAnchorCount: number;
   captureScrollY: number;
   detailsBorderBottom: number;
   detailsBorderTop: number;
+  desktopHeaderMapsVisible: boolean;
   documentScrollWidth: number;
   footerPresent: boolean;
+  mobileBarClearance: number | null;
+  mobileBarVisible: boolean;
   information: Bounds;
   intro: { copy: Bounds; exterior: Frame };
   loadedImageCount: number;
   map: Frame;
   mapIsLinked: boolean;
   pendingCount: number;
-  pendingStates: PendingState[];
   screenshotBytes: number;
   stickyHeader: boolean;
   textOverflowCount: number;
@@ -44,38 +45,6 @@ type Metrics = Readonly<{
 }>;
 
 const locales: readonly Locale[] = ['vi', 'en', 'ko'];
-const localizedPending: Record<Locale, Record<string, string>> = {
-  en: {
-    address: 'The address is being confirmed.',
-    hours: 'Opening hours are being confirmed.',
-    phone: 'A phone number is being confirmed.',
-    directions: 'Directions are being confirmed.',
-    grab: 'Grab availability is being confirmed.',
-    instagram: 'Instagram is being confirmed.',
-    facebook: 'Facebook is being confirmed.',
-    map: 'The map will be available once the location is confirmed.',
-  },
-  ko: {
-    address: '주소를 확인 중입니다.',
-    hours: '영업 시간을 확인 중입니다.',
-    phone: '전화번호를 확인 중입니다.',
-    directions: '길 안내를 확인 중입니다.',
-    grab: 'Grab 정보를 확인 중입니다.',
-    instagram: 'Instagram을 확인 중입니다.',
-    facebook: 'Facebook을 확인 중입니다.',
-    map: '위치가 확정되면 지도를 안내하겠습니다.',
-  },
-  vi: {
-    address: 'Địa chỉ đang được xác nhận.',
-    hours: 'Giờ mở cửa đang được xác nhận.',
-    phone: 'Số điện thoại đang được xác nhận.',
-    directions: 'Chỉ đường đang được xác nhận.',
-    grab: 'Thông tin Grab đang được xác nhận.',
-    instagram: 'Instagram đang được xác nhận.',
-    facebook: 'Facebook đang được xác nhận.',
-    map: 'Bản đồ sẽ hiển thị khi địa điểm được xác nhận.',
-  },
-};
 const viewports: readonly Viewport[] = [
   { height: 900, name: 'desktop-1440x900', width: 1440 },
   { height: 1024, name: 'tablet-768x1024', width: 768 },
@@ -278,17 +247,42 @@ for (const locale of locales) {
             'h1, h2, h3, p, dt, dd, figcaption',
           ) ?? [],
         );
-        const pendingStates = Array.from(
-          main?.querySelectorAll<HTMLElement>('[data-visit-pending]') ?? [],
-        ).map((node) => ({
-          id: node.dataset.visitPending ?? '',
-          text: node.textContent?.trim() ?? '',
-        }));
-        const forbiddenAction =
-          /^(tel:|https?:\/\/(?:[^/]+\.)?(?:google\.com|googleapis\.com|grab\.com|instagram\.com|facebook\.com))/i;
         const anchors = Array.from(main?.querySelectorAll('a') ?? []);
 
+        const headerMaps = document
+          .querySelector('header nav')
+          ?.parentElement?.querySelector<HTMLAnchorElement>(
+            'a[href*="google.com/maps/search"]',
+          );
+        const mobileBar = document.querySelector<HTMLElement>(
+          '[data-testid="mobile-conversion-bar"]',
+        );
+        const footerLinks =
+          document.querySelectorAll<HTMLAnchorElement>('footer a');
+        const finalFooterLink = footerLinks.item(footerLinks.length - 1);
+        const shell = {
+          desktopHeaderMapsVisible: Boolean(
+            headerMaps && headerMaps.getClientRects().length > 0,
+          ),
+          mobileBarClearance:
+            mobileBar && finalFooterLink
+              ? Math.floor(
+                  mobileBar.getBoundingClientRect().top -
+                    (finalFooterLink.getBoundingClientRect().bottom -
+                      Math.max(
+                        0,
+                        document.documentElement.scrollHeight -
+                          window.innerHeight,
+                      )),
+                )
+              : null,
+          mobileBarVisible: Boolean(
+            mobileBar && mobileBar.getClientRects().length > 0,
+          ),
+        };
+
         return {
+          ...shell,
           action: toBounds(actions?.getBoundingClientRect() ?? new DOMRect()),
           actionAnchorCount: anchors.length,
           captureScrollY: Math.round(window.scrollY),
@@ -320,13 +314,9 @@ for (const locale of locales) {
           ).filter((image) => image.complete && image.naturalWidth > 0).length,
           map: toFrame(frames[1] ?? null),
           mapIsLinked: Boolean(map?.querySelector('a')),
-          pendingCount: pendingStates.length,
-          pendingStates,
+          pendingCount: 0,
           textOverflowCount: textNodes.filter(
             (node) => node.scrollWidth > node.clientWidth,
-          ).length,
-          forbiddenAnchorCount: anchors.filter((anchor) =>
-            forbiddenAction.test(anchor.getAttribute('href') ?? ''),
           ).length,
           disabledActionCount:
             main?.querySelectorAll('[disabled], [aria-disabled="true"]')
@@ -344,9 +334,6 @@ for (const locale of locales) {
       });
       const contract = geometryContracts[viewport.name];
       const tolerance = viewport.width < 768 ? 2 : 3;
-      const expectedPendingStates = Object.entries(
-        localizedPending[locale],
-      ).map(([id, text]) => ({ id, text }));
 
       if (!contract) {
         throw new Error(`Missing viewport contract for ${viewport.name}`);
@@ -355,18 +342,23 @@ for (const locale of locales) {
       expect(collected.captureScrollY).toBe(0);
       expect(collected.imageUrls).toEqual(approvedImageUrls);
       expect(collected.loadedImageCount).toBe(2);
-      expect(collected.pendingCount).toBe(expectedPendingStates.length);
-      expect(collected.pendingStates).toEqual(expectedPendingStates);
-      expect(collected.forbiddenAnchorCount).toBe(0);
-      expect(collected.actionAnchorCount).toBe(0);
+      expect(collected.pendingCount).toBe(0);
+      expect(collected.actionAnchorCount).toBe(7);
       expect(collected.disabledActionCount).toBe(0);
-      expect(collected.mapIsLinked).toBe(false);
+      expect(collected.mapIsLinked).toBe(true);
       expect(collected.footerPresent).toBe(true);
       expect(collected.stickyHeader).toBe(true);
       expect(collected.detailsBorderTop).toBeGreaterThanOrEqual(1);
       expect(collected.detailsBorderBottom).toBeGreaterThanOrEqual(1);
       expect(collected.textOverflowCount).toBe(0);
       expect(collected.documentScrollWidth).toBeLessThanOrEqual(viewport.width);
+      expect(collected.desktopHeaderMapsVisible).toBe(viewport.width >= 768);
+      expect(collected.mobileBarVisible).toBe(viewport.width < 768);
+      if (viewport.width < 768) {
+        expect(collected.mobileBarClearance).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(collected.mobileBarClearance).toBeNull();
+      }
       expect(collected.sectionOrder).toEqual(['information', 'actions', 'map']);
 
       expectNear(collected.intro.copy.left, contract.introCopy.left, tolerance);

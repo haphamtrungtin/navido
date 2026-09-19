@@ -1,6 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useId, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from 'react';
 import { createPortal } from 'react-dom';
 
 import { LocaleLink } from '@/components/navigation/locale-link';
@@ -56,6 +63,11 @@ export function MobileNavigation({
   mapsHref,
 }: MobileNavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const isMounted = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  );
   const panelId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
@@ -218,24 +230,27 @@ export function MobileNavigation({
         ? createPortal(panel, document.body)
         : null}
 
-      {!isOpen ? (
-        <div
-          className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-[var(--navido-rule)] bg-[var(--navido-paper)] pb-[env(safe-area-inset-bottom)] md:hidden"
-          data-testid="mobile-conversion-bar"
-        >
-          <a className="grid min-h-14 place-items-center" href={callHref}>
-            {copy.call}
-          </a>
-          <a
-            className="grid min-h-14 place-items-center border-l border-[var(--navido-rule)]"
-            href={mapsHref}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {copy.directions}
-          </a>
-        </div>
-      ) : null}
+      {isMounted && !isOpen && typeof document !== 'undefined'
+        ? createPortal(
+            <div
+              className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-[var(--navido-rule)] bg-[var(--navido-paper)] pb-[env(safe-area-inset-bottom)] md:hidden"
+              data-testid="mobile-conversion-bar"
+            >
+              <a className="grid min-h-14 place-items-center" href={callHref}>
+                {copy.call}
+              </a>
+              <a
+                className="grid min-h-14 place-items-center border-l border-[var(--navido-rule)]"
+                href={mapsHref}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {copy.directions}
+              </a>
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   );
 }

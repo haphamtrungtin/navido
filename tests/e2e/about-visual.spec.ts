@@ -54,7 +54,10 @@ type LayoutContract = Readonly<{
 }>;
 type Metrics = Readonly<{
   captureScrollY: number;
+  desktopHeaderMapsVisible: boolean;
   documentScrollWidth: number;
+  mobileBarClearance: number | null;
+  mobileBarVisible: boolean;
   imageCount: number;
   imageUrls: string[];
   introduction: IntroductionPosition;
@@ -463,7 +466,40 @@ for (const locale of locales) {
           introduction?.querySelector<HTMLElement>('h1')?.parentElement;
         const introductionImage = introductionFrame?.querySelector('img');
 
+        const headerMaps = document
+          .querySelector('header nav')
+          ?.parentElement?.querySelector<HTMLAnchorElement>(
+            'a[href*="google.com/maps/search"]',
+          );
+        const mobileBar = document.querySelector<HTMLElement>(
+          '[data-testid="mobile-conversion-bar"]',
+        );
+        const footerLinks =
+          document.querySelectorAll<HTMLAnchorElement>('footer a');
+        const finalFooterLink = footerLinks.item(footerLinks.length - 1);
+        const shell = {
+          desktopHeaderMapsVisible: Boolean(
+            headerMaps && headerMaps.getClientRects().length > 0,
+          ),
+          mobileBarClearance:
+            mobileBar && finalFooterLink
+              ? Math.floor(
+                  mobileBar.getBoundingClientRect().top -
+                    (finalFooterLink.getBoundingClientRect().bottom -
+                      Math.max(
+                        0,
+                        document.documentElement.scrollHeight -
+                          window.innerHeight,
+                      )),
+                )
+              : null,
+          mobileBarVisible: Boolean(
+            mobileBar && mobileBar.getClientRects().length > 0,
+          ),
+        };
+
         return {
+          ...shell,
           captureScrollY: Math.round(window.scrollY),
           documentScrollWidth: document.documentElement.scrollWidth,
           imageCount: pageImages.length,
@@ -534,6 +570,13 @@ for (const locale of locales) {
       expect(collected.loadedImageCount).toBe(5);
       expect(collected.textOverflowCount).toBe(0);
       expect(collected.documentScrollWidth).toBeLessThanOrEqual(viewport.width);
+      expect(collected.desktopHeaderMapsVisible).toBe(viewport.width >= 768);
+      expect(collected.mobileBarVisible).toBe(viewport.width < 768);
+      if (viewport.width < 768) {
+        expect(collected.mobileBarClearance).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(collected.mobileBarClearance).toBeNull();
+      }
       expect(
         collected.sectionPaddingTop.every(
           (padding) => padding >= (viewport.width < 768 ? 70 : 110),
