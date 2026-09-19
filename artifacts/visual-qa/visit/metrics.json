@@ -1,22 +1,517 @@
 [
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "action": {
-      "bottom": 1043,
-      "height": 291,
+      "bottom": 1225,
+      "height": 473,
       "left": 644,
       "right": 996,
       "top": 753,
       "width": 352
     },
-    "actionAnchorCount": 0,
+    "actionAnchorCount": 7,
     "captureScrollY": 0,
     "detailsBorderBottom": 1,
     "detailsBorderTop": 1,
     "documentScrollWidth": 1440,
     "footerPresent": true,
     "information": {
-      "bottom": 1070,
-      "height": 318,
+      "bottom": 1094,
+      "height": 342,
+      "left": 244,
+      "right": 596,
+      "top": 753,
+      "width": 352
+    },
+    "intro": {
+      "copy": {
+        "bottom": 471,
+        "height": 230,
+        "left": 244,
+        "right": 596,
+        "top": 241,
+        "width": 352
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 512,
+          "height": 311,
+          "left": 744,
+          "right": 1296,
+          "top": 201,
+          "width": 552
+        },
+        "naturalRatio": 1.8326848249027237,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.77491961414791
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1016,
+        "height": 202,
+        "left": 1044,
+        "right": 1296,
+        "top": 814,
+        "width": 252
+      },
+      "naturalRatio": 0.46195652173913043,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.2475247524752475
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 420484,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
+    "action": {
+      "bottom": 1162,
+      "height": 473,
+      "left": 400,
+      "right": 744,
+      "top": 689,
+      "width": 344
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 768,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1031,
+      "height": 342,
+      "left": 24,
+      "right": 368,
+      "top": 689,
+      "width": 344
+    },
+    "intro": {
+      "copy": {
+        "bottom": 448,
+        "height": 247,
+        "left": 24,
+        "right": 274,
+        "top": 201,
+        "width": 250
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 448,
+          "height": 246,
+          "left": 306,
+          "right": 744,
+          "top": 201,
+          "width": 438
+        },
+        "naturalRatio": 1.84,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7804878048780488
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1831,
+        "height": 576,
+        "left": 24,
+        "right": 744,
+        "top": 1255,
+        "width": 720
+      },
+      "naturalRatio": 0.462890625,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 547853,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
+    "action": {
+      "bottom": 1582,
+      "height": 465,
+      "left": 20,
+      "right": 370,
+      "top": 1117,
+      "width": 350
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 390,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1069,
+      "height": 334,
+      "left": 20,
+      "right": 370,
+      "top": 735,
+      "width": 350
+    },
+    "intro": {
+      "copy": {
+        "bottom": 353,
+        "height": 200,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 590,
+          "height": 197,
+          "left": 20,
+          "right": 370,
+          "top": 393,
+          "width": 350
+        },
+        "naturalRatio": 1.8352941176470587,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7766497461928934
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1964,
+        "height": 280,
+        "left": 20,
+        "right": 370,
+        "top": 1684,
+        "width": 350
+      },
+      "naturalRatio": 0.46153846153846156,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 303797,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
+    "action": {
+      "bottom": 1225,
+      "height": 473,
+      "left": 644,
+      "right": 996,
+      "top": 753,
+      "width": 352
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 1440,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1094,
+      "height": 342,
+      "left": 244,
+      "right": 596,
+      "top": 753,
+      "width": 352
+    },
+    "intro": {
+      "copy": {
+        "bottom": 471,
+        "height": 230,
+        "left": 244,
+        "right": 596,
+        "top": 241,
+        "width": 352
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 512,
+          "height": 311,
+          "left": 744,
+          "right": 1296,
+          "top": 201,
+          "width": 552
+        },
+        "naturalRatio": 1.8326848249027237,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.77491961414791
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1016,
+        "height": 202,
+        "left": 1044,
+        "right": 1296,
+        "top": 814,
+        "width": 252
+      },
+      "naturalRatio": 0.46195652173913043,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.2475247524752475
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 409537,
+    "viewport": {
+      "height": 900,
+      "name": "desktop-1440x900",
+      "width": 1440
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
+    "action": {
+      "bottom": 1162,
+      "height": 473,
+      "left": 400,
+      "right": 744,
+      "top": 689,
+      "width": 344
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 768,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1031,
+      "height": 342,
+      "left": 24,
+      "right": 368,
+      "top": 689,
+      "width": 344
+    },
+    "intro": {
+      "copy": {
+        "bottom": 448,
+        "height": 247,
+        "left": 24,
+        "right": 274,
+        "top": 201,
+        "width": 250
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 448,
+          "height": 246,
+          "left": 306,
+          "right": 744,
+          "top": 201,
+          "width": 438
+        },
+        "naturalRatio": 1.84,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7804878048780488
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1831,
+        "height": 576,
+        "left": 24,
+        "right": 744,
+        "top": 1255,
+        "width": 720
+      },
+      "naturalRatio": 0.462890625,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 535962,
+    "viewport": {
+      "height": 1024,
+      "name": "tablet-768x1024",
+      "width": 768
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
+    "action": {
+      "bottom": 1582,
+      "height": 465,
+      "left": 20,
+      "right": 370,
+      "top": 1117,
+      "width": 350
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 390,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1069,
+      "height": 334,
+      "left": 20,
+      "right": 370,
+      "top": 735,
+      "width": 350
+    },
+    "intro": {
+      "copy": {
+        "bottom": 353,
+        "height": 200,
+        "left": 20,
+        "right": 370,
+        "top": 153,
+        "width": 350
+      },
+      "exterior": {
+        "bounds": {
+          "bottom": 590,
+          "height": 197,
+          "left": 20,
+          "right": 370,
+          "top": 393,
+          "width": 350
+        },
+        "naturalRatio": 1.8352941176470587,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "ratio": 1.7766497461928934
+      }
+    },
+    "loadedImageCount": 2,
+    "map": {
+      "bounds": {
+        "bottom": 1964,
+        "height": 280,
+        "left": 20,
+        "right": 370,
+        "top": 1684,
+        "width": 350
+      },
+      "naturalRatio": 0.46153846153846156,
+      "objectFit": "cover",
+      "objectPosition": "50% 50%",
+      "ratio": 1.25
+    },
+    "mapIsLinked": true,
+    "pendingCount": 0,
+    "textOverflowCount": 0,
+    "disabledActionCount": 0,
+    "imageUrls": [
+      "/images/stitch/visit-exterior.jpg",
+      "/images/stitch/visit-map-placeholder.jpg"
+    ],
+    "sectionOrder": ["information", "actions", "map"],
+    "stickyHeader": true,
+    "screenshotBytes": 294116,
+    "viewport": {
+      "height": 844,
+      "name": "mobile-390x844",
+      "width": 390
+    }
+  },
+  {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
+    "action": {
+      "bottom": 1225,
+      "height": 473,
+      "left": 644,
+      "right": 996,
+      "top": 753,
+      "width": 352
+    },
+    "actionAnchorCount": 7,
+    "captureScrollY": 0,
+    "detailsBorderBottom": 1,
+    "detailsBorderTop": 1,
+    "documentScrollWidth": 1440,
+    "footerPresent": true,
+    "information": {
+      "bottom": 1094,
+      "height": 342,
       "left": 244,
       "right": 596,
       "top": 753,
@@ -61,44 +556,9 @@
       "objectPosition": "50% 50%",
       "ratio": 1.2475247524752475
     },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "Địa chỉ đang được xác nhận."
-      },
-      {
-        "id": "hours",
-        "text": "Giờ mở cửa đang được xác nhận."
-      },
-      {
-        "id": "phone",
-        "text": "Số điện thoại đang được xác nhận."
-      },
-      {
-        "id": "directions",
-        "text": "Chỉ đường đang được xác nhận."
-      },
-      {
-        "id": "grab",
-        "text": "Thông tin Grab đang được xác nhận."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram đang được xác nhận."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook đang được xác nhận."
-      },
-      {
-        "id": "map",
-        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
-      }
-    ],
+    "mapIsLinked": true,
+    "pendingCount": 0,
     "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
       "/images/stitch/visit-exterior.jpg",
@@ -106,7 +566,7 @@
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 397320,
+    "screenshotBytes": 397960,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -114,23 +574,26 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "action": {
-      "bottom": 979,
-      "height": 291,
+      "bottom": 1161,
+      "height": 473,
       "left": 400,
       "right": 744,
       "top": 688,
       "width": 344
     },
-    "actionAnchorCount": 0,
+    "actionAnchorCount": 7,
     "captureScrollY": 0,
     "detailsBorderBottom": 1,
     "detailsBorderTop": 1,
     "documentScrollWidth": 768,
     "footerPresent": true,
     "information": {
-      "bottom": 1006,
-      "height": 318,
+      "bottom": 1030,
+      "height": 342,
       "left": 24,
       "right": 368,
       "top": 688,
@@ -163,11 +626,11 @@
     "loadedImageCount": 2,
     "map": {
       "bounds": {
-        "bottom": 1675,
+        "bottom": 1831,
         "height": 576,
         "left": 24,
         "right": 744,
-        "top": 1099,
+        "top": 1255,
         "width": 720
       },
       "naturalRatio": 0.462890625,
@@ -175,44 +638,9 @@
       "objectPosition": "50% 50%",
       "ratio": 1.25
     },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "Địa chỉ đang được xác nhận."
-      },
-      {
-        "id": "hours",
-        "text": "Giờ mở cửa đang được xác nhận."
-      },
-      {
-        "id": "phone",
-        "text": "Số điện thoại đang được xác nhận."
-      },
-      {
-        "id": "directions",
-        "text": "Chỉ đường đang được xác nhận."
-      },
-      {
-        "id": "grab",
-        "text": "Thông tin Grab đang được xác nhận."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram đang được xác nhận."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook đang được xác nhận."
-      },
-      {
-        "id": "map",
-        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
-      }
-    ],
+    "mapIsLinked": true,
+    "pendingCount": 0,
     "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
       "/images/stitch/visit-exterior.jpg",
@@ -220,7 +648,7 @@
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 522773,
+    "screenshotBytes": 525244,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -228,23 +656,26 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
     "action": {
-      "bottom": 1344,
-      "height": 283,
+      "bottom": 1550,
+      "height": 465,
       "left": 20,
       "right": 370,
-      "top": 1061,
+      "top": 1085,
       "width": 350
     },
-    "actionAnchorCount": 0,
+    "actionAnchorCount": 7,
     "captureScrollY": 0,
     "detailsBorderBottom": 1,
     "detailsBorderTop": 1,
     "documentScrollWidth": 390,
     "footerPresent": true,
     "information": {
-      "bottom": 1013,
-      "height": 310,
+      "bottom": 1037,
+      "height": 334,
       "left": 20,
       "right": 370,
       "top": 703,
@@ -277,11 +708,11 @@
     "loadedImageCount": 2,
     "map": {
       "bounds": {
-        "bottom": 1726,
+        "bottom": 1932,
         "height": 280,
         "left": 20,
         "right": 370,
-        "top": 1446,
+        "top": 1652,
         "width": 350
       },
       "naturalRatio": 0.46153846153846156,
@@ -289,44 +720,9 @@
       "objectPosition": "50% 50%",
       "ratio": 1.25
     },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "Địa chỉ đang được xác nhận."
-      },
-      {
-        "id": "hours",
-        "text": "Giờ mở cửa đang được xác nhận."
-      },
-      {
-        "id": "phone",
-        "text": "Số điện thoại đang được xác nhận."
-      },
-      {
-        "id": "directions",
-        "text": "Chỉ đường đang được xác nhận."
-      },
-      {
-        "id": "grab",
-        "text": "Thông tin Grab đang được xác nhận."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram đang được xác nhận."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook đang được xác nhận."
-      },
-      {
-        "id": "map",
-        "text": "Bản đồ sẽ hiển thị khi địa điểm được xác nhận."
-      }
-    ],
+    "mapIsLinked": true,
+    "pendingCount": 0,
     "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
     "disabledActionCount": 0,
     "imageUrls": [
       "/images/stitch/visit-exterior.jpg",
@@ -334,691 +730,7 @@
     ],
     "sectionOrder": ["information", "actions", "map"],
     "stickyHeader": true,
-    "screenshotBytes": 283028,
-    "viewport": {
-      "height": 844,
-      "name": "mobile-390x844",
-      "width": 390
-    }
-  },
-  {
-    "action": {
-      "bottom": 1043,
-      "height": 291,
-      "left": 644,
-      "right": 996,
-      "top": 753,
-      "width": 352
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 1440,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1070,
-      "height": 318,
-      "left": 244,
-      "right": 596,
-      "top": 753,
-      "width": 352
-    },
-    "intro": {
-      "copy": {
-        "bottom": 455,
-        "height": 198,
-        "left": 244,
-        "right": 596,
-        "top": 257,
-        "width": 352
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 512,
-          "height": 311,
-          "left": 744,
-          "right": 1296,
-          "top": 201,
-          "width": 552
-        },
-        "naturalRatio": 1.8326848249027237,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.77491961414791
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1016,
-        "height": 202,
-        "left": 1044,
-        "right": 1296,
-        "top": 814,
-        "width": 252
-      },
-      "naturalRatio": 0.46195652173913043,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.2475247524752475
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "The address is being confirmed."
-      },
-      {
-        "id": "hours",
-        "text": "Opening hours are being confirmed."
-      },
-      {
-        "id": "phone",
-        "text": "A phone number is being confirmed."
-      },
-      {
-        "id": "directions",
-        "text": "Directions are being confirmed."
-      },
-      {
-        "id": "grab",
-        "text": "Grab availability is being confirmed."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram is being confirmed."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook is being confirmed."
-      },
-      {
-        "id": "map",
-        "text": "The map will be available once the location is confirmed."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 389311,
-    "viewport": {
-      "height": 900,
-      "name": "desktop-1440x900",
-      "width": 1440
-    }
-  },
-  {
-    "action": {
-      "bottom": 979,
-      "height": 291,
-      "left": 400,
-      "right": 744,
-      "top": 688,
-      "width": 344
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 768,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1006,
-      "height": 318,
-      "left": 24,
-      "right": 368,
-      "top": 688,
-      "width": 344
-    },
-    "intro": {
-      "copy": {
-        "bottom": 432,
-        "height": 215,
-        "left": 24,
-        "right": 274,
-        "top": 217,
-        "width": 250
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 447,
-          "height": 246,
-          "left": 306,
-          "right": 744,
-          "top": 201,
-          "width": 438
-        },
-        "naturalRatio": 1.84,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.7804878048780488
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1675,
-        "height": 576,
-        "left": 24,
-        "right": 744,
-        "top": 1099,
-        "width": 720
-      },
-      "naturalRatio": 0.462890625,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.25
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "The address is being confirmed."
-      },
-      {
-        "id": "hours",
-        "text": "Opening hours are being confirmed."
-      },
-      {
-        "id": "phone",
-        "text": "A phone number is being confirmed."
-      },
-      {
-        "id": "directions",
-        "text": "Directions are being confirmed."
-      },
-      {
-        "id": "grab",
-        "text": "Grab availability is being confirmed."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram is being confirmed."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook is being confirmed."
-      },
-      {
-        "id": "map",
-        "text": "The map will be available once the location is confirmed."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 514236,
-    "viewport": {
-      "height": 1024,
-      "name": "tablet-768x1024",
-      "width": 768
-    }
-  },
-  {
-    "action": {
-      "bottom": 1344,
-      "height": 283,
-      "left": 20,
-      "right": 370,
-      "top": 1061,
-      "width": 350
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 390,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1013,
-      "height": 310,
-      "left": 20,
-      "right": 370,
-      "top": 703,
-      "width": 350
-    },
-    "intro": {
-      "copy": {
-        "bottom": 321,
-        "height": 168,
-        "left": 20,
-        "right": 370,
-        "top": 153,
-        "width": 350
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 558,
-          "height": 197,
-          "left": 20,
-          "right": 370,
-          "top": 361,
-          "width": 350
-        },
-        "naturalRatio": 1.8352941176470587,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.7766497461928934
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1726,
-        "height": 280,
-        "left": 20,
-        "right": 370,
-        "top": 1446,
-        "width": 350
-      },
-      "naturalRatio": 0.46153846153846156,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.25
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "The address is being confirmed."
-      },
-      {
-        "id": "hours",
-        "text": "Opening hours are being confirmed."
-      },
-      {
-        "id": "phone",
-        "text": "A phone number is being confirmed."
-      },
-      {
-        "id": "directions",
-        "text": "Directions are being confirmed."
-      },
-      {
-        "id": "grab",
-        "text": "Grab availability is being confirmed."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram is being confirmed."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook is being confirmed."
-      },
-      {
-        "id": "map",
-        "text": "The map will be available once the location is confirmed."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 275238,
-    "viewport": {
-      "height": 844,
-      "name": "mobile-390x844",
-      "width": 390
-    }
-  },
-  {
-    "action": {
-      "bottom": 1043,
-      "height": 291,
-      "left": 644,
-      "right": 996,
-      "top": 753,
-      "width": 352
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 1440,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1070,
-      "height": 318,
-      "left": 244,
-      "right": 596,
-      "top": 753,
-      "width": 352
-    },
-    "intro": {
-      "copy": {
-        "bottom": 455,
-        "height": 198,
-        "left": 244,
-        "right": 596,
-        "top": 257,
-        "width": 352
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 512,
-          "height": 311,
-          "left": 744,
-          "right": 1296,
-          "top": 201,
-          "width": 552
-        },
-        "naturalRatio": 1.8326848249027237,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.77491961414791
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1016,
-        "height": 202,
-        "left": 1044,
-        "right": 1296,
-        "top": 814,
-        "width": 252
-      },
-      "naturalRatio": 0.46195652173913043,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.2475247524752475
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "주소를 확인 중입니다."
-      },
-      {
-        "id": "hours",
-        "text": "영업 시간을 확인 중입니다."
-      },
-      {
-        "id": "phone",
-        "text": "전화번호를 확인 중입니다."
-      },
-      {
-        "id": "directions",
-        "text": "길 안내를 확인 중입니다."
-      },
-      {
-        "id": "grab",
-        "text": "Grab 정보를 확인 중입니다."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram을 확인 중입니다."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook을 확인 중입니다."
-      },
-      {
-        "id": "map",
-        "text": "위치가 확정되면 지도를 안내하겠습니다."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 373403,
-    "viewport": {
-      "height": 900,
-      "name": "desktop-1440x900",
-      "width": 1440
-    }
-  },
-  {
-    "action": {
-      "bottom": 979,
-      "height": 291,
-      "left": 400,
-      "right": 744,
-      "top": 688,
-      "width": 344
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 768,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1006,
-      "height": 318,
-      "left": 24,
-      "right": 368,
-      "top": 688,
-      "width": 344
-    },
-    "intro": {
-      "copy": {
-        "bottom": 416,
-        "height": 183,
-        "left": 24,
-        "right": 274,
-        "top": 233,
-        "width": 250
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 447,
-          "height": 246,
-          "left": 306,
-          "right": 744,
-          "top": 201,
-          "width": 438
-        },
-        "naturalRatio": 1.84,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.7804878048780488
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1675,
-        "height": 576,
-        "left": 24,
-        "right": 744,
-        "top": 1099,
-        "width": 720
-      },
-      "naturalRatio": 0.462890625,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.25
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "주소를 확인 중입니다."
-      },
-      {
-        "id": "hours",
-        "text": "영업 시간을 확인 중입니다."
-      },
-      {
-        "id": "phone",
-        "text": "전화번호를 확인 중입니다."
-      },
-      {
-        "id": "directions",
-        "text": "길 안내를 확인 중입니다."
-      },
-      {
-        "id": "grab",
-        "text": "Grab 정보를 확인 중입니다."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram을 확인 중입니다."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook을 확인 중입니다."
-      },
-      {
-        "id": "map",
-        "text": "위치가 확정되면 지도를 안내하겠습니다."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 499401,
-    "viewport": {
-      "height": 1024,
-      "name": "tablet-768x1024",
-      "width": 768
-    }
-  },
-  {
-    "action": {
-      "bottom": 1344,
-      "height": 283,
-      "left": 20,
-      "right": 370,
-      "top": 1061,
-      "width": 350
-    },
-    "actionAnchorCount": 0,
-    "captureScrollY": 0,
-    "detailsBorderBottom": 1,
-    "detailsBorderTop": 1,
-    "documentScrollWidth": 390,
-    "footerPresent": true,
-    "information": {
-      "bottom": 1013,
-      "height": 310,
-      "left": 20,
-      "right": 370,
-      "top": 703,
-      "width": 350
-    },
-    "intro": {
-      "copy": {
-        "bottom": 321,
-        "height": 168,
-        "left": 20,
-        "right": 370,
-        "top": 153,
-        "width": 350
-      },
-      "exterior": {
-        "bounds": {
-          "bottom": 558,
-          "height": 197,
-          "left": 20,
-          "right": 370,
-          "top": 361,
-          "width": 350
-        },
-        "naturalRatio": 1.8352941176470587,
-        "objectFit": "cover",
-        "objectPosition": "50% 50%",
-        "ratio": 1.7766497461928934
-      }
-    },
-    "loadedImageCount": 2,
-    "map": {
-      "bounds": {
-        "bottom": 1726,
-        "height": 280,
-        "left": 20,
-        "right": 370,
-        "top": 1446,
-        "width": 350
-      },
-      "naturalRatio": 0.46153846153846156,
-      "objectFit": "cover",
-      "objectPosition": "50% 50%",
-      "ratio": 1.25
-    },
-    "mapIsLinked": false,
-    "pendingCount": 8,
-    "pendingStates": [
-      {
-        "id": "address",
-        "text": "주소를 확인 중입니다."
-      },
-      {
-        "id": "hours",
-        "text": "영업 시간을 확인 중입니다."
-      },
-      {
-        "id": "phone",
-        "text": "전화번호를 확인 중입니다."
-      },
-      {
-        "id": "directions",
-        "text": "길 안내를 확인 중입니다."
-      },
-      {
-        "id": "grab",
-        "text": "Grab 정보를 확인 중입니다."
-      },
-      {
-        "id": "instagram",
-        "text": "Instagram을 확인 중입니다."
-      },
-      {
-        "id": "facebook",
-        "text": "Facebook을 확인 중입니다."
-      },
-      {
-        "id": "map",
-        "text": "위치가 확정되면 지도를 안내하겠습니다."
-      }
-    ],
-    "textOverflowCount": 0,
-    "forbiddenAnchorCount": 0,
-    "disabledActionCount": 0,
-    "imageUrls": [
-      "/images/stitch/visit-exterior.jpg",
-      "/images/stitch/visit-map-placeholder.jpg"
-    ],
-    "sectionOrder": ["information", "actions", "map"],
-    "stickyHeader": true,
-    "screenshotBytes": 263221,
+    "screenshotBytes": 280308,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

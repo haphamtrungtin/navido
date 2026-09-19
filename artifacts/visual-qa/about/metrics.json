@@ -1,5 +1,8 @@
 [
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 1440,
     "imageCount": 5,
@@ -502,7 +505,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 1383487,
+    "screenshotBytes": 1405040,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -510,6 +513,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 768,
     "imageCount": 5,
@@ -1012,7 +1018,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 851285,
+    "screenshotBytes": 873093,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -1020,6 +1026,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
     "captureScrollY": 0,
     "documentScrollWidth": 390,
     "imageCount": 5,
@@ -1522,7 +1531,7 @@
       }
     ],
     "locale": "vi",
-    "screenshotBytes": 796514,
+    "screenshotBytes": 791891,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -1530,6 +1539,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 1440,
     "imageCount": 5,
@@ -2032,7 +2044,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 1365126,
+    "screenshotBytes": 1384008,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -2040,6 +2052,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 768,
     "imageCount": 5,
@@ -2542,7 +2557,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 835805,
+    "screenshotBytes": 855390,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -2550,6 +2565,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 35,
+    "mobileBarVisible": true,
     "captureScrollY": 0,
     "documentScrollWidth": 390,
     "imageCount": 5,
@@ -3052,7 +3070,7 @@
       }
     ],
     "locale": "en",
-    "screenshotBytes": 784987,
+    "screenshotBytes": 779687,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -3060,6 +3078,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 1440,
     "imageCount": 5,
@@ -3562,7 +3583,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 1344507,
+    "screenshotBytes": 1363868,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -3570,6 +3591,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "captureScrollY": 0,
     "documentScrollWidth": 768,
     "imageCount": 5,
@@ -4072,7 +4096,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 810617,
+    "screenshotBytes": 830378,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -4080,6 +4104,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 35,
+    "mobileBarVisible": true,
     "captureScrollY": 0,
     "documentScrollWidth": 390,
     "imageCount": 5,
@@ -4582,7 +4609,7 @@
       }
     ],
     "locale": "ko",
-    "screenshotBytes": 771752,
+    "screenshotBytes": 768294,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

@@ -1,5 +1,8 @@
 [
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 1440,
@@ -11,7 +14,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 2354088,
+    "screenshotBytes": 2377312,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -19,6 +22,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 768,
@@ -30,7 +36,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1370981,
+    "screenshotBytes": 1392673,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -38,6 +44,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 515,
+    "mobileBarVisible": true,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 390,
@@ -49,7 +58,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1007133,
+    "screenshotBytes": 1025959,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -57,6 +66,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 1440,
@@ -68,7 +80,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 2336003,
+    "screenshotBytes": 2355098,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -76,6 +88,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 768,
@@ -87,7 +102,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1348303,
+    "screenshotBytes": 1367936,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -95,6 +110,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 515,
+    "mobileBarVisible": true,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 390,
@@ -106,7 +124,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 993397,
+    "screenshotBytes": 1010050,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -114,6 +132,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 1440,
@@ -125,7 +146,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 2278599,
+    "screenshotBytes": 2298904,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -133,6 +154,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 768,
@@ -144,7 +168,7 @@
     "picksVisible": true,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1294398,
+    "screenshotBytes": 1313945,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -152,6 +176,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 515,
+    "mobileBarVisible": true,
     "categoryCount": 14,
     "chapterPatternCount": 8,
     "documentScrollWidth": 390,
@@ -163,7 +190,7 @@
     "picksVisible": false,
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 951682,
+    "screenshotBytes": 967996,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

@@ -247,7 +247,7 @@ for (const locale of locales) {
             'h1, h2, h3, p, dt, dd, figcaption',
           ) ?? [],
         );
-        const anchors = Array.from(main?.querySelectorAll('a') ?? []);
+        const anchors = Array.from(actions?.querySelectorAll('a') ?? []);
 
         const headerMaps = document
           .querySelector('header nav')
@@ -265,7 +265,9 @@ for (const locale of locales) {
             headerMaps && headerMaps.getClientRects().length > 0,
           ),
           mobileBarClearance:
-            mobileBar && finalFooterLink
+            mobileBar &&
+            mobileBar.getClientRects().length > 0 &&
+            finalFooterLink
               ? Math.floor(
                   mobileBar.getBoundingClientRect().top -
                     (finalFooterLink.getBoundingClientRect().bottom -
@@ -425,6 +427,11 @@ for (const locale of locales) {
           collected.map.bounds.top,
         );
       }
+
+      await page.locator('nextjs-portal').evaluateAll((portals) => {
+        portals.forEach((portal) => portal.remove());
+      });
+      await expect(page.locator('nextjs-portal')).toHaveCount(0);
 
       const screenshot = await page.screenshot({
         fullPage: true,

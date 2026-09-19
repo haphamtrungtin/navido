@@ -1,5 +1,8 @@
 [
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
     "heroCropped": true,
@@ -28,7 +31,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1665285,
+    "screenshotBytes": 1686203,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -36,6 +39,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
     "heroCropped": true,
@@ -64,7 +70,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 1111823,
+    "screenshotBytes": 1133121,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -72,6 +78,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 515,
+    "mobileBarVisible": true,
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
     "heroCropped": true,
@@ -100,7 +109,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 708563,
+    "screenshotBytes": 725803,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -108,6 +117,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
     "heroCropped": true,
@@ -136,7 +148,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1652265,
+    "screenshotBytes": 1671454,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -144,6 +156,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
     "heroCropped": true,
@@ -172,7 +187,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 1095934,
+    "screenshotBytes": 1116132,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -180,6 +195,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 514,
+    "mobileBarVisible": true,
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
     "heroCropped": true,
@@ -208,7 +226,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 697980,
+    "screenshotBytes": 713584,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -216,6 +234,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 1440,
     "gridTracks": [12, 12, 12, 12],
     "heroCropped": true,
@@ -244,7 +265,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1611624,
+    "screenshotBytes": 1631173,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -252,6 +273,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "documentScrollWidth": 768,
     "gridTracks": [8, 8, 8, 8],
     "heroCropped": true,
@@ -280,7 +304,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 1056687,
+    "screenshotBytes": 1076164,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -288,6 +312,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 514,
+    "mobileBarVisible": true,
     "documentScrollWidth": 390,
     "gridTracks": [1, 1, 1, 1],
     "heroCropped": true,
@@ -316,7 +343,7 @@
     ],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 674280,
+    "screenshotBytes": 690553,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

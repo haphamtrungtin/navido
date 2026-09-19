@@ -103,6 +103,40 @@ for (const locale of locales) {
       await page.evaluate(() =>
         window.scrollTo({ top: 480, behavior: 'instant' }),
       );
+      await expect
+        .poll(() =>
+          page.evaluate(async () => {
+            const getActiveHref = () =>
+              document
+                .querySelector<HTMLElement>(
+                  '[data-menu-mobile-category-nav], [data-menu-desktop-category-nav]',
+                )
+                ?.querySelector<HTMLAnchorElement>('a[aria-current="location"]')
+                ?.getAttribute('href') ?? '';
+            const first = getActiveHref();
+            await new Promise<void>((resolve) =>
+              requestAnimationFrame(() => resolve()),
+            );
+            const second = getActiveHref();
+            await new Promise<void>((resolve) =>
+              requestAnimationFrame(() => resolve()),
+            );
+            const third = getActiveHref();
+            return first && first === second && second === third ? third : '';
+          }),
+        )
+        .not.toBe('');
+      const activeCategoryHref = await page.evaluate(
+        () =>
+          Array.from(
+            document.querySelectorAll<HTMLAnchorElement>(
+              '[data-menu-desktop-category-nav] a[aria-current="location"], [data-menu-mobile-category-nav] a[aria-current="location"]',
+            ),
+          )
+            .find((link) => link.getClientRects().length > 0)
+            ?.getAttribute('href') ?? '',
+      );
+      expect(activeCategoryHref).toMatch(/^#/);
       const metricsForViewport = await page.evaluate(() => {
         const mobileNavigation = document
           .querySelector<HTMLElement>('[data-menu-mobile-category-nav]')
@@ -132,7 +166,9 @@ for (const locale of locales) {
             headerMaps && headerMaps.getClientRects().length > 0,
           ),
           mobileBarClearance:
-            mobileBar && finalFooterLink
+            mobileBar &&
+            mobileBar.getClientRects().length > 0 &&
+            finalFooterLink
               ? Math.floor(
                   mobileBar.getBoundingClientRect().top -
                     (finalFooterLink.getBoundingClientRect().bottom -
@@ -205,6 +241,11 @@ for (const locale of locales) {
       } else {
         expect(metricsForViewport.mobileBarClearance).toBeNull();
       }
+
+      await page.locator('nextjs-portal').evaluateAll((portals) => {
+        portals.forEach((portal) => portal.remove());
+      });
+      await expect(page.locator('nextjs-portal')).toHaveCount(0);
 
       const screenshot = await page.screenshot({
         fullPage: true,

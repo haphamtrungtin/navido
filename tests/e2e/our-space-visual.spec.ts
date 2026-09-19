@@ -214,7 +214,9 @@ for (const locale of locales) {
             headerMaps && headerMaps.getClientRects().length > 0,
           ),
           mobileBarClearance:
-            mobileBar && finalFooterLink
+            mobileBar &&
+            mobileBar.getClientRects().length > 0 &&
+            finalFooterLink
               ? Math.floor(
                   mobileBar.getBoundingClientRect().top -
                     (finalFooterLink.getBoundingClientRect().bottom -
@@ -295,6 +297,11 @@ for (const locale of locales) {
       } else {
         expect(collected.mobileBarClearance).toBeNull();
       }
+
+      await page.locator('nextjs-portal').evaluateAll((portals) => {
+        portals.forEach((portal) => portal.remove());
+      });
+      await expect(page.locator('nextjs-portal')).toHaveCount(0);
 
       const screenshot = await page.screenshot({
         fullPage: true,

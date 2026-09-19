@@ -12,6 +12,22 @@ type CategoryNavigationProps = Readonly<{
   variant?: 'desktop' | 'mobile';
 }>;
 
+export function selectActiveCategoryId(
+  entries: readonly Pick<
+    IntersectionObserverEntry,
+    'boundingClientRect' | 'isIntersecting' | 'target'
+  >[],
+): string | null {
+  return (
+    entries
+      .filter((entry) => entry.isIntersecting && entry.target.id)
+      .sort(
+        (first, second) =>
+          first.boundingClientRect.top - second.boundingClientRect.top,
+      )[0]?.target.id ?? null
+  );
+}
+
 export function CategoryNavigation({
   categories,
   label,
@@ -27,8 +43,8 @@ export function CategoryNavigation({
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const activeEntry = entries.find((entry) => entry.isIntersecting);
-        if (activeEntry?.target.id) setActiveCategoryId(activeEntry.target.id);
+        const activeCategoryId = selectActiveCategoryId(entries);
+        if (activeCategoryId) setActiveCategoryId(activeCategoryId);
       },
       { rootMargin: '-35% 0px -55% 0px', threshold: 0 },
     );

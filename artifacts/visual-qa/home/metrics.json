@@ -1,5 +1,8 @@
 [
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 1440,
     "gridTracks": {
@@ -7,7 +10,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -24,7 +27,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 626312,
+    "screenshotBytes": 627752,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -32,6 +35,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 768,
     "gridTracks": {
@@ -39,7 +45,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -56,7 +62,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 320544,
+    "screenshotBytes": 323372,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -64,6 +70,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
     "contentPaddingTop": [72, 72, 72],
     "documentScrollWidth": 390,
     "gridTracks": {
@@ -71,7 +80,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -88,7 +97,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "vi",
-    "screenshotBytes": 139358,
+    "screenshotBytes": 134080,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -96,6 +105,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 1440,
     "gridTracks": {
@@ -103,7 +115,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -120,7 +132,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 623361,
+    "screenshotBytes": 624423,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -128,6 +140,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 768,
     "gridTracks": {
@@ -135,7 +150,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -152,7 +167,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 317591,
+    "screenshotBytes": 318660,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -160,6 +175,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
     "contentPaddingTop": [72, 72, 72],
     "documentScrollWidth": 390,
     "gridTracks": {
@@ -167,7 +185,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -184,7 +202,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "en",
-    "screenshotBytes": 137961,
+    "screenshotBytes": 132483,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -192,6 +210,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 1440,
     "gridTracks": {
@@ -199,7 +220,7 @@
       "introduction": 12,
       "location": 12
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 820,
@@ -216,7 +237,7 @@
     "sectionScrollWidths": [1440, 1440, 1440, 1440],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 613394,
+    "screenshotBytes": 614123,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -224,6 +245,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": true,
+    "mobileBarClearance": null,
+    "mobileBarVisible": false,
     "contentPaddingTop": [120, 120, 120],
     "documentScrollWidth": 768,
     "gridTracks": {
@@ -231,7 +255,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 944,
@@ -248,7 +272,7 @@
     "sectionScrollWidths": [768, 768, 768, 768],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 309826,
+    "screenshotBytes": 310649,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -256,6 +280,9 @@
     }
   },
   {
+    "desktopHeaderMapsVisible": false,
+    "mobileBarClearance": 34,
+    "mobileBarVisible": true,
     "contentPaddingTop": [72, 72, 72],
     "documentScrollWidth": 390,
     "gridTracks": {
@@ -263,7 +290,7 @@
       "introduction": 1,
       "location": 1
     },
-    "heroBackground": "url(\"http://127.0.0.1:3000/images/stitch/home-cafe-interior.jpg\")",
+    "heroBackground": "url(\"http://127.0.0.1:3100/images/stitch/home-cafe-interior.jpg\")",
     "heroBackgroundPosition": "50% 50%",
     "heroBackgroundSize": "cover",
     "heroHeight": 764,
@@ -280,7 +307,7 @@
     "sectionScrollWidths": [390, 390, 390, 390],
     "textOverflowCount": 0,
     "locale": "ko",
-    "screenshotBytes": 131788,
+    "screenshotBytes": 126186,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
