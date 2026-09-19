@@ -42,6 +42,12 @@ export function getAbsoluteLocalizedUrl(
   ).toString();
 }
 
+const openGraphLocales: Record<Locale, string> = {
+  en: 'en_US',
+  ko: 'ko_KR',
+  vi: 'vi_VN',
+};
+
 export function buildPageMetadata({
   description,
   locale,
@@ -49,7 +55,17 @@ export function buildPageMetadata({
   siteUrl,
   title,
 }: PageMetadataInput): Metadata {
-  const metadata: Metadata = { description, title };
+  const metadata: Metadata = {
+    description,
+    openGraph: {
+      description,
+      locale: openGraphLocales[locale],
+      title,
+      type: 'website',
+    },
+    title,
+    twitter: { card: 'summary' },
+  };
 
   if (siteUrl === null) {
     return metadata;

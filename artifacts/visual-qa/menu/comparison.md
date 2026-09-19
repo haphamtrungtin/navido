@@ -8,14 +8,14 @@ The retained reference screenshots, HTML exports, dimensions, and Stitch screen 
 
 | Locale | Viewport         | Categories | Patterns | Rows | Images loaded | Picks   | Nav position | Nav top | Text overflow | Document width | Screenshot bytes |
 | ------ | ---------------- | ---------: | -------: | ---: | ------------- | ------- | ------------ | ------: | ------------: | -------------: | ---------------: |
-| vi     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2558137 |
-| vi     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1364803 |
+| vi     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2602129 |
+| vi     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1375018 |
 | vi     | mobile-390x844   |         13 |        8 |  127 | 3/3           | hidden  | sticky       |    80px |             0 |          390px |          1112172 |
-| en     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2532692 |
-| en     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1343063 |
+| en     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2577141 |
+| en     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1352921 |
 | en     | mobile-390x844   |         13 |        8 |  127 | 3/3           | hidden  | sticky       |    80px |             0 |          390px |          1091993 |
-| ko     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2474222 |
-| ko     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1286372 |
+| ko     | desktop-1440x900 |         13 |        8 |  127 | 9/9           | visible | sticky       |  1082px |             0 |         1440px |          2522516 |
+| ko     | tablet-768x1024  |         13 |        8 |  127 | 9/9           | visible | sticky       |   812px |             0 |          768px |          1297796 |
 | ko     | mobile-390x844   |         13 |        8 |  127 | 3/3           | hidden  | sticky       |    80px |             0 |          390px |          1055794 |
 
 The verifier asserts source completeness, responsive editorial media, chapter pattern coverage, sticky navigation, decoded images, price/name containment, and zero document overflow. The shared site shell remains intentionally unchanged.

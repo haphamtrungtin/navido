@@ -242,6 +242,7 @@ function getCategoryMedia(
         aspect="4 / 5"
         desktopSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
         mobileSrc="/images/navido/coffee/navido_coffee_table_setting_01.jpg"
+        eager
       />
     );
   }
@@ -252,6 +253,7 @@ function getCategoryMedia(
         aspect="4 / 5"
         desktopSrc="/images/navido/menu/navido_menu_brunch_photographed_01.jpg"
         mobileSrc="/images/navido/menu/navido_menu_brunch_photographed_01.jpg"
+        eager
       />
     );
   }

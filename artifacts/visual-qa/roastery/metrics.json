@@ -4,7 +4,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "vi",
-    "screenshotBytes": 284363,
+    "screenshotBytes": 284682,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -16,7 +16,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "vi",
-    "screenshotBytes": 263698,
+    "screenshotBytes": 264024,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -28,7 +28,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "vi",
-    "screenshotBytes": 103099,
+    "screenshotBytes": 103412,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",
@@ -76,7 +76,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "ko",
-    "screenshotBytes": 275059,
+    "screenshotBytes": 274799,
     "viewport": {
       "height": 900,
       "name": "desktop-1440x900",
@@ -88,7 +88,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "ko",
-    "screenshotBytes": 253027,
+    "screenshotBytes": 252819,
     "viewport": {
       "height": 1024,
       "name": "tablet-768x1024",
@@ -100,7 +100,7 @@
     "imageCount": 2,
     "loadedImageCount": 2,
     "locale": "ko",
-    "screenshotBytes": 98916,
+    "screenshotBytes": 98693,
     "viewport": {
       "height": 844,
       "name": "mobile-390x844",

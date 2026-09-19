@@ -33,6 +33,7 @@ export function RoasteryHero({ copy, locale, media }: RoasteryHeroProps) {
           aspect="16 / 9"
           className="h-full"
           sizes="100vw"
+          priority
           src={media.src}
         />
       </div>
