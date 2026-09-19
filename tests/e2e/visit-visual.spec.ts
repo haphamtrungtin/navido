@@ -314,7 +314,8 @@ for (const locale of locales) {
           ).filter((image) => image.complete && image.naturalWidth > 0).length,
           map: toFrame(frames[1] ?? null),
           mapIsLinked: Boolean(map?.querySelector('a')),
-          pendingCount: 0,
+          pendingCount:
+            main?.querySelectorAll('[data-visit-pending]').length ?? 0,
           textOverflowCount: textNodes.filter(
             (node) => node.scrollWidth > node.clientWidth,
           ).length,

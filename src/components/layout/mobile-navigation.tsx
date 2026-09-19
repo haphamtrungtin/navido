@@ -208,6 +208,25 @@ export function MobileNavigation({
     </div>
   ) : null;
 
+  const conversionBar = !isOpen ? (
+    <div
+      className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-[var(--navido-rule)] bg-[var(--navido-paper)] pb-[env(safe-area-inset-bottom)] md:hidden"
+      data-testid="mobile-conversion-bar"
+    >
+      <a className="grid min-h-14 place-items-center" href={callHref}>
+        {copy.call}
+      </a>
+      <a
+        className="grid min-h-14 place-items-center border-l border-[var(--navido-rule)]"
+        href={mapsHref}
+        rel="noreferrer"
+        target="_blank"
+      >
+        {copy.directions}
+      </a>
+    </div>
+  ) : null;
+
   return (
     <div className="md:hidden">
       <button
@@ -230,26 +249,10 @@ export function MobileNavigation({
         ? createPortal(panel, document.body)
         : null}
 
-      {isMounted && !isOpen && typeof document !== 'undefined'
-        ? createPortal(
-            <div
-              className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-[var(--navido-rule)] bg-[var(--navido-paper)] pb-[env(safe-area-inset-bottom)] md:hidden"
-              data-testid="mobile-conversion-bar"
-            >
-              <a className="grid min-h-14 place-items-center" href={callHref}>
-                {copy.call}
-              </a>
-              <a
-                className="grid min-h-14 place-items-center border-l border-[var(--navido-rule)]"
-                href={mapsHref}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {copy.directions}
-              </a>
-            </div>,
-            document.body,
-          )
+      {conversionBar
+        ? isMounted && typeof document !== 'undefined'
+          ? createPortal(conversionBar, document.body)
+          : conversionBar
         : null}
     </div>
   );

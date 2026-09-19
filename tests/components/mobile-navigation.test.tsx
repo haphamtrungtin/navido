@@ -1,4 +1,5 @@
 import { cleanup, render, screen } from '@testing-library/react';
+import { renderToString } from 'react-dom/server';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
@@ -26,6 +27,20 @@ const defaultNavigationCopy = {
 afterEach(cleanup);
 
 describe('MobileNavigation', () => {
+  it('includes conversion anchors in server-rendered markup before hydration', () => {
+    const markup = renderToString(
+      <MobileNavigation
+        callHref={conversionLinks.call}
+        locale="en"
+        mapsHref={conversionLinks.maps}
+      />,
+    );
+
+    expect(markup).toContain('mobile-conversion-bar');
+    expect(markup).toContain(conversionLinks.call);
+    expect(markup).toContain(conversionLinks.maps.replaceAll('&', '&amp;'));
+  });
+
   it('offers equal call and directions actions only while navigation is closed', async () => {
     const user = userEvent.setup();
 
