@@ -31,6 +31,14 @@ Run each locale and page family:
 
 ## Remaining owner inputs
 
-- Verified production domain.
-- Confirmation to deploy to the linked Vercel project.
+- Verified production domain (still pending for canonical/hreflang activation).
+- Deployment confirmation: complete; production alias is live.
 - Final Roastery machine/process/team/packaging photography when available.
+
+## Deployment evidence — 2026-09-19
+
+- Production deployment: `https://navido-website.vercel.app`
+- Vercel deployment ID: `dpl_HbUBf6ow75nTfEqZGDW8uae2Q6ww`
+- Build state: READY; all 23 static outputs generated.
+- Live smoke: 18 localized routes plus `robots.txt` and `sitemap.xml` returned HTTP 200; each content route exposed one H1 and one title.
+- Expected pre-domain state: `robots.txt` has no sitemap URL, `sitemap.xml` is empty, and localized canonical tags are absent because `NEXT_PUBLIC_SITE_URL` is intentionally unset and the Vercel alias is not a canonical origin.
