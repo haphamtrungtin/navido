@@ -63,9 +63,22 @@ describe('localized discovery metadata', () => {
       home: '/',
       menu: '/menu',
       ourSpace: '/our-space',
+      roastery: '/roastery',
       visit: '/visit',
     });
 
+    expect(
+      buildPageMetadata({
+        description: 'Roasted in-house at NAVIDO.',
+        locale: 'vi',
+        page: 'roastery',
+        siteUrl: null,
+        title: 'XÆ°á»Ÿng rang | NAVIDO',
+      }),
+    ).toMatchObject({
+      title: 'XÆ°á»Ÿng rang | NAVIDO',
+      description: 'Roasted in-house at NAVIDO.',
+    });
     for (const [page, pathname] of Object.entries(pagePaths)) {
       const metadata = buildPageMetadata({
         description: 'Description',

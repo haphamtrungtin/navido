@@ -19,6 +19,10 @@
     "visit": {
       "title": "Ghé thăm NAVIDO",
       "description": "Xem địa chỉ, giờ mở cửa hằng ngày, số điện thoại và chỉ đường để ghé NAVIDO."
+    },
+    "roastery": {
+      "title": "Xưởng rang | NAVIDO",
+      "description": "Khám phá cà phê được rang tại chỗ và những vùng nguyên liệu NAVIDO phục vụ."
     }
   },
   "Navigation": {
@@ -29,6 +33,7 @@
     "ourSpace": "Không gian",
     "about": "Giới thiệu",
     "visit": "Ghé thăm",
+    "roastery": "Xưởng rang",
     "primary": "Điều hướng chính",
     "language": "Ngôn ngữ",
     "openMenu": "Mở điều hướng",

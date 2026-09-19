@@ -5,6 +5,7 @@ export const siteName = 'NAVIDO';
 export const navigationItems = [
   { href: '/', key: 'home' },
   { href: '/menu', key: 'menu' },
+  { href: '/roastery', key: 'roastery' },
   { href: '/our-space', key: 'ourSpace' },
   { href: '/about', key: 'about' },
   { href: '/visit', key: 'visit' },
@@ -19,6 +20,7 @@ export type NavigationCopy = Record<NavigationKey, string> & {
   language: string;
   openMenu: string;
   primary: string;
+  roastery: string;
 };
 
 export type FooterCopy = Readonly<{

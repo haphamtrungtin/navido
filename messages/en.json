@@ -19,6 +19,10 @@
     "visit": {
       "title": "Visit NAVIDO",
       "description": "Find NAVIDO's address, daily opening hours, phone number, and directions for your visit."
+    },
+    "roastery": {
+      "title": "Roastery | NAVIDO",
+      "description": "Discover NAVIDO coffee roasted in-house and the origins we serve."
     }
   },
   "Navigation": {
@@ -29,6 +33,8 @@
     "ourSpace": "Our space",
     "about": "About",
     "visit": "Visit",
+    "roastery": "Roastery",
+
     "primary": "Primary navigation",
     "language": "Language",
     "openMenu": "Open navigation",

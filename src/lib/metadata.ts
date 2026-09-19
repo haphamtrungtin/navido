@@ -7,6 +7,7 @@ export const pagePaths = {
   home: '/',
   menu: '/menu',
   ourSpace: '/our-space',
+  roastery: '/roastery',
   visit: '/visit',
 } as const;
 

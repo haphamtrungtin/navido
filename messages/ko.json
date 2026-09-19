@@ -19,6 +19,10 @@
     "visit": {
       "title": "NAVIDO 방문",
       "description": "NAVIDO 방문을 위한 주소, 매일 영업시간, 전화번호와 길 안내를 확인하세요."
+    },
+    "roastery": {
+      "title": "로스터리 | NAVIDO",
+      "description": "NAVIDO에서 직접 로스팅하는 커피와 다양한 원산지를 만나보세요."
     }
   },
   "Navigation": {
@@ -29,6 +33,7 @@
     "ourSpace": "공간",
     "about": "소개",
     "visit": "방문",
+    "roastery": "로스터리",
     "primary": "주 탐색",
     "language": "언어",
     "openMenu": "탐색 열기",
