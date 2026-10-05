@@ -1,6 +1,6 @@
 # NAVIDO Commerce — Infrastructure và vận hành bước 0
 
-Phạm vi: Auth nhân viên, membership, catalog menu, import nguồn và admin. Public website vẫn đọc file. Staging/production chưa được provision hoặc deploy trong phiên implementation này; không coi kết quả local là bằng chứng production.
+Phạm vi: Auth nhân viên, membership, catalog menu, import nguồn và admin. Public website vẫn đọc file. Staging đã apply schema/import, cấu hình Auth và deploy Preview ngày 2026-10-05; bootstrap owner và nghiệm thu authenticated HTTPS còn pending. Production chưa provision/deploy.
 
 ## Local
 
@@ -81,7 +81,7 @@ Metadata nguồn là chỉ đọc. Cờ cần review có thể được owner b�
 5. Sau khi tạo xong, chỉ cung cấp project ref staging và tên team/project Vercel để tiếp tục. Key/password đặt tại dashboard hoặc máy riêng, không gửi vào chat. Phần migration/apply/Preview tiếp tục theo các lệnh bên dưới khi quyền truy cập đã sẵn sàng.
 6. Sau nghiệm thu staging, tạo project `navido-production` riêng, xác nhận backup/chi phí, cấu hình env scope Production và bootstrap owner production. Chỉ deploy production khi chủ quán cho phép.
 
-Đầu vào còn thiếu để kết thúc staging: Supabase project staging thuộc tài khoản chủ quán, quyền apply migration, quyền Vercel project hiện có và quyết định vùng/plan. Production cần Supabase project riêng và cho phép deploy production. Không mua gói hoặc dùng DB production cho preview/tests.
+Đã xác minh quyền CLI Supabase/Vercel và project staging bên dưới. Đầu vào còn thiếu để kết thúc staging: UUID Auth user confirmed do chủ quán tạo để cấp owner, sau đó nghiệm thu authenticated HTTPS. Production cần Supabase project riêng và cho phép deploy production. Không mua gói hoặc dùng DB production cho preview/tests.
 
 | Môi trường        | Supabase                              | Vercel env                                            |
 | ----------------- | ------------------------------------- | ----------------------------------------------------- |
@@ -104,6 +104,30 @@ corepack pnpm exec supabase db push --linked
 
 Sau đó cấu hình Auth cloud, env Preview, deploy Preview qua Vercel project hiện có, bootstrap owner staging và nghiệm thu HTTPS. Khi production được cho phép, làm lại target/ref/env/backup checks với project production; không tái sử dụng link staging mà không kiểm tra. Ghi khả năng backup/restore và hạn mức theo tài khoản thực tế trước release.
 
+### Bằng chứng staging 2026-10-05
+
+| Hạng mục    | Kết quả                                                                                                                                                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supabase    | `navido-staging`, ref `vuunlbhqkdgyvxkvzfnn`, organization `xvcwjfekkqmecmtvfxah`, status `ACTIVE_HEALTHY`, PostgreSQL 17                                                                                                               |
+| Region      | Supabase `ap-northeast-2` (Seoul); Vercel Functions `icn1` theo deployment inspect. Build machine vẫn ở `iad1`; đây là region build, không phải runtime Functions                                                                       |
+| Vercel      | `kaikaiiiiis-projects/navido-website`, ID `prj_xK5fyDf8TfyD8qAr5rd9bCbh6G0o`; CLI 62.2.0 xác minh quyền                                                                                                                                 |
+| Migrations  | List và dry-run trước apply; public schema chưa có bảng ứng dụng, schema snapshot lưu riêng ở ignored scratch; cả 3 migration đã apply và remote history khớp local                                                                     |
+| Catalog     | Read-only query so sánh tất cả trường trong manifest: 14 danh mục, 130 món, 127 published/3 draft; đủ 4 bảng bật RLS                                                                                                                    |
+| Auth        | Config diff trước push chỉ đổi `auth.enable_signup` thành false; các property không khai báo giữ nguyên. Settings API xác nhận signup disabled, email enabled, anonymous disabled. Rate config 30 login/signup, 150 refresh khớp remote |
+| Env         | `SUPABASE_URL` và publishable key chỉ scope Preview. Project chưa connect Git repository nên không dùng env theo branch; không thêm env Production. Key không ghi vào git/log                                                           |
+| Upload      | Dry-run CLI ban đầu vẫn lấy scratch/local state dù git ignore. `.vercelignore` ở commit `2907b1e` loại env, credentials, scratch, worktree/junction và Supabase temp; manifest cuối 438 files đã kiểm tra trước upload                  |
+| Deployment  | `dpl_AmLk4HfmduQVpZxnevhwGkBZ7BYT`, source commit `2907b1e`, target Preview, status READY                                                                                                                                               |
+| HTTPS smoke | Qua `vercel curl` tự bypass lớp bảo vệ Vercel: login 200, menu VI/EN/KO 200, anonymous health 401 JSON `unauthenticated`, `Cache-Control: no-store`, `X-Robots-Tag: noindex, nofollow`                                                  |
+| Còn pending | Owner membership, authenticated HTTPS CRUD/logout/revoke và quyền truy cập staff; production/account plan/backup-restore chưa nghiệm thu                                                                                                |
+
+Preview: [admin login](https://navido-website-4nemskgmp-kaikaiiiiis-projects.vercel.app/admin/login). Vercel Authentication đang bảo vệ Preview; phải đăng nhập Vercel trước lớp login của ứng dụng. Không tắt lớp bảo vệ này để chạy smoke. Không promote Preview lên Production: deployment đang dùng staging env.
+
+Deploy Preview lại qua CLI với `--regions icn1` để giữ Functions gần DB; region hiện được chọn ở lệnh deploy, chưa có `vercel.json`. Cấu hình theo [tài liệu Vercel Functions regions](https://vercel.com/docs/functions/configuring-functions/region); [icn1 là Seoul](https://vercel.com/docs/pricing/regional-pricing/icn1).
+
+```powershell
+corepack pnpm dlx vercel@62.2.0 deploy --target preview --regions icn1 --scope kaikaiiiiis-projects --yes
+```
+
 Rollback: trở về deployment trước; giữ membership/catalog/audit và snapshot import. Không drop table/reset DB. Nếu cần phục hồi menu đã chỉnh sửa, chủ quán review dữ liệu audit/backup rồi thực hiện thay đổi có kiểm soát; không tự import file cũ để overwrite.
 
 ## Verification và bằng chứng
@@ -123,9 +147,9 @@ Nếu thiếu Docker, máy khác/CI chạy cùng commit/CLI và bàn giao types/
 
 Local đã kiểm tra ngày 2026-10-05 trên branch `feature/navido-website`: 41 files/158 unit và component tests, 3 files/9 integration tests, 3 files/51 pgTAP assertions; lint, typecheck và production build không có Supabase env. Implementation gốc ở commit `86a5989`. Review độc lập không phát hiện Critical; lỗi draft/version sau refresh đã tái hiện bằng hai regression tests rồi sửa để giữ version gắn với draft. Bổ sung test giao diện staff/bộ lọc và DB checks chống giả nguồn/version/actor/audit, không membership, inactive owner và sửa danh mục bằng staff.
 
-HTTP smoke với `next start` và Supabase local: `/vi/menu`, `/en/menu`, `/ko/menu`, login và các trang admin trả đúng; anonymous health 401, owner health 200, thu hồi membership health 403; health không cache. Bổ sung POST form HTML thực tế tới Server Actions: login tạo cookie và redirect, tạo danh mục/món, archive, form version cũ báo conflict và giữ dữ liệu, staff gửi lại form owner không sửa được giá, staff đổi availability tăng version, logout xóa quyền truy cập health. Fixture đã cleanup. Không dùng browser/Playwright/E2E runner; tương tác browser và deployment HTTPS vẫn cần nghiệm thu staging. Preview dùng tham số `lang=vi|en|ko`. Staging/production vẫn chưa có bằng chứng deploy. Commit chứa runbook này là mốc kiểm tra bổ sung để chạy lại các gate.
+HTTP smoke với `next start` và Supabase local: `/vi/menu`, `/en/menu`, `/ko/menu`, login và các trang admin trả đúng; anonymous health 401, owner health 200, thu hồi membership health 403; health không cache. Bổ sung POST form HTML thực tế tới Server Actions: login tạo cookie và redirect, tạo danh mục/món, archive, form version cũ báo conflict và giữ dữ liệu, staff gửi lại form owner không sửa được giá, staff đổi availability tăng version, logout xóa quyền truy cập health. Fixture đã cleanup. Không dùng browser/Playwright/E2E runner; tương tác browser và authenticated HTTPS vẫn cần nghiệm thu staging. Preview dùng tham số `lang=vi|en|ko`. Bằng chứng deploy staging và anonymous HTTPS ở mục trên; production chưa deploy.
 
-Setup cloud cần thao tác đăng nhập/tạo project của chủ quán. Máy hiện chưa có credential CLI Supabase/Vercel ở các vị trí kiểm tra; việc có `.vercel/project.json` chỉ chứng minh link project, không chứng minh quyền deploy. Trong phiên này có wizard một lần tại `.superpowers/sdd/2026-10-05-navido-commerce-step-0/setup-staging.sh` (không commit), chạy bằng Git Bash từ PowerShell:
+Setup cloud cần thao tác đăng nhập/tạo project của chủ quán. Lần kiểm tra file credential ban đầu không đủ để kết luận quyền; sau khi chủ quán login Supabase, `projects list` và `vercel whoami/project inspect` đã xác minh quyền thực tế. Trong phiên này có wizard một lần tại `.superpowers/sdd/2026-10-05-navido-commerce-step-0/setup-staging.sh` (không commit), dùng cho giai đoạn chuẩn bị tài khoản/env, chạy bằng Git Bash từ PowerShell:
 
 ```powershell
 & 'C:/Program Files/Git/bin/bash.exe' .superpowers/sdd/2026-10-05-navido-commerce-step-0/setup-staging.sh

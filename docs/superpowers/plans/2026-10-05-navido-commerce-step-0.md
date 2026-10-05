@@ -10,7 +10,7 @@
 
 **Spec:** [Overall plan và quyết định thiết kế](2026-10-05-navido-commerce-overall.md), đặc biệt mục 1–2 và bước 0. Các quyết định chi tiết của bước 0 nằm ngay dưới đây.
 
-**Status:** Đã implement và kiểm tra local ngày 2026-10-05: foundation, Auth, catalog/import và admin. Staging/production chưa provision/deploy; chủ quán xác nhận chưa có hạ tầng. Bằng chứng và hướng dẫn tại [runbook](../../navido-commerce-infrastructure.md). Các checklist chi tiết dưới đây giữ làm tiêu chí nghiệm thu đầy đủ, không được coi là đã pass trên remote.
+**Status:** Đã implement và kiểm tra local ngày 2026-10-05: foundation, Auth, catalog/import và admin. Staging đã apply 3 migration, cấu hình Auth và deploy Vercel Preview; chờ bootstrap owner và authenticated HTTPS acceptance. Production chưa provision/deploy. Bằng chứng và hướng dẫn tại [runbook](../../navido-commerce-infrastructure.md). Các checklist chi tiết dưới đây giữ làm tiêu chí nghiệm thu đầy đủ, không được coi là đã pass trên remote.
 
 **Scope update:** Chủ dự án chọn gộp migration menu và quản lý admin vào bước 0. Website khách tiếp tục đọc file; chuyển website sang DB thuộc bước 2. Bước 1 còn tùy chọn món, ảnh upload và cấu hình vận hành.
 
@@ -22,7 +22,8 @@
 | 0.6–0.7 | Catalog/RPC/audit và import 14 danh mục/130 món đã apply local; manifest, rerun, rollback và quyền DB pass |
 | 0.8 | CRUD/availability/preview đã implement; form HTML qua HTTP kiểm tra tạo/archive/conflict/staff/logout pass; browser staging còn pending |
 | 0.9 local | Runbook, hướng dẫn setup, wizard một lần, gates và review độc lập đã có bằng chứng |
-| 0.9 remote | Chờ chủ quán tạo/login Supabase staging và cấp quyền Vercel; chưa apply remote/deploy/HTTPS/production |
+| 0.9 staging | Đã xác minh quyền, apply schema/import, cấu hình signup/env Preview và deploy; manifest/RLS/anonymous HTTPS pass; owner và authenticated HTTPS còn pending |
+| 0.9 production | Chưa có project/env production và chưa deploy |
 
 Commit implementation `86a5989`; kiểm tra bổ sung: 158 unit/component tests, 9 integration tests, 51 pgTAP assertions. Checklist remote vẫn giữ chưa đánh dấu cho tới khi nghiệm thu thực tế.
 
