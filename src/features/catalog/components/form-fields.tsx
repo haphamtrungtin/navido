@@ -3,9 +3,13 @@ import type { CatalogActionState } from '../types';
 export function NameFields({
   prefix,
   name,
+  onChange,
+  disabled,
 }: {
   prefix: string;
   name?: { vi: string; en: string; ko: string };
+  onChange?: (locale: 'vi' | 'en' | 'ko', value: string) => void;
+  disabled?: boolean;
 }) {
   return (
     <>
@@ -21,7 +25,14 @@ export function NameFields({
           <input
             id={`${prefix}-${locale}`}
             name={`name${suffix}`}
-            defaultValue={name?.[locale] ?? ''}
+            {...(onChange
+              ? {
+                  value: name?.[locale] ?? '',
+                  onChange: (event: React.ChangeEvent<HTMLInputElement>) =>
+                    onChange(locale, event.target.value),
+                }
+              : { defaultValue: name?.[locale] ?? '' })}
+            disabled={disabled}
             maxLength={300}
             required={locale === 'vi'}
           />
