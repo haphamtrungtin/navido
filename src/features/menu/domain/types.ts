@@ -7,18 +7,22 @@ export type MenuCategory = {
   sourceCategoryCodes: readonly string[];
 };
 
-export type MenuItem = {
+export type DisplayMenuItem = {
   id: string;
   categoryId: string;
-  sourceCategoryCode: string;
-  sourceName: string;
   name: LocalizedText;
   priceVnd: number;
   sortOrder: number;
+  isAvailable?: boolean;
+  netWeightGram?: number;
+};
+
+export type MenuItem = DisplayMenuItem & {
+  sourceCategoryCode: string;
+  sourceName: string;
   sourceRow: number;
   needsReview: boolean;
   reviewNotes: readonly string[];
-  netWeightGram?: number;
 };
 
 export type MenuAnomalyType =

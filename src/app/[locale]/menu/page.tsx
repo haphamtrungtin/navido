@@ -11,13 +11,14 @@ import {
   featuredMenuItemIds,
   getMenuCategoryPresentation,
 } from '@/features/menu/domain/presentation';
-import type { MenuItem } from '@/features/menu/domain/types';
-import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
+import type { DisplayMenuItem } from '@/features/menu/domain/types';
+import { getPublishedMenu } from '@/features/menu/repository/published-menu-repository';
+import { MenuReadStatus } from '@/features/menu/components/menu-read-status';
 import { getLocalizedValue, isLocale, type Locale } from '@/i18n/types';
 import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
   params,
@@ -46,10 +47,20 @@ export default async function MenuPage({
   if (!isLocale(locale)) notFound();
 
   const menu = await getTranslations({ locale, namespace: 'Menu' });
-  const categories = localMenuRepository.getCategories();
-  const allItems = categories.flatMap((category) =>
-    localMenuRepository.getItemsByCategory(category.id),
-  );
+  const snapshot = await getPublishedMenu().catch(() => null);
+  if (!snapshot)
+    return (
+      <main>
+        <MenuReadStatus locale={locale} unavailable />
+      </main>
+    );
+  const { categories, items: allItems } = snapshot;
+  if (categories.length === 0)
+    return (
+      <main>
+        <MenuReadStatus locale={locale} />
+      </main>
+    );
   const itemsById = new Map(allItems.map((item) => [item.id, item]));
   const featuredItems = featuredMenuItemIds.flatMap((id) => {
     const item = itemsById.get(id);
@@ -165,7 +176,9 @@ export default async function MenuPage({
                 category={category}
                 chapter={getMenuCategoryPresentation(category.id).chapter}
                 index={index}
-                items={localMenuRepository.getItemsByCategory(category.id)}
+                items={allItems.filter(
+                  (item) => item.categoryId === category.id,
+                )}
                 locale={locale}
                 media={getCategoryMedia(category.id, menu)}
               />
@@ -204,7 +217,7 @@ export default async function MenuPage({
 function FeaturedItem({
   item,
   locale,
-}: Readonly<{ item: MenuItem; locale: Locale }>) {
+}: Readonly<{ item: DisplayMenuItem; locale: Locale }>) {
   return (
     <article
       className="border-t border-[var(--navido-rule)] pt-4"

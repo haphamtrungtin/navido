@@ -206,6 +206,7 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      get_published_menu: { Args: Record<PropertyKey, never>; Returns: Json };
       set_menu_item_availability: {
         Args: {
           p_expected_version: number;

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { DisplayMenuItem } from '@/features/menu/domain/types';
 
 import {
   getRoasteryBeanProducts,
@@ -10,22 +11,27 @@ import {
 
 describe('Roastery selectors', () => {
   it('derives public origins without hidden mock rows', () => {
-    const origins = getRoasteryOrigins();
+    const origins = getRoasteryOrigins([]);
 
     expect(origins).toEqual([]);
   });
 
   it('selects a bounded coffee bridge from public menu items', () => {
-    const picks = getRoasteryCoffeePicks(3);
+    const items: DisplayMenuItem[] = [1, 2, 3, 4].map((n) => ({
+      id: `new-${n}`,
+      categoryId: 'coffee',
+      name: { vi: 'Coffee', en: 'Coffee', ko: 'Coffee' },
+      priceVnd: 50000,
+      sortOrder: n,
+    }));
+    const picks = getRoasteryCoffeePicks(items, 3);
 
     expect(picks).toHaveLength(3);
-    expect(
-      picks.every((item) => item.sourceCategoryCode !== 'MOCK_BEANS'),
-    ).toBe(true);
+    expect(picks.every((item) => item.categoryId === 'coffee')).toBe(true);
   });
 
   it('returns an intentional empty state when no public packaged beans exist', () => {
-    expect(getRoasteryBeanProducts()).toEqual([]);
+    expect(getRoasteryBeanProducts([])).toEqual([]);
   });
 
   it('marks unresolved roastery media as temporary', () => {
@@ -35,16 +41,16 @@ describe('Roastery selectors', () => {
     });
   });
 
-  it('deduplicates selector input by source row while preserving order', () => {
+  it('deduplicates selector input by ID while retaining distinct new DB items', () => {
     const items = [
-      { sourceRow: 1, sourceName: 'Kenya AA' },
-      { sourceRow: 1, sourceName: 'Kenya AA' },
-      { sourceRow: 2, sourceName: 'Guatemala Pacaya' },
+      { id: 'one', name: 'Kenya AA' },
+      { id: 'one', name: 'Kenya AA' },
+      { id: 'two', name: 'Guatemala Pacaya' },
     ];
 
     expect(selectRoasteryItems(items)).toEqual([
-      { sourceRow: 1, sourceName: 'Kenya AA' },
-      { sourceRow: 2, sourceName: 'Guatemala Pacaya' },
+      { id: 'one', name: 'Kenya AA' },
+      { id: 'two', name: 'Guatemala Pacaya' },
     ]);
     expect(selectRoasteryItems([])).toEqual([]);
   });

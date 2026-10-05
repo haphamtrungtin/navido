@@ -1,4 +1,4 @@
-import type { MenuItem } from '@/features/menu/domain/types';
+import type { DisplayMenuItem } from '@/features/menu/domain/types';
 
 export type RoasteryMediaKey =
   'roaster-machine' | 'roasting-process' | 'roasting-team' | 'packaging';
@@ -12,8 +12,7 @@ export type RoasteryMediaAsset = Readonly<{
 
 export type RoasteryOrigin = Readonly<{
   label: string;
-  sourceCategoryCode: string;
-  sourceRows: readonly number[];
+  itemId: string;
 }>;
 
-export type RoasteryBeanProduct = MenuItem;
+export type RoasteryBeanProduct = DisplayMenuItem;

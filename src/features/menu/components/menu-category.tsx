@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 import type {
   MenuCategory as MenuCategoryType,
-  MenuItem,
+  DisplayMenuItem,
 } from '@/features/menu/domain/types';
 import type { MenuChapter } from '@/features/menu/domain/presentation';
 import { getLocalizedValue, type Locale } from '@/i18n/types';
@@ -13,7 +13,7 @@ type MenuCategoryProps = Readonly<{
   category: MenuCategoryType;
   chapter: MenuChapter;
   index: number;
-  items: readonly MenuItem[];
+  items: readonly DisplayMenuItem[];
   locale: Locale;
   media?: ReactNode;
 }>;

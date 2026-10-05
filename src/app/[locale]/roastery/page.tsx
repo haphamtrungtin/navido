@@ -6,6 +6,8 @@ import { isLocale, locales } from '@/i18n/types';
 import { businessProfile } from '@/lib/business-profile';
 import { conversionLinks } from '@/lib/conversion-links';
 import { buildPageMetadata } from '@/lib/metadata';
+import { getPublishedMenu } from '@/features/menu/repository/published-menu-repository';
+import { MenuReadStatus } from '@/features/menu/components/menu-read-status';
 import {
   getRoasteryBeanProducts,
   getRoasteryCoffeePicks,
@@ -18,7 +20,7 @@ import { RoasteryOrigins } from '@/sections/roastery/roastery-origins';
 import { RoasteryProcess } from '@/sections/roastery/roastery-process';
 import { RoasteryVisit } from '@/sections/roastery/roastery-visit';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -59,7 +61,9 @@ export default async function RoasteryPage({
 
   const copy = await getTranslations({ locale, namespace: 'Roastery' });
   const footer = await getTranslations({ locale, namespace: 'Footer' });
-  const coffeePicks = getRoasteryCoffeePicks(3);
+  const snapshot = await getPublishedMenu().catch(() => null);
+  const items = snapshot?.items ?? [];
+  const coffeePicks = getRoasteryCoffeePicks(items, 3);
 
   return (
     <main>
@@ -96,13 +100,14 @@ export default async function RoasteryPage({
         }}
         media={getRoasteryMedia('roasting-process')}
       />
+      {!snapshot && <MenuReadStatus locale={locale} unavailable />}
       <RoasteryOrigins
         copy={{
           empty: copy('origins.empty'),
           eyebrow: copy('origins.eyebrow'),
           title: copy('origins.title'),
         }}
-        origins={getRoasteryOrigins()}
+        origins={getRoasteryOrigins(items)}
       />
       <section
         className="bg-[var(--navido-paper)] py-[var(--section-gap)]"
@@ -131,7 +136,7 @@ export default async function RoasteryPage({
           empty: copy('beans.empty'),
           title: copy('beans.title'),
         }}
-        items={getRoasteryBeanProducts()}
+        items={getRoasteryBeanProducts(items)}
         locale={locale}
       />
       <RoasteryVisit

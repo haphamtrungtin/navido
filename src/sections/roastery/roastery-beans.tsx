@@ -1,11 +1,11 @@
 import { Container } from '@/components/layout/container';
 import { TextLink } from '@/components/ui/text-link';
-import type { MenuItem } from '@/features/menu/domain/types';
+import type { DisplayMenuItem } from '@/features/menu/domain/types';
 import type { Locale } from '@/i18n/types';
 
 type RoasteryBeansProps = Readonly<{
   copy: Readonly<{ action: string; empty: string; title: string }>;
-  items: readonly MenuItem[];
+  items: readonly DisplayMenuItem[];
   locale: Locale;
 }>;
 

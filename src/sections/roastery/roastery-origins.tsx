@@ -21,11 +21,8 @@ export function RoasteryOrigins({ copy, origins }: RoasteryOriginsProps) {
         {origins.length > 0 ? (
           <ul className="mt-10 grid gap-px overflow-hidden border border-[var(--navido-rule)] bg-[var(--navido-rule)] sm:grid-cols-2 lg:grid-cols-3">
             {origins.map((origin) => (
-              <li className="bg-[var(--navido-paper)] p-6" key={origin.label}>
+              <li className="bg-[var(--navido-paper)] p-6" key={origin.itemId}>
                 <p className="text-lg">{origin.label}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.12em] text-[var(--navido-muted-ink)]">
-                  {origin.sourceCategoryCode}
-                </p>
               </li>
             ))}
           </ul>

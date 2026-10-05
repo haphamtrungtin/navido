@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-import { localMenuRepository } from '@/features/menu/repository/local-menu-repository';
+import { getPublishedMenu } from '@/features/menu/repository/published-menu-repository';
+import { MenuReadStatus } from '@/features/menu/components/menu-read-status';
 import { isLocale, locales } from '@/i18n/types';
 import { businessProfile } from '@/lib/business-profile';
 import { buildPageMetadata } from '@/lib/metadata';
@@ -11,7 +12,7 @@ import { HomeIntroduction } from '@/sections/home/home-introduction';
 import { LocationInvitation } from '@/sections/home/location-invitation';
 import { SignatureHighlights } from '@/sections/home/signature-highlights';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -55,9 +56,11 @@ export default async function LocalizedHomePage({
     locale,
     namespace: 'Footer',
   });
-  const signatureItems = localMenuRepository
-    .getItemsByCategory('signature')
-    .slice(0, 3);
+  const snapshot = await getPublishedMenu().catch(() => null);
+  const signatureItems =
+    snapshot?.items
+      .filter((item) => item.categoryId === 'signature')
+      .slice(0, 3) ?? [];
 
   return (
     <main>
@@ -79,21 +82,25 @@ export default async function LocalizedHomePage({
           title: translations('introduction.title'),
         }}
       />
-      <SignatureHighlights
-        copy={{
-          action: translations('signature.action'),
-          body: translations('signature.body'),
-          eyebrow: translations('signature.eyebrow'),
-          imageAlts: [
-            translations('signature.imageAltOne'),
-            translations('signature.imageAltTwo'),
-            translations('signature.imageAltThree'),
-          ],
-          title: translations('signature.title'),
-        }}
-        items={signatureItems}
-        locale={locale}
-      />
+      {snapshot ? (
+        <SignatureHighlights
+          copy={{
+            action: translations('signature.action'),
+            body: translations('signature.body'),
+            eyebrow: translations('signature.eyebrow'),
+            imageAlts: [
+              translations('signature.imageAltOne'),
+              translations('signature.imageAltTwo'),
+              translations('signature.imageAltThree'),
+            ],
+            title: translations('signature.title'),
+          }}
+          items={signatureItems}
+          locale={locale}
+        />
+      ) : (
+        <MenuReadStatus locale={locale} unavailable />
+      )}
       <LocationInvitation
         address={businessProfile.address}
         copy={{

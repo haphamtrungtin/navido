@@ -2,7 +2,7 @@ import { Container } from '@/components/layout/container';
 import { EditorialImage } from '@/components/ui/editorial-image';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { TextLink } from '@/components/ui/text-link';
-import type { MenuItem } from '@/features/menu/domain/types';
+import type { DisplayMenuItem } from '@/features/menu/domain/types';
 import { getLocalizedValue, type Locale } from '@/i18n/types';
 
 type SignatureHighlightsProps = Readonly<{
@@ -13,7 +13,7 @@ type SignatureHighlightsProps = Readonly<{
     imageAlts: readonly [string, string, string];
     title: string;
   };
-  items: readonly MenuItem[];
+  items: readonly DisplayMenuItem[];
   locale: Locale;
 }>;
 
