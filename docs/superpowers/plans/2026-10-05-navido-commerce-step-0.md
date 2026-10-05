@@ -14,6 +14,18 @@
 
 **Scope update:** Chủ dự án chọn gộp migration menu và quản lý admin vào bước 0. Website khách tiếp tục đọc file; chuyển website sang DB thuộc bước 2. Bước 1 còn tùy chọn món, ảnh upload và cấu hình vận hành.
 
+### Tiến độ implementation local
+
+| Task | Trạng thái thực tế |
+| --- | --- |
+| 0.1–0.5 | Đã implement env/tooling, membership/RLS, SSR/proxy, login/logout và protected routes; unit/integration/HTTP local pass |
+| 0.6–0.7 | Catalog/RPC/audit và import 14 danh mục/130 món đã apply local; manifest, rerun, rollback và quyền DB pass |
+| 0.8 | CRUD/availability/preview đã implement; form HTML qua HTTP kiểm tra tạo/archive/conflict/staff/logout pass; browser staging còn pending |
+| 0.9 local | Runbook, hướng dẫn setup, wizard một lần, gates và review độc lập đã có bằng chứng |
+| 0.9 remote | Chờ chủ quán tạo/login Supabase staging và cấp quyền Vercel; chưa apply remote/deploy/HTTPS/production |
+
+Commit implementation `86a5989`; kiểm tra bổ sung: 158 unit/component tests, 9 integration tests, 51 pgTAP assertions. Checklist remote vẫn giữ chưa đánh dấu cho tới khi nghiệm thu thực tế.
+
 ## Global Constraints
 
 - Không viết hoặc chạy E2E/Playwright trong chuỗi triển khai này, bao gồm các script `verify:*` gọi Playwright. Giữ các test có sẵn. Dùng unit, component, integration và kiểm tra thủ công có ghi kết quả.
