@@ -1,6 +1,6 @@
 # NAVIDO Commerce — Infrastructure và vận hành bước 0
 
-Phạm vi: Auth nhân viên, membership, catalog menu, import nguồn và admin. Public website vẫn đọc file. Staging đã apply schema/import, cấu hình Auth và deploy Preview ngày 2026-10-05; owner đã được cấp active và kiểm tra RLS; nghiệm thu authenticated HTTPS còn pending. Production chưa provision/deploy.
+Phạm vi: Auth nhân viên, membership, catalog/import/admin và mở rộng bước 1. Bản bước 1 chuyển public sang menu DB, thêm tùy chọn/ảnh/lịch nhận đơn; xem [bàn giao bước 1](navido-commerce-step-1-acceptance.md) cho bằng chứng triển khai mới nhất. Owner staging đã được cấp active; nghiệm thu authenticated HTTPS còn pending. Production chưa provision/deploy. Các bằng chứng bước 0 phía dưới là lịch sử baseline.
 
 ## Local
 

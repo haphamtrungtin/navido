@@ -2,7 +2,7 @@
 
 **Ngày:** 2026-10-05
 
-**Trạng thái:** Bước 0 đã implement, kiểm tra local và deploy staging Preview; owner đã bootstrap; còn authenticated HTTPS acceptance, chưa deploy production. Bước 1–7 vẫn là roadmap.
+**Trạng thái:** Bước 0 đã implement và deploy staging; owner đã bootstrap, còn authenticated HTTPS acceptance. Bước 1 đã implement và kiểm tra local; xem [bàn giao bước 1](../../navido-commerce-step-1-acceptance.md) cho trạng thái deploy/nghiệm thu mới nhất. Bước 2–7 vẫn là roadmap. Chưa deploy production.
 
 **Mục tiêu:** Khách đặt món trên website, thấy đủ chi phí trước thanh toán, chọn đến lấy hoặc giao tận nơi; nhân viên quản lý menu và đơn trong admin, dùng iPOS thủ công.
 
@@ -14,7 +14,7 @@ Tài liệu này là roadmap tổng thể và nguồn quyết định cho các p
 - Tiếp tục dùng Next.js App Router + TypeScript + next-intl trong dự án hiện tại. Website, `/admin` và backend cùng repo và deployment; không cần thêm ứng dụng backend riêng.
 - Đề xuất Vercel cho runtime Next.js, Supabase cho PostgreSQL và Auth. Đây là lựa chọn lập kế hoạch, chưa có bằng chứng các tài khoản đã được tạo hoặc gói dịch vụ đã được mua.
 - Admin dùng tiếng Việt, đường dẫn `/admin` không có locale. Website khách giữ `vi`, `en`, `ko`.
-- Theo lựa chọn chủ dự án, bước 0 gồm import menu hiện có vào PostgreSQL và quản lý danh mục/món tại `/admin/menu`. Website khách vẫn đọc file ở bước 0–1; bước 2 mới chuyển sang menu DB đã công bố.
+- Theo lựa chọn chủ dự án, bước 0 gồm import menu hiện có vào PostgreSQL và quản lý danh mục/món tại `/admin/menu`. Quyết định mới ở bước 1 chuyển **cả danh mục và món public sang DB**, bao gồm Menu, Home/signature và Roastery. Bước 2 tập trung snapshot công bố, rollback nội dung và cache.
 - Khách đặt hàng không cần tài khoản. Link theo dõi có token ngẫu nhiên khó đoán; mã đơn dễ đọc chỉ dùng trao đổi với quán, không phải quyền đọc dữ liệu cá nhân.
 - Bản đầu chỉ chuyển khoản, chưa COD; trước payOS nhân viên đối chiếu ngân hàng thủ công. Đây là mặc định đề xuất để bước 3 có thể dùng độc lập.
 - Lalamove là nhà giao hàng đầu tiên; payOS xác nhận thanh toán; kênh Zalo chính thức còn cần xác minh tài khoản/quyền và khả năng gửi thông báo nội bộ.
@@ -89,12 +89,14 @@ Website công khai vẫn đọc file trong bước này. Không tạo schema đ�
 3. Dùng asset đã có để khởi tạo ảnh; thêm upload vào object storage với giới hạn loại/kích thước và quyền nhân viên, không ghi file upload vào filesystem của Vercel.
 4. Thêm cấu hình giờ nhận đơn và thời gian chuẩn bị; phân biệt giờ phục vụ khách và giờ nhận đơn cuối. Quyền owner quản lý giá/nội dung/cấu hình, staff chỉ thao tác vận hành được cho phép; tái sử dụng audit và kiểm tra membership cho schema mới.
 
-**Kiểm tra:** giới hạn tùy chọn/phụ phí, quyền cập nhật và upload, asset lỗi, cấu hình giờ hợp lệ. **Ship:** catalog đủ dữ liệu/tùy chọn/ảnh/cấu hình để bước 2–3 sử dụng; website vẫn đọc file tới bước 2.
+5. Theo [thiết kế bước 1 đã duyệt](../specs/2026-10-05-navido-commerce-step-1-design.md), chuyển website sang RPC projection public và repository asynchronous, không đọc trực tiếp bảng catalog. Chỉ trả món published thật, không source/audit/mock; category mới có layout mặc định. Runtime đọc no-store; build không gọi DB. Lỗi DB có thông báo rõ, không fallback menu file.
 
-### Bước 2 — Website dùng menu từ admin
+**Kiểm tra:** giới hạn tùy chọn/phụ phí, quyền cập nhật/upload, asset lỗi, cấu hình giờ và version/audit; category/món mới render ở cả ba locale và mọi consumer. **Ship:** catalog đủ cho bước 2–3, website dùng menu DB. Owner còn phải cấu hình tùy chọn/lịch thực tế; mặc định lịch đóng và nhận đơn paused, chưa có checkout.
 
-1. Đổi repository menu sang đọc dữ liệu đã công bố; server-side asynchronous interface thay repository đồng bộ hiện tại.
-2. Cập nhật tất cả consumer: trang Menu, Home/signature, Roastery và selectors. Các tham chiếu món nổi bật phải được lọc nếu món đã ẩn hoặc lưu trữ.
+### Bước 2 — Snapshot công bố, rollback nội dung và cache
+
+1. Dùng repository asynchronous và public projection đã chuyển ở bước 1; không chuyển nguồn/import lại. Định nghĩa snapshot công bố và quy trình review nội dung trước publication.
+2. Kiểm tra Menu, Home/signature, Roastery và selectors tiếp tục dùng cùng snapshot; tham chiếu món ẩn/lưu trữ không rò ra public.
 3. Thiết lập công bố và cache invalidation sau khi lưu; hiển thị thay đổi trong vòng 60 giây. Checkout ở bước 3 luôn đọc lại giá/trạng thái mới từ DB dù trang hiển thị dùng cache.
 4. Đối chiếu danh mục, ID, giá và thứ tự trước khi đổi nguồn. Giữ snapshot đã công bố gần nhất để rollback nội dung có kiểm soát; không tự âm thầm chuyển về menu gốc đã cũ khi DB lỗi.
 5. Chuyển kiểm tra generated file thành kiểm tra nguồn import lịch sử, không yêu cầu DB khớp file gốc khi build.

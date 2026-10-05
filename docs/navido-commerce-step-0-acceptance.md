@@ -2,6 +2,8 @@
 
 Ngày kiểm tra: 2026-10-05. Code mới nhất: `1d7fa6e`. Staging đã deploy; bước 0 chưa được đánh dấu nghiệm thu toàn bộ vì còn kiểm tra phiên đăng nhập HTTPS thật.
 
+Đây là baseline bước 0. Quyết định mới ở bước 1 chuyển public menu sang DB; trạng thái hiện tại và phần nghiệm thu kế thừa ở [bàn giao bước 1](navido-commerce-step-1-acceptance.md).
+
 ## Đã hoàn thành và kiểm tra
 
 - [x] Foundation, env server, Supabase Auth, membership, RLS, admin guard, login/logout và private health.
