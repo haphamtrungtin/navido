@@ -9,6 +9,12 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "db:start": "supabase start -x realtime,storage-api,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor",
+    "db:stop": "supabase stop",
+    "db:test": "supabase test db",
+    "db:types": "node scripts/generate-database-types.mjs",
+    "menu:import:generate": "tsx scripts/generate-menu-import.ts",
     "test:e2e": "playwright test",
     "format:check": "prettier --check .",
     "generate:assets": "tsx scripts/generate-asset-manifest.ts",
@@ -29,10 +35,13 @@
     "pnpm": ">=10"
   },
   "dependencies": {
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.117.2",
     "next": "^16.3.4",
     "next-intl": "^4.14.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "server-only": "0.0.1",
     "zod": "^4.5.4"
   },
   "devDependencies": {
@@ -50,6 +59,7 @@
     "jsdom": "^30.0.1",
     "prettier": "^3.9.6",
     "sharp": "0.35.4",
+    "supabase": "2.119.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.13",
     "typescript": "^6.0.3",

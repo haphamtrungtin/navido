@@ -1,5 +1,20 @@
 # NAVIDO Website
 
+Commerce bước 0 bổ sung đăng nhập nhân viên và quản lý menu DB tại `/admin/menu`.
+Website khách vẫn dùng nguồn file; chỉnh sửa admin chưa xuất hiện trên website.
+Xem [runbook hạ tầng, local setup, bootstrap owner và deploy](docs/navido-commerce-infrastructure.md).
+
+```bash
+corepack pnpm db:start
+corepack pnpm exec supabase migration up --local
+corepack pnpm db:types
+corepack pnpm db:test
+corepack pnpm test:integration
+```
+
+Không chạy E2E/Playwright hoặc `verify:*` trong triển khai commerce này. Các lệnh
+browser test ở phần tài liệu baseline bên dưới được giữ để mô tả dự án trước đó.
+
 NAVIDO is a static, localized informational site for a specialty coffee brand. It
 uses Next.js App Router,
 ext-intl`, Tailwind CSS, and a deterministic menu-data

@@ -10,6 +10,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': sourceDirectory,
+      'server-only': fileURLToPath(
+        new URL('./tests/helpers/server-only.ts', import.meta.url),
+      ),
     },
   },
   test: {

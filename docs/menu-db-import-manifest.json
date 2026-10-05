@@ -1,0 +1,2399 @@
+{
+  "rawSha256": "a7040fe8b651e60923851798f58dadbf8c6455f68e3a6f6d4715f6fa2106f0ae",
+  "normalizedSha256": "c854cf7a2b62c6d9c416f582d00104237ae181015cede88fb5c48ceebbb6bcc1",
+  "categoryCount": 14,
+  "itemCount": 130,
+  "categories": [
+    {
+      "id": "signature",
+      "name": {
+        "vi": "Đặc biệt",
+        "en": "Signature",
+        "ko": "시그니처"
+      },
+      "sortOrder": 0,
+      "sourceCategoryCodes": ["SIG"]
+    },
+    {
+      "id": "coffee",
+      "name": {
+        "vi": "Cà phê",
+        "en": "Coffee",
+        "ko": "커피"
+      },
+      "sortOrder": 1,
+      "sourceCategoryCodes": ["CF"]
+    },
+    {
+      "id": "brew-coffee",
+      "name": {
+        "vi": "Cà phê ủ",
+        "en": "Brew Coffee",
+        "ko": "브루 커피"
+      },
+      "sortOrder": 2,
+      "sourceCategoryCodes": ["BREW"]
+    },
+    {
+      "id": "phin",
+      "name": {
+        "vi": "Cà phê phin",
+        "en": "Phin",
+        "ko": "핀 커피"
+      },
+      "sortOrder": 3,
+      "sourceCategoryCodes": ["ITEM_TYPE-MVIF"]
+    },
+    {
+      "id": "non-coffee",
+      "name": {
+        "vi": "Không cà phê",
+        "en": "Non-Coffee",
+        "ko": "논커피"
+      },
+      "sortOrder": 4,
+      "sourceCategoryCodes": ["NCF"]
+    },
+    {
+      "id": "frappuccino",
+      "name": {
+        "vi": "Đá xay",
+        "en": "Frappuccino",
+        "ko": "프라푸치노"
+      },
+      "sortOrder": 5,
+      "sourceCategoryCodes": ["FRAP"]
+    },
+    {
+      "id": "fruit-juices",
+      "name": {
+        "vi": "Nước ép",
+        "en": "Fruit & Juices",
+        "ko": "과일 주스"
+      },
+      "sortOrder": 6,
+      "sourceCategoryCodes": ["ITEM_TYPE-1SX6"]
+    },
+    {
+      "id": "tea-pot-cup",
+      "name": {
+        "vi": "Trà",
+        "en": "Tea Pot & Cup",
+        "ko": "티팟 & 컵"
+      },
+      "sortOrder": 7,
+      "sourceCategoryCodes": ["RON"]
+    },
+    {
+      "id": "brunch",
+      "name": {
+        "vi": "Brunch",
+        "en": "Brunch",
+        "ko": "브런치"
+      },
+      "sortOrder": 8,
+      "sourceCategoryCodes": ["ITEM_TYPE-1ICS"]
+    },
+    {
+      "id": "cake",
+      "name": {
+        "vi": "Bánh ngọt",
+        "en": "Cake",
+        "ko": "케이크"
+      },
+      "sortOrder": 9,
+      "sourceCategoryCodes": ["ITEM_TYPE-IGMS"]
+    },
+    {
+      "id": "desserts",
+      "name": {
+        "vi": "Tráng miệng",
+        "en": "Desserts",
+        "ko": "디저트"
+      },
+      "sortOrder": 10,
+      "sourceCategoryCodes": ["ITEM_TYPE-MNZP"]
+    },
+    {
+      "id": "extras",
+      "name": {
+        "vi": "Thêm",
+        "en": "Extras",
+        "ko": "추가"
+      },
+      "sortOrder": 11,
+      "sourceCategoryCodes": ["ITEM_TYPE-7918", "ITEM_TYPE_OTHER"]
+    },
+    {
+      "id": "specialty-coffee",
+      "name": {
+        "vi": "Cà phê đặc sản",
+        "en": "Specialty Coffee",
+        "ko": "스페셜티 커피"
+      },
+      "sortOrder": 12,
+      "sourceCategoryCodes": ["ITEMTYPE_H4EA"]
+    },
+    {
+      "id": "coffee-beans",
+      "name": {
+        "vi": "Hạt cà phê",
+        "en": "Coffee Beans",
+        "ko": "커피 원두"
+      },
+      "sortOrder": 14,
+      "sourceCategoryCodes": ["MOCK_BEANS"]
+    }
+  ],
+  "items": [
+    {
+      "id": "row-2-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà phê Avocado Coffee",
+      "name": {
+        "vi": "Cà phê Avocado Coffee",
+        "en": "Avocado Coffee",
+        "ko": "Cà phê Avocado Coffee"
+      },
+      "priceVnd": 85000,
+      "sortOrder": 0,
+      "sourceRow": 2,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-3-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà Phê Coconut Coffee (코코넛 커피)",
+      "name": {
+        "vi": "Cà Phê Coconut Coffee",
+        "en": "Coconut Coffee",
+        "ko": "코코넛 커피"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 0,
+      "sourceRow": 3,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-107-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà Phê Cinnamon Latte (시나몬 라떼)",
+      "name": {
+        "vi": "Cà Phê Cinnamon Latte",
+        "en": "Cinnamon Latte",
+        "ko": "시나몬 라떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 0,
+      "sourceRow": 107,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-108-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà Phê Cloud Coffee (클라우드 커피)",
+      "name": {
+        "vi": "Cà Phê Cloud Coffee",
+        "en": "Cloud Coffee",
+        "ko": "클라우드 커피"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 0,
+      "sourceRow": 108,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-109-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà Phê Coco-Cano",
+      "name": {
+        "vi": "Cà Phê Coco-Cano",
+        "en": "Coco-Cano",
+        "ko": "Cà Phê Coco-Cano"
+      },
+      "priceVnd": 90000,
+      "sortOrder": 0,
+      "sourceRow": 109,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-110-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Cà Phê Coldbrew Ice Shake (콜드브루 아이스쉐이크)",
+      "name": {
+        "vi": "Cà Phê Coldbrew Ice Shake",
+        "en": "Coldbrew Ice Shake",
+        "ko": "콜드브루 아이스쉐이크"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 0,
+      "sourceRow": 110,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-111-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Sinh tố Tropical Mango Smoothies",
+      "name": {
+        "vi": "Sinh tố Tropical Mango Smoothies",
+        "en": "Sinh tố Tropical Mango Smoothies",
+        "ko": "Sinh tố Tropical Mango Smoothies"
+      },
+      "priceVnd": 85000,
+      "sortOrder": 0,
+      "sourceRow": 111,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-112-signature",
+      "categoryId": "signature",
+      "sourceCategoryCode": "SIG",
+      "sourceName": "Sữa Strawberry Latte (딸기라떼)",
+      "name": {
+        "vi": "Sữa Strawberry Latte",
+        "en": "Sữa Strawberry Latte",
+        "ko": "딸기라떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 0,
+      "sourceRow": 112,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-52-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Americano (아 메 리 카 노)",
+      "name": {
+        "vi": "Cà Phê Americano",
+        "en": "Americano",
+        "ko": "아 메 리 카 노"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 1,
+      "sourceRow": 52,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-53-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Double Espresso (에스프레소 더블 샷)",
+      "name": {
+        "vi": "Cà Phê Double Espresso",
+        "en": "Double Espresso",
+        "ko": "에스프레소 더블 샷"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 1,
+      "sourceRow": 53,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-54-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Cappucino (카푸치 노)",
+      "name": {
+        "vi": "Cà Phê Cappucino",
+        "en": "Cappucino",
+        "ko": "카푸치 노"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 1,
+      "sourceRow": 54,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "suspicious-source-spelling"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-55-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Latte (커피 라떼)",
+      "name": {
+        "vi": "Cà Phê Latte",
+        "en": "Latte",
+        "ko": "커피 라떼"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 1,
+      "sourceRow": 55,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-56-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà phê sữa đặc",
+      "name": {
+        "vi": "Cà phê sữa đặc",
+        "en": "sữa đặc",
+        "ko": "Cà phê sữa đặc"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 1,
+      "sourceRow": 56,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-57-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Bạc Xỉu",
+      "name": {
+        "vi": "Bạc Xỉu",
+        "en": "Bạc Xỉu",
+        "ko": "Bạc Xỉu"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 57,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-58-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Caramel Macchiato (카 라 멜 마끼 아 또)",
+      "name": {
+        "vi": "Cà Phê Caramel Macchiato",
+        "en": "Caramel Macchiato",
+        "ko": "카 라 멜 마끼 아 또"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 58,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-59-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Hazelnut Latte (헤이즐넛 카페라떼)",
+      "name": {
+        "vi": "Cà Phê Hazelnut Latte",
+        "en": "Hazelnut Latte",
+        "ko": "헤이즐넛 카페라떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 59,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-60-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Hazelnut Latte (헤이즐넛 카페라떼)",
+      "name": {
+        "vi": "Cà Phê Hazelnut Latte",
+        "en": "Hazelnut Latte",
+        "ko": "헤이즐넛 카페라떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 60,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "exact-duplicate:row-59"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-61-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Mocha (카페모카)",
+      "name": {
+        "vi": "Cà Phê Mocha",
+        "en": "Mocha",
+        "ko": "카페모카"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 61,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-62-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Sữa Đá (카 페 쓰 어 다)",
+      "name": {
+        "vi": "Cà Phê Sữa Đá",
+        "en": "Sữa Đá",
+        "ko": "카 페 쓰 어 다"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 62,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-63-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Cà Phê Vanilla Latte (바 닐 라 카페 라 떼)",
+      "name": {
+        "vi": "Cà Phê Vanilla Latte",
+        "en": "Vanilla Latte",
+        "ko": "바 닐 라 카페 라 떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 1,
+      "sourceRow": 63,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-64-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Big Americano",
+      "name": {
+        "vi": "Big Americano",
+        "en": "Big Americano",
+        "ko": "Big Americano"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 1,
+      "sourceRow": 64,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-65-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Milktea Bottle 500ml",
+      "name": {
+        "vi": "Milktea Bottle 500ml",
+        "en": "Milktea Bottle 500ml",
+        "ko": "Milktea Bottle 500ml"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 1,
+      "sourceRow": 65,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-66-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Iced Big Cafe Latte",
+      "name": {
+        "vi": "Iced Big Cafe Latte",
+        "en": "Iced Big Cafe Latte",
+        "ko": "Iced Big Cafe Latte"
+      },
+      "priceVnd": 90000,
+      "sortOrder": 1,
+      "sourceRow": 66,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-67-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Big Hazelnut Latte (헤이즐넛 카페라떼)",
+      "name": {
+        "vi": "Big Hazelnut Latte",
+        "en": "Big Hazelnut Latte",
+        "ko": "헤이즐넛 카페라떼"
+      },
+      "priceVnd": 95000,
+      "sortOrder": 1,
+      "sourceRow": 67,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-68-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Big Vanilla Latte (바 닐 라 카페 라 떼)",
+      "name": {
+        "vi": "Big Vanilla Latte",
+        "en": "Big Vanilla Latte",
+        "ko": "바 닐 라 카페 라 떼"
+      },
+      "priceVnd": 95000,
+      "sortOrder": 1,
+      "sourceRow": 68,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-69-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Americano Bottle 500ml",
+      "name": {
+        "vi": "Americano Bottle 500ml",
+        "en": "Americano Bottle 500ml",
+        "ko": "Americano Bottle 500ml"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 1,
+      "sourceRow": 69,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-70-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Orange Juice Bottle 500ml",
+      "name": {
+        "vi": "Orange Juice Bottle 500ml",
+        "en": "Orange Juice Bottle 500ml",
+        "ko": "Orange Juice Bottle 500ml"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 1,
+      "sourceRow": 70,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-71-coffee",
+      "categoryId": "coffee",
+      "sourceCategoryCode": "CF",
+      "sourceName": "Café latte Bottle 500ml",
+      "name": {
+        "vi": "Café latte Bottle 500ml",
+        "en": "Café latte Bottle 500ml",
+        "ko": "Café latte Bottle 500ml"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 1,
+      "sourceRow": 71,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-4-brew-coffee",
+      "categoryId": "brew-coffee",
+      "sourceCategoryCode": "BREW",
+      "sourceName": "Cà Phê Cold Brew (콜드브루)",
+      "name": {
+        "vi": "Cà Phê Cold Brew",
+        "en": "Cold Brew",
+        "ko": "콜드브루"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 2,
+      "sourceRow": 4,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-5-brew-coffee",
+      "categoryId": "brew-coffee",
+      "sourceCategoryCode": "BREW",
+      "sourceName": "Cà Phê Cold Brew Latte (콜드브루 카페라떼)",
+      "name": {
+        "vi": "Cà Phê Cold Brew Latte",
+        "en": "Cold Brew Latte",
+        "ko": "콜드브루 카페라떼"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 2,
+      "sourceRow": 5,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-6-brew-coffee",
+      "categoryId": "brew-coffee",
+      "sourceCategoryCode": "BREW",
+      "sourceName": "Cà Phê Cold Brew Specialty (콜드브루)",
+      "name": {
+        "vi": "Cà Phê Cold Brew Specialty",
+        "en": "Cold Brew Specialty",
+        "ko": "콜드브루"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 2,
+      "sourceRow": 6,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-104-phin",
+      "categoryId": "phin",
+      "sourceCategoryCode": "ITEM_TYPE-MVIF",
+      "sourceName": "Cà phê bạc xĩu (Phin)",
+      "name": {
+        "vi": "Cà phê bạc xĩu (Phin)",
+        "en": "bạc xĩu (Phin)",
+        "ko": "Cà phê bạc xĩu (Phin)"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 3,
+      "sourceRow": 104,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-105-phin",
+      "categoryId": "phin",
+      "sourceCategoryCode": "ITEM_TYPE-MVIF",
+      "sourceName": "Cà phê phin",
+      "name": {
+        "vi": "Cà phê phin",
+        "en": "phin",
+        "ko": "Cà phê phin"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 3,
+      "sourceRow": 105,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-106-phin",
+      "categoryId": "phin",
+      "sourceCategoryCode": "ITEM_TYPE-MVIF",
+      "sourceName": "Cà phê sữa (Phin)",
+      "name": {
+        "vi": "Cà phê sữa (Phin)",
+        "en": "sữa (Phin)",
+        "ko": "Cà phê sữa (Phin)"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 3,
+      "sourceRow": 106,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-91-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Dừa coconut water",
+      "name": {
+        "vi": "Dừa coconut water",
+        "en": "Dừa coconut water",
+        "ko": "Dừa coconut water"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 4,
+      "sourceRow": 91,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-92-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Nước ép Orange Juice (오렌지)",
+      "name": {
+        "vi": "Nước ép Orange Juice",
+        "en": "Nước ép Orange Juice",
+        "ko": "오렌지"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 4,
+      "sourceRow": 92,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-93-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Nước ép Tomato Juice (토마토)",
+      "name": {
+        "vi": "Nước ép Tomato Juice",
+        "en": "Nước ép Tomato Juice",
+        "ko": "토마토"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 4,
+      "sourceRow": 93,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-94-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Nước ép Water melon",
+      "name": {
+        "vi": "Nước ép Water melon",
+        "en": "Nước ép Water melon",
+        "ko": "Nước ép Water melon"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 4,
+      "sourceRow": 94,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-95-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "SInh tố Banana Milk (바나나우유)",
+      "name": {
+        "vi": "SInh tố Banana Milk",
+        "en": "SInh tố Banana Milk",
+        "ko": "바나나우유"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 4,
+      "sourceRow": 95,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-96-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Sinh Tố Strawberry Yogurt (딸기 요거트 스무디)",
+      "name": {
+        "vi": "Sinh Tố Strawberry Yogurt",
+        "en": "Sinh Tố Strawberry Yogurt",
+        "ko": "딸기 요거트 스무디"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 4,
+      "sourceRow": 96,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-97-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Sô co la (초콜릿)",
+      "name": {
+        "vi": "Sô co la",
+        "en": "Sô co la",
+        "ko": "초콜릿"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 4,
+      "sourceRow": 97,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-98-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Soda Lemonade (레모네이드)",
+      "name": {
+        "vi": "Soda Lemonade",
+        "en": "Soda Lemonade",
+        "ko": "레모네이드"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 4,
+      "sourceRow": 98,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-99-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Sữa Greentea Latte (녹차라떼)",
+      "name": {
+        "vi": "Sữa Greentea Latte",
+        "en": "Sữa Greentea Latte",
+        "ko": "녹차라떼"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 4,
+      "sourceRow": 99,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-100-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Sữa Tươi - Fresh Milk",
+      "name": {
+        "vi": "Sữa Tươi - Fresh Milk",
+        "en": "Sữa Tươi - Fresh Milk",
+        "ko": "Sữa Tươi - Fresh Milk"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 4,
+      "sourceRow": 100,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-101-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Trà Hibicus Iced Tea (히비스커스 아이스티)",
+      "name": {
+        "vi": "Trà Hibicus Iced Tea",
+        "en": "Trà Hibicus Iced Tea",
+        "ko": "히비스커스 아이스티"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 4,
+      "sourceRow": 101,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "suspicious-source-spelling"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-102-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Trà Measil (매실)",
+      "name": {
+        "vi": "Trà Measil",
+        "en": "Trà Measil",
+        "ko": "매실"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 4,
+      "sourceRow": 102,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-103-non-coffee",
+      "categoryId": "non-coffee",
+      "sourceCategoryCode": "NCF",
+      "sourceName": "Trà Sữa Bubble Milktea (버블티)",
+      "name": {
+        "vi": "Trà Sữa Bubble Milktea",
+        "en": "Trà Sữa Bubble Milktea",
+        "ko": "버블티"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 4,
+      "sourceRow": 103,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-85-frappuccino",
+      "categoryId": "frappuccino",
+      "sourceCategoryCode": "FRAP",
+      "sourceName": "Đá xay Caramel Frappe (카라멜 커피)",
+      "name": {
+        "vi": "Đá xay Caramel Frappe",
+        "en": "Đá xay Caramel Frappe",
+        "ko": "카라멜 커피"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 5,
+      "sourceRow": 85,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-86-frappuccino",
+      "categoryId": "frappuccino",
+      "sourceCategoryCode": "FRAP",
+      "sourceName": "Đá xay Cookie Oreo (쿠키 오레오)",
+      "name": {
+        "vi": "Đá xay Cookie Oreo",
+        "en": "Đá xay Cookie Oreo",
+        "ko": "쿠키 오레오"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 5,
+      "sourceRow": 86,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-87-frappuccino",
+      "categoryId": "frappuccino",
+      "sourceCategoryCode": "FRAP",
+      "sourceName": "Đá xay Mint Chocochip (민트초코칩)",
+      "name": {
+        "vi": "Đá xay Mint Chocochip",
+        "en": "Đá xay Mint Chocochip",
+        "ko": "민트초코칩"
+      },
+      "priceVnd": 75000,
+      "sortOrder": 5,
+      "sourceRow": 87,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-88-fruit-juices",
+      "categoryId": "fruit-juices",
+      "sourceCategoryCode": "ITEM_TYPE-1SX6",
+      "sourceName": "Apple Juices",
+      "name": {
+        "vi": "Apple Juices",
+        "en": "Apple Juices",
+        "ko": "Apple Juices"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 6,
+      "sourceRow": 88,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-89-fruit-juices",
+      "categoryId": "fruit-juices",
+      "sourceCategoryCode": "ITEM_TYPE-1SX6",
+      "sourceName": "Pineapples Juices",
+      "name": {
+        "vi": "Pineapples Juices",
+        "en": "Pineapples Juices",
+        "ko": "Pineapples Juices"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 6,
+      "sourceRow": 89,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-90-fruit-juices",
+      "categoryId": "fruit-juices",
+      "sourceCategoryCode": "ITEM_TYPE-1SX6",
+      "sourceName": "Pink Guava Juices",
+      "name": {
+        "vi": "Pink Guava Juices",
+        "en": "Pink Guava Juices",
+        "ko": "Pink Guava Juices"
+      },
+      "priceVnd": 65000,
+      "sortOrder": 6,
+      "sourceRow": 90,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-114-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Box Camomile (논카페인티)",
+      "name": {
+        "vi": "Box Camomile",
+        "en": "Box Camomile",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 330000,
+      "sortOrder": 7,
+      "sourceRow": 114,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-115-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Box English Breakfast",
+      "name": {
+        "vi": "Box English Breakfast",
+        "en": "Box English Breakfast",
+        "ko": "Box English Breakfast"
+      },
+      "priceVnd": 330000,
+      "sortOrder": 7,
+      "sourceRow": 115,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-116-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Box Rooibos Classic (논카페인티)",
+      "name": {
+        "vi": "Box Rooibos Classic",
+        "en": "Box Rooibos Classic",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 330000,
+      "sortOrder": 7,
+      "sourceRow": 116,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-117-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Box Rosehip (Non-Caffeine)",
+      "name": {
+        "vi": "Box Rosehip (Non-Caffeine)",
+        "en": "Box Rosehip (Non-Caffeine)",
+        "ko": "Box Rosehip (Non-Caffeine)"
+      },
+      "priceVnd": 330000,
+      "sortOrder": 7,
+      "sourceRow": 117,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-118-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Darjeeling Summer Gold",
+      "name": {
+        "vi": "Darjeeling Summer Gold",
+        "en": "Darjeeling Summer Gold",
+        "ko": "Darjeeling Summer Gold"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 118,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-119-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "English Breakfast",
+      "name": {
+        "vi": "English Breakfast",
+        "en": "English Breakfast",
+        "ko": "English Breakfast"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 7,
+      "sourceRow": 119,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-120-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Erdbeer-Himbeer (논카페인티)",
+      "name": {
+        "vi": "Erdbeer-Himbeer",
+        "en": "Erdbeer-Himbeer",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 120,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-121-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Famous Earl Grey",
+      "name": {
+        "vi": "Famous Earl Grey",
+        "en": "Famous Earl Grey",
+        "ko": "Famous Earl Grey"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 121,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-122-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Rooibos Classic (논카페인티)",
+      "name": {
+        "vi": "Rooibos Classic",
+        "en": "Rooibos Classic",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 7,
+      "sourceRow": 122,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-123-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Rooibos Orange - Sahne (논카페인티)",
+      "name": {
+        "vi": "Rooibos Orange - Sahne",
+        "en": "Rooibos Orange - Sahne",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 123,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-124-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Rosehip (Non-Caffeine)",
+      "name": {
+        "vi": "Rosehip (Non-Caffeine)",
+        "en": "Rosehip (Non-Caffeine)",
+        "ko": "Rosehip (Non-Caffeine)"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 7,
+      "sourceRow": 124,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-125-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Schlummertrunk (논카페인티)",
+      "name": {
+        "vi": "Schlummertrunk",
+        "en": "Schlummertrunk",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 125,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-126-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Trà Camomile (논카페인티)",
+      "name": {
+        "vi": "Trà Camomile",
+        "en": "Trà Camomile",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 7,
+      "sourceRow": 126,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-127-tea-pot-cup",
+      "categoryId": "tea-pot-cup",
+      "sourceCategoryCode": "RON",
+      "sourceName": "Trà Camomile cup (논카페인티)",
+      "name": {
+        "vi": "Trà Camomile cup",
+        "en": "Trà Camomile cup",
+        "ko": "논카페인티"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 7,
+      "sourceRow": 127,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-7-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Aglio E Olio",
+      "name": {
+        "vi": "Aglio E Olio",
+        "en": "Aglio E Olio",
+        "ko": "Aglio E Olio"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 7,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-8-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "All’Arrabbiata Pasta",
+      "name": {
+        "vi": "All’Arrabbiata Pasta",
+        "en": "All’Arrabbiata Pasta",
+        "ko": "All’Arrabbiata Pasta"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 8,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-9-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Arugula Burrata salad",
+      "name": {
+        "vi": "Arugula Burrata salad",
+        "en": "Arugula Burrata salad",
+        "ko": "Arugula Burrata salad"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 9,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-10-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Arugula Green salad",
+      "name": {
+        "vi": "Arugula Green salad",
+        "en": "Arugula Green salad",
+        "ko": "Arugula Green salad"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 8,
+      "sourceRow": 10,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-11-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Bánh Bagel Cream Cheese",
+      "name": {
+        "vi": "Bánh Bagel Cream Cheese",
+        "en": "Bánh Bagel Cream Cheese",
+        "ko": "Bánh Bagel Cream Cheese"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 8,
+      "sourceRow": 11,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-12-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Bánh Croissant Ham & Cheese",
+      "name": {
+        "vi": "Bánh Croissant Ham & Cheese",
+        "en": "Bánh Croissant Ham & Cheese",
+        "ko": "Bánh Croissant Ham & Cheese"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 8,
+      "sourceRow": 12,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-13-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Bánh Sandwich Ham & Cheese",
+      "name": {
+        "vi": "Bánh Sandwich Ham & Cheese",
+        "en": "Bánh Sandwich Ham & Cheese",
+        "ko": "Bánh Sandwich Ham & Cheese"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 8,
+      "sourceRow": 13,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-14-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Bánh Waffle Plain",
+      "name": {
+        "vi": "Bánh Waffle Plain",
+        "en": "Bánh Waffle Plain",
+        "ko": "Bánh Waffle Plain"
+      },
+      "priceVnd": 90000,
+      "sortOrder": 8,
+      "sourceRow": 14,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-15-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Bolognese Spaghetti",
+      "name": {
+        "vi": "Bolognese Spaghetti",
+        "en": "Bolognese Spaghetti",
+        "ko": "Bolognese Spaghetti"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 15,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-16-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Burrata Caprese Salad",
+      "name": {
+        "vi": "Burrata Caprese Salad",
+        "en": "Burrata Caprese Salad",
+        "ko": "Burrata Caprese Salad"
+      },
+      "priceVnd": 170000,
+      "sortOrder": 8,
+      "sourceRow": 16,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-17-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Burrata Cheese",
+      "name": {
+        "vi": "Burrata Cheese",
+        "en": "Burrata Cheese",
+        "ko": "Burrata Cheese"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 8,
+      "sourceRow": 17,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-18-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Classic Carbonara",
+      "name": {
+        "vi": "Classic Carbonara",
+        "en": "Classic Carbonara",
+        "ko": "Classic Carbonara"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 18,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-19-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Cream & Mushroom Pasta",
+      "name": {
+        "vi": "Cream & Mushroom Pasta",
+        "en": "Cream & Mushroom Pasta",
+        "ko": "Cream & Mushroom Pasta"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 19,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-20-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Cream Cheese",
+      "name": {
+        "vi": "Cream Cheese",
+        "en": "Cream Cheese",
+        "ko": "Cream Cheese"
+      },
+      "priceVnd": 20000,
+      "sortOrder": 8,
+      "sourceRow": 20,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-21-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "English Muffin",
+      "name": {
+        "vi": "English Muffin",
+        "en": "English Muffin",
+        "ko": "English Muffin"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 21,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-22-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Bacon",
+      "name": {
+        "vi": "Extra Bacon",
+        "en": "Extra Bacon",
+        "ko": "Extra Bacon"
+      },
+      "priceVnd": 40000,
+      "sortOrder": 8,
+      "sourceRow": 22,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-23-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Banana",
+      "name": {
+        "vi": "Extra Banana",
+        "en": "Extra Banana",
+        "ko": "Extra Banana"
+      },
+      "priceVnd": 10000,
+      "sortOrder": 8,
+      "sourceRow": 23,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-24-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Mango",
+      "name": {
+        "vi": "Extra Mango",
+        "en": "Extra Mango",
+        "ko": "Extra Mango"
+      },
+      "priceVnd": 20000,
+      "sortOrder": 8,
+      "sourceRow": 24,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-25-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Mapple",
+      "name": {
+        "vi": "Extra Mapple",
+        "en": "Extra Mapple",
+        "ko": "Extra Mapple"
+      },
+      "priceVnd": 10000,
+      "sortOrder": 8,
+      "sourceRow": 25,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-26-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Nutella",
+      "name": {
+        "vi": "Extra Nutella",
+        "en": "Extra Nutella",
+        "ko": "Extra Nutella"
+      },
+      "priceVnd": 30000,
+      "sortOrder": 8,
+      "sourceRow": 26,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-27-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Extra Sausage",
+      "name": {
+        "vi": "Extra Sausage",
+        "en": "Extra Sausage",
+        "ko": "Extra Sausage"
+      },
+      "priceVnd": 40000,
+      "sortOrder": 8,
+      "sourceRow": 27,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-28-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Greek Yogurt w/Fruit & Granola",
+      "name": {
+        "vi": "Greek Yogurt w/Fruit & Granola",
+        "en": "Greek Yogurt w/Fruit & Granola",
+        "ko": "Greek Yogurt w/Fruit & Granola"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 28,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-29-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Grilled Chicken Garden Salad",
+      "name": {
+        "vi": "Grilled Chicken Garden Salad",
+        "en": "Grilled Chicken Garden Salad",
+        "ko": "Grilled Chicken Garden Salad"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 29,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-30-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Grilled prawn & Green salad",
+      "name": {
+        "vi": "Grilled prawn & Green salad",
+        "en": "Grilled prawn & Green salad",
+        "ko": "Grilled prawn & Green salad"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 30,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-31-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Honey Toast",
+      "name": {
+        "vi": "Honey Toast",
+        "en": "Honey Toast",
+        "ko": "Honey Toast"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 31,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-32-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Mango Burrata Salad",
+      "name": {
+        "vi": "Mango Burrata Salad",
+        "en": "Mango Burrata Salad",
+        "ko": "Mango Burrata Salad"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 32,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-33-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Pesto & Garlic Shrimp Toast",
+      "name": {
+        "vi": "Pesto & Garlic Shrimp Toast",
+        "en": "Pesto & Garlic Shrimp Toast",
+        "ko": "Pesto & Garlic Shrimp Toast"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 8,
+      "sourceRow": 33,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-34-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Pesto & Seafood Pasta",
+      "name": {
+        "vi": "Pesto & Seafood Pasta",
+        "en": "Pesto & Seafood Pasta",
+        "ko": "Pesto & Seafood Pasta"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 34,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-35-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Phần ăn Big Breakfast",
+      "name": {
+        "vi": "Phần ăn Big Breakfast",
+        "en": "Phần ăn Big Breakfast",
+        "ko": "Phần ăn Big Breakfast"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 35,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-36-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Phần ăn Waffle Seasonal Fruits",
+      "name": {
+        "vi": "Phần ăn Waffle Seasonal Fruits",
+        "en": "Phần ăn Waffle Seasonal Fruits",
+        "ko": "Phần ăn Waffle Seasonal Fruits"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 36,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-37-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Scramble Eggs Toast",
+      "name": {
+        "vi": "Scramble Eggs Toast",
+        "en": "Scramble Eggs Toast",
+        "ko": "Scramble Eggs Toast"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 8,
+      "sourceRow": 37,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-38-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Scrambled eggs bacons Muffin",
+      "name": {
+        "vi": "Scrambled eggs bacons Muffin",
+        "en": "Scrambled eggs bacons Muffin",
+        "ko": "Scrambled eggs bacons Muffin"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 38,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-39-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Shrimp Aghilio E Olio",
+      "name": {
+        "vi": "Shrimp Aghilio E Olio",
+        "en": "Shrimp Aghilio E Olio",
+        "ko": "Shrimp Aghilio E Olio"
+      },
+      "priceVnd": 160000,
+      "sortOrder": 8,
+      "sourceRow": 39,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-40-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Spicy Seafood Spaghetti",
+      "name": {
+        "vi": "Spicy Seafood Spaghetti",
+        "en": "Spicy Seafood Spaghetti",
+        "ko": "Spicy Seafood Spaghetti"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 8,
+      "sourceRow": 40,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-41-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Súp - Pumkin Soup",
+      "name": {
+        "vi": "Súp - Pumkin Soup",
+        "en": "Súp - Pumkin Soup",
+        "ko": "Súp - Pumkin Soup"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 41,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-42-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Súp-Cream of Mushroom Soup",
+      "name": {
+        "vi": "Súp-Cream of Mushroom Soup",
+        "en": "Súp-Cream of Mushroom Soup",
+        "ko": "Súp-Cream of Mushroom Soup"
+      },
+      "priceVnd": 140000,
+      "sortOrder": 8,
+      "sourceRow": 42,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-43-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Tomato Toast",
+      "name": {
+        "vi": "Tomato Toast",
+        "en": "Tomato Toast",
+        "ko": "Tomato Toast"
+      },
+      "priceVnd": 100000,
+      "sortOrder": 8,
+      "sourceRow": 43,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-44-brunch",
+      "categoryId": "brunch",
+      "sourceCategoryCode": "ITEM_TYPE-1ICS",
+      "sourceName": "Wild Garlic Mushroom Cream Toast",
+      "name": {
+        "vi": "Wild Garlic Mushroom Cream Toast",
+        "en": "Wild Garlic Mushroom Cream Toast",
+        "ko": "Wild Garlic Mushroom Cream Toast"
+      },
+      "priceVnd": 120000,
+      "sortOrder": 8,
+      "sourceRow": 44,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-45-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Bánh Carrot Cake",
+      "name": {
+        "vi": "Bánh Carrot Cake",
+        "en": "Bánh Carrot Cake",
+        "ko": "Bánh Carrot Cake"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 9,
+      "sourceRow": 45,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-46-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Bánh Chocolate Banana",
+      "name": {
+        "vi": "Bánh Chocolate Banana",
+        "en": "Bánh Chocolate Banana",
+        "ko": "Bánh Chocolate Banana"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 9,
+      "sourceRow": 46,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-47-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Bánh Chocolate Cookie",
+      "name": {
+        "vi": "Bánh Chocolate Cookie",
+        "en": "Bánh Chocolate Cookie",
+        "ko": "Bánh Chocolate Cookie"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 9,
+      "sourceRow": 47,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-48-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Basque Cheese Cake",
+      "name": {
+        "vi": "Basque Cheese Cake",
+        "en": "Basque Cheese Cake",
+        "ko": "Basque Cheese Cake"
+      },
+      "priceVnd": 85000,
+      "sortOrder": 9,
+      "sourceRow": 48,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-49-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Lemon Cake",
+      "name": {
+        "vi": "Lemon Cake",
+        "en": "Lemon Cake",
+        "ko": "Lemon Cake"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 9,
+      "sourceRow": 49,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-50-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Tiramisu",
+      "name": {
+        "vi": "Tiramisu",
+        "en": "Tiramisu",
+        "ko": "Tiramisu"
+      },
+      "priceVnd": 90000,
+      "sortOrder": 9,
+      "sourceRow": 50,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-51-cake",
+      "categoryId": "cake",
+      "sourceCategoryCode": "ITEM_TYPE-IGMS",
+      "sourceName": "Whole Wheat Banana Bread",
+      "name": {
+        "vi": "Whole Wheat Banana Bread",
+        "en": "Whole Wheat Banana Bread",
+        "ko": "Whole Wheat Banana Bread"
+      },
+      "priceVnd": 40000,
+      "sortOrder": 9,
+      "sourceRow": 51,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-72-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Bánh Banana Strawberry Croffle",
+      "name": {
+        "vi": "Bánh Banana Strawberry Croffle",
+        "en": "Bánh Banana Strawberry Croffle",
+        "ko": "Bánh Banana Strawberry Croffle"
+      },
+      "priceVnd": 85000,
+      "sortOrder": 10,
+      "sourceRow": 72,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-73-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Bánh Croffle Nuttella Banana",
+      "name": {
+        "vi": "Bánh Croffle Nuttella Banana",
+        "en": "Bánh Croffle Nuttella Banana",
+        "ko": "Bánh Croffle Nuttella Banana"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 10,
+      "sourceRow": 73,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-74-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Bánh Croffle Plain",
+      "name": {
+        "vi": "Bánh Croffle Plain",
+        "en": "Bánh Croffle Plain",
+        "ko": "Bánh Croffle Plain"
+      },
+      "priceVnd": 60000,
+      "sortOrder": 10,
+      "sourceRow": 74,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-75-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Bánh Croffle Tiramisu",
+      "name": {
+        "vi": "Bánh Croffle Tiramisu",
+        "en": "Bánh Croffle Tiramisu",
+        "ko": "Bánh Croffle Tiramisu"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 10,
+      "sourceRow": 75,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-76-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Bánh Croissant",
+      "name": {
+        "vi": "Bánh Croissant",
+        "en": "Bánh Croissant",
+        "ko": "Bánh Croissant"
+      },
+      "priceVnd": 40000,
+      "sortOrder": 10,
+      "sourceRow": 76,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-77-desserts",
+      "categoryId": "desserts",
+      "sourceCategoryCode": "ITEM_TYPE-MNZP",
+      "sourceName": "Ice cream",
+      "name": {
+        "vi": "Ice cream",
+        "en": "Ice cream",
+        "ko": "Ice cream"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 10,
+      "sourceRow": 77,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-78-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Bánh mì BB",
+      "name": {
+        "vi": "Bánh mì BB",
+        "en": "Bánh mì BB",
+        "ko": "Bánh mì BB"
+      },
+      "priceVnd": 40000,
+      "sortOrder": 11,
+      "sourceRow": 78,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-79-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Bánh mì soup",
+      "name": {
+        "vi": "Bánh mì soup",
+        "en": "Bánh mì soup",
+        "ko": "Bánh mì soup"
+      },
+      "priceVnd": 20000,
+      "sortOrder": 11,
+      "sourceRow": 79,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-80-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Creamchesse",
+      "name": {
+        "vi": "Creamchesse",
+        "en": "Creamchesse",
+        "ko": "Creamchesse"
+      },
+      "priceVnd": 20000,
+      "sortOrder": 11,
+      "sourceRow": 80,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-81-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Extra Burrata Cheese",
+      "name": {
+        "vi": "Extra Burrata Cheese",
+        "en": "Extra Burrata Cheese",
+        "ko": "Extra Burrata Cheese"
+      },
+      "priceVnd": 80000,
+      "sortOrder": 11,
+      "sourceRow": 81,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-82-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Extra Creamy Dressing",
+      "name": {
+        "vi": "Extra Creamy Dressing",
+        "en": "Extra Creamy Dressing",
+        "ko": "Extra Creamy Dressing"
+      },
+      "priceVnd": 30000,
+      "sortOrder": 11,
+      "sourceRow": 82,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-83-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Extra Fennel vinaigrette",
+      "name": {
+        "vi": "Extra Fennel vinaigrette",
+        "en": "Extra Fennel vinaigrette",
+        "ko": "Extra Fennel vinaigrette"
+      },
+      "priceVnd": 30000,
+      "sortOrder": 11,
+      "sourceRow": 83,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-84-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE-7918",
+      "sourceName": "Extra Ganola",
+      "name": {
+        "vi": "Extra Ganola",
+        "en": "Extra Ganola",
+        "ko": "Extra Ganola"
+      },
+      "priceVnd": 20000,
+      "sortOrder": 11,
+      "sourceRow": 84,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "suspicious-source-spelling"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-113-specialty-coffee",
+      "categoryId": "specialty-coffee",
+      "sourceCategoryCode": "ITEMTYPE_H4EA",
+      "sourceName": "Americano Specialty",
+      "name": {
+        "vi": "Americano Specialty",
+        "en": "Americano Specialty",
+        "ko": "Americano Specialty"
+      },
+      "priceVnd": 70000,
+      "sortOrder": 12,
+      "sourceRow": 113,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-128-extras",
+      "categoryId": "extras",
+      "sourceCategoryCode": "ITEM_TYPE_OTHER",
+      "sourceName": "Extra Shot",
+      "name": {
+        "vi": "Extra Shot",
+        "en": "Extra Shot",
+        "ko": "Extra Shot"
+      },
+      "priceVnd": 10000,
+      "sortOrder": 13,
+      "sourceRow": 128,
+      "needsReview": true,
+      "reviewNotes": ["generated-translation:en", "generated-translation:ko"],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "row-9001-coffee-beans",
+      "categoryId": "coffee-beans",
+      "sourceCategoryCode": "MOCK_BEANS",
+      "sourceName": "Mock Arabica Beans 250g",
+      "name": {
+        "vi": "Mock Arabica Beans 250g",
+        "en": "Mock Arabica Beans 250g",
+        "ko": "Mock Arabica Beans 250g"
+      },
+      "priceVnd": 180000,
+      "sortOrder": 14,
+      "sourceRow": 9001,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "mock-source-record"
+      ],
+      "netWeightGram": 250,
+      "publicationStatus": "draft"
+    },
+    {
+      "id": "row-9002-coffee-beans",
+      "categoryId": "coffee-beans",
+      "sourceCategoryCode": "MOCK_BEANS",
+      "sourceName": "Mock Robusta Beans 500g",
+      "name": {
+        "vi": "Mock Robusta Beans 500g",
+        "en": "Mock Robusta Beans 500g",
+        "ko": "Mock Robusta Beans 500g"
+      },
+      "priceVnd": 260000,
+      "sortOrder": 14,
+      "sourceRow": 9002,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "mock-source-record"
+      ],
+      "netWeightGram": 500,
+      "publicationStatus": "draft"
+    },
+    {
+      "id": "row-9003-coffee-beans",
+      "categoryId": "coffee-beans",
+      "sourceCategoryCode": "MOCK_BEANS",
+      "sourceName": "Mock Espresso Blend Beans 1kg",
+      "name": {
+        "vi": "Mock Espresso Blend Beans 1kg",
+        "en": "Mock Espresso Blend Beans 1kg",
+        "ko": "Mock Espresso Blend Beans 1kg"
+      },
+      "priceVnd": 420000,
+      "sortOrder": 14,
+      "sourceRow": 9003,
+      "needsReview": true,
+      "reviewNotes": [
+        "generated-translation:en",
+        "generated-translation:ko",
+        "mock-source-record"
+      ],
+      "netWeightGram": 1000,
+      "publicationStatus": "draft"
+    }
+  ]
+}
