@@ -1,7 +1,7 @@
 # NAVIDO Commerce — Step 1: catalog đầy đủ và website đọc DB
 
 **Ngày:** 2026-10-05  
-**Trạng thái:** Đã được duyệt, implement và deploy staging; nghiệm thu browser HTTPS còn pending. Xem [bàn giao bước 1](../../navido-commerce-step-1-acceptance.md).  
+**Trạng thái:** Đã được duyệt, implement và deploy staging; nghiệm thu browser HTTPS còn pending. Xem [bàn giao bước 1](../../navido-commerce-step-1-acceptance.md).
 **Căn cứ:** [Roadmap commerce](../plans/2026-10-05-navido-commerce-overall.md), code step 0 tại `1d7fa6e`, và yêu cầu mới: chuyển **cả category và món public sang DB trong step 1**.
 
 ## 1. Kết quả cần đạt
