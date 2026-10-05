@@ -9,8 +9,8 @@ const statuses = {
 export function MenuNotice() {
   return (
     <p className="admin-notice">
-      Website hiện vẫn dùng menu từ file; thay đổi tại đây chưa xuất hiện trên
-      website.
+      Website đọc menu đã công bố từ DB. Thay đổi món đã công bố xuất hiện khi
+      tải lại trang; món nháp và lưu trữ được giữ nội bộ.
     </p>
   );
 }

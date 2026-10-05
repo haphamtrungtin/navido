@@ -1,5 +1,7 @@
 ﻿import type { LocalizedText } from '@/i18n/types';
 
+import type { OptionGroup } from '@/features/catalog/extensions/schemas';
+
 export type MenuCategory = {
   id: string;
   name: LocalizedText;
@@ -14,6 +16,8 @@ export type DisplayMenuItem = {
   priceVnd: number;
   sortOrder: number;
   isAvailable?: boolean;
+  description?: LocalizedText;
+  optionGroups?: OptionGroup[];
   netWeightGram?: number;
 };
 

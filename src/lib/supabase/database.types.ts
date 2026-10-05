@@ -131,6 +131,9 @@ export type Database = {
         Row: {
           category_id: string;
           created_at: string;
+          description_en: string;
+          description_ko: string;
+          description_vi: string;
           id: string;
           is_available: boolean;
           name_en: string;
@@ -138,6 +141,7 @@ export type Database = {
           name_vi: string;
           needs_review: boolean;
           net_weight_gram: number | null;
+          option_groups: NonNullable<Json>;
           price_vnd: number;
           publication_status: string;
           review_notes: string[];
@@ -152,6 +156,9 @@ export type Database = {
         Insert: {
           category_id: string;
           created_at?: string;
+          description_en?: string;
+          description_ko?: string;
+          description_vi?: string;
           id: string;
           is_available?: boolean;
           name_en?: string;
@@ -159,6 +166,7 @@ export type Database = {
           name_vi: string;
           needs_review?: boolean;
           net_weight_gram?: number | null;
+          option_groups?: NonNullable<Json>;
           price_vnd: number;
           publication_status?: string;
           review_notes?: string[];
@@ -173,6 +181,9 @@ export type Database = {
         Update: {
           category_id?: string;
           created_at?: string;
+          description_en?: string;
+          description_ko?: string;
+          description_vi?: string;
           id?: string;
           is_available?: boolean;
           name_en?: string;
@@ -180,6 +191,7 @@ export type Database = {
           name_vi?: string;
           needs_review?: boolean;
           net_weight_gram?: number | null;
+          option_groups?: NonNullable<Json>;
           price_vnd?: number;
           publication_status?: string;
           review_notes?: string[];
@@ -201,18 +213,78 @@ export type Database = {
           },
         ];
       };
+      store_order_settings: {
+        Row: {
+          created_at: string;
+          days: NonNullable<Json>;
+          id: string;
+          paused: boolean;
+          preparation_minutes: number;
+          timezone: string;
+          updated_at: string;
+          updated_by: string | null;
+          version: number;
+        };
+        Insert: {
+          created_at?: string;
+          days: NonNullable<Json>;
+          id?: string;
+          paused?: boolean;
+          preparation_minutes?: number;
+          timezone?: string;
+          updated_at?: string;
+          updated_by?: string | null;
+          version?: number;
+        };
+        Update: {
+          created_at?: string;
+          days?: NonNullable<Json>;
+          id?: string;
+          paused?: boolean;
+          preparation_minutes?: number;
+          timezone?: string;
+          updated_at?: string;
+          updated_by?: string | null;
+          version?: number;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
     };
     Functions: {
       get_published_menu: { Args: Record<PropertyKey, never>; Returns: Json };
+      save_menu_item_extensions: {
+        Args: {
+          p_en: string;
+          p_expected_version: number;
+          p_groups: Json;
+          p_item_id: string;
+          p_ko: string;
+          p_vi: string;
+        };
+        Returns: number;
+      };
+      save_order_settings: {
+        Args: {
+          p_days: Json;
+          p_expected_version: number;
+          p_paused: boolean;
+          p_preparation_minutes: number;
+        };
+        Returns: number;
+      };
       set_menu_item_availability: {
         Args: {
           p_expected_version: number;
           p_is_available: boolean;
           p_item_id: string;
         };
+        Returns: number;
+      };
+      set_orders_paused: {
+        Args: { p_expected_version: number; p_paused: boolean };
         Returns: number;
       };
     };

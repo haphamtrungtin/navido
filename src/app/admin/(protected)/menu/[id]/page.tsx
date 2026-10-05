@@ -2,6 +2,8 @@ import { getAdminAccess } from '@/features/admin-auth/access';
 import { getCatalogItem, listCatalog } from '@/features/catalog/repository';
 import { ItemForm } from '@/features/catalog/components/item-form';
 import { AvailabilityForm } from '@/features/catalog/components/availability-form';
+import { getItemExtensions } from '@/features/catalog/extensions/repository';
+import { ItemExtensionsForm } from '@/features/catalog/extensions/item-extensions-form';
 import {
   CatalogUnavailable,
   MenuNotice,
@@ -35,11 +37,14 @@ export default async function EditMenuItemPage({
     );
   const catalog = await listCatalog({}).catch(() => null);
   if (!catalog) return <CatalogUnavailable />;
+  const extensions = await getItemExtensions(id).catch(() => null);
+  if (!extensions) return <CatalogUnavailable />;
   return (
     <>
       <h1>Sửa món · {item.name.vi}</h1>
       <MenuNotice />
       <ItemForm item={item} categories={catalog.categories} />
+      <ItemExtensionsForm {...extensions} />
     </>
   );
 }

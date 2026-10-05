@@ -32,6 +32,7 @@ export default async function ProtectedAdminLayout({
         <Link href="/admin/menu">Menu</Link>
         <Link href="/admin/menu/categories">Danh mục</Link>
         <Link href="/admin/menu/preview">Xem trước</Link>
+        <Link href="/admin/settings">Giờ nhận đơn</Link>
         <LogoutForm />
       </nav>
       {children}

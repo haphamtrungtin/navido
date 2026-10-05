@@ -16,6 +16,50 @@ const item = {
 };
 
 describe('public menu boundary', () => {
+  it('retains public descriptions/options and order settings with VI fallback', () => {
+    const option = {
+      id: 'size',
+      name: { vi: 'Cỡ', en: '', ko: '' },
+      minSelections: 1,
+      maxSelections: 1,
+      sortOrder: 0,
+      active: true,
+      choices: [
+        {
+          id: 'small',
+          name: { vi: 'Nhỏ', en: '', ko: '' },
+          priceVnd: 5000,
+          sortOrder: 0,
+          active: true,
+        },
+      ],
+    };
+    const menu = parsePublishedMenu({
+      categories: [category],
+      items: [
+        {
+          ...item,
+          description: { vi: 'Mô tả', en: '', ko: '' },
+          optionGroups: [option],
+        },
+      ],
+      orderSettings: {
+        timezone: 'Asia/Ho_Chi_Minh',
+        preparationMinutes: 20,
+        paused: true,
+        days: Array.from({ length: 7 }, (_, day) => ({
+          day,
+          enabled: false,
+          start: '07:00',
+          lastOrder: '21:30',
+          end: '22:00',
+        })),
+      },
+    });
+    expect(menu.items[0]?.description?.ko).toBe('Mô tả');
+    expect(menu.items[0]?.optionGroups?.[0]?.choices[0]?.name.en).toBe('Nhỏ');
+    expect(menu.orderSettings?.paused).toBe(true);
+  });
   it('renders new DB items without invented import metadata and falls back to VI', () => {
     const menu = parsePublishedMenu({ categories: [category], items: [item] });
     expect(menu.categories[0]?.name).toEqual({
