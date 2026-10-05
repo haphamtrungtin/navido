@@ -115,19 +115,19 @@ Sau đó cấu hình Auth cloud, env Preview, deploy Preview qua Vercel project 
 | Catalog     | Read-only query so sánh tất cả trường trong manifest: 14 danh mục, 130 món, 127 published/3 draft; đủ 4 bảng bật RLS                                                                                                                    |
 | Auth        | Config diff trước push chỉ đổi `auth.enable_signup` thành false; các property không khai báo giữ nguyên. Settings API xác nhận signup disabled, email enabled, anonymous disabled. Rate config 30 login/signup, 150 refresh khớp remote |
 | Env         | `SUPABASE_URL` và publishable key chỉ scope Preview. Project chưa connect Git repository nên không dùng env theo branch; không thêm env Production. Key không ghi vào git/log                                                           |
-| Upload      | Dry-run CLI ban đầu vẫn lấy scratch/local state dù git ignore. `.vercelignore` ở commit `2907b1e` loại env, credentials, scratch, worktree/junction và Supabase temp; manifest cuối 438 files đã kiểm tra trước upload                  |
-| Deployment  | `dpl_AmLk4HfmduQVpZxnevhwGkBZ7BYT`, source commit `2907b1e`, target Preview, status READY                                                                                                                                               |
+| Upload      | Dry-run CLI ban đầu vẫn lấy scratch/local state dù git ignore. `.vercelignore` ở commit `2907b1e` loại env, credentials, scratch, worktree/junction và Supabase temp; manifest cuối 439 files đã kiểm tra trước upload                  |
+| Deployment  | `dpl_4BdWKEVNAVEghrVW3JhLC3WJ7725`, source commit `1d7fa6e`, target Preview, status READY                                                                                                                                               |
 | HTTPS smoke | Qua `vercel curl` tự bypass lớp bảo vệ Vercel: login 200, menu VI/EN/KO 200, anonymous health 401 JSON `unauthenticated`, `Cache-Control: no-store`, `X-Robots-Tag: noindex, nofollow`                                                  |
 | Còn pending | Authenticated HTTPS CRUD/logout/revoke và quyền truy cập staff; production/account plan/backup-restore chưa nghiệm thu                                                                                                                  |
 
-Preview: [admin login](https://navido-website-4nemskgmp-kaikaiiiiis-projects.vercel.app/admin/login). Vercel Authentication đang bảo vệ Preview; phải đăng nhập Vercel trước lớp login của ứng dụng. Không tắt lớp bảo vệ này để chạy smoke. Không promote Preview lên Production: deployment đang dùng staging env.
+Preview: [admin login](https://navido-staging-vuunlbhqkdgyvxkvzfnn.vercel.app/admin/login). Vercel Authentication đang bảo vệ Preview; phải đăng nhập Vercel trước lớp login của ứng dụng. Không tắt lớp bảo vệ này để chạy smoke. Không promote Preview lên Production: deployment đang dùng staging env.
 
 Owner staging đã được bootstrap từ UUID do chủ quán cung cấp: Auth user confirmed, không bị ban/xóa, membership `owner` và `is_active=true`. Upsert có precondition và transaction; read-back đã xác minh. Kiểm tra RLS trong authenticated context của user này đọc được 14 danh mục/130 món và audit. Đây là bằng chứng quyền DB, không thay thế phiên đăng nhập HTTPS thật. Không ghi email/password vào tài liệu; chủ quán giữ password riêng và đăng nhập Preview để nghiệm thu.
 
-Deploy Preview lại qua CLI với `--regions icn1` để giữ Functions gần DB; region hiện được chọn ở lệnh deploy, chưa có `vercel.json`. Cấu hình theo [tài liệu Vercel Functions regions](https://vercel.com/docs/functions/configuring-functions/region); [icn1 là Seoul](https://vercel.com/docs/pricing/regional-pricing/icn1).
+`vercel.json` lưu `regions: ["icn1"]` để giữ Functions gần DB. Deployment `1d7fa6e` không truyền region qua CLI và inspect vẫn xác nhận `icn1`. Alias staging riêng trỏ tới Preview này; các alias production giữ nguyên. Cấu hình theo [tài liệu Vercel Functions regions](https://vercel.com/docs/functions/configuring-functions/region); [icn1 là Seoul](https://vercel.com/docs/pricing/regional-pricing/icn1).
 
 ```powershell
-corepack pnpm dlx vercel@62.2.0 deploy --target preview --regions icn1 --scope kaikaiiiiis-projects --yes
+corepack pnpm dlx vercel@62.2.0 deploy --target preview --scope kaikaiiiiis-projects --yes
 ```
 
 Rollback: trở về deployment trước; giữ membership/catalog/audit và snapshot import. Không drop table/reset DB. Nếu cần phục hồi menu đã chỉnh sửa, chủ quán review dữ liệu audit/backup rồi thực hiện thay đổi có kiểm soát; không tự import file cũ để overwrite.
@@ -147,7 +147,7 @@ corepack pnpm build
 
 Nếu thiếu Docker, máy khác/CI chạy cùng commit/CLI và bàn giao types/kết quả. Smoke staging không thay DB gates. Playwright/E2E và `verify:*` **skipped theo yêu cầu**, không được ghi pass. Format chỉ file thay đổi.
 
-Local đã kiểm tra ngày 2026-10-05 trên branch `feature/navido-website`: 41 files/158 unit và component tests, 3 files/9 integration tests, 3 files/51 pgTAP assertions; lint, typecheck và production build không có Supabase env. Implementation gốc ở commit `86a5989`. Review độc lập không phát hiện Critical; lỗi draft/version sau refresh đã tái hiện bằng hai regression tests rồi sửa để giữ version gắn với draft. Bổ sung test giao diện staff/bộ lọc và DB checks chống giả nguồn/version/actor/audit, không membership, inactive owner và sửa danh mục bằng staff.
+Local đã kiểm tra ngày 2026-10-05 trên branch `feature/navido-website`: 41 files/163 unit và component tests, 3 files/9 integration tests, 3 files/51 pgTAP assertions; lint, typecheck và production build không có Supabase env. Implementation gốc ở commit `86a5989`. Review độc lập không phát hiện Critical; lỗi draft/version sau refresh đã tái hiện bằng hai regression tests rồi sửa để giữ version gắn với draft. Bổ sung test giao diện staff/bộ lọc và DB checks chống giả nguồn/version/actor/audit, không membership, inactive owner và sửa danh mục bằng staff.
 
 HTTP smoke với `next start` và Supabase local: `/vi/menu`, `/en/menu`, `/ko/menu`, login và các trang admin trả đúng; anonymous health 401, owner health 200, thu hồi membership health 403; health không cache. Bổ sung POST form HTML thực tế tới Server Actions: login tạo cookie và redirect, tạo danh mục/món, archive, form version cũ báo conflict và giữ dữ liệu, staff gửi lại form owner không sửa được giá, staff đổi availability tăng version, logout xóa quyền truy cập health. Fixture đã cleanup. Không dùng browser/Playwright/E2E runner; tương tác browser và authenticated HTTPS vẫn cần nghiệm thu staging. Preview dùng tham số `lang=vi|en|ko`. Bằng chứng deploy staging và anonymous HTTPS ở mục trên; production chưa deploy.
 
@@ -158,3 +158,9 @@ Setup cloud cần thao tác đăng nhập/tạo project của chủ quán. Lần
 ```
 
 Wizard mở dashboard, hướng dẫn 5 bước tài khoản/Auth/env/CLI/Vercel Preview, nhập key ẩn và lưu `.env.staging.local` bị git ignore. Đã kiểm tra `bash -n`, tính nguyên vẹn template và review độc lập; chưa chạy tương tác thay chủ quán. Không apply migration/deploy và không thu thập database password hoặc service-role key. Máy khác dùng hướng dẫn dashboard ở trên. Sau khi hoàn tất, cung cấp project ref staging và team/project Vercel, giữ key/password riêng trên máy/dashboard.
+
+## Bàn giao mới nhất
+
+Xem [checklist bước 0](navido-commerce-step-0-acceptance.md) để phân biệt phần đã kiểm tra với nghiệm thu HTTPS còn thiếu. Category form đã kiểm tra lưu liên tiếp: chỉ cập nhật expectedVersion khi toàn bộ tên và sort order khớp snapshot server; draft xung đột giữ version cũ, input khóa khi pending. Review độc lập không có finding trên bản sửa.
+
+Backup staging: CLI chưa liệt kê bản physical backup khả dụng và PITR đang tắt tại thời điểm kiểm tra. Đã xuất snapshot logical của schema public (data-only) vào scratch bị ignore ngày 2026-10-05; snapshot này không gồm Auth và chưa được restore rehearsal, không thay thế backup toàn project. Trước production cần xác nhận backup/restore và gói thực tế.

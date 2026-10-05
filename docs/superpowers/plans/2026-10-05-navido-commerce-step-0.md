@@ -1,6 +1,6 @@
 # NAVIDO Commerce Step 0 — Foundation và Menu Admin Implementation Plan
 
-> **For agentic workers:** Use `superpowers:executing-plans` to implement this plan task-by-task, or `superpowers:subagent-driven-development` if the owner selects parallel agents. Implementation was authorized by the owner on 2026-10-05. Remote deployment remains pending infrastructure setup.
+> **For agentic workers:** Use `superpowers:executing-plans` to implement this plan task-by-task, or `superpowers:subagent-driven-development` if the owner selects parallel agents. Implementation was authorized by the owner on 2026-10-05. Staging is deployed; authenticated HTTPS acceptance remains pending.
 
 **Goal:** Deploy nền tảng Next.js + PostgreSQL + đăng nhập nhân viên, import menu hiện có vào DB và quản lý danh mục/món tại `/admin/menu`, có kiểm tra kết nối được bảo vệ.
 
@@ -25,7 +25,7 @@
 | 0.9 staging | Đã xác minh quyền, apply schema/import, cấu hình signup/env Preview và deploy; manifest/RLS/anonymous HTTPS pass; owner active/RLS read pass; authenticated HTTPS còn pending |
 | 0.9 production | Chưa có project/env production và chưa deploy |
 
-Commit implementation `86a5989`; kiểm tra bổ sung: 158 unit/component tests, 9 integration tests, 51 pgTAP assertions. Checklist remote vẫn giữ chưa đánh dấu cho tới khi nghiệm thu thực tế.
+Commit implementation `86a5989`; bản sửa mới nhất `1d7fa6e`: 163 unit/component tests, 9 integration tests, 51 pgTAP assertions; lint, typecheck và build pass. Checklist remote vẫn giữ chưa đánh dấu cho tới khi nghiệm thu thực tế. Các checkbox theo từng task phía dưới là trình tự kế hoạch ban đầu; trạng thái thực tế được tổng hợp ở bảng trên và [checklist bàn giao](../../navido-commerce-step-0-acceptance.md).
 
 ## Global Constraints
 
