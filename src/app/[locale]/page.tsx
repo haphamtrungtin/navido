@@ -82,7 +82,7 @@ export default async function LocalizedHomePage({
           title: translations('introduction.title'),
         }}
       />
-      {snapshot ? (
+      {snapshot && signatureItems.length > 0 ? (
         <SignatureHighlights
           copy={{
             action: translations('signature.action'),
@@ -99,7 +99,7 @@ export default async function LocalizedHomePage({
           locale={locale}
         />
       ) : (
-        <MenuReadStatus locale={locale} unavailable />
+        <MenuReadStatus locale={locale} unavailable={!snapshot} />
       )}
       <LocationInvitation
         address={businessProfile.address}

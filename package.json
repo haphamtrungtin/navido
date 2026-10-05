@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:integration": "vitest run --config vitest.integration.config.ts",
-    "db:start": "supabase start -x realtime,storage-api,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor",
+    "db:start": "supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor",
     "db:stop": "supabase stop",
     "db:test": "supabase test db",
     "db:types": "node scripts/generate-database-types.mjs",
@@ -42,6 +42,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "server-only": "0.0.1",
+    "sharp": "0.35.4",
     "zod": "^4.5.4"
   },
   "devDependencies": {
@@ -58,7 +59,6 @@
     "eslint-config-next": "^16.3.4",
     "jsdom": "^30.0.1",
     "prettier": "^3.9.6",
-    "sharp": "0.35.4",
     "supabase": "2.119.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.13",

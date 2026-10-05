@@ -45,7 +45,7 @@ describe('private menu list', () => {
     );
     expect(screen.queryByRole('link', { name: 'Thêm món' })).toBeNull();
     expect(
-      screen.getByText(/thay đổi tại đây chưa xuất hiện/),
+      screen.getByText(/Website đọc menu đã công bố từ DB/),
     ).toBeInTheDocument();
     const row = screen.getByRole('link', { name: 'Signature' }).closest('tr')!;
     expect(within(row).getByText('Lưu trữ')).toBeInTheDocument();

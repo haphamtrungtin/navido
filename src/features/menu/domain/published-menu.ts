@@ -25,6 +25,13 @@ const item = z
     priceVnd: int.nonnegative(),
     sortOrder: int,
     isAvailable: z.boolean(),
+    imagePath: z
+      .string()
+      .regex(
+        /^(\/images\/navido\/menu\/[a-zA-Z0-9_-]+\.(avif|jpg|jpeg|png|webp)|[a-f0-9-]{36}\/[a-f0-9-]{36}\.webp)$/,
+      )
+      .nullable()
+      .optional(),
     description: z
       .object({ vi: z.string(), en: z.string(), ko: z.string() })
       .transform((n) => ({

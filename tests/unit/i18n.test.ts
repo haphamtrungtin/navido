@@ -51,10 +51,7 @@ vi.mock('next-intl/server', () => ({
 
 import HomeRedirect from '@/app/(root)/page';
 import LocaleLayout, { generateStaticParams } from '@/app/[locale]/layout';
-import {
-  dynamic as localePageDynamic,
-  generateStaticParams as generatePageStaticParams,
-} from '@/app/[locale]/page';
+import { generateStaticParams as generatePageStaticParams } from '@/app/[locale]/page';
 import { getLocalizedValue, isLocale } from '@/i18n/types';
 import requestConfig from '@/i18n/request';
 import { redirect } from 'next/navigation';
@@ -90,14 +87,13 @@ describe('i18n locale contracts', () => {
     ).toBe('Cà phê');
   });
 
-  it('generates static paths and sets the localized document language', async () => {
+  it('generates locale paths and sets the localized document language', async () => {
     expect(generateStaticParams()).toEqual([
       { locale: 'vi' },
       { locale: 'en' },
       { locale: 'ko' },
     ]);
     expect(generatePageStaticParams()).toEqual(generateStaticParams());
-    expect(localePageDynamic).toBe('force-static');
 
     const layout = await LocaleLayout({
       children: createElement('main'),

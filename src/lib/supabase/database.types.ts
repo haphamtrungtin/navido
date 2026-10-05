@@ -135,6 +135,7 @@ export type Database = {
           description_ko: string;
           description_vi: string;
           id: string;
+          image_path: string | null;
           is_available: boolean;
           name_en: string;
           name_ko: string;
@@ -160,6 +161,7 @@ export type Database = {
           description_ko?: string;
           description_vi?: string;
           id: string;
+          image_path?: string | null;
           is_available?: boolean;
           name_en?: string;
           name_ko?: string;
@@ -185,6 +187,7 @@ export type Database = {
           description_ko?: string;
           description_vi?: string;
           id?: string;
+          image_path?: string | null;
           is_available?: boolean;
           name_en?: string;
           name_ko?: string;
@@ -281,6 +284,10 @@ export type Database = {
           p_is_available: boolean;
           p_item_id: string;
         };
+        Returns: number;
+      };
+      set_menu_item_image: {
+        Args: { p_expected_version: number; p_item_id: string; p_path: string };
         Returns: number;
       };
       set_orders_paused: {

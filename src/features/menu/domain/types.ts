@@ -18,6 +18,8 @@ export type DisplayMenuItem = {
   isAvailable?: boolean;
   description?: LocalizedText;
   optionGroups?: OptionGroup[];
+  imagePath?: string | null;
+  imageUrl?: string;
   netWeightGram?: number;
 };
 

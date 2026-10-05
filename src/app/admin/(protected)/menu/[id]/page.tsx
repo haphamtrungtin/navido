@@ -4,6 +4,9 @@ import { ItemForm } from '@/features/catalog/components/item-form';
 import { AvailabilityForm } from '@/features/catalog/components/availability-form';
 import { getItemExtensions } from '@/features/catalog/extensions/repository';
 import { ItemExtensionsForm } from '@/features/catalog/extensions/item-extensions-form';
+import { MenuImageForm } from '@/features/catalog/images/image-form';
+import { menuImageAssets } from '@/features/catalog/images/assets';
+import { createServerSupabaseClient } from '@/lib/supabase/server';
 import {
   CatalogUnavailable,
   MenuNotice,
@@ -39,12 +42,25 @@ export default async function EditMenuItemPage({
   if (!catalog) return <CatalogUnavailable />;
   const extensions = await getItemExtensions(id).catch(() => null);
   if (!extensions) return <CatalogUnavailable />;
+  const client = await createServerSupabaseClient();
+  const image = await client
+    .from('menu_items')
+    .select('image_path')
+    .eq('id', id)
+    .single();
+  if (image.error) return <CatalogUnavailable />;
   return (
     <>
       <h1>Sửa món · {item.name.vi}</h1>
       <MenuNotice />
       <ItemForm item={item} categories={catalog.categories} />
       <ItemExtensionsForm {...extensions} />
+      <MenuImageForm
+        itemId={id}
+        version={extensions.version}
+        imagePath={image.data.image_path}
+        assets={menuImageAssets}
+      />
     </>
   );
 }
