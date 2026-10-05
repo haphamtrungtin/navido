@@ -2,7 +2,7 @@
 
 **Ngày:** 2026-10-05
 
-**Trạng thái:** Bước 0 đã implement, kiểm tra local và deploy staging Preview; còn bootstrap owner/authenticated HTTPS acceptance, chưa deploy production. Bước 1–7 vẫn là roadmap.
+**Trạng thái:** Bước 0 đã implement, kiểm tra local và deploy staging Preview; owner đã bootstrap; còn authenticated HTTPS acceptance, chưa deploy production. Bước 1–7 vẫn là roadmap.
 
 **Mục tiêu:** Khách đặt món trên website, thấy đủ chi phí trước thanh toán, chọn đến lấy hoặc giao tận nơi; nhân viên quản lý menu và đơn trong admin, dùng iPOS thủ công.
 

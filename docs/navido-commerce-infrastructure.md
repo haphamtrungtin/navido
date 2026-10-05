@@ -1,6 +1,6 @@
 # NAVIDO Commerce — Infrastructure và vận hành bước 0
 
-Phạm vi: Auth nhân viên, membership, catalog menu, import nguồn và admin. Public website vẫn đọc file. Staging đã apply schema/import, cấu hình Auth và deploy Preview ngày 2026-10-05; bootstrap owner và nghiệm thu authenticated HTTPS còn pending. Production chưa provision/deploy.
+Phạm vi: Auth nhân viên, membership, catalog menu, import nguồn và admin. Public website vẫn đọc file. Staging đã apply schema/import, cấu hình Auth và deploy Preview ngày 2026-10-05; owner đã được cấp active và kiểm tra RLS; nghiệm thu authenticated HTTPS còn pending. Production chưa provision/deploy.
 
 ## Local
 
@@ -81,7 +81,7 @@ Metadata nguồn là chỉ đọc. Cờ cần review có thể được owner b�
 5. Sau khi tạo xong, chỉ cung cấp project ref staging và tên team/project Vercel để tiếp tục. Key/password đặt tại dashboard hoặc máy riêng, không gửi vào chat. Phần migration/apply/Preview tiếp tục theo các lệnh bên dưới khi quyền truy cập đã sẵn sàng.
 6. Sau nghiệm thu staging, tạo project `navido-production` riêng, xác nhận backup/chi phí, cấu hình env scope Production và bootstrap owner production. Chỉ deploy production khi chủ quán cho phép.
 
-Đã xác minh quyền CLI Supabase/Vercel và project staging bên dưới. Đầu vào còn thiếu để kết thúc staging: UUID Auth user confirmed do chủ quán tạo để cấp owner, sau đó nghiệm thu authenticated HTTPS. Production cần Supabase project riêng và cho phép deploy production. Không mua gói hoặc dùng DB production cho preview/tests.
+Đã xác minh quyền CLI Supabase/Vercel và project staging bên dưới. Đầu vào còn thiếu để kết thúc staging: nghiệm thu authenticated HTTPS bằng owner đã cấp quyền. Production cần Supabase project riêng và cho phép deploy production. Không mua gói hoặc dùng DB production cho preview/tests.
 
 | Môi trường        | Supabase                              | Vercel env                                            |
 | ----------------- | ------------------------------------- | ----------------------------------------------------- |
@@ -118,9 +118,11 @@ Sau đó cấu hình Auth cloud, env Preview, deploy Preview qua Vercel project 
 | Upload      | Dry-run CLI ban đầu vẫn lấy scratch/local state dù git ignore. `.vercelignore` ở commit `2907b1e` loại env, credentials, scratch, worktree/junction và Supabase temp; manifest cuối 438 files đã kiểm tra trước upload                  |
 | Deployment  | `dpl_AmLk4HfmduQVpZxnevhwGkBZ7BYT`, source commit `2907b1e`, target Preview, status READY                                                                                                                                               |
 | HTTPS smoke | Qua `vercel curl` tự bypass lớp bảo vệ Vercel: login 200, menu VI/EN/KO 200, anonymous health 401 JSON `unauthenticated`, `Cache-Control: no-store`, `X-Robots-Tag: noindex, nofollow`                                                  |
-| Còn pending | Owner membership, authenticated HTTPS CRUD/logout/revoke và quyền truy cập staff; production/account plan/backup-restore chưa nghiệm thu                                                                                                |
+| Còn pending | Authenticated HTTPS CRUD/logout/revoke và quyền truy cập staff; production/account plan/backup-restore chưa nghiệm thu                                                                                                                  |
 
 Preview: [admin login](https://navido-website-4nemskgmp-kaikaiiiiis-projects.vercel.app/admin/login). Vercel Authentication đang bảo vệ Preview; phải đăng nhập Vercel trước lớp login của ứng dụng. Không tắt lớp bảo vệ này để chạy smoke. Không promote Preview lên Production: deployment đang dùng staging env.
+
+Owner staging đã được bootstrap từ UUID do chủ quán cung cấp: Auth user confirmed, không bị ban/xóa, membership `owner` và `is_active=true`. Upsert có precondition và transaction; read-back đã xác minh. Kiểm tra RLS trong authenticated context của user này đọc được 14 danh mục/130 món và audit. Đây là bằng chứng quyền DB, không thay thế phiên đăng nhập HTTPS thật. Không ghi email/password vào tài liệu; chủ quán giữ password riêng và đăng nhập Preview để nghiệm thu.
 
 Deploy Preview lại qua CLI với `--regions icn1` để giữ Functions gần DB; region hiện được chọn ở lệnh deploy, chưa có `vercel.json`. Cấu hình theo [tài liệu Vercel Functions regions](https://vercel.com/docs/functions/configuring-functions/region); [icn1 là Seoul](https://vercel.com/docs/pricing/regional-pricing/icn1).
 
