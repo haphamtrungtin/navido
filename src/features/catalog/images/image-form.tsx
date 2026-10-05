@@ -1,5 +1,5 @@
 'use client';
-import { useActionState, useState } from 'react';
+import { useActionState, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { selectMenuImageAsset } from './actions';
 import type { ExtensionActionState } from '../extensions/mutation';
@@ -33,11 +33,18 @@ function ImageFields({
     error: null,
   });
   const [uploading, setUploading] = useState(false);
-  const [selected, setSelected] = useState(
-    imagePath && assets.includes(imagePath) ? imagePath : '',
-  );
+  const [selected, setSelected] = useState(imagePath ?? '');
+  const fileInput = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const currentVersion = Math.max(draftVersion, state.savedVersion ?? 0);
+  if (
+    !pending &&
+    !uploading &&
+    !file &&
+    version > currentVersion &&
+    selected === (imagePath ?? '')
+  )
+    setDraftVersion(version);
   return (
     <section className="admin-form">
       <h2>Ảnh món</h2>
@@ -58,6 +65,9 @@ function ImageFields({
             disabled={pending || uploading}
           >
             <option value="">Không có ảnh</option>
+            {selected && !assets.includes(selected) && (
+              <option value={selected}>Ảnh đã upload hiện tại</option>
+            )}
             {assets.map((path) => (
               <option key={path} value={path}>
                 {path.split('/').pop()}
@@ -113,6 +123,8 @@ function ImageFields({
             setDraftVersion(result.version);
             setUploadState({ error: null, savedVersion: result.version });
             setFile(null);
+            if (fileInput.current) fileInput.current.value = '';
+            setSelected(result.imagePath);
             router.refresh();
           } catch {
             setUploadState({ error: 'unavailable' });
@@ -124,6 +136,7 @@ function ImageFields({
         <label>
           Upload ảnh mới
           <input
+            ref={fileInput}
             type="file"
             accept="image/jpeg,image/png,image/webp"
             disabled={pending || uploading}

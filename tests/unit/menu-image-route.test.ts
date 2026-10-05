@@ -11,6 +11,41 @@ vi.mock('@/features/catalog/images/service', () => ({
   uploadAndAttachMenuImage: dep.upload,
 }));
 describe('bounded image route', () => {
+  it('accepts the actual Host origin even when NextURL normalizes loopback or runtime uses an internal host', async () => {
+    dep.access.mockResolvedValue({});
+    dep.upload.mockResolvedValue({ version: 2, imagePath: 'image' });
+    const local = new NextRequest(
+      'http://127.0.0.1:3121/api/admin/menu-image',
+      {
+        method: 'POST',
+        headers: {
+          origin: 'http://127.0.0.1:3121',
+          host: '127.0.0.1:3121',
+          'content-type': 'image/png',
+          'x-item-id': 'one',
+          'x-expected-version': '1',
+        },
+        body: 'png',
+      },
+    );
+    expect((await POST(local)).status).toBe(200);
+    const alias = new NextRequest(
+      'https://internal.vercel.app/api/admin/menu-image',
+      {
+        method: 'POST',
+        headers: {
+          origin: 'https://alias.vercel.app',
+          host: 'alias.vercel.app',
+          'content-type': 'image/png',
+          'x-item-id': 'one',
+          'x-expected-version': '1',
+        },
+        body: 'png',
+      },
+    );
+    expect((await POST(alias)).status).toBe(200);
+    dep.upload.mockClear();
+  });
   it('rejects cross origin and oversize bodies before decode/upload', async () => {
     dep.access.mockResolvedValue({});
     const cross = new NextRequest('https://navido.test/api/admin/menu-image', {

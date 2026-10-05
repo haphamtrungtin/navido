@@ -9,7 +9,18 @@ import { CatalogError } from '@/features/catalog/types';
 export const runtime = 'nodejs';
 export async function POST(request: NextRequest) {
   try {
-    if (request.headers.get('origin') !== request.nextUrl.origin)
+    let origin: URL;
+    try {
+      origin = new URL(request.headers.get('origin') ?? '');
+    } catch {
+      throw new CatalogError('forbidden');
+    }
+    const host = request.headers.get('host') ?? new URL(request.url).host;
+    if (
+      origin.host !== host ||
+      !['http:', 'https:'].includes(origin.protocol) ||
+      origin.origin !== request.headers.get('origin')
+    )
       throw new CatalogError('forbidden');
     await requireOwner();
     const length = request.headers.get('content-length');

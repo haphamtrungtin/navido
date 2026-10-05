@@ -27,7 +27,9 @@ export async function selectMenuImageAsset(
       !id ||
       id.length > 160 ||
       typeof value !== 'string' ||
-      (value !== '' && !isMenuImageAsset(value)) ||
+      (value !== '' &&
+        !isMenuImageAsset(value) &&
+        !/^[a-f0-9-]{36}\/[a-f0-9-]{36}\.webp$/.test(value)) ||
       !version.success
     )
       throw new CatalogError('invalid_input');

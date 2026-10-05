@@ -24,10 +24,20 @@ function Fields({
     ExtensionActionState,
     FormData
   >(saveItemExtensions, { error: null });
-  const [initialVersion] = useState(version);
+  const [draftVersion, setDraftVersion] = useState(version);
   const [description, setDescription] = useState(initialDescription);
   const [groups, setGroups] = useState(initialGroups);
   const prefix = useId();
+  const currentVersion = Math.max(draftVersion, state.savedVersion ?? 0);
+  if (
+    !pending &&
+    version > currentVersion &&
+    (['vi', 'en', 'ko'] as const).every(
+      (locale) => description[locale].trim() === initialDescription[locale],
+    ) &&
+    JSON.stringify(groups) === JSON.stringify(initialGroups)
+  )
+    setDraftVersion(version);
   function patchGroup(index: number, patch: Partial<OptionGroup>) {
     setGroups(groups.map((g, n) => (n === index ? { ...g, ...patch } : g)));
   }
@@ -39,11 +49,7 @@ function Fields({
         được giữ riêng.
       </p>
       <input type="hidden" name="id" value={itemId} />
-      <input
-        type="hidden"
-        name="expectedVersion"
-        value={state.savedVersion ?? initialVersion}
-      />
+      <input type="hidden" name="expectedVersion" value={currentVersion} />
       <input type="hidden" name="groups" value={JSON.stringify(groups)} />
       <fieldset disabled={pending}>
         {(['vi', 'en', 'ko'] as const).map((locale) => (

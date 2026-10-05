@@ -1,5 +1,12 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import {
+  cleanup,
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+} from '@testing-library/react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+afterEach(cleanup);
 import { ItemExtensionsForm } from '@/features/catalog/extensions/item-extensions-form';
 import { OrderSettingsForm } from '@/features/catalog/extensions/order-settings-form';
 const save = vi.hoisted(() => vi.fn());
@@ -9,6 +16,19 @@ vi.mock('@/features/catalog/extensions/actions', () => ({
   setOrdersPaused: vi.fn(),
 }));
 describe('catalog extension forms', () => {
+  it('rebases an untouched extension section after another section saves', () => {
+    const props = {
+      itemId: 'new',
+      version: 2,
+      description: { vi: 'Original', en: '', ko: '' },
+      groups: [],
+    };
+    const view = render(<ItemExtensionsForm {...props} />);
+    view.rerender(<ItemExtensionsForm {...props} version={3} />);
+    expect(
+      view.container.querySelector('input[name="expectedVersion"]'),
+    ).toHaveValue('3');
+  });
   it('adds a group and retains the full draft after a conflict', async () => {
     save.mockResolvedValue({ error: 'conflict' });
     render(
@@ -43,6 +63,9 @@ describe('catalog extension forms', () => {
       groups: [],
     };
     const view = render(<ItemExtensionsForm {...props} />);
+    fireEvent.change(screen.getByLabelText('Mô tả VI'), {
+      target: { value: 'Unsaved' },
+    });
     view.rerender(<ItemExtensionsForm {...props} version={5} />);
     expect(
       view.container.querySelector('input[name="expectedVersion"]'),

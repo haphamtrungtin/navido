@@ -13,12 +13,11 @@ select is((select version from public.menu_items where id='extension-test'),2,'i
 select is((select count(*)::integer from public.menu_audit_events where entity_id='extension-test'),2,'item extensions audited');
 select is((select paused from public.store_order_settings where id='store'),true,'starts paused');
 select is((select preparation_minutes from public.store_order_settings where id='store'),20,'preparation proposal');
-select throws_ok($$update public.store_order_settings set preparation_minutes=0 where id='store'$$,'23514',null,'invalid preparation constrained');
+select throws_ok($$update public.store_order_settings set preparation_minutes=0 where id='store'$$,'42501',null,'settings direct update denied');
 select set_config('request.jwt.claim.sub','40000000-0000-0000-0000-000000000002',true);
 select throws_ok($$select public.save_menu_item_extensions('extension-test',2,'Staff','','','[]')$$,'42501','catalog_forbidden','staff content denied');
 select is(public.set_orders_paused(false,1),2,'staff can unpause');
-with changed as (update public.store_order_settings set preparation_minutes=10 where id='store' returning id)
-select is((select count(*)::integer from changed),0,'staff cannot directly edit schedule');
+select throws_ok($$update public.store_order_settings set preparation_minutes=10 where id='store'$$,'42501',null,'staff cannot directly edit schedule');
 select throws_ok($$select public.set_orders_paused(true,1)$$,'P0001','catalog_conflict','pause conflict');
 reset role;
 update public.admin_memberships set is_active=false where user_id='40000000-0000-0000-0000-000000000002';

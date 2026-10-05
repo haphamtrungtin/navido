@@ -46,16 +46,14 @@ describe('real catalog extensions and public projection', () => {
     ).toBeNull();
     expect(
       (
-        await owner.client
-          .from('menu_items')
-          .insert({
-            id: itemId,
-            category_id: categoryId,
-            name_vi: 'Món mới',
-            price_vnd: 65000,
-            sort_order: 0,
-            publication_status: 'published',
-          })
+        await owner.client.from('menu_items').insert({
+          id: itemId,
+          category_id: categoryId,
+          name_vi: 'Món mới',
+          price_vnd: 65000,
+          sort_order: 0,
+          publication_status: 'published',
+        })
       ).error,
     ).toBeNull();
   });

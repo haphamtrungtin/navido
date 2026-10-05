@@ -1,0 +1,12 @@
+begin;
+select plan(4);
+insert into auth.users(id) values('60000000-0000-0000-0000-000000000001');
+insert into public.admin_memberships(user_id,role,is_active) values('60000000-0000-0000-0000-000000000001','owner',true);
+set local role authenticated;
+select set_config('request.jwt.claim.sub','60000000-0000-0000-0000-000000000001',true);
+select throws_ok($$update public.store_order_settings set paused=false where id='store'$$,'42501',null,'owner cannot bypass settings version RPC');
+select throws_ok($$update public.menu_items set option_groups='[]' where id='row-2-signature'$$,'42501',null,'owner cannot bypass options version RPC');
+select throws_ok($$update public.menu_items set description_vi='Bypass' where id='row-2-signature'$$,'42501',null,'owner cannot bypass description version RPC');
+select throws_ok($$update public.menu_items set image_path=null where id='row-2-signature'$$,'42501',null,'owner cannot bypass image version RPC');
+reset role;
+select * from finish();rollback;

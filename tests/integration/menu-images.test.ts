@@ -29,15 +29,13 @@ describe('real Storage policies and image attachment', () => {
       .toBuffer();
     expect(
       (
-        await owner.client
-          .from('menu_items')
-          .insert({
-            id: itemId,
-            category_id: 'coffee',
-            name_vi: 'Ảnh test',
-            price_vnd: 50000,
-            sort_order: 1,
-          })
+        await owner.client.from('menu_items').insert({
+          id: itemId,
+          category_id: 'coffee',
+          name_vi: 'Ảnh test',
+          price_vnd: 50000,
+          sort_order: 1,
+        })
       ).error,
     ).toBeNull();
   });
